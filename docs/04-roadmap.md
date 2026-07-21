@@ -15,9 +15,12 @@
 - [x] 유효 샘플과 위반 fixture 분리 — `data/entries.sample.json` / `data/entries.invalid.json`
 - [x] 지면 조판 시안 — `prototype/entry.html`, 미국식 기준 (ADR-005)
 - [x] 예문 길이 규칙 재검토 — 8~12 → **6~12단어**
-- [ ] **미해결 질문 해소** — 교육부 어휘 목록 원문 확인, 아이의 기기·입력 방식 확인
-- [ ] **정의 어휘 1,000단어 목록 확정** — `data/defining-vocabulary.json`
+- [x] **교육부 어휘 목록 원문 확인** — 고시 제2022-33호 [별책 14] [별표 3]. 초등 800단어, 학습 어휘 상한 600단어. 추출본 `data/moe-vocabulary.json`
+- [ ] 아이의 기기·입력 방식 확인 (남은 미해결 질문)
+- [ ] **어휘 목록 검수** — 추출본 819개를 원문 800개와 대조. 표제어 입력 전에 끝내야 한다
+- [ ] **정의 어휘 1,000단어 목록 확정** — `data/defining-vocabulary.json`. 초등 800 + 정의용 기능어 200
 - [ ] 불규칙 굴절 매핑 — `data/inflections.json`
+- [ ] 면제 부류 목록 — `data/exempt-classes.json`. 단위명·약어·호칭은 소문자라 명시 필요
 - [ ] **검증기 구현** — V01~V16. `entries.sample.json`은 전 항목 통과, `entries.invalid.json`은 각 표제어가 `_expect`의 코드만 내야 한다
 
 **완료 기준**: 표제어 20개를 [편집 체크리스트](01-content-policy.md#편집-체크리스트) 전 항목 통과로 입력할 수 있고, 검증기가 fixture의 위반 15건을 정확히 잡아낸다.
@@ -82,6 +85,6 @@
 
 ## 지금 할 일
 
-**미해결 질문 해소가 먼저다.** 교육부 어휘 목록이 확정되지 않으면 정의 어휘 1,000단어 목록도 근거 없이 만들게 되고, 그 목록 없이는 검증기를 완성할 수 없다.
+**어휘 목록 검수가 먼저다.** 추출본이 819개로 고시 기준보다 19개 많은 상태에서 정의 어휘를 만들면 오차가 그대로 따라 내려간다.
 
-순서: 어휘 목록 확인 → `defining-vocabulary.json` + `inflections.json` → 검증기 구현 → 표제어 20개 입력.
+순서: 어휘 목록 검수 → `defining-vocabulary.json` + `inflections.json` + `exempt-classes.json` → 검증기 구현 → 표제어 20개 입력.
