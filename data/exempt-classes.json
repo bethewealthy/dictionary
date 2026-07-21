@@ -1,0 +1,55 @@
+{
+ "_purpose": "교육과정이 '기본 어휘로도, 학습해야 하는 새로운 어휘로도 간주하지 않는다'고 규정한 부류. 정의 어휘 목록에 없어도 V01 위반이 아니다. 검증기만 읽는다.",
+ "_source": "교육부 고시 제2022-33호 [별책 14] 영어과 교육과정 [별표 3] 기본 어휘 관련 지침 5",
+ "_note": "고유명사는 토큰화 3단계의 대문자 규칙으로 대부분 걸러지지만, 아래 부류는 소문자로 쓰이므로 명시 목록이 필요하다. 알파벳 한 글자, 화학식, 숫자는 패턴으로 판정한다.",
+
+ "titles": [
+  "mr", "mr.", "mrs", "mrs.", "ms", "ms.", "dr", "dr.", "madam", "sir", "ma'am", "ma’am"
+ ],
+
+ "interjections": [
+  "oh", "ah", "aha", "wow", "yippee", "ouch", "ow", "ugh", "ouh", "shhh", "oops",
+  "hurray", "hooray", "yay", "huh", "hmm", "eh", "alas"
+ ],
+
+ "units": [
+  "pound", "gram", "kilogram", "ounce", "liter", "litre", "ton",
+  "dollar", "cent", "euro", "won", "pence", "penny",
+  "meter", "metre", "kilometer", "kilometre", "centimeter", "centimetre",
+  "yard", "mile", "inch", "feet", "foot",
+  "percent", "degree", "celsius", "fahrenheit", "byte", "kilobyte", "megabyte", "gigabyte"
+ ],
+
+ "abbreviations": [
+  "a.m.", "am", "p.m.", "pm", "a.d.", "ad", "b.c.", "bc",
+  "tv", "cd", "dvd", "dna", "sns", "ai", "wi-fi", "wifi", "usb", "pc", "id", "app",
+  "ok", "okay", "etc.", "etc", "e.g.", "i.e."
+ ],
+
+ "romanizedKorean": [
+  "bulgogi", "bibimbap", "kimchi", "hanbok", "hangul", "samullori", "pungsokdo",
+  "taekwondo", "sijo", "pansori", "tteokbokki", "gimbap", "hanok", "seollal", "chuseok"
+ ],
+
+ "_numberRule": "아래 keptNumbers는 정식 어휘이므로 정의 어휘 목록에 있어야 한다. 그 밖의 기수·서수는 모두 면제 대상이다. 판정은 numberStems로 한다.",
+
+ "keptNumbers": [
+  "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+  "ten", "eleven", "twelve", "thirteen", "twenty", "thirty",
+  "hundred", "thousand", "million", "billion",
+  "first", "second", "third", "twenty-first", "twenty-second", "twenty-third"
+ ],
+
+ "numberStems": [
+  "zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine",
+  "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen",
+  "seventeen", "eighteen", "nineteen",
+  "twenty", "thirty", "forty", "fifty", "sixty", "seventy", "eighty", "ninety",
+  "hundred", "thousand", "million", "billion", "trillion",
+  "first", "second", "third", "fourth", "fifth", "sixth", "seventh", "eighth",
+  "ninth", "tenth", "eleventh", "twelfth", "thirteenth", "fourteenth", "fifteenth",
+  "sixteenth", "seventeenth", "eighteenth", "nineteenth", "twentieth", "thirtieth",
+  "fortieth", "fiftieth", "sixtieth", "seventieth", "eightieth", "ninetieth",
+  "hundredth", "thousandth", "millionth"
+ ]
+}

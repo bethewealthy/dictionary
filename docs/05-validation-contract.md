@@ -177,3 +177,31 @@
 `entries.invalid.json`의 각 항목은 `_expect` 필드에 위반 코드(V01 등)를 적어 둔다. 검증기 테스트는 "그 코드가, 그 표제어에서, 그것만 나오는지"를 확인한다.
 
 > `_expect`는 fixture 전용 필드다. `Dictionary` 타입에 없으며 실제 데이터에 넣지 않는다.
+
+**V08만 fixture로 검사하지 않는다.** 사전 전체의 예문 토큰을 합산해 판정하는 규칙이라 표제어 하나에 귀속시킬 수 없다. 경고 등급이기도 해서 fixture 계약에서 제외한다.
+
+---
+
+## 6. 구현
+
+```
+tools/validate/
+  tokenize.ts   1절의 토큰화 5단계
+  lexicon.ts    2절의 어휘 판정 — 화이트리스트·원형 환원·면제 부류
+  rules.ts      4절의 V01~V16
+  index.ts      CLI와 fixture 계약 검사
+```
+
+```bash
+npm run validate           # 유효 샘플 — 위반이 나오면 실패
+npm run validate:fixture   # fixture 계약 — _expect와 다르면 실패
+npm test                   # 둘 다
+```
+
+**의존성이 없다.** Node 22.6+가 TypeScript를 그대로 실행하므로(`node tools/validate/index.ts`) 트랜스파일러도 `node_modules`도 필요 없다. 1인 프로젝트에서 검증기 하나 때문에 빌드 툴체인을 들이지 않는다.
+
+### 구현하며 확정한 것
+
+- **`--audio` 플래그**: V11의 파일 실재 검사는 기본으로 끈다. M1의 오디오 생성 파이프라인이 선 뒤에 켠다
+- **순환 탐지는 Tarjan SCC**, 재귀 구현. 표제어 1,000개 규모에서 스택 깊이 문제는 없다
+- **파생 접사는 한 단계만 벗긴다.** 연쇄하면 `something`을 `-ing` → `-th`로 벗겨 `some`으로 만드는 오탐이 생긴다. 파생을 한 번 벗긴 뒤 굴절 한 단계까지만 추가로 허용한다(`happily` → `happi` → `happy`)

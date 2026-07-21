@@ -17,12 +17,24 @@
 
 ## 현재 상태
 
-**M0 (기반)** 진행 중 — [로드맵](docs/04-roadmap.md) 참조.
+**M0 (기반)** 진행 중 — [로드맵](docs/04-roadmap.md) 참조. 다음은 표제어 20개 입력.
+
+## 검증기
+
+```bash
+npm run validate           # 유효 샘플 — 위반이 나오면 실패
+npm run validate:fixture   # 위반 fixture — _expect와 다르면 실패
+npm test                   # 둘 다
+```
+
+의존성이 없다. Node 22.6+가 TypeScript를 그대로 실행하므로 `npm install`이 필요 없다.
+규칙 정의는 [05 · 검증기 계약](docs/05-validation-contract.md).
 
 ## 구성
 
 ```
 docs/                     설계 문서
+tools/validate/           검증기 — 토큰화 · 어휘 판정 · V01~V16 · CLI
 src/types/entry.ts        데이터 모델 (스키마 v2)
 data/moe-vocabulary.json  교육과정 [별표 3] 기본 어휘 800/1,200/1,000 · 검수 완료
 data/defining-vocabulary.json  정의 어휘 962단어 — 뜻풀이에 쓸 수 있는 화이트리스트

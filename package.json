@@ -1,0 +1,15 @@
+{
+  "name": "dictionary",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "초등학생용 영한사전",
+  "engines": {
+    "node": ">=22.6"
+  },
+  "scripts": {
+    "validate": "node tools/validate/index.ts data/entries.sample.json",
+    "validate:fixture": "node tools/validate/index.ts --fixture data/entries.invalid.json",
+    "test": "npm run validate && npm run validate:fixture"
+  }
+}

@@ -58,6 +58,54 @@
       "editorialStatus": "draft"
     },
     {
+      "_expect": ["V03"],
+      "_why": "정의문이 두 문장이다. 사전 정의는 한 문장이어야 한다",
+      "id": "whisper",
+      "headword": "whisper",
+      "syllables": "whis·per",
+      "ipa": { "us": "/ˈwɪs.pɚ/" },
+      "audio": { "us": "audio/us/whisper.mp3" },
+      "senses": [
+        {
+          "id": "whisper-1",
+          "pos": "verb",
+          "en": "to speak in a very quiet voice. It is like a soft sound",
+          "ko": "속삭이다",
+          "level": 2,
+          "tags": ["action", "sound"],
+          "examples": [
+            {
+              "id": "whisper-1-e1",
+              "en": "You must {{whisper}} when you are in the library.",
+              "ko": "도서관에서는 속삭여야 해요."
+            }
+          ]
+        }
+      ],
+      "editorialStatus": "draft"
+    },
+    {
+      "_expect": ["V10"],
+      "_why": "뜻갈래에 예문이 하나도 없다",
+      "id": "pebble",
+      "headword": "pebble",
+      "syllables": "peb·ble",
+      "ipa": { "us": "/ˈpeb.əl/" },
+      "audio": { "us": "audio/us/pebble.mp3" },
+      "senses": [
+        {
+          "id": "pebble-1",
+          "pos": "noun",
+          "en": "a small round stone that you find near a river",
+          "ko": "조약돌",
+          "level": 2,
+          "tags": ["nature"],
+          "examples": []
+        }
+      ],
+      "editorialStatus": "draft"
+    },
+    {
       "_expect": ["V04"],
       "_why": "frost → ice → freeze → frost 3단계 순환. 2단계만 보는 검증기는 놓친다",
       "id": "frost",
