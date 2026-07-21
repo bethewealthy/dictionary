@@ -17,14 +17,14 @@
 
 ## 현재 상태
 
-**M0 (기반)** 진행 중 — [로드맵](docs/04-roadmap.md) 참조. 다음은 표제어 20개 입력.
+**M0 (기반) 완료** — 스키마·검증기·정의 어휘·표제어 20개. 다음은 M1(사전) 착수. [로드맵](docs/04-roadmap.md) 참조.
 
 ## 검증기
 
 ```bash
-npm run validate           # 유효 샘플 — 위반이 나오면 실패
+npm run validate           # data/entries.json — 위반이 나오면 실패
 npm run validate:fixture   # 위반 fixture — _expect와 다르면 실패
-npm test                   # 둘 다
+npm test                   # entries + sample + fixture 전부
 ```
 
 의존성이 없다. Node 22.6+가 TypeScript를 그대로 실행하므로 `npm install`이 필요 없다.
@@ -39,6 +39,8 @@ src/types/entry.ts        데이터 모델 (스키마 v2)
 data/moe-vocabulary.json  교육과정 [별표 3] 기본 어휘 800/1,200/1,000 · 검수 완료
 data/defining-vocabulary.json  정의 어휘 962단어 — 뜻풀이에 쓸 수 있는 화이트리스트
 data/inflections.json     불규칙 굴절형 표 — 검증기의 원형 환원용
+data/exempt-classes.json  어휘로 치지 않는 부류 — 호칭·단위·약어·숫자 등
+data/entries.json         실제 사전 데이터 — 3학년 빈출어 20개
 data/entries.sample.json  유효 샘플 — 검증기 전 항목을 통과해야 한다
 data/entries.invalid.json 위반 fixture — 각 표제어가 규칙 하나씩을 어긴다
 prototype/entry.html      지면 조판 시안 (브라우저에서 바로 열림)
