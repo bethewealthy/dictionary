@@ -7,6 +7,8 @@ node_modules/
 dist/
 .vite/
 *.tsbuildinfo
+__pycache__/
+*.pyc
 
 # Piper 음성 모델 (61MB, 재다운로드 가능) — 커밋하지 않는다
 tools/audio/voices/
