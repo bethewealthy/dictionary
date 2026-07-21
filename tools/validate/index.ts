@@ -14,6 +14,7 @@
  */
 
 import { existsSync, readFileSync } from 'node:fs';
+import { join } from 'node:path';
 import type { Dictionary } from '../../src/types/entry.ts';
 import { Lexicon } from './lexicon.ts';
 import { validate, type Finding } from './rules.ts';
@@ -91,7 +92,8 @@ function main(): void {
   const lex = new Lexicon();
   const findings = validate(dict, lex, {
     checkAudioFiles: audioMode,
-    audioExists: (p) => existsSync(p),
+    // 오디오는 public/ 아래 정적 파일로 서빙된다 (audio.us = "audio/us/<id>.mp3")
+    audioExists: (p) => existsSync(join('public', p)),
   });
 
   const errors = findings.filter((f) => f.severity === 'error');

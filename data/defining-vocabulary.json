@@ -7,7 +7,7 @@
   "상한 1,000단어. 목표가 아니라 상한이며, 편집 중 빠진 단어가 드러나면 이 파일에 추가하고 이유를 added에 남긴다.",
   "철자·형태 이형(gray/grey)과 원문 괄호 안 파생형(a→an)도 모두 포함한다. 대표형만 넣으면 검증기가 grey와 an을 위반으로 잡는다."
  ],
- "_status": "draft · 표제어 편집을 시작하기 전 1회 통독 검토가 필요하다",
+ "_status": "draft · 표제어 편집 중 드러난 필수 단어를 추가하며 성장한다",
  "_source": {
   "title": "영어과 교육과정 [별표 3] 기본 어휘",
   "authority": "교육부 고시 제2022-33호 [별책 14], pp. 254-290",
@@ -22,10 +22,10 @@
   "note": "상한은 단어(대표형) 수에 적용한다. words는 이형·파생형을 포함한 허용 토큰이라 상한보다 많다."
  },
  "counts": {
-  "lemmas": 962,
+  "lemmas": 969,
   "curriculumElementary": 800,
-  "added": 162,
-  "acceptedForms": 1026
+  "added": 169,
+  "acceptedForms": 1032
  },
  "words": [
   "I",
@@ -284,6 +284,7 @@
   "different",
   "difficult",
   "dinner",
+  "dirty",
   "disagree",
   "disclose",
   "discover",
@@ -451,6 +452,7 @@
   "have",
   "he",
   "head",
+  "hear",
   "heart",
   "heat",
   "heavy",
@@ -757,12 +759,14 @@
   "remember",
   "remove",
   "replace",
+  "rest",
   "restaurant",
   "restroom",
   "result",
   "return",
   "ribbon",
   "rich",
+  "ride",
   "right",
   "ring",
   "river",
@@ -894,6 +898,7 @@
   "sun",
   "sure",
   "surface",
+  "sweet",
   "swim",
   "table",
   "tail",
@@ -1016,6 +1021,7 @@
   "west",
   "wet",
   "what",
+  "wheel",
   "when",
   "where",
   "whether",
@@ -2079,6 +2085,48 @@
    "group": "위치·방향",
    "tier": "교육과정 밖",
    "why": "사물의 위치를 설명하는 정의에 필요하다"
+  },
+  {
+   "word": "hear",
+   "group": "편집 중 추가",
+   "tier": "보강",
+   "why": "소리·감각 정의에 필수 (ear, sound). 초등 800에 없다"
+  },
+  {
+   "word": "ride",
+   "group": "편집 중 추가",
+   "tier": "보강",
+   "why": "탈것 정의에 필수 (car, bike, horse, bus)"
+  },
+  {
+   "word": "sweet",
+   "group": "편집 중 추가",
+   "tier": "보강",
+   "why": "맛 정의에 필수 (cake, orange, food). 기본 맛 형용사"
+  },
+  {
+   "word": "rest",
+   "group": "편집 중 추가",
+   "tier": "보강",
+   "why": "동작 정의에 필요 (sleep, sit)"
+  },
+  {
+   "word": "wheel",
+   "group": "편집 중 추가",
+   "tier": "보강",
+   "why": "탈것 정의에 필수 (car, bike, bus, train)"
+  },
+  {
+   "word": "clean",
+   "group": "편집 중 추가",
+   "tier": "보강",
+   "why": "dirty의 짝. 둘 다 표제어이며 서로를 정의한다"
+  },
+  {
+   "word": "dirty",
+   "group": "편집 중 추가",
+   "tier": "보강",
+   "why": "clean의 짝. 둘 다 표제어이며 서로를 정의한다"
   }
  ]
 }

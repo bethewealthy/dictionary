@@ -25,7 +25,9 @@ export default defineConfig({
         ],
       },
       workbox: {
-        globPatterns: ['**/*.{js,css,html,svg,png,woff2}'],
+        // mp3 발음 파일도 precache — 오프라인에서 소리가 나야 한다 (P2)
+        globPatterns: ['**/*.{js,css,html,svg,png,woff2,mp3}'],
+        maximumFileSizeToCacheInBytes: 4 * 1024 * 1024,
       },
     }),
   ],

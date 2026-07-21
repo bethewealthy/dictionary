@@ -1,306 +1,197 @@
 {
   "schemaVersion": 2,
-  "contentVersion": "0.1.0",
-  "_note": "실제 사전 데이터. 교육과정 초등 권장 어휘(별표 3, elementary)에서 3학년 빈출어 20개로 시작한다. 정의문은 data/defining-vocabulary.json 안에서만 쓰며 npm run validate로 검증한다.",
+  "contentVersion": "0.2.0",
+  "_note": "data/source/entries.src.json에서 tools/build-entries/build.py로 생성. 직접 편집하지 말 것.",
   "entries": [
     {
-      "id": "book",
-      "headword": "book",
-      "syllables": "book",
-      "ipa": { "us": "/bʊk/" },
-      "audio": { "us": "audio/us/book.mp3" },
-      "inflections": { "plural": "books" },
+      "id": "apple",
+      "headword": "apple",
+      "syllables": "ap·ple",
+      "ipa": {
+        "us": "/ˈæ.pəl/"
+      },
+      "audio": {
+        "us": "audio/us/apple.mp3"
+      },
+      "inflections": {
+        "plural": "apples"
+      },
       "senses": [
         {
-          "id": "book-1",
+          "id": "apple-1",
           "pos": "noun",
-          "en": "a set of many pages with words and pictures that you read",
-          "ko": "책",
+          "en": "a round red or green fruit that grows on a tree",
+          "ko": "사과",
           "level": 1,
-          "tags": ["school", "object"],
-          "examples": [
-            { "id": "book-1-e1", "en": "I read a fun {{book}} before I sleep.", "ko": "나는 자기 전에 재미있는 책을 읽어요." },
-            { "id": "book-1-e2", "en": "She has many {{books}} on her desk.", "ko": "그녀는 책상에 책이 많아요." }
-          ]
-        }
-      ],
-      "related": { "wordFamily": ["bookshelf", "notebook"] },
-      "curriculum": { "grade": 3 },
-      "editorialStatus": "done"
-    },
-    {
-      "id": "cat",
-      "headword": "cat",
-      "syllables": "cat",
-      "ipa": { "us": "/kæt/" },
-      "audio": { "us": "audio/us/cat.mp3" },
-      "inflections": { "plural": "cats" },
-      "senses": [
-        {
-          "id": "cat-1",
-          "pos": "noun",
-          "en": "a small soft animal that people keep at home",
-          "ko": "고양이",
-          "level": 1,
-          "tags": ["animal"],
-          "examples": [
-            { "id": "cat-1-e1", "en": "My {{cat}} likes to sleep on my bed.", "ko": "우리 고양이는 내 침대에서 자는 걸 좋아해요." },
-            { "id": "cat-1-e2", "en": "The {{cat}} is playing with a small ball.", "ko": "고양이가 작은 공을 가지고 놀고 있어요." }
-          ]
-        }
-      ],
-      "curriculum": { "grade": 3 },
-      "editorialStatus": "done"
-    },
-    {
-      "id": "dog",
-      "headword": "dog",
-      "syllables": "dog",
-      "ipa": { "us": "/dɔːɡ/" },
-      "audio": { "us": "audio/us/dog.mp3" },
-      "inflections": { "plural": "dogs" },
-      "senses": [
-        {
-          "id": "dog-1",
-          "pos": "noun",
-          "en": "an animal that many people keep at home and love",
-          "ko": "개, 강아지",
-          "level": 1,
-          "tags": ["animal"],
-          "examples": [
-            { "id": "dog-1-e1", "en": "Our {{dog}} runs very fast in the park.", "ko": "우리 강아지는 공원에서 아주 빨리 달려요." },
-            { "id": "dog-1-e2", "en": "The {{dog}} wants to play with me now.", "ko": "강아지가 지금 나랑 놀고 싶어 해요." }
-          ]
-        }
-      ],
-      "curriculum": { "grade": 3 },
-      "editorialStatus": "done"
-    },
-    {
-      "id": "school",
-      "headword": "school",
-      "syllables": "school",
-      "ipa": { "us": "/skuːl/" },
-      "audio": { "us": "audio/us/school.mp3" },
-      "inflections": { "plural": "schools" },
-      "senses": [
-        {
-          "id": "school-1",
-          "pos": "noun",
-          "en": "a place where children go to learn",
-          "ko": "학교",
-          "level": 1,
-          "tags": ["school", "place"],
-          "examples": [
-            { "id": "school-1-e1", "en": "I go to {{school}} with my friends.", "ko": "나는 친구들이랑 학교에 가요." },
-            { "id": "school-1-e2", "en": "Our {{school}} is close to my house.", "ko": "우리 학교는 우리 집에서 가까워요." }
-          ]
-        }
-      ],
-      "related": { "wordFamily": ["schoolbag", "preschool"] },
-      "curriculum": { "grade": 3 },
-      "editorialStatus": "done"
-    },
-    {
-      "id": "friend",
-      "headword": "friend",
-      "syllables": "friend",
-      "ipa": { "us": "/frend/" },
-      "audio": { "us": "audio/us/friend.mp3" },
-      "inflections": { "plural": "friends" },
-      "senses": [
-        {
-          "id": "friend-1",
-          "pos": "noun",
-          "en": "someone that you know well and like very much",
-          "ko": "친구",
-          "level": 1,
-          "tags": ["people", "feeling"],
-          "examples": [
-            { "id": "friend-1-e1", "en": "My best {{friend}} lives next to me.", "ko": "내 가장 친한 친구는 내 옆집에 살아요." },
-            { "id": "friend-1-e2", "en": "I play games with my {{friends}} after school.", "ko": "나는 방과 후에 친구들이랑 게임을 해요." }
-          ]
-        }
-      ],
-      "related": { "wordFamily": ["friendly", "friendship"] },
-      "curriculum": { "grade": 3 },
-      "editorialStatus": "done"
-    },
-    {
-      "id": "milk",
-      "headword": "milk",
-      "syllables": "milk",
-      "ipa": { "us": "/mɪlk/" },
-      "audio": { "us": "audio/us/milk.mp3" },
-      "senses": [
-        {
-          "id": "milk-1",
-          "pos": "noun",
-          "en": "the white drink that comes from a cow",
-          "ko": "우유",
-          "level": 1,
-          "tags": ["food-drink"],
-          "examples": [
-            { "id": "milk-1-e1", "en": "I drink a glass of {{milk}} every morning.", "ko": "나는 매일 아침 우유 한 잔을 마셔요." },
-            { "id": "milk-1-e2", "en": "The baby drinks warm {{milk}} before bed.", "ko": "아기는 자기 전에 따뜻한 우유를 마셔요." }
+          "tags": [
+            "food-drink",
+            "nature"
           ],
-          "note": "셀 수 없는 명사예요. 'a milk'가 아니라 'a glass of milk'라고 해요."
-        }
-      ],
-      "curriculum": { "grade": 3 },
-      "editorialStatus": "done"
-    },
-    {
-      "id": "bird",
-      "headword": "bird",
-      "syllables": "bird",
-      "ipa": { "us": "/bɜːrd/" },
-      "audio": { "us": "audio/us/bird.mp3" },
-      "inflections": { "plural": "birds" },
-      "senses": [
-        {
-          "id": "bird-1",
-          "pos": "noun",
-          "en": "a small animal that can fly high in the sky",
-          "ko": "새",
-          "level": 1,
-          "tags": ["animal", "nature"],
           "examples": [
-            { "id": "bird-1-e1", "en": "A little {{bird}} is singing in the tree.", "ko": "작은 새가 나무에서 노래하고 있어요." },
-            { "id": "bird-1-e2", "en": "The {{bird}} flew high up into the sky.", "ko": "새가 하늘 높이 날아올랐어요." }
+            {
+              "id": "apple-1-e1",
+              "en": "I ate a red {{apple}} after lunch today.",
+              "ko": "나는 오늘 점심 먹고 빨간 사과를 먹었어요."
+            },
+            {
+              "id": "apple-1-e2",
+              "en": "There are many {{apples}} on that tree.",
+              "ko": "저 나무에는 사과가 많이 열렸어요."
+            }
           ]
         }
       ],
-      "curriculum": { "grade": 3 },
+      "related": {
+        "wordFamily": [
+          "applesauce"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
       "editorialStatus": "done"
     },
     {
-      "id": "tree",
-      "headword": "tree",
-      "syllables": "tree",
-      "ipa": { "us": "/triː/" },
-      "audio": { "us": "audio/us/tree.mp3" },
-      "inflections": { "plural": "trees" },
+      "id": "arm",
+      "headword": "arm",
+      "syllables": "arm",
+      "ipa": {
+        "us": "/ɑːrm/"
+      },
+      "audio": {
+        "us": "audio/us/arm.mp3"
+      },
+      "inflections": {
+        "plural": "arms"
+      },
       "senses": [
         {
-          "id": "tree-1",
+          "id": "arm-1",
           "pos": "noun",
-          "en": "a tall plant with a hard brown body and many leaves",
-          "ko": "나무",
+          "en": "the long part of your body between your hand and your body",
+          "ko": "팔",
           "level": 1,
-          "tags": ["nature", "plant"],
+          "tags": [
+            "body"
+          ],
           "examples": [
-            { "id": "tree-1-e1", "en": "A big {{tree}} grows behind our house.", "ko": "우리 집 뒤에 큰 나무가 자라요." },
-            { "id": "tree-1-e2", "en": "Many {{trees}} grow near the river.", "ko": "강 근처에 나무가 많이 자라요." }
+            {
+              "id": "arm-1-e1",
+              "en": "He carried the box in his {{arms}}.",
+              "ko": "그는 상자를 팔에 안고 갔어요."
+            },
+            {
+              "id": "arm-1-e2",
+              "en": "Raise your {{arm}} if you know the answer.",
+              "ko": "답을 알면 팔을 드세요."
+            }
           ]
         }
       ],
-      "curriculum": { "grade": 3 },
+      "curriculum": {
+        "grade": 3
+      },
       "editorialStatus": "done"
     },
     {
-      "id": "hand",
-      "headword": "hand",
-      "syllables": "hand",
-      "ipa": { "us": "/hænd/" },
-      "audio": { "us": "audio/us/hand.mp3" },
-      "inflections": { "plural": "hands" },
+      "id": "baby",
+      "headword": "baby",
+      "syllables": "ba·by",
+      "ipa": {
+        "us": "/ˈbeɪ.biː/"
+      },
+      "audio": {
+        "us": "audio/us/baby.mp3"
+      },
+      "inflections": {
+        "plural": "babies"
+      },
       "senses": [
         {
-          "id": "hand-1",
+          "id": "baby-1",
           "pos": "noun",
-          "en": "the part of your body at the end of your arm",
-          "ko": "손",
+          "en": "a very young child that can not walk or talk",
+          "ko": "아기",
           "level": 1,
-          "tags": ["body"],
+          "tags": [
+            "people",
+            "family"
+          ],
           "examples": [
-            { "id": "hand-1-e1", "en": "Please wash your {{hands}} before you eat.", "ko": "밥 먹기 전에 손을 씻으세요." },
-            { "id": "hand-1-e2", "en": "She holds a pen in her right {{hand}}.", "ko": "그녀는 오른손에 펜을 들고 있어요." }
+            {
+              "id": "baby-1-e1",
+              "en": "The {{baby}} is sleeping in her bed.",
+              "ko": "아기가 침대에서 자고 있어요."
+            },
+            {
+              "id": "baby-1-e2",
+              "en": "A {{baby}} cries when it is hungry.",
+              "ko": "아기는 배가 고프면 울어요."
+            }
           ]
         }
       ],
-      "curriculum": { "grade": 3 },
+      "curriculum": {
+        "grade": 3
+      },
       "editorialStatus": "done"
     },
     {
-      "id": "rain",
-      "headword": "rain",
-      "syllables": "rain",
-      "ipa": { "us": "/reɪn/" },
-      "audio": { "us": "audio/us/rain.mp3" },
+      "id": "bag",
+      "headword": "bag",
+      "syllables": "bag",
+      "ipa": {
+        "us": "/bæɡ/"
+      },
+      "audio": {
+        "us": "audio/us/bag.mp3"
+      },
+      "inflections": {
+        "plural": "bags"
+      },
       "senses": [
         {
-          "id": "rain-1",
+          "id": "bag-1",
           "pos": "noun",
-          "en": "water that falls from the sky in small drops",
-          "ko": "비",
+          "en": "a thing that you carry books or food in",
+          "ko": "가방",
           "level": 1,
-          "tags": ["nature", "weather"],
+          "tags": [
+            "object",
+            "school"
+          ],
           "examples": [
-            { "id": "rain-1-e1", "en": "The {{rain}} fell all day long today.", "ko": "오늘 하루 종일 비가 내렸어요." },
-            { "id": "rain-1-e2", "en": "We can not play outside in the {{rain}}.", "ko": "비가 와서 우리는 밖에서 놀 수 없어요." }
+            {
+              "id": "bag-1-e1",
+              "en": "My school {{bag}} is very heavy today.",
+              "ko": "오늘 내 책가방이 아주 무거워요."
+            },
+            {
+              "id": "bag-1-e2",
+              "en": "She put an apple in her {{bag}}.",
+              "ko": "그녀는 가방에 사과를 하나 넣었어요."
+            }
           ]
         }
       ],
-      "related": { "wordFamily": ["rainy", "raincoat", "rainbow"] },
-      "curriculum": { "grade": 3 },
-      "editorialStatus": "done"
-    },
-    {
-      "id": "sun",
-      "headword": "sun",
-      "syllables": "sun",
-      "ipa": { "us": "/sʌn/" },
-      "audio": { "us": "audio/us/sun.mp3" },
-      "senses": [
-        {
-          "id": "sun-1",
-          "pos": "noun",
-          "en": "the very bright star that gives us light in the day",
-          "ko": "해, 태양",
-          "level": 1,
-          "tags": ["nature", "space"],
-          "examples": [
-            { "id": "sun-1-e1", "en": "The {{sun}} is very bright this morning.", "ko": "오늘 아침에 해가 아주 밝아요." },
-            { "id": "sun-1-e2", "en": "Plants need water and {{sun}} to grow.", "ko": "식물은 자라려면 물과 햇빛이 필요해요." }
-          ]
-        }
-      ],
-      "related": { "wordFamily": ["sunny", "sunlight", "sunflower"] },
-      "curriculum": { "grade": 3 },
-      "editorialStatus": "done"
-    },
-    {
-      "id": "star",
-      "headword": "star",
-      "syllables": "star",
-      "ipa": { "us": "/stɑːr/" },
-      "audio": { "us": "audio/us/star.mp3" },
-      "inflections": { "plural": "stars" },
-      "senses": [
-        {
-          "id": "star-1",
-          "pos": "noun",
-          "en": "a small bright light that you see in the night sky",
-          "ko": "별",
-          "level": 1,
-          "tags": ["nature", "space"],
-          "examples": [
-            { "id": "star-1-e1", "en": "I can see a bright {{star}} tonight.", "ko": "오늘 밤에 밝은 별이 보여요." },
-            { "id": "star-1-e2", "en": "There are many {{stars}} in the night sky.", "ko": "밤하늘에 별이 많이 있어요." }
-          ]
-        }
-      ],
-      "curriculum": { "grade": 3 },
+      "curriculum": {
+        "grade": 3
+      },
       "editorialStatus": "done"
     },
     {
       "id": "ball",
       "headword": "ball",
       "syllables": "ball",
-      "ipa": { "us": "/bɔːl/" },
-      "audio": { "us": "audio/us/ball.mp3" },
-      "inflections": { "plural": "balls" },
+      "ipa": {
+        "us": "/bɔːl/"
+      },
+      "audio": {
+        "us": "audio/us/ball.mp3"
+      },
+      "inflections": {
+        "plural": "balls"
+      },
       "senses": [
         {
           "id": "ball-1",
@@ -308,71 +199,558 @@
           "en": "a round thing that you kick or catch when you play games",
           "ko": "공",
           "level": 1,
-          "tags": ["toy", "sport"],
-          "examples": [
-            { "id": "ball-1-e1", "en": "The children kick the {{ball}} in the park.", "ko": "아이들이 공원에서 공을 차요." },
-            { "id": "ball-1-e2", "en": "He caught the {{ball}} with both hands.", "ko": "그는 두 손으로 공을 잡았어요." }
-          ]
-        }
-      ],
-      "curriculum": { "grade": 3 },
-      "editorialStatus": "done"
-    },
-    {
-      "id": "door",
-      "headword": "door",
-      "syllables": "door",
-      "ipa": { "us": "/dɔːr/" },
-      "audio": { "us": "audio/us/door.mp3" },
-      "inflections": { "plural": "doors" },
-      "senses": [
-        {
-          "id": "door-1",
-          "pos": "noun",
-          "en": "the part of a room that you open to go inside",
-          "ko": "문",
-          "level": 1,
-          "tags": ["house", "object"],
-          "examples": [
-            { "id": "door-1-e1", "en": "Please close the {{door}} when you leave.", "ko": "나갈 때 문을 닫아 주세요." },
-            { "id": "door-1-e2", "en": "The {{door}} is open, so come inside.", "ko": "문이 열려 있으니까 안으로 들어와요." }
-          ]
-        }
-      ],
-      "curriculum": { "grade": 3 },
-      "editorialStatus": "done"
-    },
-    {
-      "id": "fish",
-      "headword": "fish",
-      "syllables": "fish",
-      "ipa": { "us": "/fɪʃ/" },
-      "audio": { "us": "audio/us/fish.mp3" },
-      "inflections": { "plural": "fish", "irregular": true },
-      "senses": [
-        {
-          "id": "fish-1",
-          "pos": "noun",
-          "en": "an animal that lives in water and can swim",
-          "ko": "물고기",
-          "level": 1,
-          "tags": ["animal", "nature"],
-          "examples": [
-            { "id": "fish-1-e1", "en": "Many {{fish}} live in this cold river.", "ko": "이 차가운 강에는 물고기가 많이 살아요." },
-            { "id": "fish-1-e2", "en": "We saw a big {{fish}} in the water.", "ko": "우리는 물속에서 큰 물고기를 봤어요." }
+          "tags": [
+            "toy",
+            "sport"
           ],
-          "note": "복수형도 fish예요. 'fishes'라고 하지 않아요."
+          "examples": [
+            {
+              "id": "ball-1-e1",
+              "en": "The children kick the {{ball}} in the park.",
+              "ko": "아이들이 공원에서 공을 차요."
+            },
+            {
+              "id": "ball-1-e2",
+              "en": "He caught the {{ball}} with both hands.",
+              "ko": "그는 두 손으로 공을 잡았어요."
+            }
+          ]
         }
       ],
-      "curriculum": { "grade": 3 },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "banana",
+      "headword": "banana",
+      "syllables": "ba·nana",
+      "ipa": {
+        "us": "/bə.ˈnæ.nə/"
+      },
+      "audio": {
+        "us": "audio/us/banana.mp3"
+      },
+      "inflections": {
+        "plural": "bananas"
+      },
+      "senses": [
+        {
+          "id": "banana-1",
+          "pos": "noun",
+          "en": "a long yellow fruit with soft white food inside",
+          "ko": "바나나",
+          "level": 1,
+          "tags": [
+            "food-drink"
+          ],
+          "examples": [
+            {
+              "id": "banana-1-e1",
+              "en": "My sister eats a {{banana}} every morning.",
+              "ko": "우리 언니는 매일 아침 바나나를 하나 먹어요."
+            },
+            {
+              "id": "banana-1-e2",
+              "en": "The monkey took my yellow {{banana}}.",
+              "ko": "원숭이가 내 바나나를 가져갔어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "bear",
+      "headword": "bear",
+      "syllables": "bear",
+      "ipa": {
+        "us": "/ber/"
+      },
+      "audio": {
+        "us": "audio/us/bear.mp3"
+      },
+      "inflections": {
+        "plural": "bears"
+      },
+      "senses": [
+        {
+          "id": "bear-1",
+          "pos": "noun",
+          "en": "a big heavy animal covered with thick brown hair",
+          "ko": "곰",
+          "level": 1,
+          "tags": [
+            "animal"
+          ],
+          "examples": [
+            {
+              "id": "bear-1-e1",
+              "en": "A brown {{bear}} was fishing in the river.",
+              "ko": "갈색 곰이 강에서 물고기를 잡고 있었어요."
+            },
+            {
+              "id": "bear-1-e2",
+              "en": "The {{bear}} sleeps all winter in a cave.",
+              "ko": "곰은 겨울 내내 동굴에서 자요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "bed",
+      "headword": "bed",
+      "syllables": "bed",
+      "ipa": {
+        "us": "/bed/"
+      },
+      "audio": {
+        "us": "audio/us/bed.mp3"
+      },
+      "inflections": {
+        "plural": "beds"
+      },
+      "senses": [
+        {
+          "id": "bed-1",
+          "pos": "noun",
+          "en": "the thing that you sleep on at night",
+          "ko": "침대",
+          "level": 1,
+          "tags": [
+            "house",
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "bed-1-e1",
+              "en": "I go to {{bed}} at nine every night.",
+              "ko": "나는 매일 밤 아홉 시에 자러 가요."
+            },
+            {
+              "id": "bed-1-e2",
+              "en": "The cat is sleeping on my {{bed}}.",
+              "ko": "고양이가 내 침대에서 자고 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "big",
+      "headword": "big",
+      "syllables": "big",
+      "ipa": {
+        "us": "/bɪɡ/"
+      },
+      "audio": {
+        "us": "audio/us/big.mp3"
+      },
+      "inflections": {
+        "comparative": "bigger",
+        "superlative": "biggest"
+      },
+      "senses": [
+        {
+          "id": "big-1",
+          "pos": "adjective",
+          "en": "large in size",
+          "ko": "큰",
+          "level": 1,
+          "tags": [
+            "describing",
+            "size"
+          ],
+          "examples": [
+            {
+              "id": "big-1-e1",
+              "en": "They live in a {{big}} house.",
+              "ko": "그들은 큰 집에 살아요."
+            },
+            {
+              "id": "big-1-e2",
+              "en": "An elephant is a very {{big}} animal.",
+              "ko": "코끼리는 아주 큰 동물이에요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "small"
+          }
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "bike",
+      "headword": "bike",
+      "syllables": "bike",
+      "ipa": {
+        "us": "/baɪk/"
+      },
+      "audio": {
+        "us": "audio/us/bike.mp3"
+      },
+      "inflections": {
+        "plural": "bikes"
+      },
+      "senses": [
+        {
+          "id": "bike-1",
+          "pos": "noun",
+          "en": "a thing with two wheels that you ride and move with your legs",
+          "ko": "자전거",
+          "level": 1,
+          "tags": [
+            "object",
+            "sport"
+          ],
+          "examples": [
+            {
+              "id": "bike-1-e1",
+              "en": "I ride my {{bike}} to the park.",
+              "ko": "나는 자전거를 타고 공원에 가요."
+            },
+            {
+              "id": "bike-1-e2",
+              "en": "He got a new {{bike}} for his birthday.",
+              "ko": "그는 생일에 새 자전거를 받았어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "bird",
+      "headword": "bird",
+      "syllables": "bird",
+      "ipa": {
+        "us": "/bɜːrd/"
+      },
+      "audio": {
+        "us": "audio/us/bird.mp3"
+      },
+      "inflections": {
+        "plural": "birds"
+      },
+      "senses": [
+        {
+          "id": "bird-1",
+          "pos": "noun",
+          "en": "a small animal that can fly high in the sky",
+          "ko": "새",
+          "level": 1,
+          "tags": [
+            "animal",
+            "nature"
+          ],
+          "examples": [
+            {
+              "id": "bird-1-e1",
+              "en": "A little {{bird}} is singing in the tree.",
+              "ko": "작은 새가 나무에서 노래하고 있어요."
+            },
+            {
+              "id": "bird-1-e2",
+              "en": "The {{bird}} flew high up into the sky.",
+              "ko": "새가 하늘 높이 날아올랐어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "black",
+      "headword": "black",
+      "syllables": "black",
+      "ipa": {
+        "us": "/blæk/"
+      },
+      "audio": {
+        "us": "audio/us/black.mp3"
+      },
+      "senses": [
+        {
+          "id": "black-1",
+          "pos": "adjective",
+          "en": "having the colour of the night sky with no light",
+          "ko": "검은",
+          "level": 1,
+          "tags": [
+            "describing",
+            "colour"
+          ],
+          "examples": [
+            {
+              "id": "black-1-e1",
+              "en": "A tiger has {{black}} lines on its body.",
+              "ko": "호랑이는 몸에 검은 줄무늬가 있어요."
+            },
+            {
+              "id": "black-1-e2",
+              "en": "He has short {{black}} hair and brown eyes.",
+              "ko": "그는 짧은 검은 머리를 가졌어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "blue",
+      "headword": "blue",
+      "syllables": "blue",
+      "ipa": {
+        "us": "/bluː/"
+      },
+      "audio": {
+        "us": "audio/us/blue.mp3"
+      },
+      "senses": [
+        {
+          "id": "blue-1",
+          "pos": "adjective",
+          "en": "having the colour of the sky on a clear day",
+          "ko": "파란",
+          "level": 1,
+          "tags": [
+            "describing",
+            "colour"
+          ],
+          "examples": [
+            {
+              "id": "blue-1-e1",
+              "en": "The sea looks very {{blue}} today.",
+              "ko": "오늘 바다가 파랗게 보여요."
+            },
+            {
+              "id": "blue-1-e2",
+              "en": "He drew a big {{blue}} car.",
+              "ko": "그는 파란 자동차를 그렸어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "boat",
+      "headword": "boat",
+      "syllables": "boat",
+      "ipa": {
+        "us": "/boʊt/"
+      },
+      "audio": {
+        "us": "audio/us/boat.mp3"
+      },
+      "inflections": {
+        "plural": "boats"
+      },
+      "senses": [
+        {
+          "id": "boat-1",
+          "pos": "noun",
+          "en": "a thing that carries people on water",
+          "ko": "배",
+          "level": 1,
+          "tags": [
+            "object",
+            "place"
+          ],
+          "examples": [
+            {
+              "id": "boat-1-e1",
+              "en": "We rode a small {{boat}} on the lake.",
+              "ko": "우리는 호수에서 작은 배를 탔어요."
+            },
+            {
+              "id": "boat-1-e2",
+              "en": "The {{boat}} moved slowly across the river.",
+              "ko": "배가 강을 천천히 건넜어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "book",
+      "headword": "book",
+      "syllables": "book",
+      "ipa": {
+        "us": "/bʊk/"
+      },
+      "audio": {
+        "us": "audio/us/book.mp3"
+      },
+      "inflections": {
+        "plural": "books"
+      },
+      "senses": [
+        {
+          "id": "book-1",
+          "pos": "noun",
+          "en": "a set of many pages with words and pictures that you read",
+          "ko": "책",
+          "level": 1,
+          "tags": [
+            "school",
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "book-1-e1",
+              "en": "I read a fun {{book}} before I sleep.",
+              "ko": "나는 자기 전에 재미있는 책을 읽어요."
+            },
+            {
+              "id": "book-1-e2",
+              "en": "She has many {{books}} on her desk.",
+              "ko": "그녀는 책상에 책이 많아요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "notebook"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "box",
+      "headword": "box",
+      "syllables": "box",
+      "ipa": {
+        "us": "/bɑːks/"
+      },
+      "audio": {
+        "us": "audio/us/box.mp3"
+      },
+      "inflections": {
+        "plural": "boxes"
+      },
+      "senses": [
+        {
+          "id": "box-1",
+          "pos": "noun",
+          "en": "a container with flat sides for keeping things",
+          "ko": "상자",
+          "level": 1,
+          "tags": [
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "box-1-e1",
+              "en": "I put my toys in a big {{box}}.",
+              "ko": "나는 장난감을 큰 상자에 넣어요."
+            },
+            {
+              "id": "box-1-e2",
+              "en": "There are ten {{boxes}} in the room.",
+              "ko": "방에 상자 열 개가 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "boy",
+      "headword": "boy",
+      "syllables": "boy",
+      "ipa": {
+        "us": "/bɔɪ/"
+      },
+      "audio": {
+        "us": "audio/us/boy.mp3"
+      },
+      "inflections": {
+        "plural": "boys"
+      },
+      "senses": [
+        {
+          "id": "boy-1",
+          "pos": "noun",
+          "en": "a young male child",
+          "ko": "소년, 남자아이",
+          "level": 1,
+          "tags": [
+            "people"
+          ],
+          "examples": [
+            {
+              "id": "boy-1-e1",
+              "en": "The {{boy}} is playing with his dog.",
+              "ko": "그 남자아이가 강아지랑 놀고 있어요."
+            },
+            {
+              "id": "boy-1-e2",
+              "en": "Two {{boys}} are running in the park.",
+              "ko": "남자아이 둘이 공원에서 뛰고 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
       "editorialStatus": "done"
     },
     {
       "id": "bread",
       "headword": "bread",
       "syllables": "bread",
-      "ipa": { "us": "/bred/" },
-      "audio": { "us": "audio/us/bread.mp3" },
+      "ipa": {
+        "us": "/bred/"
+      },
+      "audio": {
+        "us": "audio/us/bread.mp3"
+      },
       "senses": [
         {
           "id": "bread-1",
@@ -380,95 +758,525 @@
           "en": "a food that people bake and eat with butter or jam",
           "ko": "빵",
           "level": 1,
-          "tags": ["food-drink"],
+          "tags": [
+            "food-drink"
+          ],
           "examples": [
-            { "id": "bread-1-e1", "en": "I eat {{bread}} with butter for breakfast.", "ko": "나는 아침으로 버터를 바른 빵을 먹어요." },
-            { "id": "bread-1-e2", "en": "My mother makes fresh {{bread}} every week.", "ko": "우리 엄마는 매주 갓 구운 빵을 만들어요." }
+            {
+              "id": "bread-1-e1",
+              "en": "I eat {{bread}} with butter for breakfast.",
+              "ko": "나는 아침으로 버터를 바른 빵을 먹어요."
+            },
+            {
+              "id": "bread-1-e2",
+              "en": "My mother makes fresh {{bread}} every week.",
+              "ko": "우리 엄마는 매주 갓 구운 빵을 만들어요."
+            }
           ]
         }
       ],
-      "curriculum": { "grade": 3 },
+      "curriculum": {
+        "grade": 3
+      },
       "editorialStatus": "done"
     },
     {
-      "id": "rabbit",
-      "headword": "rabbit",
-      "syllables": "rab·bit",
-      "ipa": { "us": "/ˈræb.ɪt/" },
-      "audio": { "us": "audio/us/rabbit.mp3" },
-      "inflections": { "plural": "rabbits" },
+      "id": "brother",
+      "headword": "brother",
+      "syllables": "broth·er",
+      "ipa": {
+        "us": "/ˈbrʌ.ðɚ/"
+      },
+      "audio": {
+        "us": "audio/us/brother.mp3"
+      },
+      "inflections": {
+        "plural": "brothers"
+      },
       "senses": [
         {
-          "id": "rabbit-1",
+          "id": "brother-1",
           "pos": "noun",
-          "en": "a small soft animal with long ears that can jump",
-          "ko": "토끼",
+          "en": "a boy who has the same mother and father as you",
+          "ko": "형, 오빠, 남동생",
           "level": 1,
-          "tags": ["animal"],
+          "tags": [
+            "people",
+            "family"
+          ],
           "examples": [
-            { "id": "rabbit-1-e1", "en": "The white {{rabbit}} has very long ears.", "ko": "하얀 토끼는 귀가 아주 길어요." },
-            { "id": "rabbit-1-e2", "en": "A {{rabbit}} can jump high and run fast.", "ko": "토끼는 높이 뛰고 빨리 달릴 수 있어요." }
+            {
+              "id": "brother-1-e1",
+              "en": "My big {{brother}} helps me with homework.",
+              "ko": "우리 형은 내 숙제를 도와줘요."
+            },
+            {
+              "id": "brother-1-e2",
+              "en": "He has two {{brothers}} and one sister.",
+              "ko": "그는 남자 형제가 둘, 여자 형제가 하나 있어요."
+            }
           ]
         }
       ],
-      "curriculum": { "grade": 3 },
+      "curriculum": {
+        "grade": 3
+      },
       "editorialStatus": "done"
     },
     {
-      "id": "flower",
-      "headword": "flower",
-      "syllables": "flow·er",
-      "ipa": { "us": "/ˈflaʊ.ɚ/" },
-      "audio": { "us": "audio/us/flower.mp3" },
-      "inflections": { "plural": "flowers" },
+      "id": "bus",
+      "headword": "bus",
+      "syllables": "bus",
+      "ipa": {
+        "us": "/bʌs/"
+      },
+      "audio": {
+        "us": "audio/us/bus.mp3"
+      },
+      "inflections": {
+        "plural": "buses"
+      },
       "senses": [
         {
-          "id": "flower-1",
+          "id": "bus-1",
           "pos": "noun",
-          "en": "the pretty part of a plant with a nice smell",
-          "ko": "꽃",
+          "en": "a very big thing that carries many people on roads",
+          "ko": "버스",
           "level": 1,
-          "tags": ["nature", "plant"],
+          "tags": [
+            "object",
+            "place"
+          ],
           "examples": [
-            { "id": "flower-1-e1", "en": "She gave me a pretty red {{flower}}.", "ko": "그녀가 나에게 예쁜 빨간 꽃을 줬어요." },
-            { "id": "flower-1-e2", "en": "Many {{flowers}} grow in our garden.", "ko": "우리 정원에는 꽃이 많이 피어요." }
+            {
+              "id": "bus-1-e1",
+              "en": "I take the {{bus}} to school.",
+              "ko": "나는 버스를 타고 학교에 가요."
+            },
+            {
+              "id": "bus-1-e2",
+              "en": "The {{bus}} stops in front of my house.",
+              "ko": "버스가 우리 집 앞에 서요."
+            }
           ]
         }
       ],
-      "curriculum": { "grade": 3 },
+      "curriculum": {
+        "grade": 3
+      },
       "editorialStatus": "done"
     },
     {
-      "id": "window",
-      "headword": "window",
-      "syllables": "win·dow",
-      "ipa": { "us": "/ˈwɪn.doʊ/" },
-      "audio": { "us": "audio/us/window.mp3" },
-      "inflections": { "plural": "windows" },
+      "id": "cake",
+      "headword": "cake",
+      "syllables": "cake",
+      "ipa": {
+        "us": "/keɪk/"
+      },
+      "audio": {
+        "us": "audio/us/cake.mp3"
+      },
+      "inflections": {
+        "plural": "cakes"
+      },
       "senses": [
         {
-          "id": "window-1",
+          "id": "cake-1",
           "pos": "noun",
-          "en": "the glass part of a wall that you open for air and light",
-          "ko": "창문",
+          "en": "a soft sweet food that people eat at a party",
+          "ko": "케이크",
           "level": 1,
-          "tags": ["house", "object"],
+          "tags": [
+            "food-drink"
+          ],
           "examples": [
-            { "id": "window-1-e1", "en": "Please open the {{window}} to let in air.", "ko": "바람이 들어오게 창문을 열어 주세요." },
-            { "id": "window-1-e2", "en": "I can see the moon through my {{window}}.", "ko": "나는 창문으로 달을 볼 수 있어요." }
+            {
+              "id": "cake-1-e1",
+              "en": "We ate {{cake}} at her birthday party.",
+              "ko": "우리는 그녀의 생일 파티에서 케이크를 먹었어요."
+            },
+            {
+              "id": "cake-1-e2",
+              "en": "My mother made a chocolate {{cake}}.",
+              "ko": "우리 엄마가 초콜릿 케이크를 만들었어요."
+            }
           ]
         }
       ],
-      "curriculum": { "grade": 3 },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "car",
+      "headword": "car",
+      "syllables": "car",
+      "ipa": {
+        "us": "/kɑːr/"
+      },
+      "audio": {
+        "us": "audio/us/car.mp3"
+      },
+      "inflections": {
+        "plural": "cars"
+      },
+      "senses": [
+        {
+          "id": "car-1",
+          "pos": "noun",
+          "en": "a thing with four wheels that people ride in on roads",
+          "ko": "자동차",
+          "level": 1,
+          "tags": [
+            "object",
+            "place"
+          ],
+          "examples": [
+            {
+              "id": "car-1-e1",
+              "en": "My father drives a blue {{car}}.",
+              "ko": "우리 아빠는 파란 자동차를 몰아요."
+            },
+            {
+              "id": "car-1-e2",
+              "en": "We go to the sea by {{car}}.",
+              "ko": "우리는 자동차로 바다에 가요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "cat",
+      "headword": "cat",
+      "syllables": "cat",
+      "ipa": {
+        "us": "/kæt/"
+      },
+      "audio": {
+        "us": "audio/us/cat.mp3"
+      },
+      "inflections": {
+        "plural": "cats"
+      },
+      "senses": [
+        {
+          "id": "cat-1",
+          "pos": "noun",
+          "en": "a small soft animal that people keep at home",
+          "ko": "고양이",
+          "level": 1,
+          "tags": [
+            "animal"
+          ],
+          "examples": [
+            {
+              "id": "cat-1-e1",
+              "en": "My {{cat}} likes to sleep on my bed.",
+              "ko": "우리 고양이는 내 침대에서 자는 걸 좋아해요."
+            },
+            {
+              "id": "cat-1-e2",
+              "en": "The {{cat}} is playing with a small ball.",
+              "ko": "고양이가 작은 공을 가지고 놀고 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "chair",
+      "headword": "chair",
+      "syllables": "chair",
+      "ipa": {
+        "us": "/tʃer/"
+      },
+      "audio": {
+        "us": "audio/us/chair.mp3"
+      },
+      "inflections": {
+        "plural": "chairs"
+      },
+      "senses": [
+        {
+          "id": "chair-1",
+          "pos": "noun",
+          "en": "a thing with a back and four legs that one person sits on",
+          "ko": "의자",
+          "level": 1,
+          "tags": [
+            "house",
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "chair-1-e1",
+              "en": "Please sit down on this {{chair}}.",
+              "ko": "이 의자에 앉으세요."
+            },
+            {
+              "id": "chair-1-e2",
+              "en": "There are four {{chairs}} around the table.",
+              "ko": "식탁 둘레에 의자 네 개가 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "clean",
+      "headword": "clean",
+      "syllables": "clean",
+      "ipa": {
+        "us": "/kliːn/"
+      },
+      "audio": {
+        "us": "audio/us/clean.mp3"
+      },
+      "inflections": {
+        "comparative": "cleaner",
+        "superlative": "cleanest"
+      },
+      "senses": [
+        {
+          "id": "clean-1",
+          "pos": "adjective",
+          "en": "not dirty",
+          "ko": "깨끗한",
+          "level": 1,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "clean-1-e1",
+              "en": "My hands are {{clean}} now after washing.",
+              "ko": "이제 내 손은 깨끗해요."
+            },
+            {
+              "id": "clean-1-e2",
+              "en": "Please keep your room {{clean}} and nice.",
+              "ko": "방을 깨끗하게 유지하세요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "dirty"
+          }
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "clock",
+      "headword": "clock",
+      "syllables": "clock",
+      "ipa": {
+        "us": "/klɑːk/"
+      },
+      "audio": {
+        "us": "audio/us/clock.mp3"
+      },
+      "inflections": {
+        "plural": "clocks"
+      },
+      "senses": [
+        {
+          "id": "clock-1",
+          "pos": "noun",
+          "en": "a thing on the wall that shows you the time",
+          "ko": "시계",
+          "level": 1,
+          "tags": [
+            "house",
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "clock-1-e1",
+              "en": "The {{clock}} says it is three now.",
+              "ko": "시계가 지금 세 시라고 알려 줘요."
+            },
+            {
+              "id": "clock-1-e2",
+              "en": "There is a big {{clock}} in our classroom.",
+              "ko": "우리 교실에 큰 시계가 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "close",
+      "headword": "close",
+      "syllables": "close",
+      "ipa": {
+        "us": "/kloʊs/"
+      },
+      "audio": {
+        "us": "audio/us/close.mp3"
+      },
+      "inflections": {
+        "past": "closed",
+        "presentParticiple": "closing",
+        "thirdPerson": "closes"
+      },
+      "senses": [
+        {
+          "id": "close-1",
+          "pos": "verb",
+          "en": "to move something so that it is not open",
+          "ko": "닫다",
+          "level": 1,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "close-1-e1",
+              "en": "Please {{close}} the window, it is cold.",
+              "ko": "추우니까 창문 좀 닫아 주세요."
+            },
+            {
+              "id": "close-1-e2",
+              "en": "He {{closed}} his book and went to sleep.",
+              "ko": "그는 책을 덮고 잠자러 갔어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "cloud",
+      "headword": "cloud",
+      "syllables": "cloud",
+      "ipa": {
+        "us": "/klaʊd/"
+      },
+      "audio": {
+        "us": "audio/us/cloud.mp3"
+      },
+      "inflections": {
+        "plural": "clouds"
+      },
+      "senses": [
+        {
+          "id": "cloud-1",
+          "pos": "noun",
+          "en": "a white or grey thing in the sky that brings rain",
+          "ko": "구름",
+          "level": 1,
+          "tags": [
+            "nature",
+            "weather"
+          ],
+          "examples": [
+            {
+              "id": "cloud-1-e1",
+              "en": "Dark {{clouds}} covered the whole sky.",
+              "ko": "먹구름이 하늘을 온통 덮었어요."
+            },
+            {
+              "id": "cloud-1-e2",
+              "en": "That white {{cloud}} looks like a rabbit.",
+              "ko": "저 하얀 구름은 토끼처럼 생겼어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "cloudy"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "coat",
+      "headword": "coat",
+      "syllables": "coat",
+      "ipa": {
+        "us": "/koʊt/"
+      },
+      "audio": {
+        "us": "audio/us/coat.mp3"
+      },
+      "inflections": {
+        "plural": "coats"
+      },
+      "senses": [
+        {
+          "id": "coat-1",
+          "pos": "noun",
+          "en": "warm clothes that you wear over other clothes when it is cold",
+          "ko": "외투, 코트",
+          "level": 1,
+          "tags": [
+            "clothes"
+          ],
+          "examples": [
+            {
+              "id": "coat-1-e1",
+              "en": "Wear your {{coat}}, it is cold outside.",
+              "ko": "밖이 추우니까 외투를 입으렴."
+            },
+            {
+              "id": "coat-1-e2",
+              "en": "He hung his {{coat}} by the door.",
+              "ko": "그는 외투를 문 옆에 걸었어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
       "editorialStatus": "done"
     },
     {
       "id": "cold",
       "headword": "cold",
       "syllables": "cold",
-      "ipa": { "us": "/koʊld/" },
-      "audio": { "us": "audio/us/cold.mp3" },
-      "inflections": { "comparative": "colder", "superlative": "coldest" },
+      "ipa": {
+        "us": "/koʊld/"
+      },
+      "audio": {
+        "us": "audio/us/cold.mp3"
+      },
+      "inflections": {
+        "comparative": "colder",
+        "superlative": "coldest"
+      },
       "senses": [
         {
           "id": "cold-1",
@@ -476,15 +1284,4600 @@
           "en": "not warm, like ice or snow in winter",
           "ko": "추운, 차가운",
           "level": 1,
-          "tags": ["describing", "weather"],
+          "tags": [
+            "describing",
+            "weather"
+          ],
           "examples": [
-            { "id": "cold-1-e1", "en": "The water in the river is very {{cold}}.", "ko": "강물이 아주 차가워요." },
-            { "id": "cold-1-e2", "en": "I wear a warm coat on {{cold}} days.", "ko": "나는 추운 날에는 따뜻한 외투를 입어요." }
+            {
+              "id": "cold-1-e1",
+              "en": "The water in the river is very {{cold}}.",
+              "ko": "강물이 아주 차가워요."
+            },
+            {
+              "id": "cold-1-e2",
+              "en": "I wear a warm coat on {{cold}} days.",
+              "ko": "나는 추운 날에는 따뜻한 외투를 입어요."
+            }
           ]
         }
       ],
-      "related": { "wordFamily": ["coldly"] },
-      "curriculum": { "grade": 3 },
+      "related": {
+        "wordFamily": [
+          "coldly"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "cow",
+      "headword": "cow",
+      "syllables": "cow",
+      "ipa": {
+        "us": "/kaʊ/"
+      },
+      "audio": {
+        "us": "audio/us/cow.mp3"
+      },
+      "inflections": {
+        "plural": "cows"
+      },
+      "senses": [
+        {
+          "id": "cow-1",
+          "pos": "noun",
+          "en": "a big farm animal that gives us milk",
+          "ko": "소, 젖소",
+          "level": 1,
+          "tags": [
+            "animal"
+          ],
+          "examples": [
+            {
+              "id": "cow-1-e1",
+              "en": "The {{cow}} is eating grass in the field.",
+              "ko": "소가 들판에서 풀을 먹고 있어요."
+            },
+            {
+              "id": "cow-1-e2",
+              "en": "We get milk from a {{cow}}.",
+              "ko": "우리는 소에게서 우유를 얻어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "cup",
+      "headword": "cup",
+      "syllables": "cup",
+      "ipa": {
+        "us": "/kʌp/"
+      },
+      "audio": {
+        "us": "audio/us/cup.mp3"
+      },
+      "inflections": {
+        "plural": "cups"
+      },
+      "senses": [
+        {
+          "id": "cup-1",
+          "pos": "noun",
+          "en": "a small round container that you drink from",
+          "ko": "컵, 잔",
+          "level": 1,
+          "tags": [
+            "object",
+            "food-drink"
+          ],
+          "examples": [
+            {
+              "id": "cup-1-e1",
+              "en": "I drink tea from a red {{cup}}.",
+              "ko": "나는 빨간 컵으로 차를 마셔요."
+            },
+            {
+              "id": "cup-1-e2",
+              "en": "Please wash the {{cups}} after dinner.",
+              "ko": "저녁 먹고 컵을 씻으세요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "day",
+      "headword": "day",
+      "syllables": "day",
+      "ipa": {
+        "us": "/deɪ/"
+      },
+      "audio": {
+        "us": "audio/us/day.mp3"
+      },
+      "inflections": {
+        "plural": "days"
+      },
+      "senses": [
+        {
+          "id": "day-1",
+          "pos": "noun",
+          "en": "the time when there is light from the sun",
+          "ko": "날, 낮",
+          "level": 1,
+          "tags": [
+            "time"
+          ],
+          "examples": [
+            {
+              "id": "day-1-e1",
+              "en": "We play outside during the {{day}}.",
+              "ko": "우리는 낮 동안 밖에서 놀아요."
+            },
+            {
+              "id": "day-1-e2",
+              "en": "It was a warm and sunny {{day}}.",
+              "ko": "따뜻하고 화창한 날이었어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "night"
+          }
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "dirty",
+      "headword": "dirty",
+      "syllables": "dirty",
+      "ipa": {
+        "us": "/ˈdɜːr.tiː/"
+      },
+      "audio": {
+        "us": "audio/us/dirty.mp3"
+      },
+      "inflections": {
+        "comparative": "dirtier",
+        "superlative": "dirtiest"
+      },
+      "senses": [
+        {
+          "id": "dirty-1",
+          "pos": "adjective",
+          "en": "not clean",
+          "ko": "더러운",
+          "level": 1,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "dirty-1-e1",
+              "en": "My shoes are {{dirty}} after the rain.",
+              "ko": "비가 온 뒤 내 신발이 더러워요."
+            },
+            {
+              "id": "dirty-1-e2",
+              "en": "Do not touch the food with {{dirty}} hands.",
+              "ko": "더러운 손으로 음식을 만지지 마세요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "clean"
+          }
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "doctor",
+      "headword": "doctor",
+      "syllables": "doc·tor",
+      "ipa": {
+        "us": "/ˈdɑːk.tɚ/"
+      },
+      "audio": {
+        "us": "audio/us/doctor.mp3"
+      },
+      "inflections": {
+        "plural": "doctors"
+      },
+      "senses": [
+        {
+          "id": "doctor-1",
+          "pos": "noun",
+          "en": "a person who helps sick people get well",
+          "ko": "의사",
+          "level": 1,
+          "tags": [
+            "people"
+          ],
+          "examples": [
+            {
+              "id": "doctor-1-e1",
+              "en": "The {{doctor}} helped me when I was sick.",
+              "ko": "내가 아팠을 때 의사 선생님이 도와줬어요."
+            },
+            {
+              "id": "doctor-1-e2",
+              "en": "My aunt is a {{doctor}} at a big hospital.",
+              "ko": "우리 이모는 큰 병원의 의사예요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "dog",
+      "headword": "dog",
+      "syllables": "dog",
+      "ipa": {
+        "us": "/dɔːɡ/"
+      },
+      "audio": {
+        "us": "audio/us/dog.mp3"
+      },
+      "inflections": {
+        "plural": "dogs"
+      },
+      "senses": [
+        {
+          "id": "dog-1",
+          "pos": "noun",
+          "en": "an animal that many people keep at home and love",
+          "ko": "개, 강아지",
+          "level": 1,
+          "tags": [
+            "animal"
+          ],
+          "examples": [
+            {
+              "id": "dog-1-e1",
+              "en": "Our {{dog}} runs very fast in the park.",
+              "ko": "우리 강아지는 공원에서 아주 빨리 달려요."
+            },
+            {
+              "id": "dog-1-e2",
+              "en": "The {{dog}} wants to play with me now.",
+              "ko": "강아지가 지금 나랑 놀고 싶어 해요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "door",
+      "headword": "door",
+      "syllables": "door",
+      "ipa": {
+        "us": "/dɔːr/"
+      },
+      "audio": {
+        "us": "audio/us/door.mp3"
+      },
+      "inflections": {
+        "plural": "doors"
+      },
+      "senses": [
+        {
+          "id": "door-1",
+          "pos": "noun",
+          "en": "the part of a room that you open to go inside",
+          "ko": "문",
+          "level": 1,
+          "tags": [
+            "house",
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "door-1-e1",
+              "en": "Please close the {{door}} when you leave.",
+              "ko": "나갈 때 문을 닫아 주세요."
+            },
+            {
+              "id": "door-1-e2",
+              "en": "The {{door}} is open, so come inside.",
+              "ko": "문이 열려 있으니까 안으로 들어와요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "dress",
+      "headword": "dress",
+      "syllables": "dress",
+      "ipa": {
+        "us": "/dres/"
+      },
+      "audio": {
+        "us": "audio/us/dress.mp3"
+      },
+      "inflections": {
+        "plural": "dresses"
+      },
+      "senses": [
+        {
+          "id": "dress-1",
+          "pos": "noun",
+          "en": "a piece of clothes that a girl wears over her body",
+          "ko": "원피스, 드레스",
+          "level": 1,
+          "tags": [
+            "clothes"
+          ],
+          "examples": [
+            {
+              "id": "dress-1-e1",
+              "en": "She wore a blue {{dress}} to the party.",
+              "ko": "그녀는 파티에 파란 원피스를 입고 갔어요."
+            },
+            {
+              "id": "dress-1-e2",
+              "en": "This {{dress}} is too long for me.",
+              "ko": "이 원피스는 나에게 너무 길어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "drink",
+      "headword": "drink",
+      "syllables": "drink",
+      "ipa": {
+        "us": "/drɪŋk/"
+      },
+      "audio": {
+        "us": "audio/us/drink.mp3"
+      },
+      "inflections": {
+        "past": "drank",
+        "pastParticiple": "drunk",
+        "presentParticiple": "drinking",
+        "thirdPerson": "drinks",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "drink-1",
+          "pos": "verb",
+          "en": "to take water or milk into your mouth and make it go down",
+          "ko": "마시다",
+          "level": 1,
+          "tags": [
+            "action",
+            "food-drink"
+          ],
+          "examples": [
+            {
+              "id": "drink-1-e1",
+              "en": "I {{drink}} water when I am thirsty.",
+              "ko": "나는 목이 마르면 물을 마셔요."
+            },
+            {
+              "id": "drink-1-e2",
+              "en": "He {{drank}} a glass of cold milk.",
+              "ko": "그는 차가운 우유 한 잔을 마셨어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "duck",
+      "headword": "duck",
+      "syllables": "duck",
+      "ipa": {
+        "us": "/dʌk/"
+      },
+      "audio": {
+        "us": "audio/us/duck.mp3"
+      },
+      "inflections": {
+        "plural": "ducks"
+      },
+      "senses": [
+        {
+          "id": "duck-1",
+          "pos": "noun",
+          "en": "a bird that swims on water and has a wide mouth",
+          "ko": "오리",
+          "level": 1,
+          "tags": [
+            "animal"
+          ],
+          "examples": [
+            {
+              "id": "duck-1-e1",
+              "en": "A {{duck}} is swimming on the lake.",
+              "ko": "오리가 호수에서 헤엄치고 있어요."
+            },
+            {
+              "id": "duck-1-e2",
+              "en": "We fed the {{ducks}} some bread.",
+              "ko": "우리는 오리들에게 빵을 좀 줬어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "ear",
+      "headword": "ear",
+      "syllables": "ear",
+      "ipa": {
+        "us": "/iːr/"
+      },
+      "audio": {
+        "us": "audio/us/ear.mp3"
+      },
+      "inflections": {
+        "plural": "ears"
+      },
+      "senses": [
+        {
+          "id": "ear-1",
+          "pos": "noun",
+          "en": "the part of your body that you hear with",
+          "ko": "귀",
+          "level": 1,
+          "tags": [
+            "body"
+          ],
+          "examples": [
+            {
+              "id": "ear-1-e1",
+              "en": "A rabbit has two long {{ears}}.",
+              "ko": "토끼는 긴 귀가 두 개 있어요."
+            },
+            {
+              "id": "ear-1-e2",
+              "en": "I heard the music with my {{ears}}.",
+              "ko": "나는 귀로 음악을 들었어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "eat",
+      "headword": "eat",
+      "syllables": "eat",
+      "ipa": {
+        "us": "/iːt/"
+      },
+      "audio": {
+        "us": "audio/us/eat.mp3"
+      },
+      "inflections": {
+        "past": "ate",
+        "pastParticiple": "eaten",
+        "presentParticiple": "eating",
+        "thirdPerson": "eats",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "eat-1",
+          "pos": "verb",
+          "en": "to put food in your mouth and make it go down",
+          "ko": "먹다",
+          "level": 1,
+          "tags": [
+            "action",
+            "food-drink"
+          ],
+          "examples": [
+            {
+              "id": "eat-1-e1",
+              "en": "We {{eat}} dinner together every night.",
+              "ko": "우리는 매일 밤 함께 저녁을 먹어요."
+            },
+            {
+              "id": "eat-1-e2",
+              "en": "She {{ate}} all of her rice.",
+              "ko": "그녀는 밥을 다 먹었어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "egg",
+      "headword": "egg",
+      "syllables": "egg",
+      "ipa": {
+        "us": "/eɡ/"
+      },
+      "audio": {
+        "us": "audio/us/egg.mp3"
+      },
+      "inflections": {
+        "plural": "eggs"
+      },
+      "senses": [
+        {
+          "id": "egg-1",
+          "pos": "noun",
+          "en": "a round white thing that a bird makes its babies in",
+          "ko": "달걀, 알",
+          "level": 1,
+          "tags": [
+            "food-drink",
+            "animal"
+          ],
+          "examples": [
+            {
+              "id": "egg-1-e1",
+              "en": "I eat one {{egg}} for breakfast.",
+              "ko": "나는 아침으로 달걀 하나를 먹어요."
+            },
+            {
+              "id": "egg-1-e2",
+              "en": "The bird sits on its {{eggs}} all day.",
+              "ko": "새가 하루 종일 알 위에 앉아 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "eye",
+      "headword": "eye",
+      "syllables": "eye",
+      "ipa": {
+        "us": "/aɪ/"
+      },
+      "audio": {
+        "us": "audio/us/eye.mp3"
+      },
+      "inflections": {
+        "plural": "eyes"
+      },
+      "senses": [
+        {
+          "id": "eye-1",
+          "pos": "noun",
+          "en": "the part of your face that you use to see",
+          "ko": "눈",
+          "level": 1,
+          "tags": [
+            "body"
+          ],
+          "examples": [
+            {
+              "id": "eye-1-e1",
+              "en": "Close your {{eyes}} and go to sleep.",
+              "ko": "눈을 감고 자렴."
+            },
+            {
+              "id": "eye-1-e2",
+              "en": "The baby has big brown {{eyes}}.",
+              "ko": "그 아기는 크고 갈색인 눈을 가졌어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "face",
+      "headword": "face",
+      "syllables": "face",
+      "ipa": {
+        "us": "/feɪs/"
+      },
+      "audio": {
+        "us": "audio/us/face.mp3"
+      },
+      "inflections": {
+        "plural": "faces"
+      },
+      "senses": [
+        {
+          "id": "face-1",
+          "pos": "noun",
+          "en": "the front part of your head with your eyes and mouth",
+          "ko": "얼굴",
+          "level": 1,
+          "tags": [
+            "body"
+          ],
+          "examples": [
+            {
+              "id": "face-1-e1",
+              "en": "Please wash your {{face}} in the morning.",
+              "ko": "아침에 얼굴을 씻으세요."
+            },
+            {
+              "id": "face-1-e2",
+              "en": "She had a big smile on her {{face}}.",
+              "ko": "그녀는 얼굴에 큰 미소를 지었어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "fast",
+      "headword": "fast",
+      "syllables": "fast",
+      "ipa": {
+        "us": "/fæst/"
+      },
+      "audio": {
+        "us": "audio/us/fast.mp3"
+      },
+      "inflections": {
+        "comparative": "faster",
+        "superlative": "fastest"
+      },
+      "senses": [
+        {
+          "id": "fast-1",
+          "pos": "adjective",
+          "en": "moving very quickly",
+          "ko": "빠른",
+          "level": 1,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "fast-1-e1",
+              "en": "A {{fast}} horse won the race.",
+              "ko": "빠른 말이 경주에서 이겼어요."
+            },
+            {
+              "id": "fast-1-e2",
+              "en": "This is a very {{fast}} train.",
+              "ko": "이것은 아주 빠른 기차예요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "slow"
+          }
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "father",
+      "headword": "father",
+      "syllables": "fa·ther",
+      "ipa": {
+        "us": "/ˈfɑː.ðɚ/"
+      },
+      "audio": {
+        "us": "audio/us/father.mp3"
+      },
+      "inflections": {
+        "plural": "fathers"
+      },
+      "senses": [
+        {
+          "id": "father-1",
+          "pos": "noun",
+          "en": "a man who has a child",
+          "ko": "아버지, 아빠",
+          "level": 1,
+          "tags": [
+            "people",
+            "family"
+          ],
+          "examples": [
+            {
+              "id": "father-1-e1",
+              "en": "My {{father}} drives me to school.",
+              "ko": "우리 아빠는 나를 학교에 데려다줘요."
+            },
+            {
+              "id": "father-1-e2",
+              "en": "His {{father}} reads him a story at night.",
+              "ko": "그의 아버지는 밤에 그에게 이야기를 읽어 줘요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "fire",
+      "headword": "fire",
+      "syllables": "fire",
+      "ipa": {
+        "us": "/ˈfaɪ.ɚ/"
+      },
+      "audio": {
+        "us": "audio/us/fire.mp3"
+      },
+      "senses": [
+        {
+          "id": "fire-1",
+          "pos": "noun",
+          "en": "the hot bright thing that burns and gives heat",
+          "ko": "불",
+          "level": 1,
+          "tags": [
+            "nature",
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "fire-1-e1",
+              "en": "We sat near the warm {{fire}}.",
+              "ko": "우리는 따뜻한 불 가까이에 앉았어요."
+            },
+            {
+              "id": "fire-1-e2",
+              "en": "You must be careful with {{fire}}.",
+              "ko": "불을 조심하세요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "fish",
+      "headword": "fish",
+      "syllables": "fish",
+      "ipa": {
+        "us": "/fɪʃ/"
+      },
+      "audio": {
+        "us": "audio/us/fish.mp3"
+      },
+      "inflections": {
+        "plural": "fish",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "fish-1",
+          "pos": "noun",
+          "en": "an animal that lives in water and can swim",
+          "ko": "물고기",
+          "level": 1,
+          "tags": [
+            "animal",
+            "nature"
+          ],
+          "examples": [
+            {
+              "id": "fish-1-e1",
+              "en": "Many {{fish}} live in this cold river.",
+              "ko": "이 차가운 강에는 물고기가 많이 살아요."
+            },
+            {
+              "id": "fish-1-e2",
+              "en": "We saw a big {{fish}} in the water.",
+              "ko": "우리는 물속에서 큰 물고기를 봤어요."
+            }
+          ],
+          "note": "복수형도 fish예요. 'fishes'라고 하지 않아요."
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "flower",
+      "headword": "flower",
+      "syllables": "flow·er",
+      "ipa": {
+        "us": "/ˈflaʊ.ɚ/"
+      },
+      "audio": {
+        "us": "audio/us/flower.mp3"
+      },
+      "inflections": {
+        "plural": "flowers"
+      },
+      "senses": [
+        {
+          "id": "flower-1",
+          "pos": "noun",
+          "en": "the pretty part of a plant with a nice smell",
+          "ko": "꽃",
+          "level": 1,
+          "tags": [
+            "nature",
+            "plant"
+          ],
+          "examples": [
+            {
+              "id": "flower-1-e1",
+              "en": "She gave me a pretty red {{flower}}.",
+              "ko": "그녀가 나에게 예쁜 빨간 꽃을 줬어요."
+            },
+            {
+              "id": "flower-1-e2",
+              "en": "Many {{flowers}} grow in our garden.",
+              "ko": "우리 정원에는 꽃이 많이 피어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "foot",
+      "headword": "foot",
+      "syllables": "foot",
+      "ipa": {
+        "us": "/fʊt/"
+      },
+      "audio": {
+        "us": "audio/us/foot.mp3"
+      },
+      "inflections": {
+        "plural": "feet",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "foot-1",
+          "pos": "noun",
+          "en": "the part of your body that you stand on",
+          "ko": "발",
+          "level": 1,
+          "tags": [
+            "body"
+          ],
+          "examples": [
+            {
+              "id": "foot-1-e1",
+              "en": "My left {{foot}} hurts a little.",
+              "ko": "내 왼발이 조금 아파요."
+            },
+            {
+              "id": "foot-1-e2",
+              "en": "She has small {{feet}} for her age.",
+              "ko": "그녀는 나이에 비해 발이 작아요."
+            }
+          ],
+          "note": "복수형은 feet예요. 불규칙이에요."
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "friend",
+      "headword": "friend",
+      "syllables": "friend",
+      "ipa": {
+        "us": "/frend/"
+      },
+      "audio": {
+        "us": "audio/us/friend.mp3"
+      },
+      "inflections": {
+        "plural": "friends"
+      },
+      "senses": [
+        {
+          "id": "friend-1",
+          "pos": "noun",
+          "en": "someone that you know well and like very much",
+          "ko": "친구",
+          "level": 1,
+          "tags": [
+            "people",
+            "feeling"
+          ],
+          "examples": [
+            {
+              "id": "friend-1-e1",
+              "en": "My best {{friend}} lives next to me.",
+              "ko": "내 가장 친한 친구는 내 옆집에 살아요."
+            },
+            {
+              "id": "friend-1-e2",
+              "en": "I play games with my {{friends}} after school.",
+              "ko": "나는 방과 후에 친구들이랑 게임을 해요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "friendly",
+          "friendship"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "game",
+      "headword": "game",
+      "syllables": "game",
+      "ipa": {
+        "us": "/ɡeɪm/"
+      },
+      "audio": {
+        "us": "audio/us/game.mp3"
+      },
+      "inflections": {
+        "plural": "games"
+      },
+      "senses": [
+        {
+          "id": "game-1",
+          "pos": "noun",
+          "en": "a fun thing that you play with rules",
+          "ko": "게임, 놀이",
+          "level": 1,
+          "tags": [
+            "play",
+            "sport"
+          ],
+          "examples": [
+            {
+              "id": "game-1-e1",
+              "en": "We played a fun {{game}} at the party.",
+              "ko": "우리는 파티에서 재미있는 게임을 했어요."
+            },
+            {
+              "id": "game-1-e2",
+              "en": "This {{game}} is easy to learn.",
+              "ko": "이 게임은 배우기 쉬워요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "girl",
+      "headword": "girl",
+      "syllables": "girl",
+      "ipa": {
+        "us": "/ɡɜːrl/"
+      },
+      "audio": {
+        "us": "audio/us/girl.mp3"
+      },
+      "inflections": {
+        "plural": "girls"
+      },
+      "senses": [
+        {
+          "id": "girl-1",
+          "pos": "noun",
+          "en": "a young female child",
+          "ko": "소녀, 여자아이",
+          "level": 1,
+          "tags": [
+            "people"
+          ],
+          "examples": [
+            {
+              "id": "girl-1-e1",
+              "en": "The {{girl}} is drawing a picture.",
+              "ko": "그 여자아이가 그림을 그리고 있어요."
+            },
+            {
+              "id": "girl-1-e2",
+              "en": "A {{girl}} in my class sits next to me.",
+              "ko": "우리 반 여자아이가 내 옆에 앉아요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "give",
+      "headword": "give",
+      "syllables": "give",
+      "ipa": {
+        "us": "/ɡɪv/"
+      },
+      "audio": {
+        "us": "audio/us/give.mp3"
+      },
+      "inflections": {
+        "past": "gave",
+        "pastParticiple": "given",
+        "presentParticiple": "giving",
+        "thirdPerson": "gives",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "give-1",
+          "pos": "verb",
+          "en": "to put something in someone's hand to keep",
+          "ko": "주다",
+          "level": 1,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "give-1-e1",
+              "en": "Please {{give}} this letter to your teacher.",
+              "ko": "이 편지를 선생님께 드리세요."
+            },
+            {
+              "id": "give-1-e2",
+              "en": "She {{gave}} me a nice birthday present.",
+              "ko": "그녀는 나에게 멋진 생일 선물을 줬어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "green",
+      "headword": "green",
+      "syllables": "green",
+      "ipa": {
+        "us": "/ɡriːn/"
+      },
+      "audio": {
+        "us": "audio/us/green.mp3"
+      },
+      "senses": [
+        {
+          "id": "green-1",
+          "pos": "adjective",
+          "en": "having the colour of grass and leaves",
+          "ko": "초록색의",
+          "level": 1,
+          "tags": [
+            "describing",
+            "colour"
+          ],
+          "examples": [
+            {
+              "id": "green-1-e1",
+              "en": "The leaves turn {{green}} in spring.",
+              "ko": "봄에는 잎이 초록색으로 변해요."
+            },
+            {
+              "id": "green-1-e2",
+              "en": "She has a {{green}} school bag.",
+              "ko": "그녀는 초록색 책가방을 가지고 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "hair",
+      "headword": "hair",
+      "syllables": "hair",
+      "ipa": {
+        "us": "/her/"
+      },
+      "audio": {
+        "us": "audio/us/hair.mp3"
+      },
+      "senses": [
+        {
+          "id": "hair-1",
+          "pos": "noun",
+          "en": "the soft thin things that grow on your head",
+          "ko": "머리카락",
+          "level": 1,
+          "tags": [
+            "body"
+          ],
+          "examples": [
+            {
+              "id": "hair-1-e1",
+              "en": "She has long black {{hair}} and big eyes.",
+              "ko": "그녀는 길고 검은 머리카락을 가졌어요."
+            },
+            {
+              "id": "hair-1-e2",
+              "en": "Please brush your {{hair}} before school.",
+              "ko": "학교 가기 전에 머리를 빗으세요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "hand",
+      "headword": "hand",
+      "syllables": "hand",
+      "ipa": {
+        "us": "/hænd/"
+      },
+      "audio": {
+        "us": "audio/us/hand.mp3"
+      },
+      "inflections": {
+        "plural": "hands"
+      },
+      "senses": [
+        {
+          "id": "hand-1",
+          "pos": "noun",
+          "en": "the part of your body at the end of your arm",
+          "ko": "손",
+          "level": 1,
+          "tags": [
+            "body"
+          ],
+          "examples": [
+            {
+              "id": "hand-1-e1",
+              "en": "Please wash your {{hands}} before you eat.",
+              "ko": "밥 먹기 전에 손을 씻으세요."
+            },
+            {
+              "id": "hand-1-e2",
+              "en": "She holds a pen in her right {{hand}}.",
+              "ko": "그녀는 오른손에 펜을 들고 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "happy",
+      "headword": "happy",
+      "syllables": "hap·py",
+      "ipa": {
+        "us": "/ˈhæ.piː/"
+      },
+      "audio": {
+        "us": "audio/us/happy.mp3"
+      },
+      "inflections": {
+        "comparative": "happier",
+        "superlative": "happiest"
+      },
+      "senses": [
+        {
+          "id": "happy-1",
+          "pos": "adjective",
+          "en": "feeling good because something nice happened",
+          "ko": "행복한, 기쁜",
+          "level": 1,
+          "tags": [
+            "describing",
+            "feeling"
+          ],
+          "examples": [
+            {
+              "id": "happy-1-e1",
+              "en": "I am so {{happy}} to see you!",
+              "ko": "너를 만나서 정말 기뻐!"
+            },
+            {
+              "id": "happy-1-e2",
+              "en": "She looked {{happy}} with her new bike.",
+              "ko": "그녀는 새 자전거를 받고 기뻐 보였어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "sad"
+          }
+        ],
+        "wordFamily": [
+          "happily",
+          "happiness"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "hat",
+      "headword": "hat",
+      "syllables": "hat",
+      "ipa": {
+        "us": "/hæt/"
+      },
+      "audio": {
+        "us": "audio/us/hat.mp3"
+      },
+      "inflections": {
+        "plural": "hats"
+      },
+      "senses": [
+        {
+          "id": "hat-1",
+          "pos": "noun",
+          "en": "a thing that you wear on your head",
+          "ko": "모자",
+          "level": 1,
+          "tags": [
+            "clothes"
+          ],
+          "examples": [
+            {
+              "id": "hat-1-e1",
+              "en": "I wear a {{hat}} on sunny days.",
+              "ko": "나는 화창한 날에 모자를 써요."
+            },
+            {
+              "id": "hat-1-e2",
+              "en": "Her red {{hat}} is very pretty.",
+              "ko": "그녀의 빨간 모자는 아주 예뻐요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "head",
+      "headword": "head",
+      "syllables": "head",
+      "ipa": {
+        "us": "/hed/"
+      },
+      "audio": {
+        "us": "audio/us/head.mp3"
+      },
+      "inflections": {
+        "plural": "heads"
+      },
+      "senses": [
+        {
+          "id": "head-1",
+          "pos": "noun",
+          "en": "the top part of your body where your face is",
+          "ko": "머리",
+          "level": 1,
+          "tags": [
+            "body"
+          ],
+          "examples": [
+            {
+              "id": "head-1-e1",
+              "en": "I wear a hat on my {{head}}.",
+              "ko": "나는 머리에 모자를 써요."
+            },
+            {
+              "id": "head-1-e2",
+              "en": "She turned her {{head}} to look at me.",
+              "ko": "그녀는 나를 보려고 고개를 돌렸어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "help",
+      "headword": "help",
+      "syllables": "help",
+      "ipa": {
+        "us": "/help/"
+      },
+      "audio": {
+        "us": "audio/us/help.mp3"
+      },
+      "inflections": {
+        "past": "helped",
+        "presentParticiple": "helping",
+        "thirdPerson": "helps"
+      },
+      "senses": [
+        {
+          "id": "help-1",
+          "pos": "verb",
+          "en": "to do something good for someone who needs it",
+          "ko": "돕다",
+          "level": 1,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "help-1-e1",
+              "en": "I always {{help}} my mother at home.",
+              "ko": "나는 집에서 항상 엄마를 도와요."
+            },
+            {
+              "id": "help-1-e2",
+              "en": "Can you {{help}} me with this box?",
+              "ko": "이 상자 옮기는 것 좀 도와줄래요?"
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "helpful"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "horse",
+      "headword": "horse",
+      "syllables": "horse",
+      "ipa": {
+        "us": "/hɔːrs/"
+      },
+      "audio": {
+        "us": "audio/us/horse.mp3"
+      },
+      "inflections": {
+        "plural": "horses"
+      },
+      "senses": [
+        {
+          "id": "horse-1",
+          "pos": "noun",
+          "en": "a large strong animal that people ride",
+          "ko": "말",
+          "level": 1,
+          "tags": [
+            "animal"
+          ],
+          "examples": [
+            {
+              "id": "horse-1-e1",
+              "en": "The {{horse}} runs fast across the field.",
+              "ko": "말이 들판을 가로질러 빨리 달려요."
+            },
+            {
+              "id": "horse-1-e2",
+              "en": "She likes to ride a brown {{horse}}.",
+              "ko": "그녀는 갈색 말을 타는 걸 좋아해요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "hospital",
+      "headword": "hospital",
+      "syllables": "hos·pi·tal",
+      "ipa": {
+        "us": "/ˈhɑːs.ˌpɪ.təl/"
+      },
+      "audio": {
+        "us": "audio/us/hospital.mp3"
+      },
+      "inflections": {
+        "plural": "hospitals"
+      },
+      "senses": [
+        {
+          "id": "hospital-1",
+          "pos": "noun",
+          "en": "a place where doctors help sick people get well",
+          "ko": "병원",
+          "level": 1,
+          "tags": [
+            "place"
+          ],
+          "examples": [
+            {
+              "id": "hospital-1-e1",
+              "en": "The doctor works at a big {{hospital}}.",
+              "ko": "그 의사는 큰 병원에서 일해요."
+            },
+            {
+              "id": "hospital-1-e2",
+              "en": "We went to the {{hospital}} to see my aunt.",
+              "ko": "우리는 이모를 보러 병원에 갔어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "hot",
+      "headword": "hot",
+      "syllables": "hot",
+      "ipa": {
+        "us": "/hɑːt/"
+      },
+      "audio": {
+        "us": "audio/us/hot.mp3"
+      },
+      "inflections": {
+        "comparative": "hotter",
+        "superlative": "hottest"
+      },
+      "senses": [
+        {
+          "id": "hot-1",
+          "pos": "adjective",
+          "en": "very warm, like fire or the summer sun",
+          "ko": "뜨거운, 더운",
+          "level": 1,
+          "tags": [
+            "describing",
+            "weather"
+          ],
+          "examples": [
+            {
+              "id": "hot-1-e1",
+              "en": "The soup is too {{hot}} to eat now.",
+              "ko": "국이 너무 뜨거워서 지금 못 먹어요."
+            },
+            {
+              "id": "hot-1-e2",
+              "en": "Summer days are very {{hot}} here.",
+              "ko": "여기 여름날은 아주 더워요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "cold"
+          }
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "house",
+      "headword": "house",
+      "syllables": "house",
+      "ipa": {
+        "us": "/haʊs/"
+      },
+      "audio": {
+        "us": "audio/us/house.mp3"
+      },
+      "inflections": {
+        "plural": "houses"
+      },
+      "senses": [
+        {
+          "id": "house-1",
+          "pos": "noun",
+          "en": "a building where people live",
+          "ko": "집",
+          "level": 1,
+          "tags": [
+            "house",
+            "place"
+          ],
+          "examples": [
+            {
+              "id": "house-1-e1",
+              "en": "They live in a big {{house}}.",
+              "ko": "그들은 큰 집에 살아요."
+            },
+            {
+              "id": "house-1-e2",
+              "en": "My {{house}} is close to the school.",
+              "ko": "우리 집은 학교에서 가까워요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "jump",
+      "headword": "jump",
+      "syllables": "jump",
+      "ipa": {
+        "us": "/dʒʌmp/"
+      },
+      "audio": {
+        "us": "audio/us/jump.mp3"
+      },
+      "inflections": {
+        "past": "jumped",
+        "presentParticiple": "jumping",
+        "thirdPerson": "jumps"
+      },
+      "senses": [
+        {
+          "id": "jump-1",
+          "pos": "verb",
+          "en": "to push yourself up into the air with your legs",
+          "ko": "뛰다, 점프하다",
+          "level": 1,
+          "tags": [
+            "action",
+            "sport"
+          ],
+          "examples": [
+            {
+              "id": "jump-1-e1",
+              "en": "The children {{jump}} over the rope.",
+              "ko": "아이들이 줄을 넘어 뛰어요."
+            },
+            {
+              "id": "jump-1-e2",
+              "en": "My dog can {{jump}} very high.",
+              "ko": "우리 개는 아주 높이 뛸 수 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "key",
+      "headword": "key",
+      "syllables": "key",
+      "ipa": {
+        "us": "/kiː/"
+      },
+      "audio": {
+        "us": "audio/us/key.mp3"
+      },
+      "inflections": {
+        "plural": "keys"
+      },
+      "senses": [
+        {
+          "id": "key-1",
+          "pos": "noun",
+          "en": "a small metal thing that you use to open a door",
+          "ko": "열쇠",
+          "level": 1,
+          "tags": [
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "key-1-e1",
+              "en": "I lost the {{key}} to my house.",
+              "ko": "나는 우리 집 열쇠를 잃어버렸어요."
+            },
+            {
+              "id": "key-1-e2",
+              "en": "She keeps her {{keys}} in her bag.",
+              "ko": "그녀는 열쇠를 가방에 넣어 둬요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "leg",
+      "headword": "leg",
+      "syllables": "leg",
+      "ipa": {
+        "us": "/leɡ/"
+      },
+      "audio": {
+        "us": "audio/us/leg.mp3"
+      },
+      "inflections": {
+        "plural": "legs"
+      },
+      "senses": [
+        {
+          "id": "leg-1",
+          "pos": "noun",
+          "en": "the long part of your body that you walk with",
+          "ko": "다리",
+          "level": 1,
+          "tags": [
+            "body"
+          ],
+          "examples": [
+            {
+              "id": "leg-1-e1",
+              "en": "A dog runs on four {{legs}}.",
+              "ko": "개는 네 다리로 달려요."
+            },
+            {
+              "id": "leg-1-e2",
+              "en": "My {{legs}} are tired after the long walk.",
+              "ko": "오래 걸었더니 다리가 피곤해요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "lion",
+      "headword": "lion",
+      "syllables": "li·on",
+      "ipa": {
+        "us": "/ˈlaɪ.ən/"
+      },
+      "audio": {
+        "us": "audio/us/lion.mp3"
+      },
+      "inflections": {
+        "plural": "lions"
+      },
+      "senses": [
+        {
+          "id": "lion-1",
+          "pos": "noun",
+          "en": "a big wild animal that is called the king of animals",
+          "ko": "사자",
+          "level": 1,
+          "tags": [
+            "animal"
+          ],
+          "examples": [
+            {
+              "id": "lion-1-e1",
+              "en": "The {{lion}} has a loud and strong voice.",
+              "ko": "사자는 크고 힘찬 목소리를 가졌어요."
+            },
+            {
+              "id": "lion-1-e2",
+              "en": "We saw a {{lion}} sleeping at the zoo.",
+              "ko": "우리는 동물원에서 자고 있는 사자를 봤어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "long",
+      "headword": "long",
+      "syllables": "long",
+      "ipa": {
+        "us": "/lɔːŋ/"
+      },
+      "audio": {
+        "us": "audio/us/long.mp3"
+      },
+      "inflections": {
+        "comparative": "longer",
+        "superlative": "longest"
+      },
+      "senses": [
+        {
+          "id": "long-1",
+          "pos": "adjective",
+          "en": "far from one end to the other end",
+          "ko": "긴",
+          "level": 1,
+          "tags": [
+            "describing",
+            "size"
+          ],
+          "examples": [
+            {
+              "id": "long-1-e1",
+              "en": "An elephant has a {{long}} nose.",
+              "ko": "코끼리는 긴 코를 가졌어요."
+            },
+            {
+              "id": "long-1-e2",
+              "en": "We walked a {{long}} way to the river.",
+              "ko": "우리는 강까지 먼 길을 걸었어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "short"
+          }
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "look",
+      "headword": "look",
+      "syllables": "look",
+      "ipa": {
+        "us": "/lʊk/"
+      },
+      "audio": {
+        "us": "audio/us/look.mp3"
+      },
+      "inflections": {
+        "past": "looked",
+        "presentParticiple": "looking",
+        "thirdPerson": "looks"
+      },
+      "senses": [
+        {
+          "id": "look-1",
+          "pos": "verb",
+          "en": "to turn your eyes to see something",
+          "ko": "보다",
+          "level": 1,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "look-1-e1",
+              "en": "{{Look}} at all the beautiful flowers!",
+              "ko": "저 아름다운 꽃들을 봐!"
+            },
+            {
+              "id": "look-1-e2",
+              "en": "She {{looked}} up at the night sky.",
+              "ko": "그녀는 밤하늘을 올려다봤어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "milk",
+      "headword": "milk",
+      "syllables": "milk",
+      "ipa": {
+        "us": "/mɪlk/"
+      },
+      "audio": {
+        "us": "audio/us/milk.mp3"
+      },
+      "senses": [
+        {
+          "id": "milk-1",
+          "pos": "noun",
+          "en": "the white drink that comes from a cow",
+          "ko": "우유",
+          "level": 1,
+          "tags": [
+            "food-drink"
+          ],
+          "examples": [
+            {
+              "id": "milk-1-e1",
+              "en": "I drink a glass of {{milk}} every morning.",
+              "ko": "나는 매일 아침 우유 한 잔을 마셔요."
+            },
+            {
+              "id": "milk-1-e2",
+              "en": "The baby drinks warm {{milk}} before bed.",
+              "ko": "아기는 자기 전에 따뜻한 우유를 마셔요."
+            }
+          ],
+          "note": "셀 수 없는 명사예요. 'a milk'가 아니라 'a glass of milk'라고 해요."
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "monkey",
+      "headword": "monkey",
+      "syllables": "mon·key",
+      "ipa": {
+        "us": "/ˈmʌŋ.kiː/"
+      },
+      "audio": {
+        "us": "audio/us/monkey.mp3"
+      },
+      "inflections": {
+        "plural": "monkeys"
+      },
+      "senses": [
+        {
+          "id": "monkey-1",
+          "pos": "noun",
+          "en": "an animal that climbs trees and has a long tail",
+          "ko": "원숭이",
+          "level": 1,
+          "tags": [
+            "animal"
+          ],
+          "examples": [
+            {
+              "id": "monkey-1-e1",
+              "en": "The {{monkey}} ate a yellow banana.",
+              "ko": "원숭이가 노란 바나나를 먹었어요."
+            },
+            {
+              "id": "monkey-1-e2",
+              "en": "A {{monkey}} can climb a tree very fast.",
+              "ko": "원숭이는 나무를 아주 빨리 올라갈 수 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "moon",
+      "headword": "moon",
+      "syllables": "moon",
+      "ipa": {
+        "us": "/muːn/"
+      },
+      "audio": {
+        "us": "audio/us/moon.mp3"
+      },
+      "senses": [
+        {
+          "id": "moon-1",
+          "pos": "noun",
+          "en": "the round white thing that you see in the night sky",
+          "ko": "달",
+          "level": 1,
+          "tags": [
+            "nature",
+            "space"
+          ],
+          "examples": [
+            {
+              "id": "moon-1-e1",
+              "en": "The {{moon}} was very bright last night.",
+              "ko": "어젯밤에 달이 아주 밝았어요."
+            },
+            {
+              "id": "moon-1-e2",
+              "en": "We can see the {{moon}} from our window.",
+              "ko": "우리는 창문으로 달을 볼 수 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "morning",
+      "headword": "morning",
+      "syllables": "morn·ing",
+      "ipa": {
+        "us": "/ˈmɔːr.nɪŋ/"
+      },
+      "audio": {
+        "us": "audio/us/morning.mp3"
+      },
+      "inflections": {
+        "plural": "mornings"
+      },
+      "senses": [
+        {
+          "id": "morning-1",
+          "pos": "noun",
+          "en": "the early part of the day after you wake up",
+          "ko": "아침",
+          "level": 1,
+          "tags": [
+            "time"
+          ],
+          "examples": [
+            {
+              "id": "morning-1-e1",
+              "en": "I eat bread in the {{morning}}.",
+              "ko": "나는 아침에 빵을 먹어요."
+            },
+            {
+              "id": "morning-1-e2",
+              "en": "Every {{morning}} she walks to school.",
+              "ko": "그녀는 매일 아침 학교에 걸어가요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "mother",
+      "headword": "mother",
+      "syllables": "moth·er",
+      "ipa": {
+        "us": "/ˈmʌ.ðɚ/"
+      },
+      "audio": {
+        "us": "audio/us/mother.mp3"
+      },
+      "inflections": {
+        "plural": "mothers"
+      },
+      "senses": [
+        {
+          "id": "mother-1",
+          "pos": "noun",
+          "en": "a woman who has a child",
+          "ko": "어머니, 엄마",
+          "level": 1,
+          "tags": [
+            "people",
+            "family"
+          ],
+          "examples": [
+            {
+              "id": "mother-1-e1",
+              "en": "My {{mother}} makes dinner for us.",
+              "ko": "우리 엄마는 우리에게 저녁을 만들어 줘요."
+            },
+            {
+              "id": "mother-1-e2",
+              "en": "Her {{mother}} works at a hospital.",
+              "ko": "그녀의 어머니는 병원에서 일해요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "mountain",
+      "headword": "mountain",
+      "syllables": "moun·tain",
+      "ipa": {
+        "us": "/ˈmaʊn.tən/"
+      },
+      "audio": {
+        "us": "audio/us/mountain.mp3"
+      },
+      "inflections": {
+        "plural": "mountains"
+      },
+      "senses": [
+        {
+          "id": "mountain-1",
+          "pos": "noun",
+          "en": "a very high place made of rock and ground",
+          "ko": "산",
+          "level": 1,
+          "tags": [
+            "nature",
+            "place"
+          ],
+          "examples": [
+            {
+              "id": "mountain-1-e1",
+              "en": "We climbed a high {{mountain}} last week.",
+              "ko": "우리는 지난주에 높은 산을 올랐어요."
+            },
+            {
+              "id": "mountain-1-e2",
+              "en": "Snow covers the {{mountain}} in winter.",
+              "ko": "겨울에는 눈이 산을 덮어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "mouse",
+      "headword": "mouse",
+      "syllables": "mouse",
+      "ipa": {
+        "us": "/maʊs/"
+      },
+      "audio": {
+        "us": "audio/us/mouse.mp3"
+      },
+      "inflections": {
+        "plural": "mice",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "mouse-1",
+          "pos": "noun",
+          "en": "a very small animal with a long thin tail",
+          "ko": "쥐",
+          "level": 1,
+          "tags": [
+            "animal"
+          ],
+          "examples": [
+            {
+              "id": "mouse-1-e1",
+              "en": "A small {{mouse}} ran under the bed.",
+              "ko": "작은 쥐가 침대 밑으로 달아났어요."
+            },
+            {
+              "id": "mouse-1-e2",
+              "en": "The cat wants to catch the {{mouse}}.",
+              "ko": "고양이가 쥐를 잡고 싶어 해요."
+            }
+          ],
+          "note": "복수형은 mice예요. 불규칙이에요."
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "mouth",
+      "headword": "mouth",
+      "syllables": "mouth",
+      "ipa": {
+        "us": "/maʊθ/"
+      },
+      "audio": {
+        "us": "audio/us/mouth.mp3"
+      },
+      "inflections": {
+        "plural": "mouths"
+      },
+      "senses": [
+        {
+          "id": "mouth-1",
+          "pos": "noun",
+          "en": "the part of your face that you use to eat and speak",
+          "ko": "입",
+          "level": 1,
+          "tags": [
+            "body"
+          ],
+          "examples": [
+            {
+              "id": "mouth-1-e1",
+              "en": "Open your {{mouth}} and say ah.",
+              "ko": "입을 벌리고 아 하고 말해요."
+            },
+            {
+              "id": "mouth-1-e2",
+              "en": "Do not talk with food in your {{mouth}}.",
+              "ko": "입에 음식을 넣고 말하지 마세요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "name",
+      "headword": "name",
+      "syllables": "name",
+      "ipa": {
+        "us": "/neɪm/"
+      },
+      "audio": {
+        "us": "audio/us/name.mp3"
+      },
+      "inflections": {
+        "plural": "names"
+      },
+      "senses": [
+        {
+          "id": "name-1",
+          "pos": "noun",
+          "en": "the word that people use to call you",
+          "ko": "이름",
+          "level": 1,
+          "tags": [
+            "people"
+          ],
+          "examples": [
+            {
+              "id": "name-1-e1",
+              "en": "My {{name}} is on my school bag.",
+              "ko": "내 이름이 내 책가방에 있어요."
+            },
+            {
+              "id": "name-1-e2",
+              "en": "Please write your {{name}} at the top.",
+              "ko": "맨 위에 이름을 쓰세요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "new",
+      "headword": "new",
+      "syllables": "new",
+      "ipa": {
+        "us": "/nuː/"
+      },
+      "audio": {
+        "us": "audio/us/new.mp3"
+      },
+      "inflections": {
+        "comparative": "newer",
+        "superlative": "newest"
+      },
+      "senses": [
+        {
+          "id": "new-1",
+          "pos": "adjective",
+          "en": "made a short time ago, not old",
+          "ko": "새로운",
+          "level": 1,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "new-1-e1",
+              "en": "I got a {{new}} bike for my birthday.",
+              "ko": "나는 생일에 새 자전거를 받았어요."
+            },
+            {
+              "id": "new-1-e2",
+              "en": "She is wearing a {{new}} dress today.",
+              "ko": "그녀는 오늘 새 원피스를 입었어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "old"
+          }
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "night",
+      "headword": "night",
+      "syllables": "night",
+      "ipa": {
+        "us": "/naɪt/"
+      },
+      "audio": {
+        "us": "audio/us/night.mp3"
+      },
+      "inflections": {
+        "plural": "nights"
+      },
+      "senses": [
+        {
+          "id": "night-1",
+          "pos": "noun",
+          "en": "the dark time when the sun is not in the sky",
+          "ko": "밤",
+          "level": 1,
+          "tags": [
+            "time"
+          ],
+          "examples": [
+            {
+              "id": "night-1-e1",
+              "en": "The stars come out at {{night}}.",
+              "ko": "밤에는 별이 나와요."
+            },
+            {
+              "id": "night-1-e2",
+              "en": "I read a book every {{night}}.",
+              "ko": "나는 매일 밤 책을 읽어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "day"
+          }
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "nose",
+      "headword": "nose",
+      "syllables": "nose",
+      "ipa": {
+        "us": "/noʊz/"
+      },
+      "audio": {
+        "us": "audio/us/nose.mp3"
+      },
+      "inflections": {
+        "plural": "noses"
+      },
+      "senses": [
+        {
+          "id": "nose-1",
+          "pos": "noun",
+          "en": "the part of your face that you use to smell",
+          "ko": "코",
+          "level": 1,
+          "tags": [
+            "body"
+          ],
+          "examples": [
+            {
+              "id": "nose-1-e1",
+              "en": "An elephant has a very long {{nose}}.",
+              "ko": "코끼리는 아주 긴 코를 가졌어요."
+            },
+            {
+              "id": "nose-1-e2",
+              "en": "I smell the flowers with my {{nose}}.",
+              "ko": "나는 코로 꽃 냄새를 맡아요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "old",
+      "headword": "old",
+      "syllables": "old",
+      "ipa": {
+        "us": "/oʊld/"
+      },
+      "audio": {
+        "us": "audio/us/old.mp3"
+      },
+      "inflections": {
+        "comparative": "older",
+        "superlative": "oldest"
+      },
+      "senses": [
+        {
+          "id": "old-1",
+          "pos": "adjective",
+          "en": "made a long time ago, or having lived many years",
+          "ko": "오래된, 나이 든",
+          "level": 1,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "old-1-e1",
+              "en": "This is a very {{old}} book from my grandfather.",
+              "ko": "이건 우리 할아버지의 아주 오래된 책이에요."
+            },
+            {
+              "id": "old-1-e2",
+              "en": "My grandmother is quite {{old}} now.",
+              "ko": "우리 할머니는 이제 꽤 나이가 드셨어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "new"
+          }
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "open",
+      "headword": "open",
+      "syllables": "open",
+      "ipa": {
+        "us": "/ˈoʊ.pən/"
+      },
+      "audio": {
+        "us": "audio/us/open.mp3"
+      },
+      "inflections": {
+        "past": "opened",
+        "presentParticiple": "opening",
+        "thirdPerson": "opens"
+      },
+      "senses": [
+        {
+          "id": "open-1",
+          "pos": "verb",
+          "en": "to move something so that it is not closed",
+          "ko": "열다",
+          "level": 1,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "open-1-e1",
+              "en": "Please {{open}} the door for me.",
+              "ko": "문 좀 열어 주세요."
+            },
+            {
+              "id": "open-1-e2",
+              "en": "She {{opened}} the box and looked inside.",
+              "ko": "그녀는 상자를 열고 안을 들여다봤어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "orange",
+      "headword": "orange",
+      "syllables": "or·ange",
+      "ipa": {
+        "us": "/ˈɔː.rəndʒ/"
+      },
+      "audio": {
+        "us": "audio/us/orange.mp3"
+      },
+      "inflections": {
+        "plural": "oranges"
+      },
+      "senses": [
+        {
+          "id": "orange-1",
+          "pos": "noun",
+          "en": "a round sweet fruit with a thick skin",
+          "ko": "오렌지",
+          "level": 1,
+          "tags": [
+            "food-drink",
+            "colour"
+          ],
+          "examples": [
+            {
+              "id": "orange-1-e1",
+              "en": "I drink {{orange}} juice for breakfast.",
+              "ko": "나는 아침으로 오렌지 주스를 마셔요."
+            },
+            {
+              "id": "orange-1-e2",
+              "en": "She gave me a sweet {{orange}}.",
+              "ko": "그녀가 나에게 달콤한 오렌지를 줬어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "paper",
+      "headword": "paper",
+      "syllables": "pa·per",
+      "ipa": {
+        "us": "/ˈpeɪ.pɚ/"
+      },
+      "audio": {
+        "us": "audio/us/paper.mp3"
+      },
+      "senses": [
+        {
+          "id": "paper-1",
+          "pos": "noun",
+          "en": "the thin flat thing that you write or draw on",
+          "ko": "종이",
+          "level": 1,
+          "tags": [
+            "school",
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "paper-1-e1",
+              "en": "Please write your name on the {{paper}}.",
+              "ko": "종이에 이름을 쓰세요."
+            },
+            {
+              "id": "paper-1-e2",
+              "en": "She drew a cat on white {{paper}}.",
+              "ko": "그녀는 하얀 종이에 고양이를 그렸어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "park",
+      "headword": "park",
+      "syllables": "park",
+      "ipa": {
+        "us": "/pɑːrk/"
+      },
+      "audio": {
+        "us": "audio/us/park.mp3"
+      },
+      "inflections": {
+        "plural": "parks"
+      },
+      "senses": [
+        {
+          "id": "park-1",
+          "pos": "noun",
+          "en": "a large open place with grass and trees where people play",
+          "ko": "공원",
+          "level": 1,
+          "tags": [
+            "place"
+          ],
+          "examples": [
+            {
+              "id": "park-1-e1",
+              "en": "We play in the {{park}} after school.",
+              "ko": "우리는 방과 후에 공원에서 놀아요."
+            },
+            {
+              "id": "park-1-e2",
+              "en": "There are many trees in this {{park}}.",
+              "ko": "이 공원에는 나무가 많아요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "pen",
+      "headword": "pen",
+      "syllables": "pen",
+      "ipa": {
+        "us": "/pen/"
+      },
+      "audio": {
+        "us": "audio/us/pen.mp3"
+      },
+      "inflections": {
+        "plural": "pens"
+      },
+      "senses": [
+        {
+          "id": "pen-1",
+          "pos": "noun",
+          "en": "a thin thing that you use to write with",
+          "ko": "펜",
+          "level": 1,
+          "tags": [
+            "school",
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "pen-1-e1",
+              "en": "I write my name with a black {{pen}}.",
+              "ko": "나는 검은 펜으로 이름을 써요."
+            },
+            {
+              "id": "pen-1-e2",
+              "en": "May I use your {{pen}}, please?",
+              "ko": "펜 좀 빌려줄래요?"
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "pencil",
+      "headword": "pencil",
+      "syllables": "pen·cil",
+      "ipa": {
+        "us": "/ˈpen.səl/"
+      },
+      "audio": {
+        "us": "audio/us/pencil.mp3"
+      },
+      "inflections": {
+        "plural": "pencils"
+      },
+      "senses": [
+        {
+          "id": "pencil-1",
+          "pos": "noun",
+          "en": "a thin thing made of wood that you use to write or draw",
+          "ko": "연필",
+          "level": 1,
+          "tags": [
+            "school",
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "pencil-1-e1",
+              "en": "She draws a picture with a {{pencil}}.",
+              "ko": "그녀는 연필로 그림을 그려요."
+            },
+            {
+              "id": "pencil-1-e2",
+              "en": "My {{pencil}} is too short now.",
+              "ko": "내 연필이 이제 너무 짧아요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "picture",
+      "headword": "picture",
+      "syllables": "pic·ture",
+      "ipa": {
+        "us": "/ˈpɪk.tʃɚ/"
+      },
+      "audio": {
+        "us": "audio/us/picture.mp3"
+      },
+      "inflections": {
+        "plural": "pictures"
+      },
+      "senses": [
+        {
+          "id": "picture-1",
+          "pos": "noun",
+          "en": "a drawing or an image of someone or something",
+          "ko": "그림, 사진",
+          "level": 1,
+          "tags": [
+            "school",
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "picture-1-e1",
+              "en": "I drew a {{picture}} of my family.",
+              "ko": "나는 우리 가족 그림을 그렸어요."
+            },
+            {
+              "id": "picture-1-e2",
+              "en": "There are many {{pictures}} in this book.",
+              "ko": "이 책에는 그림이 많아요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "pig",
+      "headword": "pig",
+      "syllables": "pig",
+      "ipa": {
+        "us": "/pɪɡ/"
+      },
+      "audio": {
+        "us": "audio/us/pig.mp3"
+      },
+      "inflections": {
+        "plural": "pigs"
+      },
+      "senses": [
+        {
+          "id": "pig-1",
+          "pos": "noun",
+          "en": "a fat pink farm animal with a short tail",
+          "ko": "돼지",
+          "level": 1,
+          "tags": [
+            "animal"
+          ],
+          "examples": [
+            {
+              "id": "pig-1-e1",
+              "en": "The {{pig}} is sleeping in the mud.",
+              "ko": "돼지가 진흙에서 자고 있어요."
+            },
+            {
+              "id": "pig-1-e2",
+              "en": "A baby {{pig}} is very small and pink.",
+              "ko": "아기 돼지는 아주 작고 분홍색이에요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "play",
+      "headword": "play",
+      "syllables": "play",
+      "ipa": {
+        "us": "/pleɪ/"
+      },
+      "audio": {
+        "us": "audio/us/play.mp3"
+      },
+      "inflections": {
+        "past": "played",
+        "presentParticiple": "playing",
+        "thirdPerson": "plays"
+      },
+      "senses": [
+        {
+          "id": "play-1",
+          "pos": "verb",
+          "en": "to do something fun with toys or with friends",
+          "ko": "놀다",
+          "level": 1,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "play-1-e1",
+              "en": "The children are {{playing}} in the park.",
+              "ko": "아이들이 공원에서 놀고 있어요."
+            },
+            {
+              "id": "play-1-e2",
+              "en": "Do you want to {{play}} with me today?",
+              "ko": "오늘 나랑 놀래?"
+            }
+          ]
+        },
+        {
+          "id": "play-2",
+          "pos": "verb",
+          "en": "to take part in a game or a sport",
+          "ko": "(운동을) 하다",
+          "level": 1,
+          "tags": [
+            "action",
+            "sport"
+          ],
+          "examples": [
+            {
+              "id": "play-2-e1",
+              "en": "Let's {{play}} soccer with my friends after school.",
+              "ko": "방과 후에 친구들이랑 축구하자."
+            },
+            {
+              "id": "play-2-e2",
+              "en": "They {{play}} basketball together every weekend.",
+              "ko": "그들은 주말마다 농구를 해요."
+            }
+          ]
+        },
+        {
+          "id": "play-3",
+          "pos": "verb",
+          "en": "to make music with a piano, a drum, or a guitar",
+          "ko": "(악기를) 연주하다",
+          "level": 2,
+          "tags": [
+            "music"
+          ],
+          "examples": [
+            {
+              "id": "play-3-e1",
+              "en": "He can {{play}} the piano very well.",
+              "ko": "그는 피아노를 아주 잘 쳐요."
+            }
+          ],
+          "collocations": [
+            {
+              "id": "play-3-c1",
+              "text": "play the piano",
+              "ko": "피아노를 치다",
+              "exampleId": "play-3-e1",
+              "level": 2,
+              "studiable": true
+            }
+          ],
+          "note": "악기 이름 앞에는 the를 써요: play the piano"
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "player",
+          "playground"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "rabbit",
+      "headword": "rabbit",
+      "syllables": "rab·bit",
+      "ipa": {
+        "us": "/ˈræ.bət/"
+      },
+      "audio": {
+        "us": "audio/us/rabbit.mp3"
+      },
+      "inflections": {
+        "plural": "rabbits"
+      },
+      "senses": [
+        {
+          "id": "rabbit-1",
+          "pos": "noun",
+          "en": "a small soft animal with long ears that can jump",
+          "ko": "토끼",
+          "level": 1,
+          "tags": [
+            "animal"
+          ],
+          "examples": [
+            {
+              "id": "rabbit-1-e1",
+              "en": "The white {{rabbit}} has very long ears.",
+              "ko": "하얀 토끼는 귀가 아주 길어요."
+            },
+            {
+              "id": "rabbit-1-e2",
+              "en": "A {{rabbit}} can jump high and run fast.",
+              "ko": "토끼는 높이 뛰고 빨리 달릴 수 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "rain",
+      "headword": "rain",
+      "syllables": "rain",
+      "ipa": {
+        "us": "/reɪn/"
+      },
+      "audio": {
+        "us": "audio/us/rain.mp3"
+      },
+      "senses": [
+        {
+          "id": "rain-1",
+          "pos": "noun",
+          "en": "water that falls from the sky in small drops",
+          "ko": "비",
+          "level": 1,
+          "tags": [
+            "nature",
+            "weather"
+          ],
+          "examples": [
+            {
+              "id": "rain-1-e1",
+              "en": "The {{rain}} fell all day long today.",
+              "ko": "오늘 하루 종일 비가 내렸어요."
+            },
+            {
+              "id": "rain-1-e2",
+              "en": "We can not play outside in the {{rain}}.",
+              "ko": "비가 와서 우리는 밖에서 놀 수 없어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "rainy",
+          "rainbow"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "read",
+      "headword": "read",
+      "syllables": "read",
+      "ipa": {
+        "us": "/red/"
+      },
+      "audio": {
+        "us": "audio/us/read.mp3"
+      },
+      "inflections": {
+        "past": "read",
+        "pastParticiple": "read",
+        "presentParticiple": "reading",
+        "thirdPerson": "reads",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "read-1",
+          "pos": "verb",
+          "en": "to look at words and understand what they mean",
+          "ko": "읽다",
+          "level": 1,
+          "tags": [
+            "action",
+            "school"
+          ],
+          "examples": [
+            {
+              "id": "read-1-e1",
+              "en": "I like to {{read}} books about animals.",
+              "ko": "나는 동물에 관한 책 읽는 걸 좋아해요."
+            },
+            {
+              "id": "read-1-e2",
+              "en": "She {{read}} the story to her little brother.",
+              "ko": "그녀는 남동생에게 이야기를 읽어 줬어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "red",
+      "headword": "red",
+      "syllables": "red",
+      "ipa": {
+        "us": "/red/"
+      },
+      "audio": {
+        "us": "audio/us/red.mp3"
+      },
+      "senses": [
+        {
+          "id": "red-1",
+          "pos": "adjective",
+          "en": "having the colour of blood or a tomato",
+          "ko": "빨간",
+          "level": 1,
+          "tags": [
+            "describing",
+            "colour"
+          ],
+          "examples": [
+            {
+              "id": "red-1-e1",
+              "en": "She is wearing a {{red}} hat.",
+              "ko": "그녀는 빨간 모자를 쓰고 있어요."
+            },
+            {
+              "id": "red-1-e2",
+              "en": "I like the {{red}} flowers best.",
+              "ko": "나는 빨간 꽃이 제일 좋아요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "rice",
+      "headword": "rice",
+      "syllables": "rice",
+      "ipa": {
+        "us": "/raɪs/"
+      },
+      "audio": {
+        "us": "audio/us/rice.mp3"
+      },
+      "senses": [
+        {
+          "id": "rice-1",
+          "pos": "noun",
+          "en": "the small white seeds that many people eat every day",
+          "ko": "쌀, 밥",
+          "level": 1,
+          "tags": [
+            "food-drink"
+          ],
+          "examples": [
+            {
+              "id": "rice-1-e1",
+              "en": "We eat {{rice}} with almost every meal.",
+              "ko": "우리는 거의 매 끼니 밥을 먹어요."
+            },
+            {
+              "id": "rice-1-e2",
+              "en": "She cooked warm {{rice}} for our dinner.",
+              "ko": "그녀는 저녁으로 밥을 지었어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "river",
+      "headword": "river",
+      "syllables": "riv·er",
+      "ipa": {
+        "us": "/ˈrɪ.vɚ/"
+      },
+      "audio": {
+        "us": "audio/us/river.mp3"
+      },
+      "inflections": {
+        "plural": "rivers"
+      },
+      "senses": [
+        {
+          "id": "river-1",
+          "pos": "noun",
+          "en": "a long line of water that moves across the land",
+          "ko": "강",
+          "level": 1,
+          "tags": [
+            "nature",
+            "place"
+          ],
+          "examples": [
+            {
+              "id": "river-1-e1",
+              "en": "Many fish live in this {{river}}.",
+              "ko": "이 강에는 물고기가 많이 살아요."
+            },
+            {
+              "id": "river-1-e2",
+              "en": "We walked along the {{river}} together.",
+              "ko": "우리는 강을 따라 함께 걸었어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "room",
+      "headword": "room",
+      "syllables": "room",
+      "ipa": {
+        "us": "/ruːm/"
+      },
+      "audio": {
+        "us": "audio/us/room.mp3"
+      },
+      "inflections": {
+        "plural": "rooms"
+      },
+      "senses": [
+        {
+          "id": "room-1",
+          "pos": "noun",
+          "en": "one part inside a house with its own walls",
+          "ko": "방",
+          "level": 1,
+          "tags": [
+            "house",
+            "place"
+          ],
+          "examples": [
+            {
+              "id": "room-1-e1",
+              "en": "My {{room}} has a big window.",
+              "ko": "내 방에는 큰 창문이 있어요."
+            },
+            {
+              "id": "room-1-e2",
+              "en": "Please clean your {{room}} before dinner.",
+              "ko": "저녁 먹기 전에 방을 치우세요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "run",
+      "headword": "run",
+      "syllables": "run",
+      "ipa": {
+        "us": "/rʌn/"
+      },
+      "audio": {
+        "us": "audio/us/run.mp3"
+      },
+      "inflections": {
+        "past": "ran",
+        "pastParticiple": "run",
+        "presentParticiple": "running",
+        "thirdPerson": "runs",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "run-1",
+          "pos": "verb",
+          "en": "to move very quickly on your feet",
+          "ko": "달리다, 뛰다",
+          "level": 1,
+          "tags": [
+            "action",
+            "sport"
+          ],
+          "examples": [
+            {
+              "id": "run-1-e1",
+              "en": "I can {{run}} faster than my brother.",
+              "ko": "나는 우리 형보다 빨리 달릴 수 있어요."
+            },
+            {
+              "id": "run-1-e2",
+              "en": "She {{ran}} to the bus stop.",
+              "ko": "그녀는 버스 정류장으로 뛰어갔어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "runner"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "sad",
+      "headword": "sad",
+      "syllables": "sad",
+      "ipa": {
+        "us": "/sæd/"
+      },
+      "audio": {
+        "us": "audio/us/sad.mp3"
+      },
+      "inflections": {
+        "comparative": "sadder",
+        "superlative": "saddest"
+      },
+      "senses": [
+        {
+          "id": "sad-1",
+          "pos": "adjective",
+          "en": "feeling bad because something is not nice",
+          "ko": "슬픈",
+          "level": 1,
+          "tags": [
+            "describing",
+            "feeling"
+          ],
+          "examples": [
+            {
+              "id": "sad-1-e1",
+              "en": "He was {{sad}} when his dog was sick.",
+              "ko": "그는 강아지가 아파서 슬펐어요."
+            },
+            {
+              "id": "sad-1-e2",
+              "en": "The {{sad}} girl began to cry.",
+              "ko": "슬픈 그 소녀는 울기 시작했어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "happy"
+          }
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "school",
+      "headword": "school",
+      "syllables": "school",
+      "ipa": {
+        "us": "/skuːl/"
+      },
+      "audio": {
+        "us": "audio/us/school.mp3"
+      },
+      "inflections": {
+        "plural": "schools"
+      },
+      "senses": [
+        {
+          "id": "school-1",
+          "pos": "noun",
+          "en": "a place where children go to learn",
+          "ko": "학교",
+          "level": 1,
+          "tags": [
+            "school",
+            "place"
+          ],
+          "examples": [
+            {
+              "id": "school-1-e1",
+              "en": "I go to {{school}} with my friends.",
+              "ko": "나는 친구들이랑 학교에 가요."
+            },
+            {
+              "id": "school-1-e2",
+              "en": "Our {{school}} is close to my house.",
+              "ko": "우리 학교는 우리 집에서 가까워요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "schoolbag",
+          "preschool"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "sea",
+      "headword": "sea",
+      "syllables": "sea",
+      "ipa": {
+        "us": "/siː/"
+      },
+      "audio": {
+        "us": "audio/us/sea.mp3"
+      },
+      "senses": [
+        {
+          "id": "sea-1",
+          "pos": "noun",
+          "en": "the very big area of salt water on the earth",
+          "ko": "바다",
+          "level": 1,
+          "tags": [
+            "nature",
+            "place"
+          ],
+          "examples": [
+            {
+              "id": "sea-1-e1",
+              "en": "We swam in the blue {{sea}}.",
+              "ko": "우리는 파란 바다에서 헤엄쳤어요."
+            },
+            {
+              "id": "sea-1-e2",
+              "en": "Many kinds of fish live in the {{sea}}.",
+              "ko": "바다에는 여러 종류의 물고기가 살아요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "shoe",
+      "headword": "shoe",
+      "syllables": "shoe",
+      "ipa": {
+        "us": "/ʃuː/"
+      },
+      "audio": {
+        "us": "audio/us/shoe.mp3"
+      },
+      "inflections": {
+        "plural": "shoes"
+      },
+      "senses": [
+        {
+          "id": "shoe-1",
+          "pos": "noun",
+          "en": "a thing that you wear on your foot",
+          "ko": "신발",
+          "level": 1,
+          "tags": [
+            "clothes"
+          ],
+          "examples": [
+            {
+              "id": "shoe-1-e1",
+              "en": "My new {{shoes}} are white and clean.",
+              "ko": "내 새 신발은 하얗고 깨끗해요."
+            },
+            {
+              "id": "shoe-1-e2",
+              "en": "Please take off your {{shoes}} inside.",
+              "ko": "안에서는 신발을 벗으세요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "shop",
+      "headword": "shop",
+      "syllables": "shop",
+      "ipa": {
+        "us": "/ʃɑːp/"
+      },
+      "audio": {
+        "us": "audio/us/shop.mp3"
+      },
+      "inflections": {
+        "plural": "shops"
+      },
+      "senses": [
+        {
+          "id": "shop-1",
+          "pos": "noun",
+          "en": "a place where you buy things with money",
+          "ko": "가게",
+          "level": 1,
+          "tags": [
+            "place"
+          ],
+          "examples": [
+            {
+              "id": "shop-1-e1",
+              "en": "My mother went to the {{shop}} to buy milk.",
+              "ko": "우리 엄마는 우유를 사러 가게에 갔어요."
+            },
+            {
+              "id": "shop-1-e2",
+              "en": "There is a small {{shop}} near my house.",
+              "ko": "우리 집 근처에 작은 가게가 있어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "shopping"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "short",
+      "headword": "short",
+      "syllables": "short",
+      "ipa": {
+        "us": "/ʃɔːrt/"
+      },
+      "audio": {
+        "us": "audio/us/short.mp3"
+      },
+      "inflections": {
+        "comparative": "shorter",
+        "superlative": "shortest"
+      },
+      "senses": [
+        {
+          "id": "short-1",
+          "pos": "adjective",
+          "en": "not long, or not tall",
+          "ko": "짧은, 키가 작은",
+          "level": 1,
+          "tags": [
+            "describing",
+            "size"
+          ],
+          "examples": [
+            {
+              "id": "short-1-e1",
+              "en": "My hair is very {{short}} now.",
+              "ko": "내 머리는 이제 아주 짧아요."
+            },
+            {
+              "id": "short-1-e2",
+              "en": "He is {{short}}, so he sits at the front.",
+              "ko": "그는 키가 작아서 앞자리에 앉아요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "long"
+          }
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "sing",
+      "headword": "sing",
+      "syllables": "sing",
+      "ipa": {
+        "us": "/sɪŋ/"
+      },
+      "audio": {
+        "us": "audio/us/sing.mp3"
+      },
+      "inflections": {
+        "past": "sang",
+        "pastParticiple": "sung",
+        "presentParticiple": "singing",
+        "thirdPerson": "sings",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "sing-1",
+          "pos": "verb",
+          "en": "to make music with your voice",
+          "ko": "노래하다",
+          "level": 1,
+          "tags": [
+            "action",
+            "music"
+          ],
+          "examples": [
+            {
+              "id": "sing-1-e1",
+              "en": "We {{sing}} a happy song in class.",
+              "ko": "우리는 수업 시간에 즐거운 노래를 불러요."
+            },
+            {
+              "id": "sing-1-e2",
+              "en": "A bird {{sang}} outside my window.",
+              "ko": "새가 내 창문 밖에서 노래했어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "song",
+          "singer"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "sister",
+      "headword": "sister",
+      "syllables": "sis·ter",
+      "ipa": {
+        "us": "/ˈsɪs.tɚ/"
+      },
+      "audio": {
+        "us": "audio/us/sister.mp3"
+      },
+      "inflections": {
+        "plural": "sisters"
+      },
+      "senses": [
+        {
+          "id": "sister-1",
+          "pos": "noun",
+          "en": "a girl who has the same mother and father as you",
+          "ko": "언니, 누나, 여동생",
+          "level": 1,
+          "tags": [
+            "people",
+            "family"
+          ],
+          "examples": [
+            {
+              "id": "sister-1-e1",
+              "en": "My {{sister}} is two years older than me.",
+              "ko": "우리 언니는 나보다 두 살 많아요."
+            },
+            {
+              "id": "sister-1-e2",
+              "en": "I play with my little {{sister}} every day.",
+              "ko": "나는 매일 여동생이랑 놀아요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "sit",
+      "headword": "sit",
+      "syllables": "sit",
+      "ipa": {
+        "us": "/sɪt/"
+      },
+      "audio": {
+        "us": "audio/us/sit.mp3"
+      },
+      "inflections": {
+        "past": "sat",
+        "pastParticiple": "sat",
+        "presentParticiple": "sitting",
+        "thirdPerson": "sits",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "sit-1",
+          "pos": "verb",
+          "en": "to rest on the lower part of your body",
+          "ko": "앉다",
+          "level": 1,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "sit-1-e1",
+              "en": "Please {{sit}} down on the floor.",
+              "ko": "바닥에 앉으세요."
+            },
+            {
+              "id": "sit-1-e2",
+              "en": "The cat {{sat}} on the warm chair.",
+              "ko": "고양이가 따뜻한 의자에 앉았어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "sky",
+      "headword": "sky",
+      "syllables": "sky",
+      "ipa": {
+        "us": "/skaɪ/"
+      },
+      "audio": {
+        "us": "audio/us/sky.mp3"
+      },
+      "senses": [
+        {
+          "id": "sky-1",
+          "pos": "noun",
+          "en": "the wide open space high above your head",
+          "ko": "하늘",
+          "level": 1,
+          "tags": [
+            "nature"
+          ],
+          "examples": [
+            {
+              "id": "sky-1-e1",
+              "en": "The {{sky}} is blue on a sunny day.",
+              "ko": "맑은 날에는 하늘이 파래요."
+            },
+            {
+              "id": "sky-1-e2",
+              "en": "Many stars shine in the night {{sky}}.",
+              "ko": "밤하늘에 별이 많이 빛나요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "sleep",
+      "headword": "sleep",
+      "syllables": "sleep",
+      "ipa": {
+        "us": "/sliːp/"
+      },
+      "audio": {
+        "us": "audio/us/sleep.mp3"
+      },
+      "inflections": {
+        "past": "slept",
+        "pastParticiple": "slept",
+        "presentParticiple": "sleeping",
+        "thirdPerson": "sleeps",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "sleep-1",
+          "pos": "verb",
+          "en": "to close your eyes and rest your body at night",
+          "ko": "자다",
+          "level": 1,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "sleep-1-e1",
+              "en": "I {{sleep}} for eight hours every night.",
+              "ko": "나는 매일 밤 여덟 시간 자요."
+            },
+            {
+              "id": "sleep-1-e2",
+              "en": "The baby {{slept}} for the whole afternoon.",
+              "ko": "아기가 오후 내내 잤어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "slow",
+      "headword": "slow",
+      "syllables": "slow",
+      "ipa": {
+        "us": "/sloʊ/"
+      },
+      "audio": {
+        "us": "audio/us/slow.mp3"
+      },
+      "inflections": {
+        "comparative": "slower",
+        "superlative": "slowest"
+      },
+      "senses": [
+        {
+          "id": "slow-1",
+          "pos": "adjective",
+          "en": "not moving with much speed",
+          "ko": "느린",
+          "level": 1,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "slow-1-e1",
+              "en": "A turtle is a very {{slow}} animal.",
+              "ko": "거북이는 아주 느린 동물이에요."
+            },
+            {
+              "id": "slow-1-e2",
+              "en": "The bus was {{slow}} because of the rain.",
+              "ko": "비 때문에 버스가 느렸어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "fast"
+          }
+        ],
+        "wordFamily": [
+          "slowly"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "small",
+      "headword": "small",
+      "syllables": "small",
+      "ipa": {
+        "us": "/smɔːl/"
+      },
+      "audio": {
+        "us": "audio/us/small.mp3"
+      },
+      "inflections": {
+        "comparative": "smaller",
+        "superlative": "smallest"
+      },
+      "senses": [
+        {
+          "id": "small-1",
+          "pos": "adjective",
+          "en": "little in size",
+          "ko": "작은",
+          "level": 1,
+          "tags": [
+            "describing",
+            "size"
+          ],
+          "examples": [
+            {
+              "id": "small-1-e1",
+              "en": "A mouse is a {{small}} animal.",
+              "ko": "쥐는 작은 동물이에요."
+            },
+            {
+              "id": "small-1-e2",
+              "en": "She lives in a {{small}} house near us.",
+              "ko": "그녀는 우리 근처 작은 집에 살아요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "big"
+          }
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "snow",
+      "headword": "snow",
+      "syllables": "snow",
+      "ipa": {
+        "us": "/snoʊ/"
+      },
+      "audio": {
+        "us": "audio/us/snow.mp3"
+      },
+      "senses": [
+        {
+          "id": "snow-1",
+          "pos": "noun",
+          "en": "soft white drops that fall from the sky when it is cold",
+          "ko": "눈",
+          "level": 1,
+          "tags": [
+            "nature",
+            "weather"
+          ],
+          "examples": [
+            {
+              "id": "snow-1-e1",
+              "en": "The children play in the white {{snow}}.",
+              "ko": "아이들이 하얀 눈에서 놀아요."
+            },
+            {
+              "id": "snow-1-e2",
+              "en": "We make a snowman when it {{snows}}.",
+              "ko": "눈이 오면 우리는 눈사람을 만들어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "snowy",
+          "snowman"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "star",
+      "headword": "star",
+      "syllables": "star",
+      "ipa": {
+        "us": "/stɑːr/"
+      },
+      "audio": {
+        "us": "audio/us/star.mp3"
+      },
+      "inflections": {
+        "plural": "stars"
+      },
+      "senses": [
+        {
+          "id": "star-1",
+          "pos": "noun",
+          "en": "a small bright light that you see in the night sky",
+          "ko": "별",
+          "level": 1,
+          "tags": [
+            "nature",
+            "space"
+          ],
+          "examples": [
+            {
+              "id": "star-1-e1",
+              "en": "I can see a bright {{star}} tonight.",
+              "ko": "오늘 밤에 밝은 별이 보여요."
+            },
+            {
+              "id": "star-1-e2",
+              "en": "There are many {{stars}} in the night sky.",
+              "ko": "밤하늘에 별이 많이 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "sun",
+      "headword": "sun",
+      "syllables": "sun",
+      "ipa": {
+        "us": "/sʌn/"
+      },
+      "audio": {
+        "us": "audio/us/sun.mp3"
+      },
+      "senses": [
+        {
+          "id": "sun-1",
+          "pos": "noun",
+          "en": "the very bright star that gives us light in the day",
+          "ko": "해, 태양",
+          "level": 1,
+          "tags": [
+            "nature",
+            "space"
+          ],
+          "examples": [
+            {
+              "id": "sun-1-e1",
+              "en": "The {{sun}} is very bright this morning.",
+              "ko": "오늘 아침에 해가 아주 밝아요."
+            },
+            {
+              "id": "sun-1-e2",
+              "en": "Plants need water and {{sun}} to grow.",
+              "ko": "식물은 자라려면 물과 햇빛이 필요해요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "sunny",
+          "sunlight",
+          "sunflower"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "table",
+      "headword": "table",
+      "syllables": "ta·ble",
+      "ipa": {
+        "us": "/ˈteɪ.bəl/"
+      },
+      "audio": {
+        "us": "audio/us/table.mp3"
+      },
+      "inflections": {
+        "plural": "tables"
+      },
+      "senses": [
+        {
+          "id": "table-1",
+          "pos": "noun",
+          "en": "a thing with a flat top and legs that you put things on",
+          "ko": "탁자, 식탁",
+          "level": 1,
+          "tags": [
+            "house",
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "table-1-e1",
+              "en": "We eat dinner at the {{table}}.",
+              "ko": "우리는 식탁에서 저녁을 먹어요."
+            },
+            {
+              "id": "table-1-e2",
+              "en": "Please put the books on the {{table}}.",
+              "ko": "책을 탁자 위에 놓으세요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "teacher",
+      "headword": "teacher",
+      "syllables": "teach·er",
+      "ipa": {
+        "us": "/ˈtiː.tʃɚ/"
+      },
+      "audio": {
+        "us": "audio/us/teacher.mp3"
+      },
+      "inflections": {
+        "plural": "teachers"
+      },
+      "senses": [
+        {
+          "id": "teacher-1",
+          "pos": "noun",
+          "en": "a person who helps children learn",
+          "ko": "선생님",
+          "level": 1,
+          "tags": [
+            "people",
+            "school"
+          ],
+          "examples": [
+            {
+              "id": "teacher-1-e1",
+              "en": "Our {{teacher}} is very kind to us.",
+              "ko": "우리 선생님은 우리에게 아주 친절해요."
+            },
+            {
+              "id": "teacher-1-e2",
+              "en": "The {{teacher}} wrote the words on the board.",
+              "ko": "선생님이 칠판에 단어를 썼어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "teach"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "tiger",
+      "headword": "tiger",
+      "syllables": "tiger",
+      "ipa": {
+        "us": "/ˈtaɪ.ɡɚ/"
+      },
+      "audio": {
+        "us": "audio/us/tiger.mp3"
+      },
+      "inflections": {
+        "plural": "tigers"
+      },
+      "senses": [
+        {
+          "id": "tiger-1",
+          "pos": "noun",
+          "en": "a big wild animal like a large cat with black lines",
+          "ko": "호랑이",
+          "level": 1,
+          "tags": [
+            "animal"
+          ],
+          "examples": [
+            {
+              "id": "tiger-1-e1",
+              "en": "The {{tiger}} sleeps under a tree all day.",
+              "ko": "호랑이는 하루 종일 나무 밑에서 자요."
+            },
+            {
+              "id": "tiger-1-e2",
+              "en": "A {{tiger}} can run very fast to catch food.",
+              "ko": "호랑이는 먹이를 잡으려고 아주 빨리 달려요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "toy",
+      "headword": "toy",
+      "syllables": "toy",
+      "ipa": {
+        "us": "/tɔɪ/"
+      },
+      "audio": {
+        "us": "audio/us/toy.mp3"
+      },
+      "inflections": {
+        "plural": "toys"
+      },
+      "senses": [
+        {
+          "id": "toy-1",
+          "pos": "noun",
+          "en": "a thing that children play with",
+          "ko": "장난감",
+          "level": 1,
+          "tags": [
+            "play"
+          ],
+          "examples": [
+            {
+              "id": "toy-1-e1",
+              "en": "The baby is playing with a soft {{toy}}.",
+              "ko": "아기가 부드러운 장난감을 가지고 놀아요."
+            },
+            {
+              "id": "toy-1-e2",
+              "en": "Please put your {{toys}} in the box.",
+              "ko": "장난감을 상자에 넣으세요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "train",
+      "headword": "train",
+      "syllables": "train",
+      "ipa": {
+        "us": "/treɪn/"
+      },
+      "audio": {
+        "us": "audio/us/train.mp3"
+      },
+      "inflections": {
+        "plural": "trains"
+      },
+      "senses": [
+        {
+          "id": "train-1",
+          "pos": "noun",
+          "en": "a long line of cars that moves on metal lines",
+          "ko": "기차",
+          "level": 1,
+          "tags": [
+            "object",
+            "place"
+          ],
+          "examples": [
+            {
+              "id": "train-1-e1",
+              "en": "We took a {{train}} to the mountain.",
+              "ko": "우리는 기차를 타고 산에 갔어요."
+            },
+            {
+              "id": "train-1-e2",
+              "en": "The {{train}} is very fast and long.",
+              "ko": "그 기차는 아주 빠르고 길어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "tree",
+      "headword": "tree",
+      "syllables": "tree",
+      "ipa": {
+        "us": "/triː/"
+      },
+      "audio": {
+        "us": "audio/us/tree.mp3"
+      },
+      "inflections": {
+        "plural": "trees"
+      },
+      "senses": [
+        {
+          "id": "tree-1",
+          "pos": "noun",
+          "en": "a tall plant with a hard brown body and many leaves",
+          "ko": "나무",
+          "level": 1,
+          "tags": [
+            "nature",
+            "plant"
+          ],
+          "examples": [
+            {
+              "id": "tree-1-e1",
+              "en": "A big {{tree}} grows behind our house.",
+              "ko": "우리 집 뒤에 큰 나무가 자라요."
+            },
+            {
+              "id": "tree-1-e2",
+              "en": "Many {{trees}} grow near the river.",
+              "ko": "강 근처에 나무가 많이 자라요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "walk",
+      "headword": "walk",
+      "syllables": "walk",
+      "ipa": {
+        "us": "/wɔːk/"
+      },
+      "audio": {
+        "us": "audio/us/walk.mp3"
+      },
+      "inflections": {
+        "past": "walked",
+        "presentParticiple": "walking",
+        "thirdPerson": "walks"
+      },
+      "senses": [
+        {
+          "id": "walk-1",
+          "pos": "verb",
+          "en": "to move on your feet from one place to another",
+          "ko": "걷다",
+          "level": 1,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "walk-1-e1",
+              "en": "I {{walk}} to school every morning.",
+              "ko": "나는 매일 아침 학교에 걸어가요."
+            },
+            {
+              "id": "walk-1-e2",
+              "en": "We {{walked}} along the river together.",
+              "ko": "우리는 강을 따라 함께 걸었어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "water",
+      "headword": "water",
+      "syllables": "wa·ter",
+      "ipa": {
+        "us": "/ˈwɔː.tɚ/"
+      },
+      "audio": {
+        "us": "audio/us/water.mp3"
+      },
+      "senses": [
+        {
+          "id": "water-1",
+          "pos": "noun",
+          "en": "the clear thing that falls as rain and that we drink",
+          "ko": "물",
+          "level": 1,
+          "tags": [
+            "nature",
+            "food-drink"
+          ],
+          "examples": [
+            {
+              "id": "water-1-e1",
+              "en": "Please give me a glass of {{water}}.",
+              "ko": "물 한 잔 주세요."
+            },
+            {
+              "id": "water-1-e2",
+              "en": "Fish live in the {{water}} of the river.",
+              "ko": "물고기는 강물 속에서 살아요."
+            }
+          ],
+          "note": "셀 수 없는 명사예요. 'a glass of water'라고 해요."
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "white",
+      "headword": "white",
+      "syllables": "white",
+      "ipa": {
+        "us": "/waɪt/"
+      },
+      "audio": {
+        "us": "audio/us/white.mp3"
+      },
+      "senses": [
+        {
+          "id": "white-1",
+          "pos": "adjective",
+          "en": "having the colour of snow or milk",
+          "ko": "하얀",
+          "level": 1,
+          "tags": [
+            "describing",
+            "colour"
+          ],
+          "examples": [
+            {
+              "id": "white-1-e1",
+              "en": "The falling snow is soft and {{white}}.",
+              "ko": "눈은 부드럽고 하얘요."
+            },
+            {
+              "id": "white-1-e2",
+              "en": "She wore a {{white}} dress to school.",
+              "ko": "그녀는 하얀 원피스를 입고 학교에 갔어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "wind",
+      "headword": "wind",
+      "syllables": "wind",
+      "ipa": {
+        "us": "/waɪnd/"
+      },
+      "audio": {
+        "us": "audio/us/wind.mp3"
+      },
+      "senses": [
+        {
+          "id": "wind-1",
+          "pos": "noun",
+          "en": "air that moves fast outside",
+          "ko": "바람",
+          "level": 1,
+          "tags": [
+            "nature",
+            "weather"
+          ],
+          "examples": [
+            {
+              "id": "wind-1-e1",
+              "en": "The {{wind}} is very strong today.",
+              "ko": "오늘 바람이 아주 세요."
+            },
+            {
+              "id": "wind-1-e2",
+              "en": "The {{wind}} blew my hat away.",
+              "ko": "바람이 내 모자를 날려 버렸어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "windy"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "window",
+      "headword": "window",
+      "syllables": "win·dow",
+      "ipa": {
+        "us": "/ˈwɪn.doʊ/"
+      },
+      "audio": {
+        "us": "audio/us/window.mp3"
+      },
+      "inflections": {
+        "plural": "windows"
+      },
+      "senses": [
+        {
+          "id": "window-1",
+          "pos": "noun",
+          "en": "the glass part of a wall that you open for air and light",
+          "ko": "창문",
+          "level": 1,
+          "tags": [
+            "house",
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "window-1-e1",
+              "en": "Please open the {{window}} to let in air.",
+              "ko": "바람이 들어오게 창문을 열어 주세요."
+            },
+            {
+              "id": "window-1-e2",
+              "en": "I can see the moon through my {{window}}.",
+              "ko": "나는 창문으로 달을 볼 수 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "write",
+      "headword": "write",
+      "syllables": "write",
+      "ipa": {
+        "us": "/raɪt/"
+      },
+      "audio": {
+        "us": "audio/us/write.mp3"
+      },
+      "inflections": {
+        "past": "wrote",
+        "pastParticiple": "written",
+        "presentParticiple": "writing",
+        "thirdPerson": "writes",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "write-1",
+          "pos": "verb",
+          "en": "to make words on paper with a pen",
+          "ko": "쓰다",
+          "level": 1,
+          "tags": [
+            "action",
+            "school"
+          ],
+          "examples": [
+            {
+              "id": "write-1-e1",
+              "en": "Please {{write}} your name on the paper.",
+              "ko": "종이에 이름을 쓰세요."
+            },
+            {
+              "id": "write-1-e2",
+              "en": "He {{wrote}} a letter to his friend.",
+              "ko": "그는 친구에게 편지를 썼어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "year",
+      "headword": "year",
+      "syllables": "year",
+      "ipa": {
+        "us": "/jɪr/"
+      },
+      "audio": {
+        "us": "audio/us/year.mp3"
+      },
+      "inflections": {
+        "plural": "years"
+      },
+      "senses": [
+        {
+          "id": "year-1",
+          "pos": "noun",
+          "en": "a time of twelve months",
+          "ko": "해, 년",
+          "level": 1,
+          "tags": [
+            "time"
+          ],
+          "examples": [
+            {
+              "id": "year-1-e1",
+              "en": "My little sister is nine {{years}} old.",
+              "ko": "나는 아홉 살이에요."
+            },
+            {
+              "id": "year-1-e2",
+              "en": "We visit the sea every {{year}}.",
+              "ko": "우리는 해마다 바다에 가요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "yellow",
+      "headword": "yellow",
+      "syllables": "yel·low",
+      "ipa": {
+        "us": "/ˈje.loʊ/"
+      },
+      "audio": {
+        "us": "audio/us/yellow.mp3"
+      },
+      "senses": [
+        {
+          "id": "yellow-1",
+          "pos": "adjective",
+          "en": "having the colour of the sun or a banana",
+          "ko": "노란",
+          "level": 1,
+          "tags": [
+            "describing",
+            "colour"
+          ],
+          "examples": [
+            {
+              "id": "yellow-1-e1",
+              "en": "The {{yellow}} flowers are very pretty.",
+              "ko": "노란 꽃들이 아주 예뻐요."
+            },
+            {
+              "id": "yellow-1-e2",
+              "en": "A duck has a {{yellow}} mouth.",
+              "ko": "오리는 노란 부리를 가졌어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
       "editorialStatus": "done"
     }
   ]

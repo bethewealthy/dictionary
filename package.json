@@ -11,7 +11,10 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "preview": "vite preview",
+    "entries": "python3 tools/build-entries/build.py",
+    "audio": "python3 tools/audio/generate.py",
     "validate": "node tools/validate/index.ts data/entries.json",
+    "validate:audio": "node tools/validate/index.ts --audio data/entries.json",
     "validate:sample": "node tools/validate/index.ts data/entries.sample.json",
     "validate:fixture": "node tools/validate/index.ts --fixture data/entries.invalid.json",
     "test": "npm run validate && npm run validate:sample && npm run validate:fixture"

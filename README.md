@@ -17,7 +17,7 @@
 
 ## 현재 상태
 
-**M1 (사전) 진행 중** — 앱 골격·검색·표제어 화면 동작. 다음은 표제어 200개와 오디오. [로드맵](docs/04-roadmap.md) 참조.
+**M1 (사전) 진행 중** — 표제어 **132개**, 발음 오디오, 검색·화면 동작. 목표 200개까지 소스 확장만 남음. [로드맵](docs/04-roadmap.md) 참조.
 
 ## 실행
 
@@ -27,7 +27,21 @@ npm run dev        # 개발 서버 (http://localhost:5173)
 npm run build      # 타입 검사 + 프로덕션 빌드 (PWA 포함)
 ```
 
-Vite + React 19 + TypeScript. 사전 데이터는 빌드에 번들되어 오프라인 동작한다(ADR-003).
+Vite + React 19 + TypeScript. 사전 데이터·발음 mp3는 빌드에 번들되어 오프라인 동작한다(ADR-003).
+
+## 콘텐츠 파이프라인
+
+표제어는 저작 소스에서 생성한다. 정의·예문·한국어만 사람이 쓰고, 발음기호·음절·오디오는 자동 생성된다.
+
+```bash
+# 1) data/source/entries.src.json 편집 (def/ko/ex 저작)
+npm run entries     # → data/entries.json (IPA: CMUdict, 음절: pyphen)
+npm run audio       # → public/audio/us/*.mp3 (Piper TTS, 증분)
+npm run validate    # V01~V16 검증
+```
+
+Python 도구 준비: `pip install cmudict pyphen piper-tts imageio-ffmpeg` +
+`cd tools/audio/voices && python3 -m piper.download_voices en_US-lessac-medium`
 
 ## 검증기
 
@@ -44,10 +58,13 @@ npm test                   # entries + sample + fixture 전부
 
 ```
 docs/                     설계 문서
+data/source/              저작 소스 (단일 진실) → 생성물의 원본
 src/                      앱 — 검색 · 표제어 화면 · 학년/테마 설정
   data/dictionary.ts        entries.json 번들 로드
   search/search.ts          오타 관용 검색
   components/EntryCard.tsx   사전 지면 렌더
+tools/build-entries/      소스 → entries.json (IPA·음절 생성)
+tools/audio/              Piper TTS → 발음 mp3
 tools/validate/           검증기 — 토큰화 · 어휘 판정 · V01~V16 · CLI
 src/types/entry.ts        데이터 모델 (스키마 v2)
 data/moe-vocabulary.json  교육과정 [별표 3] 기본 어휘 800/1,200/1,000 · 검수 완료
