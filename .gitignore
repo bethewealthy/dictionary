@@ -6,6 +6,7 @@
 node_modules/
 dist/
 .vite/
+*.tsbuildinfo
 
 # 빌드 타임에 생성하는 오디오 (ADR-004)
 audio/

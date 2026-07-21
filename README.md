@@ -17,7 +17,17 @@
 
 ## 현재 상태
 
-**M0 (기반) 완료** — 스키마·검증기·정의 어휘·표제어 20개. 다음은 M1(사전) 착수. [로드맵](docs/04-roadmap.md) 참조.
+**M1 (사전) 진행 중** — 앱 골격·검색·표제어 화면 동작. 다음은 표제어 200개와 오디오. [로드맵](docs/04-roadmap.md) 참조.
+
+## 실행
+
+```bash
+npm install
+npm run dev        # 개발 서버 (http://localhost:5173)
+npm run build      # 타입 검사 + 프로덕션 빌드 (PWA 포함)
+```
+
+Vite + React 19 + TypeScript. 사전 데이터는 빌드에 번들되어 오프라인 동작한다(ADR-003).
 
 ## 검증기
 
@@ -34,6 +44,10 @@ npm test                   # entries + sample + fixture 전부
 
 ```
 docs/                     설계 문서
+src/                      앱 — 검색 · 표제어 화면 · 학년/테마 설정
+  data/dictionary.ts        entries.json 번들 로드
+  search/search.ts          오타 관용 검색
+  components/EntryCard.tsx   사전 지면 렌더
 tools/validate/           검증기 — 토큰화 · 어휘 판정 · V01~V16 · CLI
 src/types/entry.ts        데이터 모델 (스키마 v2)
 data/moe-vocabulary.json  교육과정 [별표 3] 기본 어휘 800/1,200/1,000 · 검수 완료

@@ -8,9 +8,24 @@
     "node": ">=22.6"
   },
   "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
     "validate": "node tools/validate/index.ts data/entries.json",
     "validate:sample": "node tools/validate/index.ts data/entries.sample.json",
     "validate:fixture": "node tools/validate/index.ts --fixture data/entries.invalid.json",
     "test": "npm run validate && npm run validate:sample && npm run validate:fixture"
+  },
+  "dependencies": {
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "^5.0.0",
+    "typescript": "^5.9.0",
+    "vite": "^7.1.0",
+    "vite-plugin-pwa": "^1.0.0"
   }
 }
