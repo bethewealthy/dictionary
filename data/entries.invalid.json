@@ -1,0 +1,499 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "fixture",
+  "_note": "검증기 테스트용 위반 fixture. 각 표제어는 _expect에 적힌 규칙 하나만 어긴다(V04 순환은 3개 표제어가 함께 한 사례를 이룬다). _expect는 fixture 전용 필드이며 Dictionary 타입에 없다. 검증기 테스트는 '그 코드가, 그 표제어에서, 그것만' 나오는지 확인한다. 규칙 정의는 docs/05-validation-contract.md.",
+  "entries": [
+    {
+      "_expect": ["V01"],
+      "_why": "'mammal'은 정의 어휘 밖의 학술 분류어이고 링크로 감싸지도 않았다",
+      "id": "tiger",
+      "headword": "tiger",
+      "syllables": "ti·ger",
+      "ipa": { "us": "/ˈtaɪ.ɡɚ/" },
+      "audio": { "us": "audio/us/tiger.mp3" },
+      "senses": [
+        {
+          "id": "tiger-1",
+          "pos": "noun",
+          "en": "a large orange mammal with black lines on its body",
+          "ko": "호랑이",
+          "level": 1,
+          "tags": ["animal"],
+          "examples": [
+            {
+              "id": "tiger-1-e1",
+              "en": "The {{tiger}} sleeps under a tree all day.",
+              "ko": "호랑이는 하루 종일 나무 밑에서 자요."
+            }
+          ]
+        }
+      ],
+      "editorialStatus": "draft"
+    },
+    {
+      "_expect": ["V02"],
+      "_why": "정의문이 24단어로 20단어 상한을 넘는다",
+      "id": "library",
+      "headword": "library",
+      "syllables": "li·brar·y",
+      "ipa": { "us": "/ˈlaɪ.brer.i/" },
+      "audio": { "us": "audio/us/library.mp3" },
+      "senses": [
+        {
+          "id": "library-1",
+          "pos": "noun",
+          "en": "a quiet place in a school or a town where there are many books that you can read there or take home for a while",
+          "ko": "도서관",
+          "level": 1,
+          "tags": ["school"],
+          "examples": [
+            {
+              "id": "library-1-e1",
+              "en": "I read three books at the {{library}} today.",
+              "ko": "나는 오늘 도서관에서 책 세 권을 읽었어요."
+            }
+          ]
+        }
+      ],
+      "editorialStatus": "draft"
+    },
+    {
+      "_expect": ["V04"],
+      "_why": "frost → ice → freeze → frost 3단계 순환. 2단계만 보는 검증기는 놓친다",
+      "id": "frost",
+      "headword": "frost",
+      "syllables": "frost",
+      "ipa": { "us": "/frɔːst/" },
+      "audio": { "us": "audio/us/frost.mp3" },
+      "senses": [
+        {
+          "id": "frost-1",
+          "pos": "noun",
+          "en": "thin white [[ice]] that covers the ground on cold mornings",
+          "ko": "서리",
+          "level": 2,
+          "tags": ["nature", "weather"],
+          "examples": [
+            {
+              "id": "frost-1-e1",
+              "en": "There was white {{frost}} on the grass this morning.",
+              "ko": "오늘 아침 잔디에 하얀 서리가 내렸어요."
+            }
+          ]
+        }
+      ],
+      "editorialStatus": "draft"
+    },
+    {
+      "_expect": ["V04"],
+      "_why": "순환의 두 번째 고리",
+      "id": "ice",
+      "headword": "ice",
+      "syllables": "ice",
+      "ipa": { "us": "/aɪs/" },
+      "audio": { "us": "audio/us/ice.mp3" },
+      "senses": [
+        {
+          "id": "ice-1",
+          "pos": "noun",
+          "en": "water that you [[freeze]] until it becomes hard",
+          "ko": "얼음",
+          "level": 1,
+          "tags": ["nature", "food-drink"],
+          "examples": [
+            {
+              "id": "ice-1-e1",
+              "en": "Please put some {{ice}} in my drink.",
+              "ko": "제 음료에 얼음 좀 넣어 주세요."
+            }
+          ]
+        }
+      ],
+      "editorialStatus": "draft"
+    },
+    {
+      "_expect": ["V04"],
+      "_why": "순환의 세 번째 고리. 여기서 frost로 돌아간다",
+      "id": "freeze",
+      "headword": "freeze",
+      "syllables": "freeze",
+      "ipa": { "us": "/friːz/" },
+      "audio": { "us": "audio/us/freeze.mp3" },
+      "inflections": { "past": "froze", "pastParticiple": "frozen", "irregular": true },
+      "senses": [
+        {
+          "id": "freeze-1",
+          "pos": "verb",
+          "en": "to become hard and very cold like [[frost]]",
+          "ko": "얼다",
+          "level": 2,
+          "tags": ["nature", "weather"],
+          "examples": [
+            {
+              "id": "freeze-1-e1",
+              "en": "The water in the pond will {{freeze}} tonight.",
+              "ko": "연못의 물이 오늘 밤에 얼 거예요."
+            }
+          ]
+        }
+      ],
+      "editorialStatus": "draft"
+    },
+    {
+      "_expect": ["V05"],
+      "_why": "한국어 대응어가 5어절이다. 대응어가 아니라 정의를 쓴 경우",
+      "id": "kite",
+      "headword": "kite",
+      "syllables": "kite",
+      "ipa": { "us": "/kaɪt/" },
+      "audio": { "us": "audio/us/kite.mp3" },
+      "senses": [
+        {
+          "id": "kite-1",
+          "pos": "noun",
+          "en": "a toy that flies high in the wind on a long string",
+          "ko": "긴 줄에 매달아 바람에 날리는 장난감",
+          "level": 1,
+          "tags": ["toy", "play"],
+          "examples": [
+            {
+              "id": "kite-1-e1",
+              "en": "We flew a red {{kite}} at the beach.",
+              "ko": "우리는 해변에서 빨간 연을 날렸어요."
+            }
+          ]
+        }
+      ],
+      "editorialStatus": "draft"
+    },
+    {
+      "_expect": ["V06"],
+      "_why": "예문이 4단어로 하한 6단어에 못 미친다",
+      "id": "jump",
+      "headword": "jump",
+      "syllables": "jump",
+      "ipa": { "us": "/dʒʌmp/" },
+      "audio": { "us": "audio/us/jump.mp3" },
+      "senses": [
+        {
+          "id": "jump-1",
+          "pos": "verb",
+          "en": "to push yourself up into the air with your legs",
+          "ko": "뛰어오르다",
+          "level": 1,
+          "tags": ["action", "sport"],
+          "examples": [
+            {
+              "id": "jump-1-e1",
+              "en": "The cat {{jumped}} down.",
+              "ko": "고양이가 뛰어내렸어요."
+            }
+          ]
+        }
+      ],
+      "editorialStatus": "draft"
+    },
+    {
+      "_expect": ["V07"],
+      "_why": "예문에 표제어 {{ }} 마커가 없다. 지면에서 강조되지 않고 빈칸 문제도 만들 수 없다",
+      "id": "cloud",
+      "headword": "cloud",
+      "syllables": "cloud",
+      "ipa": { "us": "/klaʊd/" },
+      "audio": { "us": "audio/us/cloud.mp3" },
+      "senses": [
+        {
+          "id": "cloud-1",
+          "pos": "noun",
+          "en": "a white or grey thing in the sky that brings rain",
+          "ko": "구름",
+          "level": 1,
+          "tags": ["nature", "weather"],
+          "examples": [
+            {
+              "id": "cloud-1-e1",
+              "en": "Dark clouds covered the sky before the rain.",
+              "ko": "비가 오기 전에 먹구름이 하늘을 덮었어요."
+            }
+          ]
+        }
+      ],
+      "editorialStatus": "draft"
+    },
+    {
+      "_expect": ["V09"],
+      "_why": "뜻갈래가 4개다. 3개 상한을 넘으면 지면이 위압적으로 변한다",
+      "id": "light",
+      "headword": "light",
+      "syllables": "light",
+      "ipa": { "us": "/laɪt/" },
+      "audio": { "us": "audio/us/light.mp3" },
+      "senses": [
+        {
+          "id": "light-1",
+          "pos": "noun",
+          "en": "the bright thing from the sun that lets you see",
+          "ko": "빛",
+          "level": 1,
+          "tags": ["nature"],
+          "examples": [
+            {
+              "id": "light-1-e1",
+              "en": "The morning {{light}} came through my window.",
+              "ko": "아침 햇빛이 창문으로 들어왔어요."
+            }
+          ]
+        },
+        {
+          "id": "light-2",
+          "pos": "noun",
+          "en": "a lamp that you turn on to see at night",
+          "ko": "전등",
+          "level": 1,
+          "tags": ["house"],
+          "examples": [
+            {
+              "id": "light-2-e1",
+              "en": "Please turn off the {{light}} before you sleep.",
+              "ko": "자기 전에 불을 꺼 주세요."
+            }
+          ]
+        },
+        {
+          "id": "light-3",
+          "pos": "adjective",
+          "en": "not heavy, easy to lift or carry",
+          "ko": "가벼운",
+          "level": 2,
+          "tags": ["describing"],
+          "examples": [
+            {
+              "id": "light-3-e1",
+              "en": "My new school bag is very {{light}}.",
+              "ko": "내 새 책가방은 아주 가벼워요."
+            }
+          ]
+        },
+        {
+          "id": "light-4",
+          "pos": "adjective",
+          "en": "pale in colour, not dark",
+          "ko": "연한",
+          "level": 3,
+          "tags": ["describing", "colour"],
+          "examples": [
+            {
+              "id": "light-4-e1",
+              "en": "She wore a {{light}} blue dress to school.",
+              "ko": "그녀는 연한 파란색 원피스를 입고 학교에 갔어요."
+            }
+          ]
+        }
+      ],
+      "editorialStatus": "draft"
+    },
+    {
+      "_expect": ["V11"],
+      "_why": "audio.us가 비어 있다. P2가 1순위 문제이므로 미국식 발음은 필수다",
+      "id": "moon",
+      "headword": "moon",
+      "syllables": "moon",
+      "ipa": { "us": "/muːn/" },
+      "audio": { "us": "" },
+      "senses": [
+        {
+          "id": "moon-1",
+          "pos": "noun",
+          "en": "the round white thing that you see in the night sky",
+          "ko": "달",
+          "level": 1,
+          "tags": ["nature", "space"],
+          "examples": [
+            {
+              "id": "moon-1-e1",
+              "en": "The {{moon}} was very bright last night.",
+              "ko": "어젯밤에 달이 아주 밝았어요."
+            }
+          ]
+        }
+      ],
+      "editorialStatus": "draft"
+    },
+    {
+      "_expect": ["V12"],
+      "_why": "related.antonyms가 존재하지 않는 EntryId 'quiet-loud'를 가리킨다",
+      "id": "loud",
+      "headword": "loud",
+      "syllables": "loud",
+      "ipa": { "us": "/laʊd/" },
+      "audio": { "us": "audio/us/loud.mp3" },
+      "senses": [
+        {
+          "id": "loud-1",
+          "pos": "adjective",
+          "en": "making a lot of sound, easy to hear",
+          "ko": "시끄러운",
+          "level": 1,
+          "tags": ["describing", "sound"],
+          "examples": [
+            {
+              "id": "loud-1-e1",
+              "en": "The music was too {{loud}} for the baby.",
+              "ko": "음악이 아기에게 너무 시끄러웠어요."
+            }
+          ]
+        }
+      ],
+      "related": { "antonyms": [{ "entryId": "quiet-loud" }] },
+      "editorialStatus": "draft"
+    },
+    {
+      "_expect": ["V13"],
+      "_why": "정의 내 링크 [[branch]]가 등재되지 않은 표제어를 가리킨다",
+      "id": "nest",
+      "headword": "nest",
+      "syllables": "nest",
+      "ipa": { "us": "/nest/" },
+      "audio": { "us": "audio/us/nest.mp3" },
+      "senses": [
+        {
+          "id": "nest-1",
+          "pos": "noun",
+          "en": "a home that a bird makes on a [[branch]] for its eggs",
+          "ko": "둥지",
+          "level": 2,
+          "tags": ["animal", "nature"],
+          "examples": [
+            {
+              "id": "nest-1-e1",
+              "en": "Two small birds built a {{nest}} in our tree.",
+              "ko": "작은 새 두 마리가 우리 나무에 둥지를 지었어요."
+            }
+          ]
+        }
+      ],
+      "editorialStatus": "draft"
+    },
+    {
+      "_expect": ["V14"],
+      "_why": "두 뜻갈래의 SenseId가 'apple-1'로 중복이다. 학습 기록이 두 뜻을 구분하지 못하게 된다",
+      "id": "apple",
+      "headword": "apple",
+      "syllables": "ap·ple",
+      "ipa": { "us": "/ˈæp.əl/" },
+      "audio": { "us": "audio/us/apple.mp3" },
+      "senses": [
+        {
+          "id": "apple-1",
+          "pos": "noun",
+          "en": "a round red or green fruit that grows on a tree",
+          "ko": "사과",
+          "level": 1,
+          "tags": ["food-drink", "nature"],
+          "examples": [
+            {
+              "id": "apple-1-e1",
+              "en": "I ate a red {{apple}} after lunch today.",
+              "ko": "나는 오늘 점심 먹고 빨간 사과를 먹었어요."
+            }
+          ]
+        },
+        {
+          "id": "apple-1",
+          "pos": "noun",
+          "en": "the tree that this fruit grows on",
+          "ko": "사과나무",
+          "level": 2,
+          "tags": ["nature"],
+          "examples": [
+            {
+              "id": "apple-2-e1",
+              "en": "There is an old {{apple}} behind our house.",
+              "ko": "우리 집 뒤에 오래된 사과나무가 있어요."
+            }
+          ]
+        }
+      ],
+      "editorialStatus": "draft"
+    },
+    {
+      "_expect": ["V15"],
+      "_why": "연어의 exampleId가 다른 뜻갈래의 예문을 가리킨다",
+      "id": "brush",
+      "headword": "brush",
+      "syllables": "brush",
+      "ipa": { "us": "/brʌʃ/" },
+      "audio": { "us": "audio/us/brush.mp3" },
+      "senses": [
+        {
+          "id": "brush-1",
+          "pos": "noun",
+          "en": "a thing with short hairs that you use to clean things",
+          "ko": "솔, 빗",
+          "level": 2,
+          "tags": ["house"],
+          "examples": [
+            {
+              "id": "brush-1-e1",
+              "en": "I keep my {{brush}} next to the sink.",
+              "ko": "나는 세면대 옆에 빗을 둬요."
+            }
+          ]
+        },
+        {
+          "id": "brush-2",
+          "pos": "verb",
+          "en": "to clean or make something smooth with a brush",
+          "ko": "닦다, 빗다",
+          "level": 2,
+          "tags": ["action", "house"],
+          "examples": [
+            {
+              "id": "brush-2-e1",
+              "en": "You should {{brush}} your teeth every night.",
+              "ko": "너는 매일 밤 이를 닦아야 해."
+            }
+          ],
+          "collocations": [
+            {
+              "id": "brush-2-c1",
+              "text": "brush your teeth",
+              "ko": "이를 닦다",
+              "exampleId": "brush-1-e1",
+              "level": 2,
+              "studiable": true
+            }
+          ]
+        }
+      ],
+      "editorialStatus": "draft"
+    },
+    {
+      "_expect": ["V16"],
+      "_why": "음절 구분점을 제거하면 'bananna'가 되어 headword 'banana'와 다르다",
+      "id": "banana",
+      "headword": "banana",
+      "syllables": "ba·nan·na",
+      "ipa": { "us": "/bəˈnæn.ə/" },
+      "audio": { "us": "audio/us/banana.mp3" },
+      "senses": [
+        {
+          "id": "banana-1",
+          "pos": "noun",
+          "en": "a long yellow fruit that you peel before you eat",
+          "ko": "바나나",
+          "level": 1,
+          "tags": ["food-drink"],
+          "examples": [
+            {
+              "id": "banana-1-e1",
+              "en": "My sister eats a {{banana}} every morning.",
+              "ko": "우리 언니는 매일 아침 바나나를 하나 먹어요."
+            }
+          ]
+        }
+      ],
+      "editorialStatus": "draft"
+    }
+  ]
+}

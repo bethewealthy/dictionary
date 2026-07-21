@@ -1,0 +1,882 @@
+<title>초등 영한사전 — 지면 프로토타입</title>
+
+<style>
+  /* ──────────────────────────────────────────────────────────────
+     디자인 토큰
+     참조: 2도 인쇄 사전 지면 (먹1도 + 별색1도).
+     바탕은 광물빛이 도는 찬 미색, 별색은 만년필 잉크 블루,
+     한국어 대응어에만 벽돌빛 적색을 쓴다 — 국한문 병기 인쇄의 관습.
+     ────────────────────────────────────────────────────────────── */
+  :root {
+    --paper:        #F3F5F1;
+    --paper-raised: #FFFFFF;
+    --paper-sunk:   #E9ECE6;
+    --ink:          #14181C;
+    --ink-soft:     #5A6169;
+    --ink-faint:    #8B929A;
+    --rule:         #D4D9D1;
+    --rule-strong:  #B4BCB2;
+    --spot:         #1B4B8F;
+    --spot-tint:    #E2E9F4;
+    --gloss:        #A8342C;
+
+    --pos-noun:  #1B4B8F;
+    --pos-verb:  #1F6F5C;
+    --pos-adj:   #8A5A11;
+    --pos-adv:   #5B4B8A;
+
+    --serif: Georgia, "Nanum Myeongjo", "Noto Serif KR", "Times New Roman", serif;
+    --sans: "Pretendard", -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo",
+            "Malgun Gothic", "Noto Sans KR", system-ui, sans-serif;
+    --mono: ui-monospace, "SF Mono", "Cascadia Code", "Consolas", monospace;
+    --ipa: "Charis SIL", "Doulos SIL", "Lucida Sans Unicode", Georgia, serif;
+
+    --measure: 62ch;
+    --s1: 0.375rem; --s2: 0.75rem; --s3: 1.25rem;
+    --s4: 2rem;     --s5: 3.25rem; --s6: 5rem;
+  }
+
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper:        #121519;
+      --paper-raised: #1A1E24;
+      --paper-sunk:   #0D1013;
+      --ink:          #E5E8E3;
+      --ink-soft:     #99A1A9;
+      --ink-faint:    #6C747C;
+      --rule:         #272D34;
+      --rule-strong:  #3A424B;
+      --spot:         #82ABE7;
+      --spot-tint:    #1B2534;
+      --gloss:        #E08C82;
+
+      --pos-noun: #82ABE7;
+      --pos-verb: #63B79E;
+      --pos-adj:  #D0A053;
+      --pos-adv:  #A695D8;
+    }
+  }
+
+  /* 뷰어의 테마 토글은 두 방향 모두 미디어쿼리를 이겨야 한다 */
+  :root[data-theme="light"] {
+    --paper: #F3F5F1; --paper-raised: #FFFFFF; --paper-sunk: #E9ECE6;
+    --ink: #14181C; --ink-soft: #5A6169; --ink-faint: #8B929A;
+    --rule: #D4D9D1; --rule-strong: #B4BCB2;
+    --spot: #1B4B8F; --spot-tint: #E2E9F4; --gloss: #A8342C;
+    --pos-noun: #1B4B8F; --pos-verb: #1F6F5C; --pos-adj: #8A5A11; --pos-adv: #5B4B8A;
+  }
+  :root[data-theme="dark"] {
+    --paper: #121519; --paper-raised: #1A1E24; --paper-sunk: #0D1013;
+    --ink: #E5E8E3; --ink-soft: #99A1A9; --ink-faint: #6C747C;
+    --rule: #272D34; --rule-strong: #3A424B;
+    --spot: #82ABE7; --spot-tint: #1B2534; --gloss: #E08C82;
+    --pos-noun: #82ABE7; --pos-verb: #63B79E; --pos-adj: #D0A053; --pos-adv: #A695D8;
+  }
+
+  body {
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--sans);
+    font-size: 16px;
+    line-height: 1.7;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  .page {
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: var(--s4) var(--s3) var(--s6);
+    display: flex;
+    flex-direction: column;
+    gap: var(--s5);
+  }
+
+  a { color: var(--spot); }
+  :focus-visible {
+    outline: 2px solid var(--spot);
+    outline-offset: 3px;
+    border-radius: 2px;
+  }
+
+  /* ── 판권면 / 러닝헤드 ───────────────────────────────────────── */
+  .masthead {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s2);
+    border-bottom: 3px double var(--rule-strong);
+    padding-bottom: var(--s3);
+  }
+  .masthead-row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: var(--s2);
+  }
+  .masthead h1 {
+    font-family: var(--serif);
+    font-size: clamp(1.75rem, 4vw, 2.5rem);
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    text-wrap: balance;
+  }
+  .stamp {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+  .masthead p {
+    max-width: var(--measure);
+    color: var(--ink-soft);
+  }
+
+  /* ── 색인 탭 (사전 손잡이 색인) ──────────────────────────────── */
+  .thumb-index {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2px;
+    list-style: none;
+  }
+  .thumb-index li {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    line-height: 1;
+    padding: 5px 6px;
+    color: var(--ink-faint);
+    background: var(--paper-sunk);
+    border-radius: 1px;
+  }
+  .thumb-index li[data-live] {
+    color: var(--paper-raised);
+    background: var(--spot);
+  }
+
+  /* ── 섹션 ────────────────────────────────────────────────────── */
+  section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s3);
+  }
+  .eyebrow {
+    font-family: var(--mono);
+    font-size: 0.7rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--spot);
+  }
+  section > h2 {
+    font-family: var(--serif);
+    font-size: 1.5rem;
+    font-weight: 400;
+    line-height: 1.3;
+    text-wrap: balance;
+  }
+  section > .lede {
+    max-width: var(--measure);
+    color: var(--ink-soft);
+    margin-top: calc(var(--s3) * -0.6);
+  }
+
+  /* ── 조작부 ──────────────────────────────────────────────────── */
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--s3);
+    padding: var(--s2) var(--s3);
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+  }
+  .control-group {
+    display: flex;
+    align-items: center;
+    gap: var(--s2);
+  }
+  .control-group > span {
+    font-family: var(--mono);
+    font-size: 0.68rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+  }
+  .seg {
+    display: flex;
+    border: 1px solid var(--rule-strong);
+  }
+  .seg button {
+    font: inherit;
+    font-size: 0.85rem;
+    padding: 4px 12px;
+    background: transparent;
+    color: var(--ink-soft);
+    border: 0;
+    border-right: 1px solid var(--rule);
+    cursor: pointer;
+  }
+  .seg button:last-child { border-right: 0; }
+  .seg button[aria-pressed="true"] {
+    background: var(--spot);
+    color: #fff;
+  }
+  :root[data-theme="dark"] .seg button[aria-pressed="true"],
+  .seg button[aria-pressed="true"] { color: var(--paper-raised); }
+
+  /* ── 표제어 지면 ─────────────────────────────────────────────── */
+  .entries {
+    display: flex;
+    flex-direction: column;
+    background: var(--paper-raised);
+    border: 1px solid var(--rule);
+    border-top: 3px solid var(--ink);
+  }
+  .entry {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s2);
+    padding: var(--s4) var(--s3);
+    border-bottom: 1px solid var(--rule);
+  }
+  .entry:last-child { border-bottom: 0; }
+
+  .entry-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: var(--s2) var(--s3);
+  }
+  .headword {
+    font-family: var(--serif);
+    font-size: clamp(2rem, 5vw, 2.75rem);
+    line-height: 1.1;
+    letter-spacing: -0.01em;
+  }
+  /* 음절 구분점: 지면의 정체성이자 발음 학습 단서 */
+  .headword .dot {
+    color: var(--spot);
+    font-weight: 400;
+    padding: 0 1px;
+  }
+  .pron {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--s2);
+  }
+  .pron-pair {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+  }
+  .pron-tag {
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    padding: 2px 5px;
+    color: var(--ink-soft);
+    background: var(--paper-sunk);
+  }
+  .ipa {
+    font-family: var(--ipa);
+    font-size: 1.05rem;
+    color: var(--ink-soft);
+  }
+  .say {
+    font: inherit;
+    font-size: 0.78rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    padding: 3px 9px;
+    color: var(--spot);
+    background: var(--spot-tint);
+    border: 0;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+  .say svg { width: 12px; height: 12px; fill: currentColor; }
+
+  .inflect {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 0.95rem;
+    color: var(--ink-soft);
+  }
+  .inflect b {
+    font-style: normal;
+    font-weight: 700;
+    color: var(--ink);
+  }
+  .inflect .irr {
+    font-family: var(--mono);
+    font-style: normal;
+    font-size: 0.6rem;
+    letter-spacing: 0.08em;
+    color: var(--gloss);
+    border: 1px solid currentColor;
+    padding: 1px 4px;
+    margin-left: 4px;
+  }
+
+  /* ── 뜻갈래 ──────────────────────────────────────────────────── */
+  .senses {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--s3);
+    margin-top: var(--s1);
+  }
+  .sense {
+    display: grid;
+    grid-template-columns: 1.6rem 1fr;
+    gap: 0 var(--s2);
+    align-items: baseline;
+  }
+  .sense[hidden] { display: none; }
+  .sense-num {
+    font-family: var(--serif);
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--spot);
+    font-variant-numeric: tabular-nums;
+  }
+  .sense-body {
+    display: flex;
+    flex-direction: column;
+    gap: var(--s1);
+    max-width: var(--measure);
+  }
+  .pos {
+    font-family: var(--serif);
+    font-style: italic;
+    font-size: 0.9rem;
+    margin-right: 6px;
+  }
+  .pos[data-pos="noun"]      { color: var(--pos-noun); }
+  .pos[data-pos="verb"]      { color: var(--pos-verb); }
+  .pos[data-pos="adjective"] { color: var(--pos-adj); }
+  .pos[data-pos="adverb"]    { color: var(--pos-adv); }
+
+  .def { line-height: 1.6; }
+  .sense-ko {
+    font-weight: 600;
+    color: var(--gloss);
+  }
+  /* 뜻 가리기: 셀프테스트용 */
+  .hide-ko .sense-ko {
+    color: transparent;
+    background: var(--paper-sunk);
+    border-radius: 2px;
+    cursor: pointer;
+    user-select: none;
+  }
+  .hide-ko .sense-ko.revealed {
+    color: var(--gloss);
+    background: transparent;
+  }
+
+  .examples {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: var(--s1);
+    margin-top: var(--s1);
+    padding-left: var(--s2);
+    border-left: 2px solid var(--rule);
+  }
+  .examples li {
+    display: flex;
+    flex-direction: column;
+  }
+  .ex-en {
+    font-family: var(--serif);
+    font-size: 1rem;
+    line-height: 1.55;
+  }
+  .ex-en b { color: var(--spot); }
+  .ex-ko {
+    font-size: 0.87rem;
+    color: var(--ink-soft);
+  }
+  .note {
+    font-size: 0.85rem;
+    color: var(--ink-soft);
+    background: var(--paper-sunk);
+    padding: var(--s1) var(--s2);
+    border-left: 3px solid var(--pos-adj);
+  }
+
+  .related {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--s1) var(--s3);
+    padding-top: var(--s2);
+    border-top: 1px dotted var(--rule-strong);
+    font-size: 0.85rem;
+  }
+  .related dt {
+    display: inline;
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--ink-faint);
+    margin-right: 5px;
+  }
+  .related dd { display: inline; font-family: var(--serif); }
+  .related div { display: inline-flex; align-items: baseline; }
+
+  /* ── 해부도 ──────────────────────────────────────────────────── */
+  .anatomy {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 1px;
+    background: var(--rule);
+    border: 1px solid var(--rule);
+  }
+  .anatomy > div {
+    background: var(--paper-raised);
+    padding: var(--s3);
+    display: flex;
+    flex-direction: column;
+    gap: var(--s1);
+  }
+  .anatomy code {
+    font-family: var(--mono);
+    font-size: 0.78rem;
+    color: var(--spot);
+  }
+  .anatomy strong { font-size: 0.95rem; }
+  .anatomy p { font-size: 0.87rem; color: var(--ink-soft); }
+
+  /* ── 로드맵 ──────────────────────────────────────────────────── */
+  .roadmap {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid var(--rule);
+  }
+  .roadmap li {
+    display: grid;
+    grid-template-columns: 2.5rem 1fr auto;
+    gap: var(--s2);
+    align-items: baseline;
+    padding: var(--s2) var(--s1);
+    border-bottom: 1px solid var(--rule);
+  }
+  .roadmap .step {
+    font-family: var(--mono);
+    font-size: 0.72rem;
+    color: var(--ink-faint);
+    font-variant-numeric: tabular-nums;
+  }
+  .roadmap .what { display: flex; flex-direction: column; }
+  .roadmap .what span { font-size: 0.85rem; color: var(--ink-soft); }
+  .roadmap .state {
+    font-family: var(--mono);
+    font-size: 0.62rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 2px 7px;
+    white-space: nowrap;
+  }
+  .state[data-s="done"] { color: var(--pos-verb); background: var(--paper-sunk); }
+  .state[data-s="next"] { color: var(--paper-raised); background: var(--spot); }
+  .state[data-s="todo"] { color: var(--ink-faint); background: var(--paper-sunk); }
+
+  footer {
+    font-size: 0.8rem;
+    color: var(--ink-faint);
+    border-top: 1px solid var(--rule);
+    padding-top: var(--s3);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .say, .seg button, .sense-ko { transition: background-color .15s ease, color .15s ease; }
+  }
+</style>
+
+<div class="page">
+
+  <header class="masthead">
+    <div class="masthead-row">
+      <h1>초등 영한사전 &mdash; 지면 프로토타입</h1>
+      <span class="stamp">v0.1 · 표제어 6</span>
+    </div>
+    <p>
+      앱 로직을 붙이기 전에 <strong>한 개의 표제어가 지면에서 어떻게 보이는가</strong>를 먼저 확정하기 위한 조판 시안입니다.
+      여기 보이는 모든 요소는 <code>src/types/entry.ts</code>의 필드 하나에 대응합니다.
+    </p>
+    <ul class="thumb-index" aria-label="색인">
+      <li>A</li><li>B</li><li>C</li><li>D</li><li data-live>E</li><li>F</li><li>G</li>
+      <li>H</li><li>I</li><li>J</li><li>K</li><li>L</li><li>M</li><li>N</li><li>O</li>
+      <li>P</li><li>Q</li><li data-live>R</li><li>S</li><li>T</li><li>U</li><li>V</li>
+      <li data-live>W</li><li>X</li><li>Y</li><li>Z</li>
+    </ul>
+  </header>
+
+  <section>
+    <span class="eyebrow">01 · 표제어 지면</span>
+    <h2>학년을 바꾸면 지면이 바뀝니다</h2>
+    <p class="lede">
+      뜻갈래마다 난이도가 붙어 있어, 3학년에게는 기본 뜻만 보이고 6학년에게는 확장된 뜻까지 보입니다.
+      한 벌의 데이터로 세 학년을 감당하는 구조입니다.
+    </p>
+
+    <div class="controls">
+      <div class="control-group">
+        <span>학년</span>
+        <div class="seg" id="grade">
+          <button type="button" data-level="1" aria-pressed="true">3–4학년</button>
+          <button type="button" data-level="2" aria-pressed="false">5학년</button>
+          <button type="button" data-level="3" aria-pressed="false">6학년</button>
+        </div>
+      </div>
+      <div class="control-group">
+        <span>한국어 뜻</span>
+        <div class="seg" id="gloss">
+          <button type="button" data-gloss="show" aria-pressed="true">보이기</button>
+          <button type="button" data-gloss="hide" aria-pressed="false">가리기</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="entries" id="entries">
+
+      <article class="entry">
+        <div class="entry-head">
+          <span class="headword">el<span class="dot">·</span>e<span class="dot">·</span>phant</span>
+          <span class="pron">
+            <span class="pron-pair"><span class="pron-tag">US</span><span class="ipa">/ˈel.ə.fənt/</span></span>
+            <button type="button" class="say" data-say="elephant" data-lang="en-US">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2 4.5 5H2v6h2.5L8 14V2zm3 2.6a5 5 0 0 1 0 6.8l-1-1a3.6 3.6 0 0 0 0-4.8l1-1z"/></svg>
+              발음
+            </button>
+          </span>
+        </div>
+        <p class="inflect">복수형 <b>elephants</b></p>
+        <ol class="senses">
+          <li class="sense" data-level="1">
+            <span class="sense-num">1</span>
+            <div class="sense-body">
+              <p class="def">
+                <span class="pos" data-pos="noun">n.</span>
+                a very big grey animal with a long nose called a trunk and two long white teeth
+                &nbsp;<span class="sense-ko">코끼리</span>
+              </p>
+              <ul class="examples">
+                <li>
+                  <span class="ex-en">An <b>elephant</b> drinks water with its long nose.</span>
+                  <span class="ex-ko">코끼리는 긴 코로 물을 마셔요.</span>
+                </li>
+                <li>
+                  <span class="ex-en">We saw three <b>elephants</b> at the zoo.</span>
+                  <span class="ex-ko">우리는 동물원에서 코끼리 세 마리를 봤어요.</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <span class="headword">run</span>
+          <span class="pron">
+            <span class="pron-pair"><span class="pron-tag">US · UK</span><span class="ipa">/rʌn/</span></span>
+            <button type="button" class="say" data-say="run" data-lang="en-US">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2 4.5 5H2v6h2.5L8 14V2zm3 2.6a5 5 0 0 1 0 6.8l-1-1a3.6 3.6 0 0 0 0-4.8l1-1z"/></svg>
+              발음
+            </button>
+          </span>
+        </div>
+        <p class="inflect">
+          과거형 <b>ran</b> · 과거분사 <b>run</b> · -ing형 <b>running</b>
+          <span class="irr">불규칙</span>
+        </p>
+        <ol class="senses">
+          <li class="sense" data-level="1">
+            <span class="sense-num">1</span>
+            <div class="sense-body">
+              <p class="def">
+                <span class="pos" data-pos="verb">v.</span>
+                to move very quickly on your feet
+                &nbsp;<span class="sense-ko">달리다, 뛰다</span>
+              </p>
+              <ul class="examples">
+                <li>
+                  <span class="ex-en">I can <b>run</b> faster than my brother.</span>
+                  <span class="ex-ko">나는 우리 형보다 빨리 달릴 수 있어요.</span>
+                </li>
+                <li>
+                  <span class="ex-en">She <b>ran</b> to the bus stop.</span>
+                  <span class="ex-ko">그녀는 버스 정류장으로 뛰어갔어요.</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sense" data-level="2">
+            <span class="sense-num">2</span>
+            <div class="sense-body">
+              <p class="def">
+                <span class="pos" data-pos="verb">v.</span>
+                if a machine runs, it is working
+                &nbsp;<span class="sense-ko">(기계가) 작동하다</span>
+              </p>
+              <ul class="examples">
+                <li>
+                  <span class="ex-en">The clock does not <b>run</b> without a battery.</span>
+                  <span class="ex-ko">그 시계는 건전지가 없으면 가지 않아요.</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li class="sense" data-level="2">
+            <span class="sense-num">3</span>
+            <div class="sense-body">
+              <p class="def">
+                <span class="pos" data-pos="noun">n.</span>
+                a short trip when you move quickly on your feet
+                &nbsp;<span class="sense-ko">달리기</span>
+              </p>
+              <ul class="examples">
+                <li>
+                  <span class="ex-en">My dad goes for a <b>run</b> every morning.</span>
+                  <span class="ex-ko">우리 아빠는 매일 아침 달리기를 하러 가요.</span>
+                </li>
+              </ul>
+              <p class="note">‘go for a run’처럼 통째로 외우면 쉬워요.</p>
+            </div>
+          </li>
+        </ol>
+        <dl class="related">
+          <div><dt>비슷한 말</dt><dd>dash</dd></div>
+          <div><dt>반대말</dt><dd>walk</dd></div>
+        </dl>
+      </article>
+
+      <article class="entry">
+        <div class="entry-head">
+          <span class="headword">wa<span class="dot">·</span>ter</span>
+          <span class="pron">
+            <span class="pron-pair"><span class="pron-tag">US</span><span class="ipa">/ˈwɑː.t̬ɚ/</span></span>
+            <span class="pron-pair"><span class="pron-tag">UK</span><span class="ipa">/ˈwɔː.tər/</span></span>
+            <button type="button" class="say" data-say="water" data-lang="en-US">
+              <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2 4.5 5H2v6h2.5L8 14V2zm3 2.6a5 5 0 0 1 0 6.8l-1-1a3.6 3.6 0 0 0 0-4.8l1-1z"/></svg>
+              발음
+            </button>
+          </span>
+        </div>
+        <ol class="senses">
+          <li class="sense" data-level="1">
+            <span class="sense-num">1</span>
+            <div class="sense-body">
+              <p class="def">
+                <span class="pos" data-pos="noun">n.</span>
+                the clear liquid that falls as rain and that we drink
+                &nbsp;<span class="sense-ko">물</span>
+              </p>
+              <ul class="examples">
+                <li>
+                  <span class="ex-en">Please give me a glass of <b>water</b>.</span>
+                  <span class="ex-ko">물 한 잔 주세요.</span>
+                </li>
+              </ul>
+              <p class="note">셀 수 없는 명사예요. ‘a water’가 아니라 ‘a glass of water’라고 해요.</p>
+            </div>
+          </li>
+          <li class="sense" data-level="2">
+            <span class="sense-num">2</span>
+            <div class="sense-body">
+              <p class="def">
+                <span class="pos" data-pos="verb">v.</span>
+                to pour water on a plant
+                &nbsp;<span class="sense-ko">물을 주다</span>
+              </p>
+              <ul class="examples">
+                <li>
+                  <span class="ex-en">I <b>water</b> the flowers every day.</span>
+                  <span class="ex-ko">나는 매일 꽃에 물을 줘요.</span>
+                </li>
+              </ul>
+            </div>
+          </li>
+        </ol>
+        <dl class="related">
+          <div><dt>같은 뿌리</dt><dd>watery · underwater</dd></div>
+        </dl>
+      </article>
+
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">02 · 조판 해부</span>
+    <h2>지면의 각 요소는 스키마 필드 하나입니다</h2>
+    <p class="lede">
+      영미 사전의 관습 중 초등 학습에 실제로 값을 하는 것만 남기고, 나머지(어원·인용문·이형 철자)는 잘라냈습니다.
+    </p>
+    <div class="anatomy">
+      <div>
+        <code>syllables</code>
+        <strong>음절 구분점</strong>
+        <p>el<span style="color:var(--spot)">·</span>e<span style="color:var(--spot)">·</span>phant. 사전 지면의 정체성이자, 초등생이 긴 단어를 끊어 읽고 강세를 잡는 유일한 단서입니다. 별색으로 찍어 표제어보다 뒤로 물립니다.</p>
+      </div>
+      <div>
+        <code>ipa.us</code> · <code>audio.us</code>
+        <strong>미국식이 기본</strong>
+        <p>한국 초등 교과서가 미국식 기준이라, 학교에서 듣는 소리와 앱의 소리가 달라선 안 됩니다. UK는 water처럼 확연히 갈릴 때만 뒤에 병기합니다. 미국식 오디오는 <em>필수</em> 필드입니다.</p>
+      </div>
+      <div>
+        <code>재생 실패 경로</code>
+        <strong>소리가 안 나도 학습은 끝난다</strong>
+        <p>브라우저 정책·무음 모드·이어폰 미연결로 재생은 실제로 자주 실패합니다. 자동 재생 성공 여부와 무관하게 다시 듣기 버튼은 늘 같은 자리에 있고, 뜻과 예문은 전부 글자로도 읽힙니다.</p>
+      </div>
+      <div>
+        <code>senses[].pos</code>
+        <strong>품사 색상 코드</strong>
+        <p>이탤릭 약어(<em>n. v. adj.</em>)라는 사전 관습을 지키되, 아직 약어를 못 읽는 아이를 위해 품사별 색을 겹쳐 씁니다. 색만으로 구분하지 않도록 약어를 항상 함께 둡니다.</p>
+      </div>
+      <div>
+        <code>senses[].level</code>
+        <strong>뜻갈래 난이도</strong>
+        <p>run의 ‘달리다’는 3학년, ‘작동하다’는 5학년. 한 표제어를 학년별로 복제하지 않고 뜻갈래 단위로 노출을 제어합니다.</p>
+      </div>
+      <div>
+        <code>senses[].en</code>
+        <strong>통제된 정의 어휘</strong>
+        <p>Longman이 2,000단어로 모든 뜻을 풀듯, 정의문에 쓸 단어를 1,000개로 묶고 빌드할 때 자동 검증합니다. 이게 없으면 정의가 표제어보다 어려워집니다.</p>
+      </div>
+      <div>
+        <code>inflections.irregular</code>
+        <strong>불규칙 굴절 표시</strong>
+        <p>ran / run / running. 초등 단계에서 가장 자주 틀리는 지점이라 지면 위쪽, 뜻갈래보다 먼저 배치했습니다.</p>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <span class="eyebrow">03 · 진행 순서</span>
+    <h2>다음에 할 일</h2>
+    <ol class="roadmap">
+      <li>
+        <span class="step">01</span>
+        <span class="what">설계 문서<span>목표·콘텐츠 규칙·학습 설계·ADR·검증기 계약</span></span>
+        <span class="state" data-s="done">완료</span>
+      </li>
+      <li>
+        <span class="step">02</span>
+        <span class="what">데이터 스키마 v2 확정<span>src/types/entry.ts · 유효 샘플과 위반 fixture 분리</span></span>
+        <span class="state" data-s="done">완료</span>
+      </li>
+      <li>
+        <span class="step">03</span>
+        <span class="what">지면 조판 확정<span>이 문서. 활자·색·여백을 여기서 끝낸다</span></span>
+        <span class="state" data-s="done">완료</span>
+      </li>
+      <li>
+        <span class="step">04</span>
+        <span class="what">정의 어휘 1,000단어 목록<span>검증기의 입력값. 교육부 어휘 목록 확인이 선행</span></span>
+        <span class="state" data-s="next">다음</span>
+      </li>
+      <li>
+        <span class="step">05</span>
+        <span class="what">검증기 구현 · 표제어 200개<span>V01~V16. 아이가 물어본 단어 우선</span></span>
+        <span class="state" data-s="todo">대기</span>
+      </li>
+      <li>
+        <span class="step">06</span>
+        <span class="what">Vite + React 앱 골격 · 검색<span>로컬 JSON 번들, 오프라인 우선</span></span>
+        <span class="state" data-s="todo">대기</span>
+      </li>
+      <li>
+        <span class="step">07</span>
+        <span class="what">간격 반복 학습 · 뜻 가리기 퀴즈<span>Leitner 5박스, 학습 기록은 sense.id 기준</span></span>
+        <span class="state" data-s="todo">대기</span>
+      </li>
+    </ol>
+  </section>
+
+  <footer>
+    발음 버튼은 브라우저 내장 음성합성(Web Speech API)으로 동작합니다 &mdash; 실제 앱에서는 녹음 오디오를 우선 쓰고, 없을 때만 이 경로로 대체합니다.
+  </footer>
+
+</div>
+
+<script>
+  (function () {
+    const entries = document.getElementById('entries');
+
+    // 학년 전환: 선택한 난이도 이하의 뜻갈래만 남긴다
+    document.getElementById('grade').addEventListener('click', function (e) {
+      const btn = e.target.closest('button');
+      if (!btn) return;
+      const max = Number(btn.dataset.level);
+      this.querySelectorAll('button').forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b === btn));
+      });
+      entries.querySelectorAll('.sense').forEach(function (s) {
+        s.hidden = Number(s.dataset.level) > max;
+      });
+    });
+
+    // 한국어 뜻 가리기: 셀프테스트 모드
+    document.getElementById('gloss').addEventListener('click', function (e) {
+      const btn = e.target.closest('button');
+      if (!btn) return;
+      this.querySelectorAll('button').forEach(function (b) {
+        b.setAttribute('aria-pressed', String(b === btn));
+      });
+      const hide = btn.dataset.gloss === 'hide';
+      entries.classList.toggle('hide-ko', hide);
+      if (hide) {
+        entries.querySelectorAll('.sense-ko').forEach(function (k) {
+          k.classList.remove('revealed');
+          k.setAttribute('tabindex', '0');
+          k.setAttribute('role', 'button');
+        });
+      } else {
+        entries.querySelectorAll('.sense-ko').forEach(function (k) {
+          k.removeAttribute('tabindex');
+          k.removeAttribute('role');
+        });
+      }
+    });
+
+    // 가려진 뜻 열어보기
+    entries.addEventListener('click', function (e) {
+      const ko = e.target.closest('.sense-ko');
+      if (ko && entries.classList.contains('hide-ko')) ko.classList.add('revealed');
+    });
+    entries.addEventListener('keydown', function (e) {
+      if (e.key !== 'Enter' && e.key !== ' ') return;
+      const ko = e.target.closest('.sense-ko');
+      if (ko && entries.classList.contains('hide-ko')) {
+        e.preventDefault();
+        ko.classList.add('revealed');
+      }
+    });
+
+    // 발음: 녹음 오디오가 없을 때의 대체 경로 시연.
+    // 실제 앱은 audio.us(mp3)를 먼저 쓰고, 없을 때만 여기로 온다.
+    const canSpeak = 'speechSynthesis' in window;
+    if (!canSpeak) {
+      entries.querySelectorAll('.say').forEach(function (b) {
+        b.disabled = true;
+        b.title = '이 브라우저에서는 소리를 재생할 수 없어요';
+      });
+    }
+    entries.addEventListener('click', function (e) {
+      const btn = e.target.closest('.say');
+      if (!btn || !canSpeak) return;
+      const u = new SpeechSynthesisUtterance(btn.dataset.say);
+      u.lang = btn.dataset.lang;
+      u.rate = 0.85;
+      // 재생이 실패해도 버튼은 사라지지 않는다 — 다시 누를 수 있어야 한다
+      u.onerror = function () { btn.title = '소리를 재생하지 못했어요. 다시 눌러 보세요'; };
+      speechSynthesis.cancel();
+      speechSynthesis.speak(u);
+    });
+  })();
+</script>

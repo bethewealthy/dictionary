@@ -1,0 +1,11 @@
+# 도구 상태 (커밋 대상 아님)
+.omc/
+.claude/settings.local.json
+
+# M1부터
+node_modules/
+dist/
+.vite/
+
+# 빌드 타임에 생성하는 오디오 (ADR-004)
+audio/

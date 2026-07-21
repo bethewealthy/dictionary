@@ -1,0 +1,311 @@
+{
+  "schemaVersion": 2,
+  "contentVersion": "0.1.0",
+  "_note": "검증기 전 항목을 통과해야 하는 유효 샘플. 검증기가 이 파일을 실패시키면 검증기 버그다. 위반 fixture는 entries.invalid.json에 있다. V12(related 참조)와 V13(정의 내 링크)은 표제어 6개 규모에서 자연스럽게 만들 수 없어 여기서는 검사되지 않고, invalid fixture에서만 다룬다.",
+  "entries": [
+    {
+      "id": "elephant",
+      "headword": "elephant",
+      "syllables": "el·e·phant",
+      "ipa": { "us": "/ˈel.ə.fənt/", "uk": "/ˈel.ɪ.fənt/" },
+      "audio": { "us": "audio/us/elephant.mp3" },
+      "inflections": { "plural": "elephants" },
+      "senses": [
+        {
+          "id": "elephant-1",
+          "pos": "noun",
+          "en": "a very big grey animal with a long nose called a trunk",
+          "ko": "코끼리",
+          "level": 1,
+          "tags": ["animal", "zoo"],
+          "examples": [
+            {
+              "id": "elephant-1-e1",
+              "en": "An {{elephant}} drinks water with its long nose.",
+              "ko": "코끼리는 긴 코로 물을 마셔요."
+            },
+            {
+              "id": "elephant-1-e2",
+              "en": "We saw three {{elephants}} at the zoo.",
+              "ko": "우리는 동물원에서 코끼리 세 마리를 봤어요."
+            }
+          ]
+        }
+      ],
+      "related": { "wordFamily": ["elephants"] },
+      "curriculum": { "grade": 3 },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "run",
+      "headword": "run",
+      "syllables": "run",
+      "ipa": { "us": "/rʌn/" },
+      "audio": { "us": "audio/us/run.mp3" },
+      "inflections": {
+        "past": "ran",
+        "pastParticiple": "run",
+        "presentParticiple": "running",
+        "thirdPerson": "runs",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "run-1",
+          "pos": "verb",
+          "en": "to move very quickly on your feet",
+          "ko": "달리다, 뛰다",
+          "level": 1,
+          "tags": ["action", "sport"],
+          "examples": [
+            {
+              "id": "run-1-e1",
+              "en": "I can {{run}} faster than my brother.",
+              "ko": "나는 우리 형보다 빨리 달릴 수 있어요."
+            },
+            {
+              "id": "run-1-e2",
+              "en": "She {{ran}} to the bus stop.",
+              "ko": "그녀는 버스 정류장으로 뛰어갔어요."
+            }
+          ]
+        },
+        {
+          "id": "run-2",
+          "pos": "verb",
+          "en": "if a machine runs, it is working",
+          "ko": "(기계가) 작동하다",
+          "level": 2,
+          "tags": ["machine"],
+          "examples": [
+            {
+              "id": "run-2-e1",
+              "en": "The clock does not {{run}} without a battery.",
+              "ko": "그 시계는 건전지가 없으면 가지 않아요."
+            }
+          ]
+        },
+        {
+          "id": "run-3",
+          "pos": "noun",
+          "en": "a short trip when you move quickly on your feet",
+          "ko": "달리기",
+          "level": 2,
+          "tags": ["action", "sport"],
+          "examples": [
+            {
+              "id": "run-3-e1",
+              "en": "My dad goes for a {{run}} every morning.",
+              "ko": "우리 아빠는 매일 아침 달리기를 하러 가요."
+            }
+          ],
+          "collocations": [
+            {
+              "id": "run-3-c1",
+              "text": "go for a run",
+              "ko": "달리기하러 가다",
+              "exampleId": "run-3-e1",
+              "level": 2,
+              "studiable": true
+            }
+          ],
+          "note": "'go for a run'처럼 통째로 외우면 쉬워요."
+        }
+      ],
+      "related": { "wordFamily": ["runner", "running"] },
+      "curriculum": { "grade": 3 },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "big",
+      "headword": "big",
+      "syllables": "big",
+      "ipa": { "us": "/bɪɡ/" },
+      "audio": { "us": "audio/us/big.mp3" },
+      "inflections": { "comparative": "bigger", "superlative": "biggest" },
+      "senses": [
+        {
+          "id": "big-1",
+          "pos": "adjective",
+          "en": "large in size",
+          "ko": "큰",
+          "level": 1,
+          "tags": ["size", "describing"],
+          "examples": [
+            {
+              "id": "big-1-e1",
+              "en": "They live in a {{big}} house.",
+              "ko": "그들은 큰 집에 살아요."
+            }
+          ]
+        },
+        {
+          "id": "big-2",
+          "pos": "adjective",
+          "en": "important, or serious",
+          "ko": "중요한",
+          "level": 2,
+          "tags": ["describing"],
+          "examples": [
+            {
+              "id": "big-2-e1",
+              "en": "Tomorrow is a {{big}} day for our team.",
+              "ko": "내일은 우리 팀에게 중요한 날이에요."
+            }
+          ]
+        }
+      ],
+      "curriculum": { "grade": 3 },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "water",
+      "headword": "water",
+      "syllables": "wa·ter",
+      "ipa": { "us": "/ˈwɑː.t̬ɚ/", "uk": "/ˈwɔː.tər/" },
+      "audio": { "us": "audio/us/water.mp3", "uk": "audio/uk/water.mp3" },
+      "senses": [
+        {
+          "id": "water-1",
+          "pos": "noun",
+          "en": "the clear thing that falls as rain and that we drink",
+          "ko": "물",
+          "level": 1,
+          "tags": ["nature", "food-drink"],
+          "examples": [
+            {
+              "id": "water-1-e1",
+              "en": "Please give me a glass of {{water}}.",
+              "ko": "물 한 잔 주세요."
+            }
+          ],
+          "note": "셀 수 없는 명사예요. 'a water'가 아니라 'a glass of water'라고 해요."
+        },
+        {
+          "id": "water-2",
+          "pos": "verb",
+          "en": "to pour water on a plant",
+          "ko": "물을 주다",
+          "level": 2,
+          "tags": ["action", "nature"],
+          "examples": [
+            {
+              "id": "water-2-e1",
+              "en": "I {{water}} the flowers every day.",
+              "ko": "나는 매일 꽃에 물을 줘요."
+            }
+          ]
+        }
+      ],
+      "related": { "wordFamily": ["watery", "underwater"] },
+      "curriculum": { "grade": 3 },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "happy",
+      "headword": "happy",
+      "syllables": "hap·py",
+      "ipa": { "us": "/ˈhæp.i/" },
+      "audio": { "us": "audio/us/happy.mp3" },
+      "inflections": { "comparative": "happier", "superlative": "happiest" },
+      "senses": [
+        {
+          "id": "happy-1",
+          "pos": "adjective",
+          "en": "feeling good because something nice happened",
+          "ko": "행복한, 기쁜",
+          "level": 1,
+          "tags": ["feeling"],
+          "examples": [
+            {
+              "id": "happy-1-e1",
+              "en": "I am so {{happy}} to see you!",
+              "ko": "너를 만나서 정말 기뻐!"
+            },
+            {
+              "id": "happy-1-e2",
+              "en": "She looked {{happy}} with her new bike.",
+              "ko": "그녀는 새 자전거를 받고 기뻐 보였어요."
+            }
+          ]
+        }
+      ],
+      "related": { "wordFamily": ["happily", "happiness", "unhappy"] },
+      "curriculum": { "grade": 3 },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "play",
+      "headword": "play",
+      "syllables": "play",
+      "ipa": { "us": "/pleɪ/" },
+      "audio": { "us": "audio/us/play.mp3" },
+      "inflections": {
+        "past": "played",
+        "presentParticiple": "playing",
+        "thirdPerson": "plays"
+      },
+      "senses": [
+        {
+          "id": "play-1",
+          "pos": "verb",
+          "en": "to do something fun with toys or with friends",
+          "ko": "놀다",
+          "level": 1,
+          "tags": ["action", "school"],
+          "examples": [
+            {
+              "id": "play-1-e1",
+              "en": "The children are {{playing}} in the park.",
+              "ko": "아이들이 공원에서 놀고 있어요."
+            }
+          ]
+        },
+        {
+          "id": "play-2",
+          "pos": "verb",
+          "en": "to take part in a game or a sport",
+          "ko": "(운동·게임을) 하다",
+          "level": 1,
+          "tags": ["action", "sport"],
+          "examples": [
+            {
+              "id": "play-2-e1",
+              "en": "Let's {{play}} soccer with my friends after school.",
+              "ko": "방과 후에 친구들이랑 축구하자."
+            }
+          ]
+        },
+        {
+          "id": "play-3",
+          "pos": "verb",
+          "en": "to make music with an instrument",
+          "ko": "(악기를) 연주하다",
+          "level": 2,
+          "tags": ["music"],
+          "examples": [
+            {
+              "id": "play-3-e1",
+              "en": "He can {{play}} the piano very well.",
+              "ko": "그는 피아노를 아주 잘 쳐요."
+            }
+          ],
+          "collocations": [
+            {
+              "id": "play-3-c1",
+              "text": "play the piano",
+              "ko": "피아노를 치다",
+              "exampleId": "play-3-e1",
+              "level": 2,
+              "studiable": true
+            }
+          ],
+          "note": "악기 이름 앞에는 the를 써요: play the piano"
+        }
+      ],
+      "related": { "wordFamily": ["player", "playful", "playground"] },
+      "curriculum": { "grade": 3 },
+      "editorialStatus": "done"
+    }
+  ]
+}
