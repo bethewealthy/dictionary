@@ -24,7 +24,9 @@
 ```
 docs/                     설계 문서
 src/types/entry.ts        데이터 모델 (스키마 v2)
-data/moe-vocabulary.json  교육과정 [별표 3] 기본 어휘 3,000 (초등 800 표시) · 검수 전
+data/moe-vocabulary.json  교육과정 [별표 3] 기본 어휘 800/1,200/1,000 · 검수 완료
+data/defining-vocabulary.json  정의 어휘 962단어 — 뜻풀이에 쓸 수 있는 화이트리스트
+data/inflections.json     불규칙 굴절형 표 — 검증기의 원형 환원용
 data/entries.sample.json  유효 샘플 — 검증기 전 항목을 통과해야 한다
 data/entries.invalid.json 위반 fixture — 각 표제어가 규칙 하나씩을 어긴다
 prototype/entry.html      지면 조판 시안 (브라우저에서 바로 열림)

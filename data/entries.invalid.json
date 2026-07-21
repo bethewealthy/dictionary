@@ -232,7 +232,7 @@
         {
           "id": "light-1",
           "pos": "noun",
-          "en": "the bright thing from the sun that lets you see",
+          "en": "the bright thing from the sun that helps you see",
           "ko": "빛",
           "level": 1,
           "tags": ["nature"],
@@ -247,7 +247,7 @@
         {
           "id": "light-2",
           "pos": "noun",
-          "en": "a lamp that you turn on to see at night",
+          "en": "a thing that you turn on to see at night",
           "ko": "전등",
           "level": 1,
           "tags": ["house"],
@@ -262,7 +262,7 @@
         {
           "id": "light-3",
           "pos": "adjective",
-          "en": "not heavy, easy to lift or carry",
+          "en": "not heavy, so you can carry it",
           "ko": "가벼운",
           "level": 2,
           "tags": ["describing"],
@@ -277,7 +277,7 @@
         {
           "id": "light-4",
           "pos": "adjective",
-          "en": "pale in colour, not dark",
+          "en": "not dark in colour",
           "ko": "연한",
           "level": 3,
           "tags": ["describing", "colour"],
@@ -331,7 +331,7 @@
         {
           "id": "loud-1",
           "pos": "adjective",
-          "en": "making a lot of sound, easy to hear",
+          "en": "making a very big sound, like a drum or a bell",
           "ko": "시끄러운",
           "level": 1,
           "tags": ["describing", "sound"],
@@ -480,7 +480,7 @@
         {
           "id": "banana-1",
           "pos": "noun",
-          "en": "a long yellow fruit that you peel before you eat",
+          "en": "a long yellow fruit with soft white food inside",
           "ko": "바나나",
           "level": 1,
           "tags": ["food-drink"],

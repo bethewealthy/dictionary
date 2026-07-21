@@ -14,10 +14,11 @@
         {
           "id": "elephant-1",
           "pos": "noun",
-          "en": "a very big grey animal with a long nose called a trunk",
+          "en": "a very big grey animal with a long nose and two long white teeth",
           "ko": "코끼리",
           "level": 1,
           "tags": ["animal", "zoo"],
+          "note": "코끼리의 긴 코는 영어로 trunk라고 불러요.",
           "examples": [
             {
               "id": "elephant-1-e1",
@@ -142,7 +143,7 @@
         {
           "id": "big-2",
           "pos": "adjective",
-          "en": "important, or serious",
+          "en": "important, and something you care about",
           "ko": "중요한",
           "level": 2,
           "tags": ["describing"],
@@ -279,7 +280,7 @@
         {
           "id": "play-3",
           "pos": "verb",
-          "en": "to make music with an instrument",
+          "en": "to make music with a piano, a drum, or a guitar",
           "ko": "(악기를) 연주하다",
           "level": 2,
           "tags": ["music"],

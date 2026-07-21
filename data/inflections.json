@@ -1,0 +1,387 @@
+{
+ "_purpose": "규칙 접미사로 환원할 수 없는 불규칙 굴절형 표. 검증기의 원형 환원 4단계가 읽는다(docs/05-validation-contract.md).",
+ "_note": "교육과정 [별표 3] 지침이 든 예시(be, they, foot 등)를 포함한다. 규칙형(-s, -ed, -ing, -er, -est)은 알고리즘으로 처리하므로 여기 넣지 않는다.",
+ "_direction": "key = 대표형, value = 이 대표형으로 환원되는 굴절형들",
+ "counts": {
+  "lemmas": 103,
+  "forms": 170
+ },
+ "inflections": {
+  "be": [
+   "am",
+   "are",
+   "is",
+   "was",
+   "were",
+   "been",
+   "being"
+  ],
+  "have": [
+   "has",
+   "had",
+   "having"
+  ],
+  "do": [
+   "does",
+   "did",
+   "done",
+   "doing"
+  ],
+  "I": [
+   "me",
+   "my",
+   "mine",
+   "myself"
+  ],
+  "you": [
+   "your",
+   "yours",
+   "yourself",
+   "yourselves"
+  ],
+  "he": [
+   "him",
+   "his",
+   "himself"
+  ],
+  "she": [
+   "her",
+   "hers",
+   "herself"
+  ],
+  "it": [
+   "its",
+   "itself"
+  ],
+  "we": [
+   "us",
+   "our",
+   "ours",
+   "ourselves"
+  ],
+  "they": [
+   "them",
+   "their",
+   "theirs",
+   "themselves"
+  ],
+  "this": [
+   "these"
+  ],
+  "that": [
+   "those"
+  ],
+  "foot": [
+   "feet"
+  ],
+  "tooth": [
+   "teeth"
+  ],
+  "child": [
+   "children"
+  ],
+  "man": [
+   "men"
+  ],
+  "woman": [
+   "women"
+  ],
+  "mouse": [
+   "mice"
+  ],
+  "person": [
+   "people"
+  ],
+  "leaf": [
+   "leaves"
+  ],
+  "life": [
+   "lives"
+  ],
+  "knife": [
+   "knives"
+  ],
+  "wife": [
+   "wives"
+  ],
+  "shelf": [
+   "shelves"
+  ],
+  "fish": [
+   "fish"
+  ],
+  "sheep": [
+   "sheep"
+  ],
+  "deer": [
+   "deer"
+  ],
+  "go": [
+   "went",
+   "gone",
+   "goes",
+   "going"
+  ],
+  "come": [
+   "came"
+  ],
+  "see": [
+   "saw",
+   "seen"
+  ],
+  "eat": [
+   "ate",
+   "eaten"
+  ],
+  "give": [
+   "gave",
+   "given"
+  ],
+  "take": [
+   "took",
+   "taken"
+  ],
+  "make": [
+   "made"
+  ],
+  "get": [
+   "got",
+   "gotten"
+  ],
+  "know": [
+   "knew",
+   "known"
+  ],
+  "think": [
+   "thought"
+  ],
+  "say": [
+   "said"
+  ],
+  "tell": [
+   "told"
+  ],
+  "find": [
+   "found"
+  ],
+  "run": [
+   "ran"
+  ],
+  "become": [
+   "became"
+  ],
+  "begin": [
+   "began",
+   "begun"
+  ],
+  "break": [
+   "broke",
+   "broken"
+  ],
+  "bring": [
+   "brought"
+  ],
+  "build": [
+   "built"
+  ],
+  "buy": [
+   "bought"
+  ],
+  "catch": [
+   "caught"
+  ],
+  "choose": [
+   "chose",
+   "chosen"
+  ],
+  "cut": [
+   "cut"
+  ],
+  "draw": [
+   "drew",
+   "drawn"
+  ],
+  "drink": [
+   "drank",
+   "drunk"
+  ],
+  "drive": [
+   "drove",
+   "driven"
+  ],
+  "fall": [
+   "fell",
+   "fallen"
+  ],
+  "feel": [
+   "felt"
+  ],
+  "fight": [
+   "fought"
+  ],
+  "fly": [
+   "flew",
+   "flown"
+  ],
+  "forget": [
+   "forgot",
+   "forgotten"
+  ],
+  "grow": [
+   "grew",
+   "grown"
+  ],
+  "hang": [
+   "hung"
+  ],
+  "hear": [
+   "heard"
+  ],
+  "hit": [
+   "hit"
+  ],
+  "hold": [
+   "held"
+  ],
+  "hurt": [
+   "hurt"
+  ],
+  "keep": [
+   "kept"
+  ],
+  "leave": [
+   "left"
+  ],
+  "lend": [
+   "lent"
+  ],
+  "let": [
+   "let"
+  ],
+  "lie": [
+   "lay",
+   "lain"
+  ],
+  "lose": [
+   "lost"
+  ],
+  "mean": [
+   "meant"
+  ],
+  "meet": [
+   "met"
+  ],
+  "pay": [
+   "paid"
+  ],
+  "put": [
+   "put"
+  ],
+  "read": [
+   "read"
+  ],
+  "ride": [
+   "rode",
+   "ridden"
+  ],
+  "ring": [
+   "rang",
+   "rung"
+  ],
+  "rise": [
+   "rose",
+   "risen"
+  ],
+  "sell": [
+   "sold"
+  ],
+  "send": [
+   "sent"
+  ],
+  "set": [
+   "set"
+  ],
+  "shine": [
+   "shone"
+  ],
+  "sing": [
+   "sang",
+   "sung"
+  ],
+  "sit": [
+   "sat"
+  ],
+  "sleep": [
+   "slept"
+  ],
+  "speak": [
+   "spoke",
+   "spoken"
+  ],
+  "spend": [
+   "spent"
+  ],
+  "stand": [
+   "stood"
+  ],
+  "steal": [
+   "stole",
+   "stolen"
+  ],
+  "swim": [
+   "swam",
+   "swum"
+  ],
+  "teach": [
+   "taught"
+  ],
+  "throw": [
+   "threw",
+   "thrown"
+  ],
+  "understand": [
+   "understood"
+  ],
+  "wake": [
+   "woke",
+   "woken"
+  ],
+  "wear": [
+   "wore",
+   "worn"
+  ],
+  "win": [
+   "won"
+  ],
+  "write": [
+   "wrote",
+   "written"
+  ],
+  "good": [
+   "better",
+   "best"
+  ],
+  "bad": [
+   "worse",
+   "worst"
+  ],
+  "many": [
+   "more",
+   "most"
+  ],
+  "much": [
+   "more",
+   "most"
+  ],
+  "little": [
+   "less",
+   "least"
+  ],
+  "far": [
+   "farther",
+   "further",
+   "farthest",
+   "furthest"
+  ]
+ }
+}

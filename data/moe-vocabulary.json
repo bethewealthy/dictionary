@@ -2,3071 +2,10505 @@
  "_source": {
   "title": "영어과 교육과정 [별표 3] 기본 어휘",
   "authority": "교육부 고시 제2022-33호 [별책 14], pp. 254-290",
-  "via": "2022 개정 교육과정에 따른 영어과 교과용도서 검정을 위한 영어 어휘 검색 프로그램(KICE Word Lister), 한국교육과정평가원 교과서검정연구기획단",
+  "via": "KICE Word Lister 자료집(한국교육과정평가원 교과서검정연구기획단) 수록본에서 추출",
   "url": "https://www.goe.go.kr/resource/old/BBSMSTR_000000030136/BBS_202307111028067791.pdf",
   "retrieved": "2026-07-21",
-  "appliedFrom": "초3~4학년 2025학년도, 초5~6학년 2026학년도 (2026년 현재 초등 전 학년 적용)"
+  "verified": "2026-07-21 · 원문 고시 기준(초등 800 / 중고 1,200 / 그 외 1,000 = 3,000)과 일치 확인"
  },
- "_caveat": "PDF 텍스트 추출 결과이며 아직 원문 대조 검수를 거치지 않았다. 고시 기준 개수는 초등 800 / 중고 1,200 / 그 외 1,000이나 아래 추출본은 819 / 1,215 / 1,011이다. 초과분 대부분은 영·미 철자 이형(color/colour 등 40쌍)이 각각 세어진 것이고, 나머지 10여 개는 추출 잡음으로 보인다. 표제어 선정에 쓰기 전에 검수할 것.",
+ "_note": "철자·형태 이형이 있는 항목은 forms에 함께 둔다(color/colour, hello/hey/hi). 별표 마크는 819/1215/1011개지만 단어 수는 800/1200/1000이다. derived는 원문 괄호 안의 파생 변이형이다.",
  "_marks": {
-  "elementary": "*표. 초등학교에서 사용 권장",
-  "secondary": "**표. 중학교·고등학교 공통과목에서 사용 권장",
-  "other": "무표. 그 외 과목에서 사용 권장"
+  "elementary": "*표 · 초등학교 사용 권장 800",
+  "secondary": "**표 · 중·고 공통과목 1,200",
+  "other": "무표 · 그 외 과목 1,000"
  },
+ "_lemmaRule": "목록의 한 단어는 대표형이며 모든 굴절 변이형과 36개 파생 접사에 의한 변이형을 포함한다. 단 의존 어근에 붙은 형태(precious = price + -ous)는 제외한다.",
  "counts": {
-  "elementary": 819,
-  "secondary": 1215,
-  "other": 1011
+  "elementary": 800,
+  "secondary": 1200,
+  "other": 1000
  },
  "elementary": [
-  "I",
-  "OK",
-  "a",
-  "about",
-  "above",
-  "across",
-  "act",
-  "add",
-  "address",
-  "adult",
-  "aeroplane",
-  "afraid",
-  "after",
-  "afternoon",
-  "again",
-  "against",
-  "age",
-  "ago",
-  "agree",
-  "ahead",
-  "air",
-  "airplane",
-  "album",
-  "all",
-  "almost",
-  "alone",
-  "along",
-  "already",
-  "alright",
-  "also",
-  "always",
-  "and",
-  "animal",
-  "another",
-  "answer",
-  "any",
-  "apartment",
-  "apple",
-  "area",
-  "arm",
-  "around",
-  "arrive",
-  "art",
-  "as",
-  "ask",
-  "at",
-  "aunt",
-  "autumn",
-  "away",
-  "baby",
-  "back",
-  "bad",
-  "badminton",
-  "bag",
-  "bake",
-  "ball",
-  "banana",
-  "bank",
-  "base",
-  "baseball",
-  "basket",
-  "basketball",
-  "bat",
-  "bath",
-  "be",
-  "beach",
-  "bear",
-  "beauty",
-  "because",
-  "become",
-  "bed",
-  "bee",
-  "beef",
-  "before",
-  "begin",
-  "behind",
-  "believe",
-  "bell",
-  "below",
-  "belt",
-  "beside",
-  "between",
-  "big",
-  "bike",
-  "bill",
-  "bird",
-  "birth",
-  "biscuit",
-  "black",
-  "blood",
-  "blue",
-  "board",
-  "boat",
-  "body",
-  "bone",
-  "book",
-  "borrow",
-  "both",
-  "bottle",
-  "bottom",
-  "box",
-  "boy",
-  "brave",
-  "bread",
-  "break",
-  "breakfast",
-  "bridge",
-  "bright",
-  "bring",
-  "brother",
-  "brown",
-  "brush",
-  "build",
-  "burn",
-  "bus",
-  "business",
-  "busy",
-  "but",
-  "butter",
-  "button",
-  "buy",
-  "by",
-  "cake",
-  "call",
-  "camera",
-  "camp",
-  "campaign",
-  "can",
-  "candy",
-  "cap",
-  "car",
-  "card",
-  "care",
-  "carrot",
-  "carry",
-  "case",
-  "cash",
-  "cat",
-  "catch",
-  "center",
-  "certain",
-  "chair",
-  "chance",
-  "change",
-  "cheap",
-  "check",
-  "cheese",
-  "cheque",
-  "chicken",
-  "child",
-  "chocolate",
-  "choose",
-  "church",
-  "circle",
-  "city",
-  "class",
-  "clean",
-  "clear",
-  "clever",
-  "climb",
-  "clock",
-  "close",
-  "clothes",
-  "cloud",
-  "club",
-  "coat",
-  "coffee",
-  "cold",
-  "collect",
-  "college",
-  "color",
-  "colour",
-  "come",
-  "comic",
-  "company",
-  "compute",
-  "condition",
-  "congratulate",
-  "control",
-  "cook",
-  "cookie",
-  "cooky",
-  "cool",
-  "corner",
-  "cost",
-  "could",
-  "country",
-  "couple",
-  "course",
-  "court",
-  "cousin",
-  "cover",
-  "cow",
-  "crayon",
-  "cream",
-  "cross",
-  "cry",
-  "culture",
-  "cup",
-  "curtain",
-  "customer",
-  "cut",
-  "dance",
-  "danger",
-  "dark",
-  "date",
-  "daughter",
-  "day",
-  "dead",
-  "death",
-  "decide",
-  "deep",
-  "delicious",
-  "design",
-  "desk",
-  "dialog",
-  "dialogue",
-  "die",
-  "difficult",
-  "dinner",
-  "discuss",
-  "do",
-  "doctor",
-  "dog",
-  "doll",
-  "door",
-  "double",
-  "doughnut",
-  "down",
-  "draw",
-  "dream",
-  "dress",
-  "drink",
-  "drive",
-  "drop",
-  "drum",
-  "dry",
-  "duck",
-  "during",
-  "ear",
-  "early",
-  "earth",
-  "east",
-  "eat",
-  "egg",
-  "eight",
-  "elephant",
-  "eleven",
-  "end",
-  "energy",
-  "enough",
-  "enter",
-  "evening",
-  "every",
-  "example",
-  "exercise",
-  "eye",
-  "face",
-  "fact",
-  "fail",
-  "fall",
-  "family",
-  "fan",
-  "far",
-  "farm",
-  "fast",
-  "fat",
-  "father",
-  "favorite",
-  "favourite",
-  "feel",
-  "festival",
-  "field",
-  "fight",
-  "file",
-  "fill",
-  "film",
-  "find",
-  "fine",
-  "finger",
-  "finish",
-  "fire",
-  "first",
-  "fish",
-  "five",
-  "fix",
-  "floor",
-  "flower",
-  "fly",
-  "focus",
-  "food",
-  "fool",
-  "foot",
-  "football",
-  "for",
-  "forest",
-  "forget",
-  "fork",
-  "form",
-  "four",
-  "fox",
-  "free",
-  "fresh",
-  "friend",
-  "from",
-  "front",
-  "fruit",
-  "full",
-  "fun",
-  "future",
-  "game",
-  "garden",
-  "gas",
-  "gentleman",
-  "get",
-  "girl",
-  "give",
-  "glad",
-  "glass",
-  "go",
-  "goal",
-  "god",
-  "gold",
-  "good",
-  "goodbye",
-  "grandfather",
-  "grape",
-  "grass",
-  "gray",
-  "great",
-  "green",
-  "grey",
-  "ground",
-  "group",
-  "grow",
-  "guess",
-  "guitar",
-  "gum",
-  "guy",
-  "habit",
-  "hair",
-  "hamburger",
-  "hand",
-  "hang",
-  "happy",
-  "hard",
-  "hat",
-  "hate",
-  "have",
-  "he",
-  "head",
-  "heart",
-  "heat",
-  "heavy",
-  "hello",
-  "helmet",
-  "help",
-  "here",
-  "hero",
-  "hey",
-  "hi",
-  "high",
-  "hike",
-  "hill",
-  "history",
-  "hit",
-  "hobby",
-  "hold",
-  "holiday",
-  "home",
-  "homework",
-  "honest",
-  "hope",
-  "horse",
-  "hospital",
-  "hot",
-  "hour",
-  "house",
-  "how",
-  "however",
-  "human",
-  "hundred",
-  "hunt",
-  "hurry",
-  "husband",
-  "ice",
-  "idea",
-  "if",
-  "image",
-  "in",
-  "inside",
-  "internet",
-  "into",
-  "introduce",
-  "invite",
-  "issue",
-  "it",
-  "jacket",
-  "jam",
-  "job",
-  "join",
-  "juice",
-  "jump",
-  "just",
-  "keep",
-  "key",
-  "kick",
-  "kid",
-  "kill",
-  "kind",
-  "king",
-  "kiss",
-  "kitchen",
-  "knife",
-  "know",
-  "lady",
-  "lake",
-  "land",
-  "large",
-  "laser",
-  "last",
-  "late",
-  "lazy",
-  "learn",
-  "left",
-  "leg",
-  "lesson",
-  "letter",
-  "library",
-  "lie",
-  "life",
-  "light",
-  "like",
-  "line",
-  "lion",
-  "lip",
-  "listen",
-  "little",
-  "live",
-  "long",
-  "look",
-  "love",
-  "low",
-  "luck",
-  "lunch",
-  "mad",
-  "mail",
-  "make",
-  "man",
-  "many",
-  "map",
-  "marathon",
-  "market",
-  "marry",
-  "math",
-  "mathematics",
-  "maths",
-  "may",
-  "meat",
-  "medal",
-  "meet",
-  "member",
-  "memory",
-  "middle",
-  "might",
-  "milk",
-  "mind",
-  "miss",
-  "model",
-  "money",
-  "monkey",
-  "month",
-  "moon",
-  "morning",
-  "mother",
-  "mountain",
-  "mouse",
-  "mouth",
-  "move",
-  "movie",
-  "much",
-  "music",
-  "must",
-  "name",
-  "nation",
-  "nature",
-  "nay",
-  "near",
-  "neck",
-  "need",
-  "never",
-  "new",
-  "news",
-  "newspaper",
-  "next",
-  "nice",
-  "night",
-  "nine",
-  "no",
-  "nope",
-  "north",
-  "nose",
-  "not",
-  "note",
-  "notebook",
-  "nothing",
-  "now",
-  "number",
-  "nurse",
-  "of",
-  "off",
-  "office",
-  "often",
-  "oil",
-  "okay",
-  "okey",
-  "old",
-  "on",
-  "one",
-  "only",
-  "open",
-  "or",
-  "orange",
-  "out",
-  "over",
-  "page",
-  "paint",
-  "pants",
-  "paper",
-  "parent",
-  "park",
-  "part",
-  "partner",
-  "party",
-  "pass",
-  "pay",
-  "pen",
-  "pencil",
-  "people",
-  "phone",
-  "piano",
-  "pick",
-  "picture",
-  "pig",
-  "pilot",
-  "pink",
-  "pizza",
-  "place",
-  "plan",
-  "plastic",
-  "play",
-  "please",
-  "point",
-  "police",
-  "poor",
-  "potato",
-  "power",
-  "present",
-  "pretty",
-  "prince",
-  "print",
-  "problem",
-  "program",
-  "programme",
-  "project",
-  "puppy",
-  "push",
-  "put",
-  "queen",
-  "question",
-  "quick",
-  "quiet",
-  "quiz",
-  "rabbit",
-  "race",
-  "radio",
-  "rain",
-  "read",
-  "ready",
-  "recreation",
-  "red",
-  "remember",
-  "restaurant",
-  "restroom",
-  "return",
-  "ribbon",
-  "rich",
-  "right",
-  "ring",
-  "river",
-  "road",
-  "robot",
-  "rock",
-  "room",
-  "rose",
-  "run",
-  "sad",
-  "safe",
-  "salad",
-  "sale",
-  "salt",
-  "same",
-  "sand",
-  "sandwich",
-  "save",
-  "say",
-  "school",
-  "science",
-  "scissors",
-  "score",
-  "sea",
-  "season",
-  "second",
-  "see",
-  "sell",
-  "send",
-  "service",
-  "set",
-  "seven",
-  "she",
-  "ship",
-  "shirt",
-  "shoe",
-  "shop",
-  "short",
-  "should",
-  "show",
-  "shy",
-  "sick",
-  "side",
-  "sing",
-  "sister",
-  "sit",
-  "six",
-  "size",
-  "skate",
-  "ski",
-  "skin",
-  "skirt",
-  "sky",
-  "sleep",
-  "slow",
-  "small",
-  "smell",
-  "smile",
-  "snow",
-  "so",
-  "soccer",
-  "sock",
-  "soft",
-  "software",
-  "some",
-  "son",
-  "song",
-  "sorry",
-  "sound",
-  "soup",
-  "south",
-  "space",
-  "spaghetti",
-  "speak",
-  "speed",
-  "spoon",
-  "sport",
-  "spring",
-  "staff",
-  "stand",
-  "star",
-  "start",
-  "stay",
-  "steak",
-  "stone",
-  "stop",
-  "store",
-  "story",
-  "street",
-  "strong",
-  "study",
-  "style",
-  "subway",
-  "sugar",
-  "summer",
-  "sun",
-  "sure",
-  "swim",
-  "table",
-  "tail",
-  "take",
-  "talk",
-  "tall",
-  "tape",
-  "taste",
-  "taxi",
-  "teach",
-  "team",
-  "telephone",
-  "television",
-  "tell",
-  "ten",
-  "tennis",
-  "tent",
-  "test",
-  "textbook",
-  "than",
-  "thank",
-  "that",
-  "the",
-  "there",
-  "they",
-  "thing",
-  "think",
-  "third",
-  "thirst",
-  "thirteen",
-  "thirty",
-  "this",
-  "three",
-  "ticket",
-  "tiger",
-  "time",
-  "tire",
-  "to",
-  "today",
-  "together",
-  "tomato",
-  "tomorrow",
-  "tonight",
-  "too",
-  "tooth",
-  "top",
-  "touch",
-  "town",
-  "toy",
-  "track",
-  "train",
-  "travel",
-  "tree",
-  "trip",
-  "truck",
-  "true",
-  "try",
-  "turn",
-  "twelve",
-  "twenty",
-  "twenty-first",
-  "twenty-second",
-  "twenty-third",
-  "twice",
-  "two",
-  "type",
-  "ugly",
-  "umbrella",
-  "uncle",
-  "under",
-  "understand",
-  "up",
-  "use",
-  "vegetable",
-  "very",
-  "video",
-  "violin",
-  "visit",
-  "voice",
-  "wait",
-  "wake",
-  "walk",
-  "wall",
-  "want",
-  "war",
-  "warm",
-  "wash",
-  "watch",
-  "water",
-  "watermelon",
-  "way",
-  "we",
-  "wear",
-  "weather",
-  "website",
-  "wedding",
-  "week",
-  "weekend",
-  "weight",
-  "welcome",
-  "well",
-  "west",
-  "wet",
-  "what",
-  "when",
-  "where",
-  "white",
-  "who",
-  "why",
-  "wife",
-  "will",
-  "win",
-  "wind",
-  "window",
-  "wine",
-  "winter",
-  "wish",
-  "with",
-  "woman",
-  "wood",
-  "word",
-  "work",
-  "world",
-  "worry",
-  "write",
-  "wrong",
-  "yeah",
-  "year",
-  "yellow",
-  "yep",
-  "yes",
-  "yesterday",
-  "you",
-  "young",
-  "zoo"
+  {
+   "lemma": "a",
+   "forms": [
+    "a"
+   ],
+   "derived": [
+    "an"
+   ]
+  },
+  {
+   "lemma": "about"
+  },
+  {
+   "lemma": "above"
+  },
+  {
+   "lemma": "across"
+  },
+  {
+   "lemma": "act",
+   "forms": [
+    "act"
+   ],
+   "derived": [
+    "actual",
+    "interact"
+   ]
+  },
+  {
+   "lemma": "add"
+  },
+  {
+   "lemma": "address"
+  },
+  {
+   "lemma": "adult"
+  },
+  {
+   "lemma": "afraid"
+  },
+  {
+   "lemma": "after"
+  },
+  {
+   "lemma": "afternoon"
+  },
+  {
+   "lemma": "again"
+  },
+  {
+   "lemma": "against"
+  },
+  {
+   "lemma": "age"
+  },
+  {
+   "lemma": "ago"
+  },
+  {
+   "lemma": "agree",
+   "forms": [
+    "agree"
+   ],
+   "derived": [
+    "disagree"
+   ]
+  },
+  {
+   "lemma": "ahead"
+  },
+  {
+   "lemma": "air"
+  },
+  {
+   "lemma": "airplane",
+   "forms": [
+    "airplane",
+    "aeroplane"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "album"
+  },
+  {
+   "lemma": "all"
+  },
+  {
+   "lemma": "almost"
+  },
+  {
+   "lemma": "alone"
+  },
+  {
+   "lemma": "along"
+  },
+  {
+   "lemma": "already"
+  },
+  {
+   "lemma": "alright"
+  },
+  {
+   "lemma": "also"
+  },
+  {
+   "lemma": "always"
+  },
+  {
+   "lemma": "and"
+  },
+  {
+   "lemma": "animal"
+  },
+  {
+   "lemma": "another"
+  },
+  {
+   "lemma": "answer"
+  },
+  {
+   "lemma": "any"
+  },
+  {
+   "lemma": "apartment"
+  },
+  {
+   "lemma": "apple"
+  },
+  {
+   "lemma": "area"
+  },
+  {
+   "lemma": "arm"
+  },
+  {
+   "lemma": "around"
+  },
+  {
+   "lemma": "arrive"
+  },
+  {
+   "lemma": "art"
+  },
+  {
+   "lemma": "as"
+  },
+  {
+   "lemma": "ask"
+  },
+  {
+   "lemma": "at"
+  },
+  {
+   "lemma": "aunt"
+  },
+  {
+   "lemma": "autumn"
+  },
+  {
+   "lemma": "away"
+  },
+  {
+   "lemma": "baby"
+  },
+  {
+   "lemma": "back"
+  },
+  {
+   "lemma": "bad"
+  },
+  {
+   "lemma": "badminton"
+  },
+  {
+   "lemma": "bag"
+  },
+  {
+   "lemma": "bake"
+  },
+  {
+   "lemma": "ball"
+  },
+  {
+   "lemma": "banana"
+  },
+  {
+   "lemma": "bank"
+  },
+  {
+   "lemma": "base"
+  },
+  {
+   "lemma": "baseball"
+  },
+  {
+   "lemma": "basket"
+  },
+  {
+   "lemma": "basketball"
+  },
+  {
+   "lemma": "bat"
+  },
+  {
+   "lemma": "bath"
+  },
+  {
+   "lemma": "be"
+  },
+  {
+   "lemma": "beach"
+  },
+  {
+   "lemma": "bear"
+  },
+  {
+   "lemma": "beauty"
+  },
+  {
+   "lemma": "because"
+  },
+  {
+   "lemma": "become"
+  },
+  {
+   "lemma": "bed"
+  },
+  {
+   "lemma": "bee"
+  },
+  {
+   "lemma": "beef"
+  },
+  {
+   "lemma": "before"
+  },
+  {
+   "lemma": "begin"
+  },
+  {
+   "lemma": "behind"
+  },
+  {
+   "lemma": "believe"
+  },
+  {
+   "lemma": "bell"
+  },
+  {
+   "lemma": "below"
+  },
+  {
+   "lemma": "belt"
+  },
+  {
+   "lemma": "beside"
+  },
+  {
+   "lemma": "between"
+  },
+  {
+   "lemma": "big"
+  },
+  {
+   "lemma": "bike"
+  },
+  {
+   "lemma": "bill"
+  },
+  {
+   "lemma": "bird"
+  },
+  {
+   "lemma": "birth"
+  },
+  {
+   "lemma": "biscuit"
+  },
+  {
+   "lemma": "black"
+  },
+  {
+   "lemma": "blood"
+  },
+  {
+   "lemma": "blue"
+  },
+  {
+   "lemma": "board"
+  },
+  {
+   "lemma": "boat"
+  },
+  {
+   "lemma": "body",
+   "forms": [
+    "body"
+   ],
+   "derived": [
+    "embody"
+   ]
+  },
+  {
+   "lemma": "bone"
+  },
+  {
+   "lemma": "book"
+  },
+  {
+   "lemma": "borrow"
+  },
+  {
+   "lemma": "both"
+  },
+  {
+   "lemma": "bottle"
+  },
+  {
+   "lemma": "bottom"
+  },
+  {
+   "lemma": "box"
+  },
+  {
+   "lemma": "boy"
+  },
+  {
+   "lemma": "brave"
+  },
+  {
+   "lemma": "bread"
+  },
+  {
+   "lemma": "break"
+  },
+  {
+   "lemma": "breakfast"
+  },
+  {
+   "lemma": "bridge"
+  },
+  {
+   "lemma": "bright"
+  },
+  {
+   "lemma": "bring"
+  },
+  {
+   "lemma": "brother"
+  },
+  {
+   "lemma": "brown"
+  },
+  {
+   "lemma": "brush"
+  },
+  {
+   "lemma": "build"
+  },
+  {
+   "lemma": "burn"
+  },
+  {
+   "lemma": "bus"
+  },
+  {
+   "lemma": "business"
+  },
+  {
+   "lemma": "busy"
+  },
+  {
+   "lemma": "but"
+  },
+  {
+   "lemma": "butter"
+  },
+  {
+   "lemma": "button"
+  },
+  {
+   "lemma": "buy"
+  },
+  {
+   "lemma": "by"
+  },
+  {
+   "lemma": "cake"
+  },
+  {
+   "lemma": "call"
+  },
+  {
+   "lemma": "camera"
+  },
+  {
+   "lemma": "camp"
+  },
+  {
+   "lemma": "campaign"
+  },
+  {
+   "lemma": "can"
+  },
+  {
+   "lemma": "candy"
+  },
+  {
+   "lemma": "cap"
+  },
+  {
+   "lemma": "car"
+  },
+  {
+   "lemma": "card"
+  },
+  {
+   "lemma": "care"
+  },
+  {
+   "lemma": "carrot"
+  },
+  {
+   "lemma": "carry"
+  },
+  {
+   "lemma": "case",
+   "forms": [
+    "case"
+   ],
+   "derived": [
+    "casual"
+   ]
+  },
+  {
+   "lemma": "cash"
+  },
+  {
+   "lemma": "cat"
+  },
+  {
+   "lemma": "catch"
+  },
+  {
+   "lemma": "center"
+  },
+  {
+   "lemma": "certain"
+  },
+  {
+   "lemma": "chair"
+  },
+  {
+   "lemma": "chance"
+  },
+  {
+   "lemma": "change"
+  },
+  {
+   "lemma": "cheap"
+  },
+  {
+   "lemma": "check",
+   "forms": [
+    "check",
+    "cheque"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "cheese"
+  },
+  {
+   "lemma": "chicken"
+  },
+  {
+   "lemma": "child"
+  },
+  {
+   "lemma": "chocolate"
+  },
+  {
+   "lemma": "choose"
+  },
+  {
+   "lemma": "church"
+  },
+  {
+   "lemma": "circle"
+  },
+  {
+   "lemma": "city"
+  },
+  {
+   "lemma": "class",
+   "forms": [
+    "class"
+   ],
+   "derived": [
+    "classic",
+    "classify"
+   ]
+  },
+  {
+   "lemma": "clean"
+  },
+  {
+   "lemma": "clear",
+   "forms": [
+    "clear"
+   ],
+   "derived": [
+    "clarify"
+   ]
+  },
+  {
+   "lemma": "clever"
+  },
+  {
+   "lemma": "climb"
+  },
+  {
+   "lemma": "clock"
+  },
+  {
+   "lemma": "close",
+   "forms": [
+    "close"
+   ],
+   "derived": [
+    "disclose",
+    "enclose"
+   ]
+  },
+  {
+   "lemma": "clothes"
+  },
+  {
+   "lemma": "cloud"
+  },
+  {
+   "lemma": "club"
+  },
+  {
+   "lemma": "coat"
+  },
+  {
+   "lemma": "coffee"
+  },
+  {
+   "lemma": "cold"
+  },
+  {
+   "lemma": "collect"
+  },
+  {
+   "lemma": "college"
+  },
+  {
+   "lemma": "color",
+   "forms": [
+    "color",
+    "colour"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "come"
+  },
+  {
+   "lemma": "comic"
+  },
+  {
+   "lemma": "company"
+  },
+  {
+   "lemma": "compute",
+   "forms": [
+    "compute"
+   ],
+   "derived": [
+    "computer"
+   ]
+  },
+  {
+   "lemma": "condition"
+  },
+  {
+   "lemma": "congratulate"
+  },
+  {
+   "lemma": "control"
+  },
+  {
+   "lemma": "cook"
+  },
+  {
+   "lemma": "cookie",
+   "forms": [
+    "cookie",
+    "cooky"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "cool"
+  },
+  {
+   "lemma": "corner"
+  },
+  {
+   "lemma": "cost"
+  },
+  {
+   "lemma": "could"
+  },
+  {
+   "lemma": "country"
+  },
+  {
+   "lemma": "couple"
+  },
+  {
+   "lemma": "course"
+  },
+  {
+   "lemma": "court"
+  },
+  {
+   "lemma": "cousin"
+  },
+  {
+   "lemma": "cover",
+   "forms": [
+    "cover"
+   ],
+   "derived": [
+    "discover"
+   ]
+  },
+  {
+   "lemma": "cow"
+  },
+  {
+   "lemma": "crayon"
+  },
+  {
+   "lemma": "cream"
+  },
+  {
+   "lemma": "cross"
+  },
+  {
+   "lemma": "cry"
+  },
+  {
+   "lemma": "culture"
+  },
+  {
+   "lemma": "cup"
+  },
+  {
+   "lemma": "curtain"
+  },
+  {
+   "lemma": "customer"
+  },
+  {
+   "lemma": "cut"
+  },
+  {
+   "lemma": "dance"
+  },
+  {
+   "lemma": "danger"
+  },
+  {
+   "lemma": "dark"
+  },
+  {
+   "lemma": "date"
+  },
+  {
+   "lemma": "daughter"
+  },
+  {
+   "lemma": "day"
+  },
+  {
+   "lemma": "dead"
+  },
+  {
+   "lemma": "death"
+  },
+  {
+   "lemma": "decide",
+   "forms": [
+    "decide"
+   ],
+   "derived": [
+    "decision"
+   ]
+  },
+  {
+   "lemma": "deep"
+  },
+  {
+   "lemma": "delicious"
+  },
+  {
+   "lemma": "design"
+  },
+  {
+   "lemma": "desk"
+  },
+  {
+   "lemma": "dialogue",
+   "forms": [
+    "dialogue",
+    "dialog"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "die"
+  },
+  {
+   "lemma": "difficult"
+  },
+  {
+   "lemma": "dinner"
+  },
+  {
+   "lemma": "discuss"
+  },
+  {
+   "lemma": "do"
+  },
+  {
+   "lemma": "doctor"
+  },
+  {
+   "lemma": "dog"
+  },
+  {
+   "lemma": "doll"
+  },
+  {
+   "lemma": "door"
+  },
+  {
+   "lemma": "double"
+  },
+  {
+   "lemma": "doughnut"
+  },
+  {
+   "lemma": "down"
+  },
+  {
+   "lemma": "draw",
+   "forms": [
+    "draw"
+   ],
+   "derived": [
+    "drawer"
+   ]
+  },
+  {
+   "lemma": "dream"
+  },
+  {
+   "lemma": "dress"
+  },
+  {
+   "lemma": "drink"
+  },
+  {
+   "lemma": "drive"
+  },
+  {
+   "lemma": "drop"
+  },
+  {
+   "lemma": "drum"
+  },
+  {
+   "lemma": "dry"
+  },
+  {
+   "lemma": "duck"
+  },
+  {
+   "lemma": "during"
+  },
+  {
+   "lemma": "ear"
+  },
+  {
+   "lemma": "early"
+  },
+  {
+   "lemma": "earth"
+  },
+  {
+   "lemma": "east"
+  },
+  {
+   "lemma": "eat"
+  },
+  {
+   "lemma": "egg"
+  },
+  {
+   "lemma": "eight"
+  },
+  {
+   "lemma": "elephant"
+  },
+  {
+   "lemma": "eleven"
+  },
+  {
+   "lemma": "end"
+  },
+  {
+   "lemma": "energy"
+  },
+  {
+   "lemma": "enough"
+  },
+  {
+   "lemma": "enter"
+  },
+  {
+   "lemma": "evening"
+  },
+  {
+   "lemma": "every"
+  },
+  {
+   "lemma": "example"
+  },
+  {
+   "lemma": "exercise"
+  },
+  {
+   "lemma": "eye"
+  },
+  {
+   "lemma": "face"
+  },
+  {
+   "lemma": "fact",
+   "forms": [
+    "fact"
+   ],
+   "derived": [
+    "factual"
+   ]
+  },
+  {
+   "lemma": "fail"
+  },
+  {
+   "lemma": "fall"
+  },
+  {
+   "lemma": "family"
+  },
+  {
+   "lemma": "fan"
+  },
+  {
+   "lemma": "far"
+  },
+  {
+   "lemma": "farm"
+  },
+  {
+   "lemma": "fast"
+  },
+  {
+   "lemma": "fat"
+  },
+  {
+   "lemma": "father",
+   "forms": [
+    "father"
+   ],
+   "derived": [
+    "dad",
+    "daddy"
+   ]
+  },
+  {
+   "lemma": "favorite",
+   "forms": [
+    "favorite",
+    "favourite"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "feel"
+  },
+  {
+   "lemma": "festival"
+  },
+  {
+   "lemma": "field"
+  },
+  {
+   "lemma": "fight"
+  },
+  {
+   "lemma": "file"
+  },
+  {
+   "lemma": "fill"
+  },
+  {
+   "lemma": "film"
+  },
+  {
+   "lemma": "find"
+  },
+  {
+   "lemma": "fine"
+  },
+  {
+   "lemma": "finger"
+  },
+  {
+   "lemma": "finish"
+  },
+  {
+   "lemma": "fire"
+  },
+  {
+   "lemma": "first"
+  },
+  {
+   "lemma": "fish"
+  },
+  {
+   "lemma": "five"
+  },
+  {
+   "lemma": "fix"
+  },
+  {
+   "lemma": "floor"
+  },
+  {
+   "lemma": "flower"
+  },
+  {
+   "lemma": "fly"
+  },
+  {
+   "lemma": "focus"
+  },
+  {
+   "lemma": "food"
+  },
+  {
+   "lemma": "fool"
+  },
+  {
+   "lemma": "foot"
+  },
+  {
+   "lemma": "football"
+  },
+  {
+   "lemma": "for"
+  },
+  {
+   "lemma": "forest"
+  },
+  {
+   "lemma": "forget"
+  },
+  {
+   "lemma": "fork"
+  },
+  {
+   "lemma": "form",
+   "forms": [
+    "form"
+   ],
+   "derived": [
+    "formal",
+    "formation",
+    "informal"
+   ]
+  },
+  {
+   "lemma": "four"
+  },
+  {
+   "lemma": "fox"
+  },
+  {
+   "lemma": "free"
+  },
+  {
+   "lemma": "fresh"
+  },
+  {
+   "lemma": "friend",
+   "forms": [
+    "friend"
+   ],
+   "derived": [
+    "friendship"
+   ]
+  },
+  {
+   "lemma": "from"
+  },
+  {
+   "lemma": "front"
+  },
+  {
+   "lemma": "fruit"
+  },
+  {
+   "lemma": "full"
+  },
+  {
+   "lemma": "fun"
+  },
+  {
+   "lemma": "future"
+  },
+  {
+   "lemma": "game"
+  },
+  {
+   "lemma": "garden"
+  },
+  {
+   "lemma": "gas"
+  },
+  {
+   "lemma": "gentleman"
+  },
+  {
+   "lemma": "get"
+  },
+  {
+   "lemma": "girl"
+  },
+  {
+   "lemma": "give"
+  },
+  {
+   "lemma": "glad"
+  },
+  {
+   "lemma": "glass"
+  },
+  {
+   "lemma": "go"
+  },
+  {
+   "lemma": "goal"
+  },
+  {
+   "lemma": "god"
+  },
+  {
+   "lemma": "gold"
+  },
+  {
+   "lemma": "good",
+   "forms": [
+    "good"
+   ],
+   "derived": [
+    "goods"
+   ]
+  },
+  {
+   "lemma": "goodbye",
+   "forms": [
+    "goodbye"
+   ],
+   "derived": [
+    "bye"
+   ]
+  },
+  {
+   "lemma": "grandfather"
+  },
+  {
+   "lemma": "grape"
+  },
+  {
+   "lemma": "grass"
+  },
+  {
+   "lemma": "gray",
+   "forms": [
+    "gray",
+    "grey"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "great"
+  },
+  {
+   "lemma": "green"
+  },
+  {
+   "lemma": "ground"
+  },
+  {
+   "lemma": "group"
+  },
+  {
+   "lemma": "grow"
+  },
+  {
+   "lemma": "guess"
+  },
+  {
+   "lemma": "guitar"
+  },
+  {
+   "lemma": "gum"
+  },
+  {
+   "lemma": "guy"
+  },
+  {
+   "lemma": "habit"
+  },
+  {
+   "lemma": "hair"
+  },
+  {
+   "lemma": "hamburger"
+  },
+  {
+   "lemma": "hand"
+  },
+  {
+   "lemma": "hang"
+  },
+  {
+   "lemma": "happy"
+  },
+  {
+   "lemma": "hard",
+   "forms": [
+    "hard"
+   ],
+   "derived": [
+    "hardly"
+   ]
+  },
+  {
+   "lemma": "hat"
+  },
+  {
+   "lemma": "hate"
+  },
+  {
+   "lemma": "have"
+  },
+  {
+   "lemma": "he"
+  },
+  {
+   "lemma": "head"
+  },
+  {
+   "lemma": "heart"
+  },
+  {
+   "lemma": "heat"
+  },
+  {
+   "lemma": "heavy"
+  },
+  {
+   "lemma": "hello",
+   "forms": [
+    "hello",
+    "hey",
+    "hi"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "helmet"
+  },
+  {
+   "lemma": "help"
+  },
+  {
+   "lemma": "here"
+  },
+  {
+   "lemma": "hero"
+  },
+  {
+   "lemma": "high"
+  },
+  {
+   "lemma": "hike"
+  },
+  {
+   "lemma": "hill"
+  },
+  {
+   "lemma": "history"
+  },
+  {
+   "lemma": "hit"
+  },
+  {
+   "lemma": "hobby"
+  },
+  {
+   "lemma": "hold"
+  },
+  {
+   "lemma": "holiday"
+  },
+  {
+   "lemma": "home"
+  },
+  {
+   "lemma": "homework"
+  },
+  {
+   "lemma": "honest"
+  },
+  {
+   "lemma": "hope"
+  },
+  {
+   "lemma": "horse"
+  },
+  {
+   "lemma": "hospital"
+  },
+  {
+   "lemma": "hot"
+  },
+  {
+   "lemma": "hour"
+  },
+  {
+   "lemma": "house"
+  },
+  {
+   "lemma": "how"
+  },
+  {
+   "lemma": "however"
+  },
+  {
+   "lemma": "human"
+  },
+  {
+   "lemma": "hundred"
+  },
+  {
+   "lemma": "hunt"
+  },
+  {
+   "lemma": "hurry"
+  },
+  {
+   "lemma": "husband"
+  },
+  {
+   "lemma": "I"
+  },
+  {
+   "lemma": "ice"
+  },
+  {
+   "lemma": "idea"
+  },
+  {
+   "lemma": "if"
+  },
+  {
+   "lemma": "image"
+  },
+  {
+   "lemma": "in"
+  },
+  {
+   "lemma": "inside"
+  },
+  {
+   "lemma": "internet"
+  },
+  {
+   "lemma": "into"
+  },
+  {
+   "lemma": "introduce"
+  },
+  {
+   "lemma": "invite"
+  },
+  {
+   "lemma": "issue"
+  },
+  {
+   "lemma": "it"
+  },
+  {
+   "lemma": "jacket"
+  },
+  {
+   "lemma": "jam"
+  },
+  {
+   "lemma": "job"
+  },
+  {
+   "lemma": "join"
+  },
+  {
+   "lemma": "juice"
+  },
+  {
+   "lemma": "jump"
+  },
+  {
+   "lemma": "just"
+  },
+  {
+   "lemma": "keep"
+  },
+  {
+   "lemma": "key"
+  },
+  {
+   "lemma": "kick"
+  },
+  {
+   "lemma": "kid"
+  },
+  {
+   "lemma": "kill"
+  },
+  {
+   "lemma": "kind"
+  },
+  {
+   "lemma": "king"
+  },
+  {
+   "lemma": "kiss"
+  },
+  {
+   "lemma": "kitchen"
+  },
+  {
+   "lemma": "knife"
+  },
+  {
+   "lemma": "know"
+  },
+  {
+   "lemma": "lady"
+  },
+  {
+   "lemma": "lake"
+  },
+  {
+   "lemma": "land"
+  },
+  {
+   "lemma": "large"
+  },
+  {
+   "lemma": "laser"
+  },
+  {
+   "lemma": "last"
+  },
+  {
+   "lemma": "late"
+  },
+  {
+   "lemma": "lazy"
+  },
+  {
+   "lemma": "learn"
+  },
+  {
+   "lemma": "left"
+  },
+  {
+   "lemma": "leg"
+  },
+  {
+   "lemma": "lesson"
+  },
+  {
+   "lemma": "letter",
+   "forms": [
+    "letter"
+   ],
+   "derived": [
+    "literal"
+   ]
+  },
+  {
+   "lemma": "library"
+  },
+  {
+   "lemma": "lie"
+  },
+  {
+   "lemma": "life"
+  },
+  {
+   "lemma": "light"
+  },
+  {
+   "lemma": "like",
+   "forms": [
+    "like"
+   ],
+   "derived": [
+    "likely"
+   ]
+  },
+  {
+   "lemma": "line"
+  },
+  {
+   "lemma": "lion"
+  },
+  {
+   "lemma": "lip"
+  },
+  {
+   "lemma": "listen"
+  },
+  {
+   "lemma": "little"
+  },
+  {
+   "lemma": "live"
+  },
+  {
+   "lemma": "long"
+  },
+  {
+   "lemma": "look"
+  },
+  {
+   "lemma": "love"
+  },
+  {
+   "lemma": "low"
+  },
+  {
+   "lemma": "luck"
+  },
+  {
+   "lemma": "lunch"
+  },
+  {
+   "lemma": "mad"
+  },
+  {
+   "lemma": "mail"
+  },
+  {
+   "lemma": "make"
+  },
+  {
+   "lemma": "man"
+  },
+  {
+   "lemma": "many"
+  },
+  {
+   "lemma": "map"
+  },
+  {
+   "lemma": "marathon"
+  },
+  {
+   "lemma": "market"
+  },
+  {
+   "lemma": "marry"
+  },
+  {
+   "lemma": "mathematics",
+   "forms": [
+    "mathematics",
+    "maths",
+    "math"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "may"
+  },
+  {
+   "lemma": "meat"
+  },
+  {
+   "lemma": "medal"
+  },
+  {
+   "lemma": "meet"
+  },
+  {
+   "lemma": "member",
+   "forms": [
+    "member"
+   ],
+   "derived": [
+    "membership"
+   ]
+  },
+  {
+   "lemma": "memory"
+  },
+  {
+   "lemma": "middle"
+  },
+  {
+   "lemma": "might"
+  },
+  {
+   "lemma": "milk"
+  },
+  {
+   "lemma": "mind"
+  },
+  {
+   "lemma": "miss"
+  },
+  {
+   "lemma": "model"
+  },
+  {
+   "lemma": "money"
+  },
+  {
+   "lemma": "monkey"
+  },
+  {
+   "lemma": "month"
+  },
+  {
+   "lemma": "moon",
+   "forms": [
+    "moon"
+   ],
+   "derived": [
+    "half­moon"
+   ]
+  },
+  {
+   "lemma": "morning"
+  },
+  {
+   "lemma": "mother",
+   "forms": [
+    "mother"
+   ],
+   "derived": [
+    "mom",
+    "mommy"
+   ]
+  },
+  {
+   "lemma": "mountain"
+  },
+  {
+   "lemma": "mouse"
+  },
+  {
+   "lemma": "mouth"
+  },
+  {
+   "lemma": "move"
+  },
+  {
+   "lemma": "movie"
+  },
+  {
+   "lemma": "much"
+  },
+  {
+   "lemma": "music"
+  },
+  {
+   "lemma": "must"
+  },
+  {
+   "lemma": "name"
+  },
+  {
+   "lemma": "nation",
+   "forms": [
+    "nation"
+   ],
+   "derived": [
+    "international"
+   ]
+  },
+  {
+   "lemma": "nature"
+  },
+  {
+   "lemma": "near"
+  },
+  {
+   "lemma": "neck"
+  },
+  {
+   "lemma": "need"
+  },
+  {
+   "lemma": "never"
+  },
+  {
+   "lemma": "new"
+  },
+  {
+   "lemma": "news"
+  },
+  {
+   "lemma": "newspaper"
+  },
+  {
+   "lemma": "next"
+  },
+  {
+   "lemma": "nice"
+  },
+  {
+   "lemma": "night"
+  },
+  {
+   "lemma": "nine"
+  },
+  {
+   "lemma": "no",
+   "forms": [
+    "no",
+    "nope",
+    "nay"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "north"
+  },
+  {
+   "lemma": "nose"
+  },
+  {
+   "lemma": "not"
+  },
+  {
+   "lemma": "note",
+   "forms": [
+    "note"
+   ],
+   "derived": [
+    "notion"
+   ]
+  },
+  {
+   "lemma": "notebook"
+  },
+  {
+   "lemma": "nothing"
+  },
+  {
+   "lemma": "now"
+  },
+  {
+   "lemma": "number"
+  },
+  {
+   "lemma": "nurse"
+  },
+  {
+   "lemma": "of"
+  },
+  {
+   "lemma": "off"
+  },
+  {
+   "lemma": "office",
+   "forms": [
+    "office"
+   ],
+   "derived": [
+    "official"
+   ]
+  },
+  {
+   "lemma": "often"
+  },
+  {
+   "lemma": "oil"
+  },
+  {
+   "lemma": "okay",
+   "forms": [
+    "okay",
+    "okey",
+    "OK"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "old"
+  },
+  {
+   "lemma": "on"
+  },
+  {
+   "lemma": "one"
+  },
+  {
+   "lemma": "only"
+  },
+  {
+   "lemma": "open"
+  },
+  {
+   "lemma": "or"
+  },
+  {
+   "lemma": "orange"
+  },
+  {
+   "lemma": "out"
+  },
+  {
+   "lemma": "over"
+  },
+  {
+   "lemma": "page"
+  },
+  {
+   "lemma": "paint"
+  },
+  {
+   "lemma": "pants"
+  },
+  {
+   "lemma": "paper"
+  },
+  {
+   "lemma": "parent"
+  },
+  {
+   "lemma": "park"
+  },
+  {
+   "lemma": "part"
+  },
+  {
+   "lemma": "partner"
+  },
+  {
+   "lemma": "party"
+  },
+  {
+   "lemma": "pass"
+  },
+  {
+   "lemma": "pay"
+  },
+  {
+   "lemma": "pen"
+  },
+  {
+   "lemma": "pencil"
+  },
+  {
+   "lemma": "people"
+  },
+  {
+   "lemma": "piano"
+  },
+  {
+   "lemma": "pick"
+  },
+  {
+   "lemma": "picture"
+  },
+  {
+   "lemma": "pig"
+  },
+  {
+   "lemma": "pilot"
+  },
+  {
+   "lemma": "pink"
+  },
+  {
+   "lemma": "pizza"
+  },
+  {
+   "lemma": "place",
+   "forms": [
+    "place"
+   ],
+   "derived": [
+    "displace"
+   ]
+  },
+  {
+   "lemma": "plan"
+  },
+  {
+   "lemma": "plastic"
+  },
+  {
+   "lemma": "play"
+  },
+  {
+   "lemma": "please",
+   "forms": [
+    "please"
+   ],
+   "derived": [
+    "pleasant",
+    "pleasure"
+   ]
+  },
+  {
+   "lemma": "point"
+  },
+  {
+   "lemma": "police"
+  },
+  {
+   "lemma": "poor"
+  },
+  {
+   "lemma": "potato"
+  },
+  {
+   "lemma": "power"
+  },
+  {
+   "lemma": "present"
+  },
+  {
+   "lemma": "pretty"
+  },
+  {
+   "lemma": "prince"
+  },
+  {
+   "lemma": "print"
+  },
+  {
+   "lemma": "problem"
+  },
+  {
+   "lemma": "program",
+   "forms": [
+    "program",
+    "programme"
+   ],
+   "derived": [
+    "programmatic"
+   ]
+  },
+  {
+   "lemma": "project"
+  },
+  {
+   "lemma": "puppy"
+  },
+  {
+   "lemma": "push"
+  },
+  {
+   "lemma": "put"
+  },
+  {
+   "lemma": "queen"
+  },
+  {
+   "lemma": "question"
+  },
+  {
+   "lemma": "quick"
+  },
+  {
+   "lemma": "quiet"
+  },
+  {
+   "lemma": "quiz"
+  },
+  {
+   "lemma": "rabbit"
+  },
+  {
+   "lemma": "race",
+   "forms": [
+    "race"
+   ],
+   "derived": [
+    "racial"
+   ]
+  },
+  {
+   "lemma": "radio"
+  },
+  {
+   "lemma": "rain"
+  },
+  {
+   "lemma": "read"
+  },
+  {
+   "lemma": "ready"
+  },
+  {
+   "lemma": "recreation"
+  },
+  {
+   "lemma": "red"
+  },
+  {
+   "lemma": "remember"
+  },
+  {
+   "lemma": "restaurant"
+  },
+  {
+   "lemma": "restroom"
+  },
+  {
+   "lemma": "return"
+  },
+  {
+   "lemma": "ribbon"
+  },
+  {
+   "lemma": "rich"
+  },
+  {
+   "lemma": "right"
+  },
+  {
+   "lemma": "ring"
+  },
+  {
+   "lemma": "river"
+  },
+  {
+   "lemma": "road"
+  },
+  {
+   "lemma": "robot"
+  },
+  {
+   "lemma": "rock"
+  },
+  {
+   "lemma": "room"
+  },
+  {
+   "lemma": "rose"
+  },
+  {
+   "lemma": "run"
+  },
+  {
+   "lemma": "sad"
+  },
+  {
+   "lemma": "safe"
+  },
+  {
+   "lemma": "salad"
+  },
+  {
+   "lemma": "sale"
+  },
+  {
+   "lemma": "salt"
+  },
+  {
+   "lemma": "same"
+  },
+  {
+   "lemma": "sand"
+  },
+  {
+   "lemma": "sandwich"
+  },
+  {
+   "lemma": "save"
+  },
+  {
+   "lemma": "say"
+  },
+  {
+   "lemma": "school"
+  },
+  {
+   "lemma": "science"
+  },
+  {
+   "lemma": "scissors"
+  },
+  {
+   "lemma": "score"
+  },
+  {
+   "lemma": "sea"
+  },
+  {
+   "lemma": "season"
+  },
+  {
+   "lemma": "second",
+   "forms": [
+    "second"
+   ],
+   "derived": [
+    "secondary"
+   ]
+  },
+  {
+   "lemma": "see"
+  },
+  {
+   "lemma": "sell"
+  },
+  {
+   "lemma": "send"
+  },
+  {
+   "lemma": "service"
+  },
+  {
+   "lemma": "set"
+  },
+  {
+   "lemma": "seven"
+  },
+  {
+   "lemma": "she"
+  },
+  {
+   "lemma": "ship"
+  },
+  {
+   "lemma": "shirt"
+  },
+  {
+   "lemma": "shoe"
+  },
+  {
+   "lemma": "shop"
+  },
+  {
+   "lemma": "short"
+  },
+  {
+   "lemma": "should"
+  },
+  {
+   "lemma": "show"
+  },
+  {
+   "lemma": "shy"
+  },
+  {
+   "lemma": "sick"
+  },
+  {
+   "lemma": "side"
+  },
+  {
+   "lemma": "sing"
+  },
+  {
+   "lemma": "sister"
+  },
+  {
+   "lemma": "sit"
+  },
+  {
+   "lemma": "six"
+  },
+  {
+   "lemma": "size"
+  },
+  {
+   "lemma": "skate"
+  },
+  {
+   "lemma": "ski"
+  },
+  {
+   "lemma": "skin"
+  },
+  {
+   "lemma": "skirt"
+  },
+  {
+   "lemma": "sky"
+  },
+  {
+   "lemma": "sleep"
+  },
+  {
+   "lemma": "slow"
+  },
+  {
+   "lemma": "small"
+  },
+  {
+   "lemma": "smell"
+  },
+  {
+   "lemma": "smile"
+  },
+  {
+   "lemma": "snow"
+  },
+  {
+   "lemma": "so"
+  },
+  {
+   "lemma": "soccer"
+  },
+  {
+   "lemma": "sock"
+  },
+  {
+   "lemma": "soft"
+  },
+  {
+   "lemma": "software"
+  },
+  {
+   "lemma": "some"
+  },
+  {
+   "lemma": "son"
+  },
+  {
+   "lemma": "song"
+  },
+  {
+   "lemma": "sorry"
+  },
+  {
+   "lemma": "sound"
+  },
+  {
+   "lemma": "soup"
+  },
+  {
+   "lemma": "south"
+  },
+  {
+   "lemma": "space"
+  },
+  {
+   "lemma": "spaghetti"
+  },
+  {
+   "lemma": "speak"
+  },
+  {
+   "lemma": "speed"
+  },
+  {
+   "lemma": "spoon"
+  },
+  {
+   "lemma": "sport"
+  },
+  {
+   "lemma": "spring"
+  },
+  {
+   "lemma": "staff"
+  },
+  {
+   "lemma": "stand"
+  },
+  {
+   "lemma": "star"
+  },
+  {
+   "lemma": "start"
+  },
+  {
+   "lemma": "stay"
+  },
+  {
+   "lemma": "steak"
+  },
+  {
+   "lemma": "stone"
+  },
+  {
+   "lemma": "stop"
+  },
+  {
+   "lemma": "store"
+  },
+  {
+   "lemma": "story"
+  },
+  {
+   "lemma": "street"
+  },
+  {
+   "lemma": "strong"
+  },
+  {
+   "lemma": "study",
+   "forms": [
+    "study"
+   ],
+   "derived": [
+    "student"
+   ]
+  },
+  {
+   "lemma": "style"
+  },
+  {
+   "lemma": "subway"
+  },
+  {
+   "lemma": "sugar"
+  },
+  {
+   "lemma": "summer"
+  },
+  {
+   "lemma": "sun"
+  },
+  {
+   "lemma": "sure",
+   "forms": [
+    "sure"
+   ],
+   "derived": [
+    "ensure"
+   ]
+  },
+  {
+   "lemma": "swim"
+  },
+  {
+   "lemma": "table"
+  },
+  {
+   "lemma": "tail"
+  },
+  {
+   "lemma": "take",
+   "forms": [
+    "take"
+   ],
+   "derived": [
+    "mistake"
+   ]
+  },
+  {
+   "lemma": "talk"
+  },
+  {
+   "lemma": "tall"
+  },
+  {
+   "lemma": "tape"
+  },
+  {
+   "lemma": "taste"
+  },
+  {
+   "lemma": "taxi"
+  },
+  {
+   "lemma": "teach"
+  },
+  {
+   "lemma": "team"
+  },
+  {
+   "lemma": "telephone",
+   "forms": [
+    "telephone",
+    "phone"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "television"
+  },
+  {
+   "lemma": "tell"
+  },
+  {
+   "lemma": "ten"
+  },
+  {
+   "lemma": "tennis"
+  },
+  {
+   "lemma": "tent"
+  },
+  {
+   "lemma": "test"
+  },
+  {
+   "lemma": "textbook"
+  },
+  {
+   "lemma": "than"
+  },
+  {
+   "lemma": "thank"
+  },
+  {
+   "lemma": "that"
+  },
+  {
+   "lemma": "the"
+  },
+  {
+   "lemma": "there"
+  },
+  {
+   "lemma": "they"
+  },
+  {
+   "lemma": "thing"
+  },
+  {
+   "lemma": "think"
+  },
+  {
+   "lemma": "third"
+  },
+  {
+   "lemma": "thirst"
+  },
+  {
+   "lemma": "thirteen"
+  },
+  {
+   "lemma": "thirty"
+  },
+  {
+   "lemma": "this"
+  },
+  {
+   "lemma": "three"
+  },
+  {
+   "lemma": "ticket"
+  },
+  {
+   "lemma": "tiger"
+  },
+  {
+   "lemma": "time"
+  },
+  {
+   "lemma": "tire",
+   "forms": [
+    "tire"
+   ],
+   "derived": [
+    "tired"
+   ]
+  },
+  {
+   "lemma": "to"
+  },
+  {
+   "lemma": "today"
+  },
+  {
+   "lemma": "together"
+  },
+  {
+   "lemma": "tomato"
+  },
+  {
+   "lemma": "tomorrow"
+  },
+  {
+   "lemma": "tonight"
+  },
+  {
+   "lemma": "too"
+  },
+  {
+   "lemma": "tooth"
+  },
+  {
+   "lemma": "top"
+  },
+  {
+   "lemma": "touch"
+  },
+  {
+   "lemma": "town"
+  },
+  {
+   "lemma": "toy"
+  },
+  {
+   "lemma": "track"
+  },
+  {
+   "lemma": "train"
+  },
+  {
+   "lemma": "travel"
+  },
+  {
+   "lemma": "tree"
+  },
+  {
+   "lemma": "trip"
+  },
+  {
+   "lemma": "truck"
+  },
+  {
+   "lemma": "true"
+  },
+  {
+   "lemma": "try",
+   "forms": [
+    "try"
+   ],
+   "derived": [
+    "trial"
+   ]
+  },
+  {
+   "lemma": "turn"
+  },
+  {
+   "lemma": "twelve"
+  },
+  {
+   "lemma": "twenty"
+  },
+  {
+   "lemma": "twenty-first"
+  },
+  {
+   "lemma": "twenty-second"
+  },
+  {
+   "lemma": "twenty-third"
+  },
+  {
+   "lemma": "twice"
+  },
+  {
+   "lemma": "two"
+  },
+  {
+   "lemma": "type"
+  },
+  {
+   "lemma": "ugly"
+  },
+  {
+   "lemma": "umbrella"
+  },
+  {
+   "lemma": "uncle"
+  },
+  {
+   "lemma": "under"
+  },
+  {
+   "lemma": "understand"
+  },
+  {
+   "lemma": "up"
+  },
+  {
+   "lemma": "use",
+   "forms": [
+    "use"
+   ],
+   "derived": [
+    "usual"
+   ]
+  },
+  {
+   "lemma": "vegetable"
+  },
+  {
+   "lemma": "very"
+  },
+  {
+   "lemma": "video"
+  },
+  {
+   "lemma": "violin"
+  },
+  {
+   "lemma": "visit"
+  },
+  {
+   "lemma": "voice"
+  },
+  {
+   "lemma": "wait"
+  },
+  {
+   "lemma": "wake"
+  },
+  {
+   "lemma": "walk"
+  },
+  {
+   "lemma": "wall"
+  },
+  {
+   "lemma": "want"
+  },
+  {
+   "lemma": "war"
+  },
+  {
+   "lemma": "warm"
+  },
+  {
+   "lemma": "wash"
+  },
+  {
+   "lemma": "watch"
+  },
+  {
+   "lemma": "water"
+  },
+  {
+   "lemma": "watermelon"
+  },
+  {
+   "lemma": "way"
+  },
+  {
+   "lemma": "we"
+  },
+  {
+   "lemma": "wear"
+  },
+  {
+   "lemma": "weather"
+  },
+  {
+   "lemma": "website"
+  },
+  {
+   "lemma": "wedding"
+  },
+  {
+   "lemma": "week"
+  },
+  {
+   "lemma": "weekend"
+  },
+  {
+   "lemma": "weight"
+  },
+  {
+   "lemma": "welcome"
+  },
+  {
+   "lemma": "well"
+  },
+  {
+   "lemma": "west"
+  },
+  {
+   "lemma": "wet"
+  },
+  {
+   "lemma": "what"
+  },
+  {
+   "lemma": "when"
+  },
+  {
+   "lemma": "where"
+  },
+  {
+   "lemma": "white"
+  },
+  {
+   "lemma": "who"
+  },
+  {
+   "lemma": "why"
+  },
+  {
+   "lemma": "wife"
+  },
+  {
+   "lemma": "will"
+  },
+  {
+   "lemma": "win"
+  },
+  {
+   "lemma": "wind"
+  },
+  {
+   "lemma": "window"
+  },
+  {
+   "lemma": "wine"
+  },
+  {
+   "lemma": "winter"
+  },
+  {
+   "lemma": "wish"
+  },
+  {
+   "lemma": "with"
+  },
+  {
+   "lemma": "woman"
+  },
+  {
+   "lemma": "wood"
+  },
+  {
+   "lemma": "word"
+  },
+  {
+   "lemma": "work"
+  },
+  {
+   "lemma": "world"
+  },
+  {
+   "lemma": "worry"
+  },
+  {
+   "lemma": "write"
+  },
+  {
+   "lemma": "wrong"
+  },
+  {
+   "lemma": "year"
+  },
+  {
+   "lemma": "yellow"
+  },
+  {
+   "lemma": "yes",
+   "forms": [
+    "yes",
+    "yeah",
+    "yep"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "yesterday"
+  },
+  {
+   "lemma": "you"
+  },
+  {
+   "lemma": "young"
+  },
+  {
+   "lemma": "zoo"
+  }
  ],
  "secondary": [
-  "able",
-  "absolute",
-  "accent",
-  "accept",
-  "access",
-  "accident",
-  "account",
-  "accuse",
-  "achieve",
-  "adapt",
-  "admire",
-  "admit",
-  "adopt",
-  "advance",
-  "advantage",
-  "adventure",
-  "advertise",
-  "advertize",
-  "advice",
-  "advise",
-  "affair",
-  "affect",
-  "afford",
-  "agent",
-  "aid",
-  "aim",
-  "airline",
-  "airport",
-  "alarm",
-  "alcohol",
-  "alive",
-  "allow",
-  "aloud",
-  "alter",
-  "although",
-  "altogether",
-  "amaze",
-  "ambulance",
-  "among",
-  "amount",
-  "amuse",
-  "analysis",
-  "angel",
-  "anger",
-  "announce",
-  "annoy",
-  "annual",
-  "ant",
-  "anxious",
-  "apart",
-  "appeal",
-  "appear",
-  "apply",
-  "appoint",
-  "appreciate",
-  "approach",
-  "appropriate",
-  "argue",
-  "army",
-  "arrange",
-  "arrest",
-  "article",
-  "aside",
-  "asleep",
-  "assess",
-  "assign",
-  "assist",
-  "associate",
-  "assume",
-  "atmosphere",
-  "attach",
-  "attack",
-  "attempt",
-  "attend",
-  "attention",
-  "attitude",
-  "attract",
-  "audience",
-  "automatic",
-  "average",
-  "avoid",
-  "awake",
-  "award",
-  "aware",
-  "awkward",
-  "background",
-  "bacon",
-  "balance",
-  "balloon",
-  "band",
-  "bang",
-  "bar",
-  "bare",
-  "bark",
-  "basis",
-  "battery",
-  "battle",
-  "bay",
-  "bean",
-  "beat",
-  "beer",
-  "beg",
-  "belief",
-  "belong",
-  "bench",
-  "bend",
-  "beneath",
-  "benefit",
-  "bet",
-  "beyond",
-  "billion",
-  "bin",
-  "bind",
-  "bit",
-  "bite",
-  "bitter",
-  "blame",
-  "blank",
-  "blanket",
-  "bless",
-  "blind",
-  "block",
-  "blonde",
-  "bloom",
-  "blow",
-  "boil",
-  "bomb",
-  "bond",
-  "boom",
-  "boot",
-  "bore",
-  "boss",
-  "bother",
-  "bounce",
-  "bow",
-  "bowl",
-  "brain",
-  "brake",
-  "branch",
-  "brand",
-  "breast",
-  "breath",
-  "breathe",
-  "brick",
-  "brief",
-  "brilliant",
-  "broad",
-  "bubble",
-  "budget",
-  "bug",
-  "bump",
-  "bunch",
-  "burst",
-  "bury",
-  "bush",
-  "cable",
-  "cage",
-  "calculate",
-  "calendar",
-  "calm",
-  "capable",
-  "cape",
-  "capital",
-  "captain",
-  "career",
-  "carpet",
-  "cart",
-  "cast",
-  "castle",
-  "catalog",
-  "catalogue",
-  "category",
-  "cause",
-  "ceiling",
-  "cell",
-  "century",
-  "chain",
-  "chairman",
-  "challenge",
-  "champion",
-  "channel",
-  "character",
-  "characteristic",
-  "charge",
-  "charm",
-  "chart",
-  "chase",
-  "chat",
-  "cheek",
-  "cheer",
-  "chest",
-  "chew",
-  "chief",
-  "chip",
-  "choice",
-  "chop",
-  "cigarette",
-  "cinema",
-  "circumstance",
-  "citizen",
-  "civil",
-  "claim",
-  "clerk",
-  "click",
-  "client",
-  "cliff",
-  "climate",
-  "clip",
-  "clue",
-  "coach",
-  "coal",
-  "coast",
-  "code",
-  "coin",
-  "combine",
-  "comedy",
-  "comfort",
-  "command",
-  "comment",
-  "commerce",
-  "committee",
-  "common",
-  "communicate",
-  "community",
-  "compare",
-  "complain",
-  "complete",
-  "complex",
-  "complicate",
-  "concentrate",
-  "concept",
-  "concern",
-  "concert",
-  "confirm",
-  "conflict",
-  "confuse",
-  "connect",
-  "conscious",
-  "consider",
-  "constant",
-  "consume",
-  "contact",
-  "contain",
-  "content",
-  "contest",
-  "context",
-  "continue",
-  "contract",
-  "contribute",
-  "converse",
-  "convince",
-  "cop",
-  "cope",
-  "copy",
-  "correct",
-  "cottage",
-  "cotton",
-  "cough",
-  "council",
-  "count",
-  "countryside",
-  "county",
-  "crack",
-  "crash",
-  "crawl",
-  "create",
-  "credit",
-  "crime",
-  "crisis",
-  "crisp",
-  "crowd",
-  "crown",
-  "cruel",
-  "cure",
-  "curious",
-  "curl",
-  "current",
-  "cute",
-  "cycle",
-  "damage",
-  "dare",
-  "darling",
-  "dawn",
-  "deal",
-  "debate",
-  "debt",
-  "deck",
-  "decorate",
-  "defence",
-  "defense",
-  "define",
-  "definite",
-  "degree",
-  "delay",
-  "delight",
-  "deliver",
-  "demand",
-  "demonstrate",
-  "dentist",
-  "deny",
-  "depend",
-  "depress",
-  "describe",
-  "desert",
-  "deserve",
-  "desire",
-  "desperate",
-  "despite",
-  "destroy",
-  "detail",
-  "detect",
-  "determine",
-  "develop",
-  "diary",
-  "dictionary",
-  "diet",
-  "dig",
-  "direct",
-  "dirt",
-  "disappoint",
-  "disc",
-  "discipline",
-  "disgust",
-  "dish",
-  "display",
-  "distance",
-  "district",
-  "disturb",
-  "dive",
-  "divide",
-  "divorce",
-  "document",
-  "dolphin",
-  "domestic",
-  "donate",
-  "doubt",
-  "dozen",
-  "drag",
-  "drama",
-  "drug",
-  "due",
-  "dump",
-  "dust",
-  "duty",
-  "each",
-  "earn",
-  "ease",
-  "economy",
-  "edge",
-  "edit",
-  "educate",
-  "effect",
-  "effort",
-  "either",
-  "elect",
-  "electric",
-  "element",
-  "else",
-  "embarrass",
-  "emotion",
-  "emphasize",
-  "empire",
-  "employ",
-  "empty",
-  "enemy",
-  "engage",
-  "engine",
-  "engineer",
-  "enormous",
-  "entertain",
-  "entire",
-  "envelope",
-  "equal",
-  "escape",
-  "especial",
-  "essay",
-  "establish",
-  "estimate",
-  "even",
-  "event",
-  "ever",
-  "evidence",
-  "evil",
-  "exact",
-  "examine",
-  "except",
-  "exchange",
-  "excite",
-  "excuse",
-  "exhaust",
-  "exist",
-  "exit",
-  "expand",
-  "expect",
-  "expense",
-  "experience",
-  "experiment",
-  "expert",
-  "explain",
-  "expose",
-  "express",
-  "extend",
-  "extra",
-  "extreme",
-  "factor",
-  "factory",
-  "faint",
-  "fair",
-  "faith",
-  "familiar",
-  "fancy",
-  "fantastic",
-  "fascinate",
-  "fashion",
-  "fault",
-  "favor",
-  "favour",
-  "fear",
-  "feature",
-  "fee",
-  "feed",
-  "fellow",
-  "female",
-  "fence",
-  "fever",
-  "few",
-  "figure",
-  "final",
-  "finance",
-  "firm",
-  "fit",
-  "flag",
-  "flame",
-  "flash",
-  "flat",
-  "flight",
-  "float",
-  "flood",
-  "flow",
-  "fog",
-  "fold",
-  "folk",
-  "follow",
-  "force",
-  "foreign",
-  "forever",
-  "forgive",
-  "forth",
-  "fortunate",
-  "fortune",
-  "forward",
-  "found",
-  "frame",
-  "frankly",
-  "freeze",
-  "fright",
-  "frog",
-  "frustrate",
-  "fry",
-  "function",
-  "fund",
-  "fur",
-  "furniture",
-  "gain",
-  "garage",
-  "gate",
-  "gather",
-  "gear",
-  "general",
-  "gentle",
-  "gesture",
-  "ghost",
-  "giant",
-  "gift",
-  "giraffe",
-  "glance",
-  "glory",
-  "glove",
-  "glue",
-  "golf",
-  "gorgeous",
-  "govern",
-  "grab",
-  "grace",
-  "grade",
-  "grand",
-  "grant",
-  "graph",
-  "greet",
-  "grocery",
-  "guarantee",
-  "guard",
-  "guest",
-  "guide",
-  "guilt",
-  "gun",
-  "half",
-  "hall",
-  "handle",
-  "handsome",
-  "happen",
-  "harm",
-  "health",
-  "hear",
-  "heaven",
-  "height",
-  "helicopter",
-  "hell",
-  "hesitate",
-  "hide",
-  "highway",
-  "hint",
-  "hire",
-  "hole",
-  "honey",
-  "honor",
-  "honour",
-  "hotel",
-  "hug",
-  "huge",
-  "humor",
-  "humour",
-  "hunger",
-  "hurt",
-  "identity",
-  "ignore",
-  "ill",
-  "illustrate",
-  "imagine",
-  "immediate",
-  "impress",
-  "improve",
-  "include",
-  "income",
-  "increase",
-  "indeed",
-  "indicate",
-  "individual",
-  "industry",
-  "influence",
-  "inform",
-  "injure",
-  "innocent",
-  "insist",
-  "inspect",
-  "instance",
-  "instant",
-  "instead",
-  "instruct",
-  "instrument",
-  "insure",
-  "intend",
-  "intense",
-  "intent",
-  "interest",
-  "internal",
-  "interrupt",
-  "invent",
-  "invest",
-  "investigate",
-  "involve",
-  "iron",
-  "island",
-  "item",
-  "jaw",
-  "jeans",
-  "joke",
-  "journey",
-  "joy",
-  "judge",
-  "junior",
-  "justice",
-  "knee",
-  "knock",
-  "knowledge",
-  "lab",
-  "label",
-  "labor",
-  "laboratory",
-  "labour",
-  "lack",
-  "lamb",
-  "lamp",
-  "lane",
-  "language",
-  "laugh",
-  "law",
-  "lawn",
-  "lawyer",
-  "lay",
-  "lead",
-  "leaf",
-  "league",
-  "lean",
-  "leap",
-  "leave",
-  "legal",
-  "lemon",
-  "lend",
-  "let",
-  "level",
-  "licence",
-  "license",
-  "lid",
-  "lift",
-  "limit",
-  "link",
-  "list",
-  "livingroom",
-  "load",
-  "loan",
-  "local",
-  "locate",
-  "lock",
-  "log",
-  "loose",
-  "lose",
-  "loss",
-  "lot",
-  "loud",
-  "machine",
-  "magazine",
-  "magic",
-  "main",
-  "maintain",
-  "major",
-  "male",
-  "manage",
-  "manner",
-  "manufacture",
-  "mark",
-  "marvel",
-  "mask",
-  "mass",
-  "master",
-  "match",
-  "mate",
-  "matter",
-  "maximum",
-  "maybe",
-  "meal",
-  "mean",
-  "measure",
-  "medical",
-  "medicine",
-  "melon",
-  "melt",
-  "mental",
-  "mention",
-  "menu",
-  "mess",
-  "message",
-  "metal",
-  "method",
-  "microwave",
-  "military",
-  "mill",
-  "minor",
-  "minute",
-  "mirror",
-  "mission",
-  "mix",
-  "modern",
-  "moment",
-  "monitor",
-  "mood",
-  "moral",
-  "moreover",
-  "motion",
-  "motor",
-  "mount",
-  "mud",
-  "muscle",
-  "museum",
-  "mushroom",
-  "mystery",
-  "nail",
-  "narrow",
-  "native",
-  "navy",
-  "neat",
-  "necessary",
-  "neighbor",
-  "neighbour",
-  "neither",
-  "nerve",
-  "nest",
-  "net",
-  "noise",
-  "none",
-  "noon",
-  "nor",
-  "notice",
-  "nowadays",
-  "nowhere",
-  "nut",
-  "oak",
-  "object",
-  "observe",
-  "obvious",
-  "occasion",
-  "occur",
-  "ocean",
-  "odd",
-  "offer",
-  "officer",
-  "once",
-  "opera",
-  "operate",
-  "opinion",
-  "oppose",
-  "order",
-  "ordinary",
-  "other",
-  "otherwise",
-  "ought",
-  "oven",
-  "overall",
-  "own",
-  "pack",
-  "pain",
-  "pair",
-  "palace",
-  "pan",
-  "panic",
-  "parade",
-  "paragraph",
-  "pardon",
-  "particular",
-  "past",
-  "path",
-  "patient",
-  "pattern",
-  "pause",
-  "peace",
-  "pear",
-  "pepper",
-  "per",
-  "perfect",
-  "perform",
-  "perhaps",
-  "period",
-  "person",
-  "pet",
-  "photo",
-  "photograph",
-  "physical",
-  "picnic",
-  "pie",
-  "piece",
-  "pile",
-  "pin",
-  "pine",
-  "pipe",
-  "pitch",
-  "pity",
-  "plain",
-  "plane",
-  "planet",
-  "plant",
-  "plate",
-  "plenty",
-  "plus",
-  "pocket",
-  "poem",
-  "poet",
-  "poison",
-  "pole",
-  "policy",
-  "polite",
-  "politics",
-  "pollute",
-  "pool",
-  "pop",
-  "popular",
-  "pork",
-  "port",
-  "possess",
-  "possible",
-  "post",
-  "pot",
-  "potential",
-  "pour",
-  "powder",
-  "practical",
-  "practice",
-  "practise",
-  "pray",
-  "prefer",
-  "pregnant",
-  "prepare",
-  "presence",
-  "press",
-  "pretend",
-  "prevent",
-  "previous",
-  "price",
-  "pride",
-  "prime",
-  "principle",
-  "prison",
-  "privacy",
-  "private",
-  "prize",
-  "probable",
-  "proceed",
-  "process",
-  "produce",
-  "profession",
-  "profit",
-  "progress",
-  "promise",
-  "promote",
-  "pronounce",
-  "proper",
-  "property",
-  "propose",
-  "protect",
-  "protest",
-  "proud",
-  "prove",
-  "provide",
-  "pub",
-  "public",
-  "pull",
-  "pump",
-  "punch",
-  "punish",
-  "purchase",
-  "pure",
-  "purple",
-  "purpose",
-  "puzzle",
-  "quality",
-  "quarter",
-  "quit",
-  "quite",
-  "quote",
-  "rail",
-  "rainbow",
-  "raise",
-  "range",
-  "rapid",
-  "rare",
-  "rat",
-  "rate",
-  "rather",
-  "reach",
-  "react",
-  "real",
-  "reason",
-  "receive",
-  "recent",
-  "recipe",
-  "recognize",
-  "recommend",
-  "record",
-  "recover",
-  "reduce",
-  "refer",
-  "reflect",
-  "refuse",
-  "regard",
-  "region",
-  "register",
-  "regular",
-  "relate",
-  "relax",
-  "release",
-  "relief",
-  "rely",
-  "remain",
-  "remark",
-  "remind",
-  "remove",
-  "rent",
-  "repair",
-  "repeat",
-  "replace",
-  "reply",
-  "report",
-  "represent",
-  "request",
-  "require",
-  "research",
-  "reserve",
-  "resist",
-  "resource",
-  "respect",
-  "respond",
-  "responsible",
-  "rest",
-  "result",
-  "retire",
-  "rice",
-  "ride",
-  "rise",
-  "risk",
-  "rob",
-  "rocket",
-  "role",
-  "roll",
-  "roof",
-  "root",
-  "rope",
-  "rough",
-  "round",
-  "route",
-  "row",
-  "royal",
-  "rub",
-  "rude",
-  "ruin",
-  "rule",
-  "rush",
-  "sail",
-  "salary",
-  "sample",
-  "satisfy",
-  "sauce",
-  "scale",
-  "scare",
-  "scarf",
-  "scene",
-  "schedule",
-  "scratch",
-  "scream",
-  "screen",
-  "seal",
-  "search",
-  "seat",
-  "secret",
-  "secretary",
-  "section",
-  "secure",
-  "seed",
-  "seek",
-  "seem",
-  "select",
-  "self",
-  "senior",
-  "sense",
-  "sentence",
-  "separate",
-  "series",
-  "serious",
-  "serve",
-  "session",
-  "settle",
-  "several",
-  "sew",
-  "sex",
-  "shade",
-  "shadow",
-  "shake",
-  "shall",
-  "shame",
-  "shape",
-  "share",
-  "sharp",
-  "shave",
-  "sheep",
-  "sheet",
-  "shelf",
-  "shell",
-  "shelter",
-  "shift",
-  "shine",
-  "shock",
-  "shoot",
-  "shore",
-  "shoulder",
-  "shout",
-  "shower",
-  "shut",
-  "sight",
-  "sign",
-  "silly",
-  "silver",
-  "similar",
-  "simple",
-  "since",
-  "single",
-  "sink",
-  "site",
-  "situate",
-  "skill",
-  "slave",
-  "slide",
-  "slight",
-  "slip",
-  "smart",
-  "smash",
-  "smoke",
-  "smooth",
-  "snack",
-  "snake",
-  "snap",
-  "social",
-  "society",
-  "soil",
-  "soldier",
-  "solid",
-  "solve",
-  "somewhat",
-  "soon",
-  "sore",
-  "sort",
-  "soul",
-  "sour",
-  "source",
-  "spare",
-  "species",
-  "specific",
-  "speech",
-  "spell",
-  "spend",
-  "spin",
-  "spirit",
-  "spoil",
-  "sponsor",
-  "spot",
-  "spray",
-  "spread",
-  "spy",
-  "square",
-  "stable",
-  "stage",
-  "stairs",
-  "stamp",
-  "standard",
-  "stare",
-  "state",
-  "station",
-  "steady",
-  "steal",
-  "steam",
-  "steel",
-  "step",
-  "stick",
-  "still",
-  "stir",
-  "stock",
-  "stomach",
-  "storm",
-  "straight",
-  "strange",
-  "strategy",
-  "strawberry",
-  "stream",
-  "stress",
-  "stretch",
-  "strike",
-  "string",
-  "structure",
-  "struggle",
-  "studio",
-  "stuff",
-  "subject",
-  "succeed",
-  "success",
-  "such",
-  "sudden",
-  "suffer",
-  "suggest",
-  "suit",
-  "sum",
-  "super",
-  "supper",
-  "supply",
-  "support",
-  "suppose",
-  "surface",
-  "surprise",
-  "surround",
-  "survey",
-  "survive",
-  "suspect",
-  "swallow",
-  "sweater",
-  "sweep",
-  "sweet",
-  "swing",
-  "switch",
-  "system",
-  "tale",
-  "tank",
-  "tap",
-  "target",
-  "tax",
-  "tea",
-  "tear",
-  "technic",
-  "technique",
-  "technology",
-  "teenage",
-  "temperature",
-  "tend",
-  "tense",
-  "term",
-  "terrible",
-  "text",
-  "theater",
-  "theatre",
-  "then",
-  "theory",
-  "therefore",
-  "thick",
-  "thief",
-  "thin",
-  "though",
-  "thousand",
-  "threat",
-  "throat",
-  "through",
-  "throw",
-  "thus",
-  "tide",
-  "tie",
-  "tight",
-  "till",
-  "tin",
-  "tiny",
-  "tip",
-  "title",
-  "toast",
-  "toe",
-  "toilet",
-  "tone",
-  "tongue",
-  "tool",
-  "topic",
-  "total",
-  "tough",
-  "tour",
-  "toward",
-  "towards",
-  "towel",
-  "tower",
-  "trace",
-  "trade",
-  "tradition",
-  "traffic",
-  "transfer",
-  "transport",
-  "trap",
-  "tray",
-  "treat",
-  "triangle",
-  "trick",
-  "trouble",
-  "trunk",
-  "trust",
-  "truth",
-  "tune",
-  "twin",
-  "twist",
-  "uniform",
-  "unit",
-  "unite",
-  "university",
-  "unless",
-  "until",
-  "upon",
-  "upper",
-  "upset",
-  "valley",
-  "value",
-  "van",
-  "various",
-  "vary",
-  "vehicle",
-  "version",
-  "victim",
-  "view",
-  "villa",
-  "village",
-  "violent",
-  "vision",
-  "volume",
-  "volunteer",
-  "vote",
-  "wage",
-  "warn",
-  "waste",
-  "wave",
-  "weak",
-  "weapon",
-  "weigh",
-  "whale",
-  "wheel",
-  "whether",
-  "which",
-  "while",
-  "whisper",
-  "whistle",
-  "whole",
-  "wide",
-  "wild",
-  "wing",
-  "wipe",
-  "wire",
-  "wise",
-  "within",
-  "without",
-  "wonder",
-  "wool",
-  "worth",
-  "would",
-  "wound",
-  "wrap",
-  "yell",
-  "yet",
-  "zebra",
-  "zero"
+  {
+   "lemma": "able",
+   "forms": [
+    "able"
+   ],
+   "derived": [
+    "disabled"
+   ]
+  },
+  {
+   "lemma": "absolute"
+  },
+  {
+   "lemma": "accent"
+  },
+  {
+   "lemma": "accept"
+  },
+  {
+   "lemma": "access"
+  },
+  {
+   "lemma": "accident"
+  },
+  {
+   "lemma": "account"
+  },
+  {
+   "lemma": "accuse"
+  },
+  {
+   "lemma": "achieve"
+  },
+  {
+   "lemma": "adapt"
+  },
+  {
+   "lemma": "admire"
+  },
+  {
+   "lemma": "admit",
+   "forms": [
+    "admit"
+   ],
+   "derived": [
+    "admission"
+   ]
+  },
+  {
+   "lemma": "adopt"
+  },
+  {
+   "lemma": "advance"
+  },
+  {
+   "lemma": "advantage",
+   "forms": [
+    "advantage"
+   ],
+   "derived": [
+    "disadvantage"
+   ]
+  },
+  {
+   "lemma": "adventure"
+  },
+  {
+   "lemma": "advertize",
+   "forms": [
+    "advertize",
+    "advertise"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "advice"
+  },
+  {
+   "lemma": "advise"
+  },
+  {
+   "lemma": "affair"
+  },
+  {
+   "lemma": "affect",
+   "forms": [
+    "affect"
+   ],
+   "derived": [
+    "affection"
+   ]
+  },
+  {
+   "lemma": "afford"
+  },
+  {
+   "lemma": "agent"
+  },
+  {
+   "lemma": "aid"
+  },
+  {
+   "lemma": "aim"
+  },
+  {
+   "lemma": "airline"
+  },
+  {
+   "lemma": "airport"
+  },
+  {
+   "lemma": "alarm"
+  },
+  {
+   "lemma": "alcohol"
+  },
+  {
+   "lemma": "alive"
+  },
+  {
+   "lemma": "allow"
+  },
+  {
+   "lemma": "aloud"
+  },
+  {
+   "lemma": "alter"
+  },
+  {
+   "lemma": "although"
+  },
+  {
+   "lemma": "altogether"
+  },
+  {
+   "lemma": "amaze"
+  },
+  {
+   "lemma": "ambulance"
+  },
+  {
+   "lemma": "among"
+  },
+  {
+   "lemma": "amount"
+  },
+  {
+   "lemma": "amuse"
+  },
+  {
+   "lemma": "analysis"
+  },
+  {
+   "lemma": "angel"
+  },
+  {
+   "lemma": "anger"
+  },
+  {
+   "lemma": "announce"
+  },
+  {
+   "lemma": "annoy"
+  },
+  {
+   "lemma": "annual"
+  },
+  {
+   "lemma": "ant"
+  },
+  {
+   "lemma": "anxious"
+  },
+  {
+   "lemma": "apart"
+  },
+  {
+   "lemma": "appeal"
+  },
+  {
+   "lemma": "appear",
+   "forms": [
+    "appear"
+   ],
+   "derived": [
+    "disappear"
+   ]
+  },
+  {
+   "lemma": "apply",
+   "forms": [
+    "apply"
+   ],
+   "derived": [
+    "applicant"
+   ]
+  },
+  {
+   "lemma": "appoint"
+  },
+  {
+   "lemma": "appreciate"
+  },
+  {
+   "lemma": "approach"
+  },
+  {
+   "lemma": "appropriate"
+  },
+  {
+   "lemma": "argue"
+  },
+  {
+   "lemma": "army"
+  },
+  {
+   "lemma": "arrange"
+  },
+  {
+   "lemma": "arrest"
+  },
+  {
+   "lemma": "article"
+  },
+  {
+   "lemma": "aside"
+  },
+  {
+   "lemma": "asleep"
+  },
+  {
+   "lemma": "assess"
+  },
+  {
+   "lemma": "assign",
+   "forms": [
+    "assign"
+   ],
+   "derived": [
+    "assignment"
+   ]
+  },
+  {
+   "lemma": "assist",
+   "forms": [
+    "assist"
+   ],
+   "derived": [
+    "assistant"
+   ]
+  },
+  {
+   "lemma": "associate"
+  },
+  {
+   "lemma": "assume"
+  },
+  {
+   "lemma": "atmosphere"
+  },
+  {
+   "lemma": "attach"
+  },
+  {
+   "lemma": "attack"
+  },
+  {
+   "lemma": "attempt"
+  },
+  {
+   "lemma": "attend"
+  },
+  {
+   "lemma": "attention"
+  },
+  {
+   "lemma": "attitude"
+  },
+  {
+   "lemma": "attract"
+  },
+  {
+   "lemma": "audience"
+  },
+  {
+   "lemma": "automatic"
+  },
+  {
+   "lemma": "average"
+  },
+  {
+   "lemma": "avoid"
+  },
+  {
+   "lemma": "awake"
+  },
+  {
+   "lemma": "award"
+  },
+  {
+   "lemma": "aware",
+   "forms": [
+    "aware"
+   ],
+   "derived": [
+    "unaware"
+   ]
+  },
+  {
+   "lemma": "awkward"
+  },
+  {
+   "lemma": "background"
+  },
+  {
+   "lemma": "bacon"
+  },
+  {
+   "lemma": "balance"
+  },
+  {
+   "lemma": "balloon"
+  },
+  {
+   "lemma": "band"
+  },
+  {
+   "lemma": "bang"
+  },
+  {
+   "lemma": "bar"
+  },
+  {
+   "lemma": "bare"
+  },
+  {
+   "lemma": "bark"
+  },
+  {
+   "lemma": "basis"
+  },
+  {
+   "lemma": "battery"
+  },
+  {
+   "lemma": "battle"
+  },
+  {
+   "lemma": "bay"
+  },
+  {
+   "lemma": "bean"
+  },
+  {
+   "lemma": "beat"
+  },
+  {
+   "lemma": "beer"
+  },
+  {
+   "lemma": "beg"
+  },
+  {
+   "lemma": "belief"
+  },
+  {
+   "lemma": "belong"
+  },
+  {
+   "lemma": "bench"
+  },
+  {
+   "lemma": "bend"
+  },
+  {
+   "lemma": "beneath"
+  },
+  {
+   "lemma": "benefit"
+  },
+  {
+   "lemma": "bet"
+  },
+  {
+   "lemma": "beyond"
+  },
+  {
+   "lemma": "billion"
+  },
+  {
+   "lemma": "bin"
+  },
+  {
+   "lemma": "bind"
+  },
+  {
+   "lemma": "bit"
+  },
+  {
+   "lemma": "bite"
+  },
+  {
+   "lemma": "bitter"
+  },
+  {
+   "lemma": "blame"
+  },
+  {
+   "lemma": "blank"
+  },
+  {
+   "lemma": "blanket"
+  },
+  {
+   "lemma": "bless"
+  },
+  {
+   "lemma": "blind"
+  },
+  {
+   "lemma": "block"
+  },
+  {
+   "lemma": "blonde"
+  },
+  {
+   "lemma": "bloom"
+  },
+  {
+   "lemma": "blow"
+  },
+  {
+   "lemma": "boil"
+  },
+  {
+   "lemma": "bomb"
+  },
+  {
+   "lemma": "bond"
+  },
+  {
+   "lemma": "boom"
+  },
+  {
+   "lemma": "boot"
+  },
+  {
+   "lemma": "bore"
+  },
+  {
+   "lemma": "boss"
+  },
+  {
+   "lemma": "bother"
+  },
+  {
+   "lemma": "bounce"
+  },
+  {
+   "lemma": "bow"
+  },
+  {
+   "lemma": "bowl"
+  },
+  {
+   "lemma": "brain"
+  },
+  {
+   "lemma": "brake"
+  },
+  {
+   "lemma": "branch"
+  },
+  {
+   "lemma": "brand"
+  },
+  {
+   "lemma": "breast"
+  },
+  {
+   "lemma": "breath"
+  },
+  {
+   "lemma": "breathe"
+  },
+  {
+   "lemma": "brick"
+  },
+  {
+   "lemma": "brief"
+  },
+  {
+   "lemma": "brilliant"
+  },
+  {
+   "lemma": "broad"
+  },
+  {
+   "lemma": "bubble"
+  },
+  {
+   "lemma": "budget"
+  },
+  {
+   "lemma": "bug"
+  },
+  {
+   "lemma": "bump"
+  },
+  {
+   "lemma": "bunch"
+  },
+  {
+   "lemma": "burst"
+  },
+  {
+   "lemma": "bury"
+  },
+  {
+   "lemma": "bush"
+  },
+  {
+   "lemma": "cable"
+  },
+  {
+   "lemma": "cage"
+  },
+  {
+   "lemma": "calculate",
+   "forms": [
+    "calculate"
+   ],
+   "derived": [
+    "calculator"
+   ]
+  },
+  {
+   "lemma": "calendar"
+  },
+  {
+   "lemma": "calm"
+  },
+  {
+   "lemma": "capable"
+  },
+  {
+   "lemma": "cape"
+  },
+  {
+   "lemma": "capital"
+  },
+  {
+   "lemma": "captain"
+  },
+  {
+   "lemma": "career"
+  },
+  {
+   "lemma": "carpet"
+  },
+  {
+   "lemma": "cart"
+  },
+  {
+   "lemma": "cast"
+  },
+  {
+   "lemma": "castle"
+  },
+  {
+   "lemma": "catalogue",
+   "forms": [
+    "catalogue",
+    "catalog"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "category"
+  },
+  {
+   "lemma": "cause",
+   "forms": [
+    "cause"
+   ],
+   "derived": [
+    "causal"
+   ]
+  },
+  {
+   "lemma": "ceiling"
+  },
+  {
+   "lemma": "cell"
+  },
+  {
+   "lemma": "century"
+  },
+  {
+   "lemma": "chain"
+  },
+  {
+   "lemma": "chairman"
+  },
+  {
+   "lemma": "challenge"
+  },
+  {
+   "lemma": "champion"
+  },
+  {
+   "lemma": "channel"
+  },
+  {
+   "lemma": "character"
+  },
+  {
+   "lemma": "characteristic"
+  },
+  {
+   "lemma": "charge",
+   "forms": [
+    "charge"
+   ],
+   "derived": [
+    "discharge"
+   ]
+  },
+  {
+   "lemma": "charm"
+  },
+  {
+   "lemma": "chart"
+  },
+  {
+   "lemma": "chase"
+  },
+  {
+   "lemma": "chat"
+  },
+  {
+   "lemma": "cheek"
+  },
+  {
+   "lemma": "cheer"
+  },
+  {
+   "lemma": "chest"
+  },
+  {
+   "lemma": "chew"
+  },
+  {
+   "lemma": "chief"
+  },
+  {
+   "lemma": "chip"
+  },
+  {
+   "lemma": "choice"
+  },
+  {
+   "lemma": "chop"
+  },
+  {
+   "lemma": "cigarette"
+  },
+  {
+   "lemma": "cinema"
+  },
+  {
+   "lemma": "circumstance"
+  },
+  {
+   "lemma": "citizen"
+  },
+  {
+   "lemma": "civil"
+  },
+  {
+   "lemma": "claim"
+  },
+  {
+   "lemma": "clerk"
+  },
+  {
+   "lemma": "click"
+  },
+  {
+   "lemma": "client"
+  },
+  {
+   "lemma": "cliff"
+  },
+  {
+   "lemma": "climate"
+  },
+  {
+   "lemma": "clip"
+  },
+  {
+   "lemma": "clue"
+  },
+  {
+   "lemma": "coach"
+  },
+  {
+   "lemma": "coal"
+  },
+  {
+   "lemma": "coast"
+  },
+  {
+   "lemma": "code"
+  },
+  {
+   "lemma": "coin"
+  },
+  {
+   "lemma": "combine"
+  },
+  {
+   "lemma": "comedy"
+  },
+  {
+   "lemma": "comfort",
+   "forms": [
+    "comfort"
+   ],
+   "derived": [
+    "comfortable"
+   ]
+  },
+  {
+   "lemma": "command"
+  },
+  {
+   "lemma": "comment"
+  },
+  {
+   "lemma": "commerce"
+  },
+  {
+   "lemma": "committee"
+  },
+  {
+   "lemma": "common"
+  },
+  {
+   "lemma": "communicate",
+   "forms": [
+    "communicate"
+   ],
+   "derived": [
+    "communication"
+   ]
+  },
+  {
+   "lemma": "community"
+  },
+  {
+   "lemma": "compare"
+  },
+  {
+   "lemma": "complain"
+  },
+  {
+   "lemma": "complete"
+  },
+  {
+   "lemma": "complex",
+   "forms": [
+    "complex"
+   ],
+   "derived": [
+    "complexity"
+   ]
+  },
+  {
+   "lemma": "complicate"
+  },
+  {
+   "lemma": "concentrate"
+  },
+  {
+   "lemma": "concept"
+  },
+  {
+   "lemma": "concern"
+  },
+  {
+   "lemma": "concert"
+  },
+  {
+   "lemma": "confirm"
+  },
+  {
+   "lemma": "conflict"
+  },
+  {
+   "lemma": "confuse"
+  },
+  {
+   "lemma": "connect"
+  },
+  {
+   "lemma": "conscious"
+  },
+  {
+   "lemma": "consider"
+  },
+  {
+   "lemma": "constant"
+  },
+  {
+   "lemma": "consume",
+   "forms": [
+    "consume"
+   ],
+   "derived": [
+    "consumer",
+    "consumption"
+   ]
+  },
+  {
+   "lemma": "contact"
+  },
+  {
+   "lemma": "contain"
+  },
+  {
+   "lemma": "content"
+  },
+  {
+   "lemma": "contest"
+  },
+  {
+   "lemma": "context"
+  },
+  {
+   "lemma": "continue"
+  },
+  {
+   "lemma": "contract"
+  },
+  {
+   "lemma": "contribute"
+  },
+  {
+   "lemma": "converse",
+   "forms": [
+    "converse"
+   ],
+   "derived": [
+    "conversation"
+   ]
+  },
+  {
+   "lemma": "convince"
+  },
+  {
+   "lemma": "cop"
+  },
+  {
+   "lemma": "cope"
+  },
+  {
+   "lemma": "copy"
+  },
+  {
+   "lemma": "correct"
+  },
+  {
+   "lemma": "cottage"
+  },
+  {
+   "lemma": "cotton"
+  },
+  {
+   "lemma": "cough"
+  },
+  {
+   "lemma": "council"
+  },
+  {
+   "lemma": "count",
+   "forms": [
+    "count"
+   ],
+   "derived": [
+    "discount",
+    "counter"
+   ]
+  },
+  {
+   "lemma": "countryside"
+  },
+  {
+   "lemma": "county"
+  },
+  {
+   "lemma": "crack"
+  },
+  {
+   "lemma": "crash"
+  },
+  {
+   "lemma": "crawl"
+  },
+  {
+   "lemma": "create",
+   "forms": [
+    "create"
+   ],
+   "derived": [
+    "creature"
+   ]
+  },
+  {
+   "lemma": "credit"
+  },
+  {
+   "lemma": "crime",
+   "forms": [
+    "crime"
+   ],
+   "derived": [
+    "criminal"
+   ]
+  },
+  {
+   "lemma": "crisis"
+  },
+  {
+   "lemma": "crisp"
+  },
+  {
+   "lemma": "crowd"
+  },
+  {
+   "lemma": "crown"
+  },
+  {
+   "lemma": "cruel"
+  },
+  {
+   "lemma": "cure"
+  },
+  {
+   "lemma": "curious",
+   "forms": [
+    "curious"
+   ],
+   "derived": [
+    "curiosity"
+   ]
+  },
+  {
+   "lemma": "curl"
+  },
+  {
+   "lemma": "current"
+  },
+  {
+   "lemma": "cute"
+  },
+  {
+   "lemma": "cycle",
+   "forms": [
+    "cycle"
+   ],
+   "derived": [
+    "recycle",
+    "cyclist"
+   ]
+  },
+  {
+   "lemma": "damage"
+  },
+  {
+   "lemma": "dare"
+  },
+  {
+   "lemma": "darling"
+  },
+  {
+   "lemma": "dawn"
+  },
+  {
+   "lemma": "deal"
+  },
+  {
+   "lemma": "debate"
+  },
+  {
+   "lemma": "debt"
+  },
+  {
+   "lemma": "deck"
+  },
+  {
+   "lemma": "decorate"
+  },
+  {
+   "lemma": "defense",
+   "forms": [
+    "defense",
+    "defence"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "define"
+  },
+  {
+   "lemma": "definite"
+  },
+  {
+   "lemma": "degree"
+  },
+  {
+   "lemma": "delay"
+  },
+  {
+   "lemma": "delight"
+  },
+  {
+   "lemma": "deliver"
+  },
+  {
+   "lemma": "demand"
+  },
+  {
+   "lemma": "demonstrate"
+  },
+  {
+   "lemma": "dentist"
+  },
+  {
+   "lemma": "deny"
+  },
+  {
+   "lemma": "depend",
+   "forms": [
+    "depend"
+   ],
+   "derived": [
+    "dependence",
+    "independent"
+   ]
+  },
+  {
+   "lemma": "depress"
+  },
+  {
+   "lemma": "describe",
+   "forms": [
+    "describe"
+   ],
+   "derived": [
+    "description"
+   ]
+  },
+  {
+   "lemma": "desert"
+  },
+  {
+   "lemma": "deserve"
+  },
+  {
+   "lemma": "desire"
+  },
+  {
+   "lemma": "desperate"
+  },
+  {
+   "lemma": "despite"
+  },
+  {
+   "lemma": "destroy"
+  },
+  {
+   "lemma": "detail"
+  },
+  {
+   "lemma": "detect"
+  },
+  {
+   "lemma": "determine"
+  },
+  {
+   "lemma": "develop"
+  },
+  {
+   "lemma": "diary"
+  },
+  {
+   "lemma": "dictionary"
+  },
+  {
+   "lemma": "diet"
+  },
+  {
+   "lemma": "dig"
+  },
+  {
+   "lemma": "direct"
+  },
+  {
+   "lemma": "dirt",
+   "forms": [
+    "dirt"
+   ],
+   "derived": [
+    "dirty"
+   ]
+  },
+  {
+   "lemma": "disappoint"
+  },
+  {
+   "lemma": "disc",
+   "forms": [
+    "disc"
+   ],
+   "derived": [
+    "disk"
+   ]
+  },
+  {
+   "lemma": "discipline"
+  },
+  {
+   "lemma": "disgust"
+  },
+  {
+   "lemma": "dish"
+  },
+  {
+   "lemma": "display"
+  },
+  {
+   "lemma": "distance"
+  },
+  {
+   "lemma": "district"
+  },
+  {
+   "lemma": "disturb"
+  },
+  {
+   "lemma": "dive"
+  },
+  {
+   "lemma": "divide"
+  },
+  {
+   "lemma": "divorce"
+  },
+  {
+   "lemma": "document"
+  },
+  {
+   "lemma": "dolphin"
+  },
+  {
+   "lemma": "domestic"
+  },
+  {
+   "lemma": "donate"
+  },
+  {
+   "lemma": "doubt"
+  },
+  {
+   "lemma": "dozen"
+  },
+  {
+   "lemma": "drag"
+  },
+  {
+   "lemma": "drama"
+  },
+  {
+   "lemma": "drug"
+  },
+  {
+   "lemma": "due"
+  },
+  {
+   "lemma": "dump"
+  },
+  {
+   "lemma": "dust"
+  },
+  {
+   "lemma": "duty"
+  },
+  {
+   "lemma": "each"
+  },
+  {
+   "lemma": "earn"
+  },
+  {
+   "lemma": "ease",
+   "forms": [
+    "ease"
+   ],
+   "derived": [
+    "disease",
+    "easy"
+   ]
+  },
+  {
+   "lemma": "economy"
+  },
+  {
+   "lemma": "edge"
+  },
+  {
+   "lemma": "edit"
+  },
+  {
+   "lemma": "educate"
+  },
+  {
+   "lemma": "effect",
+   "forms": [
+    "effect"
+   ],
+   "derived": [
+    "effective"
+   ]
+  },
+  {
+   "lemma": "effort"
+  },
+  {
+   "lemma": "either"
+  },
+  {
+   "lemma": "elect"
+  },
+  {
+   "lemma": "electric"
+  },
+  {
+   "lemma": "element",
+   "forms": [
+    "element"
+   ],
+   "derived": [
+    "elementary"
+   ]
+  },
+  {
+   "lemma": "else"
+  },
+  {
+   "lemma": "embarrass"
+  },
+  {
+   "lemma": "emotion"
+  },
+  {
+   "lemma": "emphasize"
+  },
+  {
+   "lemma": "empire"
+  },
+  {
+   "lemma": "employ"
+  },
+  {
+   "lemma": "empty"
+  },
+  {
+   "lemma": "enemy"
+  },
+  {
+   "lemma": "engage"
+  },
+  {
+   "lemma": "engine"
+  },
+  {
+   "lemma": "engineer"
+  },
+  {
+   "lemma": "enormous"
+  },
+  {
+   "lemma": "entertain"
+  },
+  {
+   "lemma": "entire"
+  },
+  {
+   "lemma": "envelope"
+  },
+  {
+   "lemma": "equal"
+  },
+  {
+   "lemma": "escape"
+  },
+  {
+   "lemma": "especial",
+   "forms": [
+    "especial"
+   ],
+   "derived": [
+    "especially"
+   ]
+  },
+  {
+   "lemma": "essay"
+  },
+  {
+   "lemma": "establish"
+  },
+  {
+   "lemma": "estimate"
+  },
+  {
+   "lemma": "even"
+  },
+  {
+   "lemma": "event",
+   "forms": [
+    "event"
+   ],
+   "derived": [
+    "eventually"
+   ]
+  },
+  {
+   "lemma": "ever"
+  },
+  {
+   "lemma": "evidence"
+  },
+  {
+   "lemma": "evil"
+  },
+  {
+   "lemma": "exact"
+  },
+  {
+   "lemma": "examine",
+   "forms": [
+    "examine"
+   ],
+   "derived": [
+    "examination / exam"
+   ]
+  },
+  {
+   "lemma": "except"
+  },
+  {
+   "lemma": "exchange"
+  },
+  {
+   "lemma": "excite"
+  },
+  {
+   "lemma": "excuse"
+  },
+  {
+   "lemma": "exhaust"
+  },
+  {
+   "lemma": "exist"
+  },
+  {
+   "lemma": "exit"
+  },
+  {
+   "lemma": "expand"
+  },
+  {
+   "lemma": "expect"
+  },
+  {
+   "lemma": "expense",
+   "forms": [
+    "expense"
+   ],
+   "derived": [
+    "expensive"
+   ]
+  },
+  {
+   "lemma": "experience"
+  },
+  {
+   "lemma": "experiment"
+  },
+  {
+   "lemma": "expert"
+  },
+  {
+   "lemma": "explain"
+  },
+  {
+   "lemma": "expose"
+  },
+  {
+   "lemma": "express"
+  },
+  {
+   "lemma": "extend"
+  },
+  {
+   "lemma": "extra"
+  },
+  {
+   "lemma": "extreme"
+  },
+  {
+   "lemma": "factor"
+  },
+  {
+   "lemma": "factory"
+  },
+  {
+   "lemma": "faint"
+  },
+  {
+   "lemma": "fair"
+  },
+  {
+   "lemma": "faith"
+  },
+  {
+   "lemma": "familiar"
+  },
+  {
+   "lemma": "fancy"
+  },
+  {
+   "lemma": "fantastic"
+  },
+  {
+   "lemma": "fascinate"
+  },
+  {
+   "lemma": "fashion"
+  },
+  {
+   "lemma": "fault"
+  },
+  {
+   "lemma": "favor",
+   "forms": [
+    "favor",
+    "favour"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "fear"
+  },
+  {
+   "lemma": "feature"
+  },
+  {
+   "lemma": "fee"
+  },
+  {
+   "lemma": "feed"
+  },
+  {
+   "lemma": "fellow"
+  },
+  {
+   "lemma": "female"
+  },
+  {
+   "lemma": "fence"
+  },
+  {
+   "lemma": "fever"
+  },
+  {
+   "lemma": "few"
+  },
+  {
+   "lemma": "figure"
+  },
+  {
+   "lemma": "final"
+  },
+  {
+   "lemma": "finance"
+  },
+  {
+   "lemma": "firm"
+  },
+  {
+   "lemma": "fit"
+  },
+  {
+   "lemma": "flag"
+  },
+  {
+   "lemma": "flame"
+  },
+  {
+   "lemma": "flash"
+  },
+  {
+   "lemma": "flat"
+  },
+  {
+   "lemma": "flight"
+  },
+  {
+   "lemma": "float"
+  },
+  {
+   "lemma": "flood"
+  },
+  {
+   "lemma": "flow"
+  },
+  {
+   "lemma": "fog"
+  },
+  {
+   "lemma": "fold"
+  },
+  {
+   "lemma": "folk"
+  },
+  {
+   "lemma": "follow"
+  },
+  {
+   "lemma": "force",
+   "forms": [
+    "force"
+   ],
+   "derived": [
+    "enforce"
+   ]
+  },
+  {
+   "lemma": "foreign"
+  },
+  {
+   "lemma": "forever"
+  },
+  {
+   "lemma": "forgive"
+  },
+  {
+   "lemma": "forth"
+  },
+  {
+   "lemma": "fortunate"
+  },
+  {
+   "lemma": "fortune"
+  },
+  {
+   "lemma": "forward"
+  },
+  {
+   "lemma": "found",
+   "forms": [
+    "found"
+   ],
+   "derived": [
+    "foundation"
+   ]
+  },
+  {
+   "lemma": "frame"
+  },
+  {
+   "lemma": "frankly"
+  },
+  {
+   "lemma": "freeze"
+  },
+  {
+   "lemma": "fright"
+  },
+  {
+   "lemma": "frog"
+  },
+  {
+   "lemma": "frustrate"
+  },
+  {
+   "lemma": "fry"
+  },
+  {
+   "lemma": "function"
+  },
+  {
+   "lemma": "fund"
+  },
+  {
+   "lemma": "fur"
+  },
+  {
+   "lemma": "furniture"
+  },
+  {
+   "lemma": "gain"
+  },
+  {
+   "lemma": "garage"
+  },
+  {
+   "lemma": "gate"
+  },
+  {
+   "lemma": "gather"
+  },
+  {
+   "lemma": "gear"
+  },
+  {
+   "lemma": "general"
+  },
+  {
+   "lemma": "gentle"
+  },
+  {
+   "lemma": "gesture"
+  },
+  {
+   "lemma": "ghost"
+  },
+  {
+   "lemma": "giant"
+  },
+  {
+   "lemma": "gift"
+  },
+  {
+   "lemma": "giraffe"
+  },
+  {
+   "lemma": "glance"
+  },
+  {
+   "lemma": "glory"
+  },
+  {
+   "lemma": "glove"
+  },
+  {
+   "lemma": "glue"
+  },
+  {
+   "lemma": "golf"
+  },
+  {
+   "lemma": "gorgeous"
+  },
+  {
+   "lemma": "govern",
+   "forms": [
+    "govern"
+   ],
+   "derived": [
+    "government"
+   ]
+  },
+  {
+   "lemma": "grab"
+  },
+  {
+   "lemma": "grace"
+  },
+  {
+   "lemma": "grade",
+   "forms": [
+    "grade"
+   ],
+   "derived": [
+    "gradual"
+   ]
+  },
+  {
+   "lemma": "grand"
+  },
+  {
+   "lemma": "grant"
+  },
+  {
+   "lemma": "graph",
+   "forms": [
+    "graph"
+   ],
+   "derived": [
+    "graphic"
+   ]
+  },
+  {
+   "lemma": "greet"
+  },
+  {
+   "lemma": "grocery"
+  },
+  {
+   "lemma": "guarantee"
+  },
+  {
+   "lemma": "guard"
+  },
+  {
+   "lemma": "guest"
+  },
+  {
+   "lemma": "guide"
+  },
+  {
+   "lemma": "guilt",
+   "forms": [
+    "guilt"
+   ],
+   "derived": [
+    "guilty"
+   ]
+  },
+  {
+   "lemma": "gun"
+  },
+  {
+   "lemma": "half"
+  },
+  {
+   "lemma": "hall"
+  },
+  {
+   "lemma": "handle"
+  },
+  {
+   "lemma": "handsome"
+  },
+  {
+   "lemma": "happen"
+  },
+  {
+   "lemma": "harm"
+  },
+  {
+   "lemma": "health",
+   "forms": [
+    "health"
+   ],
+   "derived": [
+    "healthy"
+   ]
+  },
+  {
+   "lemma": "hear"
+  },
+  {
+   "lemma": "heaven"
+  },
+  {
+   "lemma": "height"
+  },
+  {
+   "lemma": "helicopter"
+  },
+  {
+   "lemma": "hell"
+  },
+  {
+   "lemma": "hesitate"
+  },
+  {
+   "lemma": "hide"
+  },
+  {
+   "lemma": "highway"
+  },
+  {
+   "lemma": "hint"
+  },
+  {
+   "lemma": "hire"
+  },
+  {
+   "lemma": "hole"
+  },
+  {
+   "lemma": "honey"
+  },
+  {
+   "lemma": "honor",
+   "forms": [
+    "honor",
+    "honour"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "hotel"
+  },
+  {
+   "lemma": "hug"
+  },
+  {
+   "lemma": "huge"
+  },
+  {
+   "lemma": "humor",
+   "forms": [
+    "humor",
+    "humour"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "hunger",
+   "forms": [
+    "hunger"
+   ],
+   "derived": [
+    "hungry"
+   ]
+  },
+  {
+   "lemma": "hurt"
+  },
+  {
+   "lemma": "identity",
+   "forms": [
+    "identity"
+   ],
+   "derived": [
+    "identify"
+   ]
+  },
+  {
+   "lemma": "ignore"
+  },
+  {
+   "lemma": "ill"
+  },
+  {
+   "lemma": "illustrate"
+  },
+  {
+   "lemma": "imagine"
+  },
+  {
+   "lemma": "immediate"
+  },
+  {
+   "lemma": "impress"
+  },
+  {
+   "lemma": "improve"
+  },
+  {
+   "lemma": "include"
+  },
+  {
+   "lemma": "income"
+  },
+  {
+   "lemma": "increase"
+  },
+  {
+   "lemma": "indeed"
+  },
+  {
+   "lemma": "indicate"
+  },
+  {
+   "lemma": "individual"
+  },
+  {
+   "lemma": "industry"
+  },
+  {
+   "lemma": "influence"
+  },
+  {
+   "lemma": "inform"
+  },
+  {
+   "lemma": "injure"
+  },
+  {
+   "lemma": "innocent"
+  },
+  {
+   "lemma": "insist"
+  },
+  {
+   "lemma": "inspect"
+  },
+  {
+   "lemma": "instance"
+  },
+  {
+   "lemma": "instant"
+  },
+  {
+   "lemma": "instead"
+  },
+  {
+   "lemma": "instruct"
+  },
+  {
+   "lemma": "instrument"
+  },
+  {
+   "lemma": "insure",
+   "forms": [
+    "insure"
+   ],
+   "derived": [
+    "insurance"
+   ]
+  },
+  {
+   "lemma": "intend"
+  },
+  {
+   "lemma": "intense"
+  },
+  {
+   "lemma": "intent",
+   "forms": [
+    "intent"
+   ],
+   "derived": [
+    "intention"
+   ]
+  },
+  {
+   "lemma": "interest"
+  },
+  {
+   "lemma": "internal"
+  },
+  {
+   "lemma": "interrupt"
+  },
+  {
+   "lemma": "invent",
+   "forms": [
+    "invent"
+   ],
+   "derived": [
+    "inventor"
+   ]
+  },
+  {
+   "lemma": "invest"
+  },
+  {
+   "lemma": "investigate"
+  },
+  {
+   "lemma": "involve"
+  },
+  {
+   "lemma": "iron"
+  },
+  {
+   "lemma": "island"
+  },
+  {
+   "lemma": "item"
+  },
+  {
+   "lemma": "jaw"
+  },
+  {
+   "lemma": "jeans"
+  },
+  {
+   "lemma": "joke"
+  },
+  {
+   "lemma": "journey"
+  },
+  {
+   "lemma": "joy",
+   "forms": [
+    "joy"
+   ],
+   "derived": [
+    "enjoy"
+   ]
+  },
+  {
+   "lemma": "judge"
+  },
+  {
+   "lemma": "junior"
+  },
+  {
+   "lemma": "justice"
+  },
+  {
+   "lemma": "knee"
+  },
+  {
+   "lemma": "knock"
+  },
+  {
+   "lemma": "knowledge"
+  },
+  {
+   "lemma": "label"
+  },
+  {
+   "lemma": "labor",
+   "forms": [
+    "labor",
+    "labour"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "laboratory",
+   "forms": [
+    "laboratory",
+    "lab"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "lack"
+  },
+  {
+   "lemma": "lamb"
+  },
+  {
+   "lemma": "lamp"
+  },
+  {
+   "lemma": "lane"
+  },
+  {
+   "lemma": "language"
+  },
+  {
+   "lemma": "laugh"
+  },
+  {
+   "lemma": "law"
+  },
+  {
+   "lemma": "lawn"
+  },
+  {
+   "lemma": "lawyer"
+  },
+  {
+   "lemma": "lay",
+   "forms": [
+    "lay"
+   ],
+   "derived": [
+    "layer"
+   ]
+  },
+  {
+   "lemma": "lead"
+  },
+  {
+   "lemma": "leaf"
+  },
+  {
+   "lemma": "league"
+  },
+  {
+   "lemma": "lean"
+  },
+  {
+   "lemma": "leap"
+  },
+  {
+   "lemma": "leave"
+  },
+  {
+   "lemma": "legal"
+  },
+  {
+   "lemma": "lemon"
+  },
+  {
+   "lemma": "lend"
+  },
+  {
+   "lemma": "let"
+  },
+  {
+   "lemma": "level"
+  },
+  {
+   "lemma": "license",
+   "forms": [
+    "license",
+    "licence"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "lid"
+  },
+  {
+   "lemma": "lift"
+  },
+  {
+   "lemma": "limit"
+  },
+  {
+   "lemma": "link"
+  },
+  {
+   "lemma": "list"
+  },
+  {
+   "lemma": "livingroom"
+  },
+  {
+   "lemma": "load"
+  },
+  {
+   "lemma": "loan"
+  },
+  {
+   "lemma": "local"
+  },
+  {
+   "lemma": "locate"
+  },
+  {
+   "lemma": "lock"
+  },
+  {
+   "lemma": "log"
+  },
+  {
+   "lemma": "loose"
+  },
+  {
+   "lemma": "lose"
+  },
+  {
+   "lemma": "loss"
+  },
+  {
+   "lemma": "lot"
+  },
+  {
+   "lemma": "loud"
+  },
+  {
+   "lemma": "machine"
+  },
+  {
+   "lemma": "magazine"
+  },
+  {
+   "lemma": "magic"
+  },
+  {
+   "lemma": "main"
+  },
+  {
+   "lemma": "maintain"
+  },
+  {
+   "lemma": "major",
+   "forms": [
+    "major"
+   ],
+   "derived": [
+    "majority"
+   ]
+  },
+  {
+   "lemma": "male"
+  },
+  {
+   "lemma": "manage"
+  },
+  {
+   "lemma": "manner"
+  },
+  {
+   "lemma": "manufacture"
+  },
+  {
+   "lemma": "mark"
+  },
+  {
+   "lemma": "marvel"
+  },
+  {
+   "lemma": "mask"
+  },
+  {
+   "lemma": "mass"
+  },
+  {
+   "lemma": "master"
+  },
+  {
+   "lemma": "match"
+  },
+  {
+   "lemma": "mate"
+  },
+  {
+   "lemma": "matter",
+   "forms": [
+    "matter"
+   ],
+   "derived": [
+    "material"
+   ]
+  },
+  {
+   "lemma": "maximum"
+  },
+  {
+   "lemma": "maybe"
+  },
+  {
+   "lemma": "meal"
+  },
+  {
+   "lemma": "mean"
+  },
+  {
+   "lemma": "measure"
+  },
+  {
+   "lemma": "medical"
+  },
+  {
+   "lemma": "medicine"
+  },
+  {
+   "lemma": "melon"
+  },
+  {
+   "lemma": "melt"
+  },
+  {
+   "lemma": "mental"
+  },
+  {
+   "lemma": "mention"
+  },
+  {
+   "lemma": "menu"
+  },
+  {
+   "lemma": "mess"
+  },
+  {
+   "lemma": "message"
+  },
+  {
+   "lemma": "metal"
+  },
+  {
+   "lemma": "method"
+  },
+  {
+   "lemma": "microwave"
+  },
+  {
+   "lemma": "military"
+  },
+  {
+   "lemma": "mill"
+  },
+  {
+   "lemma": "minor"
+  },
+  {
+   "lemma": "minute"
+  },
+  {
+   "lemma": "mirror"
+  },
+  {
+   "lemma": "mission"
+  },
+  {
+   "lemma": "mix"
+  },
+  {
+   "lemma": "modern"
+  },
+  {
+   "lemma": "moment"
+  },
+  {
+   "lemma": "monitor"
+  },
+  {
+   "lemma": "mood"
+  },
+  {
+   "lemma": "moral"
+  },
+  {
+   "lemma": "moreover"
+  },
+  {
+   "lemma": "motion"
+  },
+  {
+   "lemma": "motor"
+  },
+  {
+   "lemma": "mount"
+  },
+  {
+   "lemma": "mud"
+  },
+  {
+   "lemma": "muscle"
+  },
+  {
+   "lemma": "museum"
+  },
+  {
+   "lemma": "mushroom"
+  },
+  {
+   "lemma": "mystery"
+  },
+  {
+   "lemma": "nail"
+  },
+  {
+   "lemma": "narrow"
+  },
+  {
+   "lemma": "native"
+  },
+  {
+   "lemma": "navy"
+  },
+  {
+   "lemma": "neat"
+  },
+  {
+   "lemma": "necessary"
+  },
+  {
+   "lemma": "neighbor",
+   "forms": [
+    "neighbor",
+    "neighbour"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "neither"
+  },
+  {
+   "lemma": "nerve",
+   "forms": [
+    "nerve"
+   ],
+   "derived": [
+    "nervous"
+   ]
+  },
+  {
+   "lemma": "nest"
+  },
+  {
+   "lemma": "net"
+  },
+  {
+   "lemma": "noise"
+  },
+  {
+   "lemma": "none"
+  },
+  {
+   "lemma": "noon"
+  },
+  {
+   "lemma": "nor"
+  },
+  {
+   "lemma": "notice"
+  },
+  {
+   "lemma": "nowadays"
+  },
+  {
+   "lemma": "nowhere"
+  },
+  {
+   "lemma": "nut"
+  },
+  {
+   "lemma": "oak"
+  },
+  {
+   "lemma": "object",
+   "forms": [
+    "object"
+   ],
+   "derived": [
+    "objective"
+   ]
+  },
+  {
+   "lemma": "observe"
+  },
+  {
+   "lemma": "obvious"
+  },
+  {
+   "lemma": "occasion"
+  },
+  {
+   "lemma": "occur",
+   "forms": [
+    "occur"
+   ],
+   "derived": [
+    "occurrence"
+   ]
+  },
+  {
+   "lemma": "ocean"
+  },
+  {
+   "lemma": "odd"
+  },
+  {
+   "lemma": "offer"
+  },
+  {
+   "lemma": "officer"
+  },
+  {
+   "lemma": "once"
+  },
+  {
+   "lemma": "opera"
+  },
+  {
+   "lemma": "operate"
+  },
+  {
+   "lemma": "opinion"
+  },
+  {
+   "lemma": "oppose"
+  },
+  {
+   "lemma": "order",
+   "forms": [
+    "order"
+   ],
+   "derived": [
+    "disorder"
+   ]
+  },
+  {
+   "lemma": "ordinary"
+  },
+  {
+   "lemma": "other"
+  },
+  {
+   "lemma": "otherwise"
+  },
+  {
+   "lemma": "ought"
+  },
+  {
+   "lemma": "oven"
+  },
+  {
+   "lemma": "overall"
+  },
+  {
+   "lemma": "own"
+  },
+  {
+   "lemma": "pack"
+  },
+  {
+   "lemma": "pain"
+  },
+  {
+   "lemma": "pair"
+  },
+  {
+   "lemma": "palace"
+  },
+  {
+   "lemma": "pan"
+  },
+  {
+   "lemma": "panic"
+  },
+  {
+   "lemma": "parade"
+  },
+  {
+   "lemma": "paragraph"
+  },
+  {
+   "lemma": "pardon"
+  },
+  {
+   "lemma": "particular",
+   "forms": [
+    "particular"
+   ],
+   "derived": [
+    "particularly"
+   ]
+  },
+  {
+   "lemma": "past"
+  },
+  {
+   "lemma": "path"
+  },
+  {
+   "lemma": "patient"
+  },
+  {
+   "lemma": "pattern"
+  },
+  {
+   "lemma": "pause"
+  },
+  {
+   "lemma": "peace",
+   "forms": [
+    "peace"
+   ],
+   "derived": [
+    "peaceful"
+   ]
+  },
+  {
+   "lemma": "pear"
+  },
+  {
+   "lemma": "pepper"
+  },
+  {
+   "lemma": "per"
+  },
+  {
+   "lemma": "perfect"
+  },
+  {
+   "lemma": "perform"
+  },
+  {
+   "lemma": "perhaps"
+  },
+  {
+   "lemma": "period"
+  },
+  {
+   "lemma": "person",
+   "forms": [
+    "person"
+   ],
+   "derived": [
+    "personality"
+   ]
+  },
+  {
+   "lemma": "pet"
+  },
+  {
+   "lemma": "photograph",
+   "forms": [
+    "photograph",
+    "photo"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "physical"
+  },
+  {
+   "lemma": "picnic"
+  },
+  {
+   "lemma": "pie"
+  },
+  {
+   "lemma": "piece"
+  },
+  {
+   "lemma": "pile"
+  },
+  {
+   "lemma": "pin"
+  },
+  {
+   "lemma": "pine"
+  },
+  {
+   "lemma": "pipe"
+  },
+  {
+   "lemma": "pitch"
+  },
+  {
+   "lemma": "pity"
+  },
+  {
+   "lemma": "plain"
+  },
+  {
+   "lemma": "plane"
+  },
+  {
+   "lemma": "planet"
+  },
+  {
+   "lemma": "plant"
+  },
+  {
+   "lemma": "plate"
+  },
+  {
+   "lemma": "plenty"
+  },
+  {
+   "lemma": "plus"
+  },
+  {
+   "lemma": "pocket"
+  },
+  {
+   "lemma": "poem"
+  },
+  {
+   "lemma": "poet"
+  },
+  {
+   "lemma": "poison"
+  },
+  {
+   "lemma": "pole",
+   "forms": [
+    "pole"
+   ],
+   "derived": [
+    "polar"
+   ]
+  },
+  {
+   "lemma": "policy"
+  },
+  {
+   "lemma": "polite"
+  },
+  {
+   "lemma": "politics"
+  },
+  {
+   "lemma": "pollute"
+  },
+  {
+   "lemma": "pool"
+  },
+  {
+   "lemma": "pop"
+  },
+  {
+   "lemma": "popular"
+  },
+  {
+   "lemma": "pork"
+  },
+  {
+   "lemma": "port"
+  },
+  {
+   "lemma": "possess"
+  },
+  {
+   "lemma": "possible"
+  },
+  {
+   "lemma": "post",
+   "forms": [
+    "post"
+   ],
+   "derived": [
+    "poster"
+   ]
+  },
+  {
+   "lemma": "pot"
+  },
+  {
+   "lemma": "potential"
+  },
+  {
+   "lemma": "pour"
+  },
+  {
+   "lemma": "powder"
+  },
+  {
+   "lemma": "practical"
+  },
+  {
+   "lemma": "practice",
+   "forms": [
+    "practice",
+    "practise"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "pray"
+  },
+  {
+   "lemma": "prefer"
+  },
+  {
+   "lemma": "pregnant"
+  },
+  {
+   "lemma": "prepare"
+  },
+  {
+   "lemma": "presence"
+  },
+  {
+   "lemma": "press"
+  },
+  {
+   "lemma": "pretend"
+  },
+  {
+   "lemma": "prevent"
+  },
+  {
+   "lemma": "previous"
+  },
+  {
+   "lemma": "price"
+  },
+  {
+   "lemma": "pride"
+  },
+  {
+   "lemma": "prime",
+   "forms": [
+    "prime"
+   ],
+   "derived": [
+    "primary"
+   ]
+  },
+  {
+   "lemma": "principle"
+  },
+  {
+   "lemma": "prison"
+  },
+  {
+   "lemma": "privacy"
+  },
+  {
+   "lemma": "private"
+  },
+  {
+   "lemma": "prize"
+  },
+  {
+   "lemma": "probable",
+   "forms": [
+    "probable"
+   ],
+   "derived": [
+    "probably"
+   ]
+  },
+  {
+   "lemma": "proceed",
+   "forms": [
+    "proceed"
+   ],
+   "derived": [
+    "procedure"
+   ]
+  },
+  {
+   "lemma": "process"
+  },
+  {
+   "lemma": "produce"
+  },
+  {
+   "lemma": "profession"
+  },
+  {
+   "lemma": "profit"
+  },
+  {
+   "lemma": "progress"
+  },
+  {
+   "lemma": "promise"
+  },
+  {
+   "lemma": "promote"
+  },
+  {
+   "lemma": "pronounce",
+   "forms": [
+    "pronounce"
+   ],
+   "derived": [
+    "pronunciation"
+   ]
+  },
+  {
+   "lemma": "proper"
+  },
+  {
+   "lemma": "property"
+  },
+  {
+   "lemma": "propose"
+  },
+  {
+   "lemma": "protect"
+  },
+  {
+   "lemma": "protest"
+  },
+  {
+   "lemma": "proud"
+  },
+  {
+   "lemma": "prove"
+  },
+  {
+   "lemma": "provide"
+  },
+  {
+   "lemma": "pub"
+  },
+  {
+   "lemma": "public"
+  },
+  {
+   "lemma": "pull"
+  },
+  {
+   "lemma": "pump"
+  },
+  {
+   "lemma": "punch"
+  },
+  {
+   "lemma": "punish"
+  },
+  {
+   "lemma": "purchase"
+  },
+  {
+   "lemma": "pure"
+  },
+  {
+   "lemma": "purple"
+  },
+  {
+   "lemma": "purpose"
+  },
+  {
+   "lemma": "puzzle"
+  },
+  {
+   "lemma": "quality",
+   "forms": [
+    "quality"
+   ],
+   "derived": [
+    "qualify"
+   ]
+  },
+  {
+   "lemma": "quarter"
+  },
+  {
+   "lemma": "quit"
+  },
+  {
+   "lemma": "quite"
+  },
+  {
+   "lemma": "quote"
+  },
+  {
+   "lemma": "rail"
+  },
+  {
+   "lemma": "rainbow"
+  },
+  {
+   "lemma": "raise"
+  },
+  {
+   "lemma": "range"
+  },
+  {
+   "lemma": "rapid"
+  },
+  {
+   "lemma": "rare"
+  },
+  {
+   "lemma": "rat"
+  },
+  {
+   "lemma": "rate"
+  },
+  {
+   "lemma": "rather"
+  },
+  {
+   "lemma": "reach"
+  },
+  {
+   "lemma": "react"
+  },
+  {
+   "lemma": "real",
+   "forms": [
+    "real"
+   ],
+   "derived": [
+    "realize / realise"
+   ]
+  },
+  {
+   "lemma": "reason",
+   "forms": [
+    "reason"
+   ],
+   "derived": [
+    "reasonable"
+   ]
+  },
+  {
+   "lemma": "receive",
+   "forms": [
+    "receive"
+   ],
+   "derived": [
+    "reception"
+   ]
+  },
+  {
+   "lemma": "recent"
+  },
+  {
+   "lemma": "recipe"
+  },
+  {
+   "lemma": "recognize"
+  },
+  {
+   "lemma": "recommend"
+  },
+  {
+   "lemma": "record"
+  },
+  {
+   "lemma": "recover"
+  },
+  {
+   "lemma": "reduce"
+  },
+  {
+   "lemma": "refer"
+  },
+  {
+   "lemma": "reflect"
+  },
+  {
+   "lemma": "refuse"
+  },
+  {
+   "lemma": "regard"
+  },
+  {
+   "lemma": "region"
+  },
+  {
+   "lemma": "register"
+  },
+  {
+   "lemma": "regular"
+  },
+  {
+   "lemma": "relate",
+   "forms": [
+    "relate"
+   ],
+   "derived": [
+    "relative",
+    "relation",
+    "relationship"
+   ]
+  },
+  {
+   "lemma": "relax"
+  },
+  {
+   "lemma": "release"
+  },
+  {
+   "lemma": "relief"
+  },
+  {
+   "lemma": "rely"
+  },
+  {
+   "lemma": "remain"
+  },
+  {
+   "lemma": "remark"
+  },
+  {
+   "lemma": "remind"
+  },
+  {
+   "lemma": "remove"
+  },
+  {
+   "lemma": "rent"
+  },
+  {
+   "lemma": "repair"
+  },
+  {
+   "lemma": "repeat"
+  },
+  {
+   "lemma": "replace"
+  },
+  {
+   "lemma": "reply"
+  },
+  {
+   "lemma": "report"
+  },
+  {
+   "lemma": "represent"
+  },
+  {
+   "lemma": "request"
+  },
+  {
+   "lemma": "require"
+  },
+  {
+   "lemma": "research"
+  },
+  {
+   "lemma": "reserve"
+  },
+  {
+   "lemma": "resist"
+  },
+  {
+   "lemma": "resource"
+  },
+  {
+   "lemma": "respect",
+   "forms": [
+    "respect"
+   ],
+   "derived": [
+    "respective"
+   ]
+  },
+  {
+   "lemma": "respond"
+  },
+  {
+   "lemma": "responsible"
+  },
+  {
+   "lemma": "rest"
+  },
+  {
+   "lemma": "result"
+  },
+  {
+   "lemma": "retire"
+  },
+  {
+   "lemma": "rice"
+  },
+  {
+   "lemma": "ride"
+  },
+  {
+   "lemma": "rise"
+  },
+  {
+   "lemma": "risk"
+  },
+  {
+   "lemma": "rob"
+  },
+  {
+   "lemma": "rocket"
+  },
+  {
+   "lemma": "role"
+  },
+  {
+   "lemma": "roll",
+   "forms": [
+    "roll"
+   ],
+   "derived": [
+    "enroll / enrol"
+   ]
+  },
+  {
+   "lemma": "roof"
+  },
+  {
+   "lemma": "root"
+  },
+  {
+   "lemma": "rope"
+  },
+  {
+   "lemma": "rough"
+  },
+  {
+   "lemma": "round"
+  },
+  {
+   "lemma": "route"
+  },
+  {
+   "lemma": "row"
+  },
+  {
+   "lemma": "royal"
+  },
+  {
+   "lemma": "rub",
+   "forms": [
+    "rub"
+   ],
+   "derived": [
+    "rubber"
+   ]
+  },
+  {
+   "lemma": "rude"
+  },
+  {
+   "lemma": "ruin"
+  },
+  {
+   "lemma": "rule"
+  },
+  {
+   "lemma": "rush"
+  },
+  {
+   "lemma": "sail"
+  },
+  {
+   "lemma": "salary"
+  },
+  {
+   "lemma": "sample"
+  },
+  {
+   "lemma": "satisfy"
+  },
+  {
+   "lemma": "sauce"
+  },
+  {
+   "lemma": "scale"
+  },
+  {
+   "lemma": "scare"
+  },
+  {
+   "lemma": "scarf"
+  },
+  {
+   "lemma": "scene"
+  },
+  {
+   "lemma": "schedule"
+  },
+  {
+   "lemma": "scratch"
+  },
+  {
+   "lemma": "scream"
+  },
+  {
+   "lemma": "screen"
+  },
+  {
+   "lemma": "seal"
+  },
+  {
+   "lemma": "search"
+  },
+  {
+   "lemma": "seat"
+  },
+  {
+   "lemma": "secret"
+  },
+  {
+   "lemma": "secretary"
+  },
+  {
+   "lemma": "section"
+  },
+  {
+   "lemma": "secure"
+  },
+  {
+   "lemma": "seed"
+  },
+  {
+   "lemma": "seek"
+  },
+  {
+   "lemma": "seem"
+  },
+  {
+   "lemma": "select"
+  },
+  {
+   "lemma": "self"
+  },
+  {
+   "lemma": "senior"
+  },
+  {
+   "lemma": "sense",
+   "forms": [
+    "sense"
+   ],
+   "derived": [
+    "sensation"
+   ]
+  },
+  {
+   "lemma": "sentence"
+  },
+  {
+   "lemma": "separate"
+  },
+  {
+   "lemma": "series"
+  },
+  {
+   "lemma": "serious"
+  },
+  {
+   "lemma": "serve"
+  },
+  {
+   "lemma": "session"
+  },
+  {
+   "lemma": "settle"
+  },
+  {
+   "lemma": "several"
+  },
+  {
+   "lemma": "sew"
+  },
+  {
+   "lemma": "sex"
+  },
+  {
+   "lemma": "shade"
+  },
+  {
+   "lemma": "shadow"
+  },
+  {
+   "lemma": "shake"
+  },
+  {
+   "lemma": "shall"
+  },
+  {
+   "lemma": "shame"
+  },
+  {
+   "lemma": "shape"
+  },
+  {
+   "lemma": "share"
+  },
+  {
+   "lemma": "sharp"
+  },
+  {
+   "lemma": "shave"
+  },
+  {
+   "lemma": "sheep"
+  },
+  {
+   "lemma": "sheet"
+  },
+  {
+   "lemma": "shelf"
+  },
+  {
+   "lemma": "shell"
+  },
+  {
+   "lemma": "shelter"
+  },
+  {
+   "lemma": "shift"
+  },
+  {
+   "lemma": "shine"
+  },
+  {
+   "lemma": "shock"
+  },
+  {
+   "lemma": "shoot"
+  },
+  {
+   "lemma": "shore"
+  },
+  {
+   "lemma": "shoulder"
+  },
+  {
+   "lemma": "shout"
+  },
+  {
+   "lemma": "shower"
+  },
+  {
+   "lemma": "shut"
+  },
+  {
+   "lemma": "sight"
+  },
+  {
+   "lemma": "sign",
+   "forms": [
+    "sign"
+   ],
+   "derived": [
+    "significant"
+   ]
+  },
+  {
+   "lemma": "silly"
+  },
+  {
+   "lemma": "silver"
+  },
+  {
+   "lemma": "similar"
+  },
+  {
+   "lemma": "simple"
+  },
+  {
+   "lemma": "since"
+  },
+  {
+   "lemma": "single"
+  },
+  {
+   "lemma": "sink"
+  },
+  {
+   "lemma": "site"
+  },
+  {
+   "lemma": "situate",
+   "forms": [
+    "situate"
+   ],
+   "derived": [
+    "situation"
+   ]
+  },
+  {
+   "lemma": "skill"
+  },
+  {
+   "lemma": "slave"
+  },
+  {
+   "lemma": "slide"
+  },
+  {
+   "lemma": "slight"
+  },
+  {
+   "lemma": "slip"
+  },
+  {
+   "lemma": "smart"
+  },
+  {
+   "lemma": "smash"
+  },
+  {
+   "lemma": "smoke"
+  },
+  {
+   "lemma": "smooth"
+  },
+  {
+   "lemma": "snack"
+  },
+  {
+   "lemma": "snake"
+  },
+  {
+   "lemma": "snap"
+  },
+  {
+   "lemma": "social"
+  },
+  {
+   "lemma": "society"
+  },
+  {
+   "lemma": "soil"
+  },
+  {
+   "lemma": "soldier"
+  },
+  {
+   "lemma": "solid"
+  },
+  {
+   "lemma": "solve"
+  },
+  {
+   "lemma": "somewhat"
+  },
+  {
+   "lemma": "soon"
+  },
+  {
+   "lemma": "sore"
+  },
+  {
+   "lemma": "sort"
+  },
+  {
+   "lemma": "soul"
+  },
+  {
+   "lemma": "sour"
+  },
+  {
+   "lemma": "source"
+  },
+  {
+   "lemma": "spare"
+  },
+  {
+   "lemma": "species",
+   "forms": [
+    "species"
+   ],
+   "derived": [
+    "special"
+   ]
+  },
+  {
+   "lemma": "specific"
+  },
+  {
+   "lemma": "speech"
+  },
+  {
+   "lemma": "spell"
+  },
+  {
+   "lemma": "spend"
+  },
+  {
+   "lemma": "spin"
+  },
+  {
+   "lemma": "spirit"
+  },
+  {
+   "lemma": "spoil"
+  },
+  {
+   "lemma": "sponsor"
+  },
+  {
+   "lemma": "spot"
+  },
+  {
+   "lemma": "spray"
+  },
+  {
+   "lemma": "spread"
+  },
+  {
+   "lemma": "spy"
+  },
+  {
+   "lemma": "square"
+  },
+  {
+   "lemma": "stable"
+  },
+  {
+   "lemma": "stage"
+  },
+  {
+   "lemma": "stairs"
+  },
+  {
+   "lemma": "stamp"
+  },
+  {
+   "lemma": "standard"
+  },
+  {
+   "lemma": "stare"
+  },
+  {
+   "lemma": "state"
+  },
+  {
+   "lemma": "station"
+  },
+  {
+   "lemma": "steady"
+  },
+  {
+   "lemma": "steal"
+  },
+  {
+   "lemma": "steam"
+  },
+  {
+   "lemma": "steel"
+  },
+  {
+   "lemma": "step"
+  },
+  {
+   "lemma": "stick"
+  },
+  {
+   "lemma": "still"
+  },
+  {
+   "lemma": "stir"
+  },
+  {
+   "lemma": "stock"
+  },
+  {
+   "lemma": "stomach"
+  },
+  {
+   "lemma": "storm"
+  },
+  {
+   "lemma": "straight"
+  },
+  {
+   "lemma": "strange"
+  },
+  {
+   "lemma": "strategy"
+  },
+  {
+   "lemma": "strawberry"
+  },
+  {
+   "lemma": "stream"
+  },
+  {
+   "lemma": "stress"
+  },
+  {
+   "lemma": "stretch"
+  },
+  {
+   "lemma": "strike"
+  },
+  {
+   "lemma": "string"
+  },
+  {
+   "lemma": "structure"
+  },
+  {
+   "lemma": "struggle"
+  },
+  {
+   "lemma": "studio"
+  },
+  {
+   "lemma": "stuff"
+  },
+  {
+   "lemma": "subject",
+   "forms": [
+    "subject"
+   ],
+   "derived": [
+    "subjective"
+   ]
+  },
+  {
+   "lemma": "succeed"
+  },
+  {
+   "lemma": "success"
+  },
+  {
+   "lemma": "such"
+  },
+  {
+   "lemma": "sudden"
+  },
+  {
+   "lemma": "suffer"
+  },
+  {
+   "lemma": "suggest"
+  },
+  {
+   "lemma": "suit"
+  },
+  {
+   "lemma": "sum",
+   "forms": [
+    "sum"
+   ],
+   "derived": [
+    "summary"
+   ]
+  },
+  {
+   "lemma": "super"
+  },
+  {
+   "lemma": "supper"
+  },
+  {
+   "lemma": "supply"
+  },
+  {
+   "lemma": "support"
+  },
+  {
+   "lemma": "suppose"
+  },
+  {
+   "lemma": "surface"
+  },
+  {
+   "lemma": "surprise"
+  },
+  {
+   "lemma": "surround"
+  },
+  {
+   "lemma": "survey"
+  },
+  {
+   "lemma": "survive"
+  },
+  {
+   "lemma": "suspect"
+  },
+  {
+   "lemma": "swallow"
+  },
+  {
+   "lemma": "sweater"
+  },
+  {
+   "lemma": "sweep"
+  },
+  {
+   "lemma": "sweet"
+  },
+  {
+   "lemma": "swing"
+  },
+  {
+   "lemma": "switch"
+  },
+  {
+   "lemma": "system"
+  },
+  {
+   "lemma": "tale"
+  },
+  {
+   "lemma": "tank"
+  },
+  {
+   "lemma": "tap"
+  },
+  {
+   "lemma": "target"
+  },
+  {
+   "lemma": "tax"
+  },
+  {
+   "lemma": "tea"
+  },
+  {
+   "lemma": "tear"
+  },
+  {
+   "lemma": "technique",
+   "forms": [
+    "technique",
+    "technic"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "technology"
+  },
+  {
+   "lemma": "teenage"
+  },
+  {
+   "lemma": "temperature"
+  },
+  {
+   "lemma": "tend"
+  },
+  {
+   "lemma": "tense"
+  },
+  {
+   "lemma": "term"
+  },
+  {
+   "lemma": "terrible"
+  },
+  {
+   "lemma": "text"
+  },
+  {
+   "lemma": "theater",
+   "forms": [
+    "theater",
+    "theatre"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "then"
+  },
+  {
+   "lemma": "theory"
+  },
+  {
+   "lemma": "therefore"
+  },
+  {
+   "lemma": "thick"
+  },
+  {
+   "lemma": "thief"
+  },
+  {
+   "lemma": "thin"
+  },
+  {
+   "lemma": "though"
+  },
+  {
+   "lemma": "thousand"
+  },
+  {
+   "lemma": "threat"
+  },
+  {
+   "lemma": "throat"
+  },
+  {
+   "lemma": "through"
+  },
+  {
+   "lemma": "throw"
+  },
+  {
+   "lemma": "thus"
+  },
+  {
+   "lemma": "tide",
+   "forms": [
+    "tide"
+   ],
+   "derived": [
+    "tidy"
+   ]
+  },
+  {
+   "lemma": "tie"
+  },
+  {
+   "lemma": "tight"
+  },
+  {
+   "lemma": "till"
+  },
+  {
+   "lemma": "tin"
+  },
+  {
+   "lemma": "tiny"
+  },
+  {
+   "lemma": "tip"
+  },
+  {
+   "lemma": "title",
+   "forms": [
+    "title"
+   ],
+   "derived": [
+    "entitle"
+   ]
+  },
+  {
+   "lemma": "toast"
+  },
+  {
+   "lemma": "toe"
+  },
+  {
+   "lemma": "toilet"
+  },
+  {
+   "lemma": "tone"
+  },
+  {
+   "lemma": "tongue"
+  },
+  {
+   "lemma": "tool"
+  },
+  {
+   "lemma": "topic"
+  },
+  {
+   "lemma": "total"
+  },
+  {
+   "lemma": "tough"
+  },
+  {
+   "lemma": "tour"
+  },
+  {
+   "lemma": "toward",
+   "forms": [
+    "toward",
+    "towards"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "towel"
+  },
+  {
+   "lemma": "tower"
+  },
+  {
+   "lemma": "trace"
+  },
+  {
+   "lemma": "trade"
+  },
+  {
+   "lemma": "tradition"
+  },
+  {
+   "lemma": "traffic"
+  },
+  {
+   "lemma": "transfer"
+  },
+  {
+   "lemma": "transport",
+   "forms": [
+    "transport"
+   ],
+   "derived": [
+    "transportation"
+   ]
+  },
+  {
+   "lemma": "trap"
+  },
+  {
+   "lemma": "tray"
+  },
+  {
+   "lemma": "treat"
+  },
+  {
+   "lemma": "triangle"
+  },
+  {
+   "lemma": "trick"
+  },
+  {
+   "lemma": "trouble"
+  },
+  {
+   "lemma": "trunk"
+  },
+  {
+   "lemma": "trust"
+  },
+  {
+   "lemma": "truth"
+  },
+  {
+   "lemma": "tune"
+  },
+  {
+   "lemma": "twin"
+  },
+  {
+   "lemma": "twist"
+  },
+  {
+   "lemma": "uniform"
+  },
+  {
+   "lemma": "unit"
+  },
+  {
+   "lemma": "unite",
+   "forms": [
+    "unite"
+   ],
+   "derived": [
+    "union"
+   ]
+  },
+  {
+   "lemma": "university"
+  },
+  {
+   "lemma": "unless"
+  },
+  {
+   "lemma": "until"
+  },
+  {
+   "lemma": "upon"
+  },
+  {
+   "lemma": "upper"
+  },
+  {
+   "lemma": "upset"
+  },
+  {
+   "lemma": "valley"
+  },
+  {
+   "lemma": "value"
+  },
+  {
+   "lemma": "van"
+  },
+  {
+   "lemma": "various"
+  },
+  {
+   "lemma": "vary"
+  },
+  {
+   "lemma": "vehicle"
+  },
+  {
+   "lemma": "version"
+  },
+  {
+   "lemma": "victim"
+  },
+  {
+   "lemma": "view",
+   "forms": [
+    "view"
+   ],
+   "derived": [
+    "interview",
+    "review"
+   ]
+  },
+  {
+   "lemma": "villa"
+  },
+  {
+   "lemma": "village"
+  },
+  {
+   "lemma": "violent"
+  },
+  {
+   "lemma": "vision"
+  },
+  {
+   "lemma": "volume"
+  },
+  {
+   "lemma": "volunteer"
+  },
+  {
+   "lemma": "vote"
+  },
+  {
+   "lemma": "wage"
+  },
+  {
+   "lemma": "warn"
+  },
+  {
+   "lemma": "waste"
+  },
+  {
+   "lemma": "wave"
+  },
+  {
+   "lemma": "weak"
+  },
+  {
+   "lemma": "weapon"
+  },
+  {
+   "lemma": "weigh"
+  },
+  {
+   "lemma": "whale"
+  },
+  {
+   "lemma": "wheel"
+  },
+  {
+   "lemma": "whether"
+  },
+  {
+   "lemma": "which"
+  },
+  {
+   "lemma": "while"
+  },
+  {
+   "lemma": "whisper"
+  },
+  {
+   "lemma": "whistle"
+  },
+  {
+   "lemma": "whole"
+  },
+  {
+   "lemma": "wide"
+  },
+  {
+   "lemma": "wild"
+  },
+  {
+   "lemma": "wing"
+  },
+  {
+   "lemma": "wipe"
+  },
+  {
+   "lemma": "wire"
+  },
+  {
+   "lemma": "wise"
+  },
+  {
+   "lemma": "within"
+  },
+  {
+   "lemma": "without"
+  },
+  {
+   "lemma": "wonder"
+  },
+  {
+   "lemma": "wool"
+  },
+  {
+   "lemma": "worth"
+  },
+  {
+   "lemma": "would"
+  },
+  {
+   "lemma": "wound"
+  },
+  {
+   "lemma": "wrap"
+  },
+  {
+   "lemma": "yell"
+  },
+  {
+   "lemma": "yet"
+  },
+  {
+   "lemma": "zebra"
+  },
+  {
+   "lemma": "zero"
+  }
  ],
  "other": [
-  "abandon",
-  "aboard",
-  "abort",
-  "abound",
-  "abroad",
-  "absent",
-  "absorb",
-  "abstract",
-  "absurd",
-  "abuse",
-  "academy",
-  "accelerate",
-  "accommodate",
-  "accompany",
-  "accomplish",
-  "accord",
-  "accumulate",
-  "accurate",
-  "ache",
-  "acid",
-  "acknowledge",
-  "acquire",
-  "acquisition",
-  "addict",
-  "adequate",
-  "adjust",
-  "administer",
-  "adolescent",
-  "adverse",
-  "advocate",
-  "aesthetic",
-  "agency",
-  "agenda",
-  "aggress",
-  "agriculture",
-  "alert",
-  "alien",
-  "alike",
-  "allocate",
-  "ally",
-  "alongside",
-  "alternate",
-  "ambassador",
-  "ambition",
-  "analyse",
-  "analyze",
-  "anchor",
-  "ancient",
-  "angle",
-  "anniversary",
-  "anticipate",
-  "anxiety",
-  "apology",
-  "apparent",
-  "approve",
-  "approximate",
-  "architect",
-  "arise",
-  "arrow",
-  "artifice",
-  "aspect",
-  "aspire",
-  "assault",
-  "assemble",
-  "assert",
-  "asset",
-  "assure",
-  "astonish",
-  "athlete",
-  "atom",
-  "attribute",
-  "auction",
-  "authentic",
-  "author",
-  "avail",
-  "await",
-  "awe",
-  "ban",
-  "bankrupt",
-  "bargain",
-  "barrier",
-  "beam",
-  "beard",
-  "beast",
-  "behalf",
-  "behave",
-  "betray",
-  "bias",
-  "biography",
-  "biology",
-  "blast",
-  "blend",
-  "blink",
-  "blossom",
-  "bold",
-  "boost",
-  "border",
-  "boundary",
-  "breed",
-  "breeze",
-  "broadcast",
-  "brute",
-  "bulk",
-  "bull",
-  "bully",
-  "bundle",
-  "burden",
-  "butcher",
-  "buzz",
-  "cancel",
-  "cancer",
-  "candidate",
-  "canvas",
-  "capture",
-  "carve",
-  "cater",
-  "cattle",
-  "caution",
-  "cave",
-  "cease",
-  "celebrate",
-  "celebrity",
-  "censor",
-  "certificate",
-  "chamber",
-  "chaos",
-  "charity",
-  "chef",
-  "chemical",
-  "chill",
-  "chin",
-  "choir",
-  "chorus",
-  "chronic",
-  "circulate",
-  "cite",
-  "clap",
-  "clash",
-  "clause",
-  "clay",
-  "cling",
-  "clinic",
-  "cluster",
-  "coincide",
-  "collaborate",
-  "collapse",
-  "collar",
-  "colleague",
-  "colony",
-  "column",
-  "combat",
-  "commit",
-  "commodity",
-  "communist",
-  "companion",
-  "compatible",
-  "compel",
-  "compensate",
-  "compete",
-  "compile",
-  "complement",
-  "component",
-  "compose",
-  "compound",
-  "comprehend",
-  "comprise",
-  "compromise",
-  "conceal",
-  "conceive",
-  "conclude",
-  "concrete",
-  "condemn",
-  "conduct",
-  "confer",
-  "confess",
-  "confide",
-  "confine",
-  "conform",
-  "confront",
-  "congress",
-  "conscience",
-  "consent",
-  "conserve",
-  "consist",
-  "constitute",
-  "constrain",
-  "construct",
-  "consult",
-  "contemporary",
-  "contend",
-  "continent",
-  "contradict",
-  "contrary",
-  "contrast",
-  "controversy",
-  "convene",
-  "convert",
-  "convey",
-  "convict",
-  "cooperate",
-  "coordinate",
-  "copyright",
-  "cord",
-  "core",
-  "corn",
-  "corporate",
-  "correspond",
-  "corridor",
-  "corrupt",
-  "costume",
-  "counsel",
-  "counterpart",
-  "coupon",
-  "courage",
-  "craft",
-  "craze",
-  "credible",
-  "creep",
-  "crew",
-  "criterion",
-  "critic",
-  "crop",
-  "crucial",
-  "cruise",
-  "crush",
-  "crystal",
-  "cultivate",
-  "currency",
-  "curriculum",
-  "curry",
-  "curse",
-  "curve",
-  "custody",
-  "custom",
-  "cynical",
-  "dairy",
-  "damp",
-  "dash",
-  "database",
-  "datum",
-  "decade",
-  "decay",
-  "decent",
-  "declare",
-  "decline",
-  "decrease",
-  "dedicate",
-  "defeat",
-  "defend",
-  "deficiency",
-  "deficit",
-  "delegate",
-  "delete",
-  "deliberate",
-  "delicate",
-  "democracy",
-  "democrat",
-  "demon",
-  "dense",
-  "depart",
-  "depict",
-  "deposit",
-  "deprive",
-  "derive",
-  "descend",
-  "designate",
-  "despair",
-  "destine",
-  "destiny",
-  "destruct",
-  "detach",
-  "device",
-  "devil",
-  "devise",
-  "devote",
-  "diabetes",
-  "dictate",
-  "differ",
-  "dignity",
-  "dimension",
-  "diminish",
-  "dine",
-  "dip",
-  "diplomat",
-  "disaster",
-  "discourse",
-  "discriminate",
-  "dismiss",
-  "dispute",
-  "disrupt",
-  "distinct",
-  "distinguish",
-  "distort",
-  "distract",
-  "distribute",
-  "diverse",
-  "divine",
-  "domain",
-  "dominate",
-  "dose",
-  "dot",
-  "draft",
-  "drain",
-  "dread",
-  "drill",
-  "drown",
-  "dual",
-  "dull",
-  "dwell",
-  "dynamic",
-  "eager",
-  "efficient",
-  "elaborate",
-  "electronic",
-  "elegant",
-  "elevate",
-  "eliminate",
-  "elite",
-  "embassy",
-  "embrace",
-  "emerge",
-  "emergency",
-  "emit",
-  "emphasis",
-  "encounter",
-  "endure",
-  "enhance",
-  "enquire",
-  "enterprise",
-  "enthusiastic",
-  "entry",
-  "environ",
-  "envy",
-  "equip",
-  "era",
-  "erase",
-  "erect",
-  "err",
-  "essence",
-  "estate",
-  "ethic",
-  "ethnic",
-  "evacuate",
-  "evaluate",
-  "evitable",
-  "evolution",
-  "evolve",
-  "exaggerate",
-  "exceed",
-  "excel",
-  "excess",
-  "exclude",
-  "executive",
-  "exhibit",
-  "exotic",
-  "expertise",
-  "explicit",
-  "explode",
-  "explore",
-  "export",
-  "extent",
-  "external",
-  "extinct",
-  "extract",
-  "extraordinary",
-  "eyebrow",
-  "fabric",
-  "facilitate",
-  "facility",
-  "faculty",
-  "fade",
-  "false",
-  "fame",
-  "fare",
-  "fasten",
-  "fate",
-  "federal",
-  "ferry",
-  "fertile",
-  "fiber",
-  "fibre",
-  "fiction",
-  "fierce",
-  "filter",
-  "finite",
-  "flavor",
-  "flavour",
-  "flaw",
-  "flee",
-  "flesh",
-  "flexible",
-  "flip",
-  "flock",
-  "flourish",
-  "flush",
-  "fond",
-  "forbid",
-  "forecast",
-  "forehead",
-  "format",
-  "former",
-  "formula",
-  "foster",
-  "fountain",
-  "fraction",
-  "framework",
-  "frequent",
-  "frost",
-  "frown",
-  "fuel",
-  "fulfil",
-  "fundamental",
-  "funeral",
-  "furnish",
-  "furthermore",
-  "fury",
-  "fuse",
-  "gallery",
-  "gamble",
-  "gang",
-  "gap",
-  "gasoline",
-  "gaze",
-  "gender",
-  "gene",
-  "generate",
-  "generous",
-  "genius",
-  "genuine",
-  "geography",
-  "geology",
-  "glare",
-  "globe",
-  "glow",
-  "goat",
-  "graduate",
-  "grain",
-  "grasp",
-  "grateful",
-  "grave",
-  "greed",
-  "grief",
-  "grip",
-  "gross",
-  "guardian",
-  "guideline",
-  "gulf",
-  "gym",
-  "gymnasium",
-  "habitat",
-  "halt",
-  "hammer",
-  "handicap",
-  "harbor",
-  "harbour",
-  "harmony",
-  "harsh",
-  "harvest",
-  "haunt",
-  "hazard",
-  "headquarters",
-  "heal",
-  "heel",
-  "heir",
-  "hence",
-  "heritage",
-  "hierarchy",
-  "highlight",
-  "holy",
-  "hook",
-  "horizon",
-  "horror",
-  "host",
-  "hostile",
-  "household",
-  "hut",
-  "hypothesis",
-  "ideal",
-  "identical",
-  "ideology",
-  "illude",
-  "imitate",
-  "immense",
-  "immigrate",
-  "immune",
-  "impact",
-  "imperial",
-  "implement",
-  "imply",
-  "import",
-  "impose",
-  "incentive",
-  "incident",
-  "incline",
-  "incorporate",
-  "index",
-  "induce",
-  "infant",
-  "infect",
-  "infer",
-  "inflate",
-  "ingredient",
-  "inhabit",
-  "inherent",
-  "inhibit",
-  "initial",
-  "inject",
-  "inn",
-  "innovate",
-  "input",
-  "inquire",
-  "insect",
-  "insert",
-  "insight",
-  "inspire",
-  "install",
-  "instinct",
-  "institute",
-  "insult",
-  "integrate",
-  "intellect",
-  "intelligent",
-  "interfere",
-  "interior",
-  "intermediate",
-  "interpret",
-  "interval",
-  "intervene",
-  "intimate",
-  "intrigue",
-  "invade",
-  "irony",
-  "irritate",
-  "isolate",
-  "jail",
-  "jar",
-  "jog",
-  "joint",
-  "journal",
-  "jury",
-  "keen",
-  "kit",
-  "knight",
-  "knot",
-  "ladder",
-  "landscape",
-  "lap",
-  "latter",
-  "launch",
-  "laundry",
-  "leak",
-  "lease",
-  "leather",
-  "lecture",
-  "legend",
-  "legislate",
-  "legitimate",
-  "leisure",
-  "liberal",
-  "liberty",
-  "likewise",
-  "linguistic",
-  "liquid",
-  "literature",
-  "logic",
-  "lone",
-  "loyal",
-  "lump",
-  "luxury",
-  "magnet",
-  "magnificent",
-  "manifest",
-  "manipulate",
-  "margin",
-  "marine",
-  "mature",
-  "mayor",
-  "meanwhile",
-  "mechanic",
-  "mechanism",
-  "mediate",
-  "medieval",
-  "medium",
-  "merchant",
-  "mere",
-  "merge",
-  "merit",
-  "metropolitan",
-  "microphone",
-  "migrate",
-  "mild",
-  "million",
-  "mine",
-  "mineral",
-  "minimal",
-  "minimum",
-  "ministry",
-  "miracle",
-  "missile",
-  "mobile",
-  "mock",
-  "mode",
-  "moderate",
-  "modest",
-  "modify",
-  "moist",
-  "molecule",
-  "monster",
-  "monument",
-  "mortal",
-  "motive",
-  "multiple",
-  "murder",
-  "mutual",
-  "myth",
-  "naive",
-  "naked",
-  "narrate",
-  "nasty",
-  "needle",
-  "negate",
-  "neglect",
-  "negotiate",
-  "nephew",
-  "network",
-  "neutral",
-  "nevertheless",
-  "nightmare",
-  "noble",
-  "nod",
-  "nominate",
-  "nonetheless",
-  "norm",
-  "novel",
-  "nuclear",
-  "numerous",
-  "obey",
-  "oblige",
-  "obsess",
-  "obtain",
-  "occupy",
-  "offend",
-  "opportune",
-  "opt",
-  "optimist",
-  "oral",
-  "orbit",
-  "orchestra",
-  "organ",
-  "orient",
-  "origin",
-  "outcome",
-  "outline",
-  "output",
-  "outrage",
-  "outstanding",
-  "overcome",
-  "overhead",
-  "overlap",
-  "overlook",
-  "overnight",
-  "oversea",
-  "overseas",
-  "overwhelm",
-  "owe",
-  "pace",
-  "pad",
-  "pale",
-  "palm",
-  "panel",
-  "parallel",
-  "parliament",
-  "participate",
-  "particle",
-  "passage",
-  "passenger",
-  "passion",
-  "passport",
-  "pat",
-  "patch",
-  "patent",
-  "pave",
-  "peak",
-  "peasant",
-  "peel",
-  "peer",
-  "penalty",
-  "perceive",
-  "permanent",
-  "permit",
-  "persist",
-  "perspective",
-  "persuade",
-  "petrol",
-  "phase",
-  "phenomenon",
-  "philosophy",
-  "phrase",
-  "physics",
-  "pill",
-  "pinch",
-  "pioneer",
-  "platform",
-  "plot",
-  "polish",
-  "poll",
-  "pond",
-  "populate",
-  "portion",
-  "portrait",
-  "pose",
-  "posit",
-  "praise",
-  "preach",
-  "precede",
-  "precise",
-  "predator",
-  "predict",
-  "prejudice",
-  "premium",
-  "prescribe",
-  "preserve",
-  "preside",
-  "presume",
-  "prevail",
-  "prey",
-  "priest",
-  "primitive",
-  "principal",
-  "prior",
-  "privilege",
-  "professor",
-  "profile",
-  "profound",
-  "prohibit",
-  "prominent",
-  "prompt",
-  "proof",
-  "proportion",
-  "prospect",
-  "prosper",
-  "protein",
-  "province",
-  "provoke",
-  "psychology",
-  "publish",
-  "pupil",
-  "pursue",
-  "quantity",
-  "questionnaire",
-  "rage",
-  "rally",
-  "random",
-  "rank",
-  "rational",
-  "raw",
-  "rear",
-  "rebel",
-  "receipt",
-  "recruit",
-  "refine",
-  "reform",
-  "refrigerate",
-  "regret",
-  "regulate",
-  "reinforce",
-  "reject",
-  "relevant",
-  "relieve",
-  "religion",
-  "reluctant",
-  "remedy",
-  "remote",
-  "republic",
-  "reputation",
-  "rescue",
-  "resemble",
-  "reside",
-  "resign",
-  "resolve",
-  "resort",
-  "restore",
-  "restrain",
-  "restrict",
-  "resume",
-  "retail",
-  "retain",
-  "retreat",
-  "reveal",
-  "revenge",
-  "reverse",
-  "revise",
-  "revive",
-  "revolution",
-  "reward",
-  "rhythm",
-  "rid",
-  "ridicule",
-  "riot",
-  "rival",
-  "roar",
-  "roast",
-  "rod",
-  "romantic",
-  "rot",
-  "routine",
-  "rumor",
-  "rumour",
-  "rural",
-  "sack",
-  "sacred",
-  "sacrifice",
-  "satellite",
-  "scan",
-  "scandal",
-  "scarce",
-  "scatter",
-  "scheme",
-  "scholar",
-  "scope",
-  "scramble",
-  "screw",
-  "sculpt",
-  "sector",
-  "seize",
-  "sensible",
-  "sentiment",
-  "sequence",
-  "severe",
-  "shallow",
-  "sigh",
-  "silent",
-  "simulate",
-  "simultaneous",
-  "sin",
-  "skip",
-  "slice",
-  "slim",
-  "slope",
-  "sneak",
-  "soak",
-  "soap",
-  "sociology",
-  "sole",
-  "sophisticate",
-  "span",
-  "spark",
-  "spectacle",
-  "spectrum",
-  "sphere",
-  "spill",
-  "spit",
-  "splash",
-  "split",
-  "spouse",
-  "squeeze",
-  "stack",
-  "stain",
-  "starve",
-  "statistic",
-  "statue",
-  "status",
-  "steep",
-  "stem",
-  "stiff",
-  "stimulate",
-  "stitch",
-  "stove",
-  "strain",
-  "strict",
-  "strip",
-  "stripe",
-  "stroke",
-  "submarine",
-  "submit",
-  "subscribe",
-  "substance",
-  "substitute",
-  "subtle",
-  "suburb",
-  "suck",
-  "suffice",
-  "suicide",
-  "suite",
-  "summit",
-  "superb",
-  "superior",
-  "supervise",
-  "supplement",
-  "surgery",
-  "surrender",
-  "suspend",
-  "sustain",
-  "swear",
-  "sweat",
-  "swell",
-  "swift",
-  "symbol",
-  "sympathy",
-  "symphony",
-  "symptom",
-  "tackle",
-  "tag",
-  "talent",
-  "task",
-  "tease",
-  "telegraph",
-  "temple",
-  "temporary",
-  "tempt",
-  "tenant",
-  "tender",
-  "terminal",
-  "terminate",
-  "terrace",
-  "terrific",
-  "territory",
-  "terror",
-  "theme",
-  "therapy",
-  "thorough",
-  "thread",
-  "thrill",
-  "thumb",
-  "tick",
-  "timber",
-  "tissue",
-  "torture",
-  "toss",
-  "toxic",
-  "tragic",
-  "trail",
-  "transact",
-  "transform",
-  "transition",
-  "translate",
-  "transmit",
-  "treasure",
-  "treaty",
-  "tremendous",
-  "trend",
-  "tribe",
-  "trigger",
-  "trim",
-  "triumph",
-  "troop",
-  "tube",
-  "tunnel",
-  "turnover",
-  "ultimate",
-  "undergo",
-  "underlie",
-  "undermine",
-  "undertake",
-  "unify",
-  "unique",
-  "universe",
-  "update",
-  "upward",
-  "upwards",
-  "urban",
-  "urge",
-  "utilise",
-  "utilize",
-  "utter",
-  "vacate",
-  "vaccine",
-  "vacuum",
-  "vague",
-  "valid",
-  "vanish",
-  "vast",
-  "venture",
-  "verb",
-  "verse",
-  "versus",
-  "vertical",
-  "vessel",
-  "veterinarian",
-  "via",
-  "vice",
-  "victory",
-  "vigor",
-  "virgin",
-  "virtue",
-  "virus",
-  "visible",
-  "visual",
-  "vital",
-  "vivid",
-  "vocabulary",
-  "vocation",
-  "wander",
-  "warehouse",
-  "warrant",
-  "wealth",
-  "weave",
-  "weed",
-  "weird",
-  "welfare",
-  "wheat",
-  "whereas",
-  "whip",
-  "wicked",
-  "wit",
-  "withdraw",
-  "witness",
-  "worship",
-  "wreck",
-  "yield",
-  "zone"
+  {
+   "lemma": "abandon"
+  },
+  {
+   "lemma": "aboard"
+  },
+  {
+   "lemma": "abort",
+   "forms": [
+    "abort"
+   ],
+   "derived": [
+    "abortion"
+   ]
+  },
+  {
+   "lemma": "abound",
+   "forms": [
+    "abound"
+   ],
+   "derived": [
+    "abundant"
+   ]
+  },
+  {
+   "lemma": "abroad"
+  },
+  {
+   "lemma": "absent"
+  },
+  {
+   "lemma": "absorb"
+  },
+  {
+   "lemma": "abstract"
+  },
+  {
+   "lemma": "absurd"
+  },
+  {
+   "lemma": "abuse"
+  },
+  {
+   "lemma": "academy"
+  },
+  {
+   "lemma": "accelerate"
+  },
+  {
+   "lemma": "accommodate"
+  },
+  {
+   "lemma": "accompany"
+  },
+  {
+   "lemma": "accomplish"
+  },
+  {
+   "lemma": "accord"
+  },
+  {
+   "lemma": "accumulate"
+  },
+  {
+   "lemma": "accurate"
+  },
+  {
+   "lemma": "ache",
+   "forms": [
+    "ache"
+   ],
+   "derived": [
+    "headache"
+   ]
+  },
+  {
+   "lemma": "acid"
+  },
+  {
+   "lemma": "acknowledge"
+  },
+  {
+   "lemma": "acquire"
+  },
+  {
+   "lemma": "acquisition"
+  },
+  {
+   "lemma": "addict"
+  },
+  {
+   "lemma": "adequate"
+  },
+  {
+   "lemma": "adjust"
+  },
+  {
+   "lemma": "administer",
+   "forms": [
+    "administer"
+   ],
+   "derived": [
+    "administration"
+   ]
+  },
+  {
+   "lemma": "adolescent"
+  },
+  {
+   "lemma": "adverse"
+  },
+  {
+   "lemma": "advocate"
+  },
+  {
+   "lemma": "aesthetic"
+  },
+  {
+   "lemma": "agency"
+  },
+  {
+   "lemma": "agenda"
+  },
+  {
+   "lemma": "aggress",
+   "forms": [
+    "aggress"
+   ],
+   "derived": [
+    "aggressive"
+   ]
+  },
+  {
+   "lemma": "agriculture"
+  },
+  {
+   "lemma": "alert"
+  },
+  {
+   "lemma": "alien"
+  },
+  {
+   "lemma": "alike"
+  },
+  {
+   "lemma": "allocate"
+  },
+  {
+   "lemma": "ally"
+  },
+  {
+   "lemma": "alongside"
+  },
+  {
+   "lemma": "alternate",
+   "forms": [
+    "alternate"
+   ],
+   "derived": [
+    "alternative"
+   ]
+  },
+  {
+   "lemma": "ambassador"
+  },
+  {
+   "lemma": "ambition",
+   "forms": [
+    "ambition"
+   ],
+   "derived": [
+    "ambitious"
+   ]
+  },
+  {
+   "lemma": "analyze",
+   "forms": [
+    "analyze",
+    "analyse"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "anchor"
+  },
+  {
+   "lemma": "ancient"
+  },
+  {
+   "lemma": "angle"
+  },
+  {
+   "lemma": "anniversary"
+  },
+  {
+   "lemma": "anticipate"
+  },
+  {
+   "lemma": "anxiety"
+  },
+  {
+   "lemma": "apology"
+  },
+  {
+   "lemma": "apparent"
+  },
+  {
+   "lemma": "approve"
+  },
+  {
+   "lemma": "approximate"
+  },
+  {
+   "lemma": "architect",
+   "forms": [
+    "architect"
+   ],
+   "derived": [
+    "architecture"
+   ]
+  },
+  {
+   "lemma": "arise"
+  },
+  {
+   "lemma": "arrow"
+  },
+  {
+   "lemma": "artifice",
+   "forms": [
+    "artifice"
+   ],
+   "derived": [
+    "artificial"
+   ]
+  },
+  {
+   "lemma": "aspect"
+  },
+  {
+   "lemma": "aspire"
+  },
+  {
+   "lemma": "assault"
+  },
+  {
+   "lemma": "assemble"
+  },
+  {
+   "lemma": "assert"
+  },
+  {
+   "lemma": "asset"
+  },
+  {
+   "lemma": "assure"
+  },
+  {
+   "lemma": "astonish"
+  },
+  {
+   "lemma": "athlete"
+  },
+  {
+   "lemma": "atom"
+  },
+  {
+   "lemma": "attribute"
+  },
+  {
+   "lemma": "auction"
+  },
+  {
+   "lemma": "authentic"
+  },
+  {
+   "lemma": "author"
+  },
+  {
+   "lemma": "avail",
+   "forms": [
+    "avail"
+   ],
+   "derived": [
+    "available"
+   ]
+  },
+  {
+   "lemma": "await"
+  },
+  {
+   "lemma": "awe",
+   "forms": [
+    "awe"
+   ],
+   "derived": [
+    "awful"
+   ]
+  },
+  {
+   "lemma": "ban"
+  },
+  {
+   "lemma": "bankrupt"
+  },
+  {
+   "lemma": "bargain"
+  },
+  {
+   "lemma": "barrier"
+  },
+  {
+   "lemma": "beam"
+  },
+  {
+   "lemma": "beard"
+  },
+  {
+   "lemma": "beast"
+  },
+  {
+   "lemma": "behalf"
+  },
+  {
+   "lemma": "behave",
+   "forms": [
+    "behave"
+   ],
+   "derived": [
+    "behavior / behaviour"
+   ]
+  },
+  {
+   "lemma": "betray"
+  },
+  {
+   "lemma": "bias"
+  },
+  {
+   "lemma": "biography"
+  },
+  {
+   "lemma": "biology"
+  },
+  {
+   "lemma": "blast"
+  },
+  {
+   "lemma": "blend"
+  },
+  {
+   "lemma": "blink"
+  },
+  {
+   "lemma": "blossom"
+  },
+  {
+   "lemma": "bold"
+  },
+  {
+   "lemma": "boost"
+  },
+  {
+   "lemma": "border"
+  },
+  {
+   "lemma": "boundary"
+  },
+  {
+   "lemma": "breed"
+  },
+  {
+   "lemma": "breeze"
+  },
+  {
+   "lemma": "broadcast"
+  },
+  {
+   "lemma": "brute",
+   "forms": [
+    "brute"
+   ],
+   "derived": [
+    "brutal"
+   ]
+  },
+  {
+   "lemma": "bulk"
+  },
+  {
+   "lemma": "bull"
+  },
+  {
+   "lemma": "bully"
+  },
+  {
+   "lemma": "bundle"
+  },
+  {
+   "lemma": "burden"
+  },
+  {
+   "lemma": "butcher"
+  },
+  {
+   "lemma": "buzz"
+  },
+  {
+   "lemma": "cancel"
+  },
+  {
+   "lemma": "cancer"
+  },
+  {
+   "lemma": "candidate"
+  },
+  {
+   "lemma": "canvas"
+  },
+  {
+   "lemma": "capture"
+  },
+  {
+   "lemma": "carve"
+  },
+  {
+   "lemma": "cater"
+  },
+  {
+   "lemma": "cattle"
+  },
+  {
+   "lemma": "caution"
+  },
+  {
+   "lemma": "cave"
+  },
+  {
+   "lemma": "cease"
+  },
+  {
+   "lemma": "celebrate"
+  },
+  {
+   "lemma": "celebrity"
+  },
+  {
+   "lemma": "censor"
+  },
+  {
+   "lemma": "certificate"
+  },
+  {
+   "lemma": "chamber"
+  },
+  {
+   "lemma": "chaos"
+  },
+  {
+   "lemma": "charity"
+  },
+  {
+   "lemma": "chef"
+  },
+  {
+   "lemma": "chemical"
+  },
+  {
+   "lemma": "chill"
+  },
+  {
+   "lemma": "chin"
+  },
+  {
+   "lemma": "choir"
+  },
+  {
+   "lemma": "chorus"
+  },
+  {
+   "lemma": "chronic"
+  },
+  {
+   "lemma": "circulate"
+  },
+  {
+   "lemma": "cite"
+  },
+  {
+   "lemma": "clap"
+  },
+  {
+   "lemma": "clash"
+  },
+  {
+   "lemma": "clause"
+  },
+  {
+   "lemma": "clay"
+  },
+  {
+   "lemma": "cling"
+  },
+  {
+   "lemma": "clinic"
+  },
+  {
+   "lemma": "cluster"
+  },
+  {
+   "lemma": "coincide"
+  },
+  {
+   "lemma": "collaborate"
+  },
+  {
+   "lemma": "collapse"
+  },
+  {
+   "lemma": "collar"
+  },
+  {
+   "lemma": "colleague"
+  },
+  {
+   "lemma": "colony"
+  },
+  {
+   "lemma": "column"
+  },
+  {
+   "lemma": "combat"
+  },
+  {
+   "lemma": "commit",
+   "forms": [
+    "commit"
+   ],
+   "derived": [
+    "commission"
+   ]
+  },
+  {
+   "lemma": "commodity"
+  },
+  {
+   "lemma": "communist"
+  },
+  {
+   "lemma": "companion"
+  },
+  {
+   "lemma": "compatible"
+  },
+  {
+   "lemma": "compel"
+  },
+  {
+   "lemma": "compensate"
+  },
+  {
+   "lemma": "compete",
+   "forms": [
+    "compete"
+   ],
+   "derived": [
+    "competent"
+   ]
+  },
+  {
+   "lemma": "compile"
+  },
+  {
+   "lemma": "complement"
+  },
+  {
+   "lemma": "component"
+  },
+  {
+   "lemma": "compose"
+  },
+  {
+   "lemma": "compound"
+  },
+  {
+   "lemma": "comprehend",
+   "forms": [
+    "comprehend"
+   ],
+   "derived": [
+    "comprehensive"
+   ]
+  },
+  {
+   "lemma": "comprise"
+  },
+  {
+   "lemma": "compromise"
+  },
+  {
+   "lemma": "conceal"
+  },
+  {
+   "lemma": "conceive"
+  },
+  {
+   "lemma": "conclude"
+  },
+  {
+   "lemma": "concrete"
+  },
+  {
+   "lemma": "condemn"
+  },
+  {
+   "lemma": "conduct"
+  },
+  {
+   "lemma": "confer"
+  },
+  {
+   "lemma": "confess"
+  },
+  {
+   "lemma": "confide",
+   "forms": [
+    "confide"
+   ],
+   "derived": [
+    "confident"
+   ]
+  },
+  {
+   "lemma": "confine"
+  },
+  {
+   "lemma": "conform"
+  },
+  {
+   "lemma": "confront"
+  },
+  {
+   "lemma": "congress"
+  },
+  {
+   "lemma": "conscience"
+  },
+  {
+   "lemma": "consent"
+  },
+  {
+   "lemma": "conserve"
+  },
+  {
+   "lemma": "consist",
+   "forms": [
+    "consist"
+   ],
+   "derived": [
+    "consistent"
+   ]
+  },
+  {
+   "lemma": "constitute",
+   "forms": [
+    "constitute"
+   ],
+   "derived": [
+    "constitution"
+   ]
+  },
+  {
+   "lemma": "constrain"
+  },
+  {
+   "lemma": "construct",
+   "forms": [
+    "construct"
+   ],
+   "derived": [
+    "construction"
+   ]
+  },
+  {
+   "lemma": "consult"
+  },
+  {
+   "lemma": "contemporary"
+  },
+  {
+   "lemma": "contend"
+  },
+  {
+   "lemma": "continent"
+  },
+  {
+   "lemma": "contradict"
+  },
+  {
+   "lemma": "contrary"
+  },
+  {
+   "lemma": "contrast"
+  },
+  {
+   "lemma": "controversy"
+  },
+  {
+   "lemma": "convene",
+   "forms": [
+    "convene"
+   ],
+   "derived": [
+    "convenient",
+    "convention"
+   ]
+  },
+  {
+   "lemma": "convert"
+  },
+  {
+   "lemma": "convey"
+  },
+  {
+   "lemma": "convict"
+  },
+  {
+   "lemma": "cooperate"
+  },
+  {
+   "lemma": "coordinate"
+  },
+  {
+   "lemma": "copyright"
+  },
+  {
+   "lemma": "cord"
+  },
+  {
+   "lemma": "core"
+  },
+  {
+   "lemma": "corn"
+  },
+  {
+   "lemma": "corporate",
+   "forms": [
+    "corporate"
+   ],
+   "derived": [
+    "corporation"
+   ]
+  },
+  {
+   "lemma": "correspond"
+  },
+  {
+   "lemma": "corridor"
+  },
+  {
+   "lemma": "corrupt"
+  },
+  {
+   "lemma": "costume"
+  },
+  {
+   "lemma": "counsel"
+  },
+  {
+   "lemma": "counterpart"
+  },
+  {
+   "lemma": "coupon"
+  },
+  {
+   "lemma": "courage",
+   "forms": [
+    "courage"
+   ],
+   "derived": [
+    "discourage",
+    "encourage"
+   ]
+  },
+  {
+   "lemma": "craft"
+  },
+  {
+   "lemma": "craze",
+   "forms": [
+    "craze"
+   ],
+   "derived": [
+    "crazy"
+   ]
+  },
+  {
+   "lemma": "credible",
+   "forms": [
+    "credible"
+   ],
+   "derived": [
+    "incredible"
+   ]
+  },
+  {
+   "lemma": "creep"
+  },
+  {
+   "lemma": "crew"
+  },
+  {
+   "lemma": "criterion"
+  },
+  {
+   "lemma": "critic",
+   "forms": [
+    "critic"
+   ],
+   "derived": [
+    "criticize / criticise",
+    "criticism"
+   ]
+  },
+  {
+   "lemma": "crop"
+  },
+  {
+   "lemma": "crucial"
+  },
+  {
+   "lemma": "cruise"
+  },
+  {
+   "lemma": "crush"
+  },
+  {
+   "lemma": "crystal"
+  },
+  {
+   "lemma": "cultivate"
+  },
+  {
+   "lemma": "currency"
+  },
+  {
+   "lemma": "curriculum"
+  },
+  {
+   "lemma": "curry"
+  },
+  {
+   "lemma": "curse"
+  },
+  {
+   "lemma": "curve"
+  },
+  {
+   "lemma": "custody"
+  },
+  {
+   "lemma": "custom"
+  },
+  {
+   "lemma": "cynical"
+  },
+  {
+   "lemma": "dairy"
+  },
+  {
+   "lemma": "damp"
+  },
+  {
+   "lemma": "dash"
+  },
+  {
+   "lemma": "database"
+  },
+  {
+   "lemma": "datum",
+   "forms": [
+    "datum"
+   ],
+   "derived": [
+    "data"
+   ]
+  },
+  {
+   "lemma": "decade"
+  },
+  {
+   "lemma": "decay"
+  },
+  {
+   "lemma": "decent"
+  },
+  {
+   "lemma": "declare"
+  },
+  {
+   "lemma": "decline",
+   "forms": [
+    "decline"
+   ],
+   "derived": [
+    "declension"
+   ]
+  },
+  {
+   "lemma": "decrease"
+  },
+  {
+   "lemma": "dedicate"
+  },
+  {
+   "lemma": "defeat"
+  },
+  {
+   "lemma": "defend",
+   "forms": [
+    "defend"
+   ],
+   "derived": [
+    "defendant"
+   ]
+  },
+  {
+   "lemma": "deficiency"
+  },
+  {
+   "lemma": "deficit"
+  },
+  {
+   "lemma": "delegate"
+  },
+  {
+   "lemma": "delete"
+  },
+  {
+   "lemma": "deliberate"
+  },
+  {
+   "lemma": "delicate"
+  },
+  {
+   "lemma": "democracy"
+  },
+  {
+   "lemma": "democrat"
+  },
+  {
+   "lemma": "demon"
+  },
+  {
+   "lemma": "dense"
+  },
+  {
+   "lemma": "depart",
+   "forms": [
+    "depart"
+   ],
+   "derived": [
+    "department",
+    "departure"
+   ]
+  },
+  {
+   "lemma": "depict"
+  },
+  {
+   "lemma": "deposit"
+  },
+  {
+   "lemma": "deprive"
+  },
+  {
+   "lemma": "derive"
+  },
+  {
+   "lemma": "descend"
+  },
+  {
+   "lemma": "designate"
+  },
+  {
+   "lemma": "despair"
+  },
+  {
+   "lemma": "destine",
+   "forms": [
+    "destine"
+   ],
+   "derived": [
+    "destination"
+   ]
+  },
+  {
+   "lemma": "destiny"
+  },
+  {
+   "lemma": "destruct",
+   "forms": [
+    "destruct"
+   ],
+   "derived": [
+    "destruction"
+   ]
+  },
+  {
+   "lemma": "detach"
+  },
+  {
+   "lemma": "device"
+  },
+  {
+   "lemma": "devil"
+  },
+  {
+   "lemma": "devise"
+  },
+  {
+   "lemma": "devote"
+  },
+  {
+   "lemma": "diabetes"
+  },
+  {
+   "lemma": "dictate"
+  },
+  {
+   "lemma": "differ",
+   "forms": [
+    "differ"
+   ],
+   "derived": [
+    "different"
+   ]
+  },
+  {
+   "lemma": "dignity"
+  },
+  {
+   "lemma": "dimension"
+  },
+  {
+   "lemma": "diminish"
+  },
+  {
+   "lemma": "dine"
+  },
+  {
+   "lemma": "dip"
+  },
+  {
+   "lemma": "diplomat"
+  },
+  {
+   "lemma": "disaster"
+  },
+  {
+   "lemma": "discourse"
+  },
+  {
+   "lemma": "discriminate"
+  },
+  {
+   "lemma": "dismiss"
+  },
+  {
+   "lemma": "dispute"
+  },
+  {
+   "lemma": "disrupt"
+  },
+  {
+   "lemma": "distinct"
+  },
+  {
+   "lemma": "distinguish"
+  },
+  {
+   "lemma": "distort"
+  },
+  {
+   "lemma": "distract"
+  },
+  {
+   "lemma": "distribute"
+  },
+  {
+   "lemma": "diverse"
+  },
+  {
+   "lemma": "divine"
+  },
+  {
+   "lemma": "domain"
+  },
+  {
+   "lemma": "dominate",
+   "forms": [
+    "dominate"
+   ],
+   "derived": [
+    "dominant"
+   ]
+  },
+  {
+   "lemma": "dose"
+  },
+  {
+   "lemma": "dot"
+  },
+  {
+   "lemma": "draft"
+  },
+  {
+   "lemma": "drain"
+  },
+  {
+   "lemma": "dread"
+  },
+  {
+   "lemma": "drill"
+  },
+  {
+   "lemma": "drown"
+  },
+  {
+   "lemma": "dual"
+  },
+  {
+   "lemma": "dull"
+  },
+  {
+   "lemma": "dwell"
+  },
+  {
+   "lemma": "dynamic"
+  },
+  {
+   "lemma": "eager"
+  },
+  {
+   "lemma": "efficient"
+  },
+  {
+   "lemma": "elaborate"
+  },
+  {
+   "lemma": "electronic"
+  },
+  {
+   "lemma": "elegant"
+  },
+  {
+   "lemma": "elevate",
+   "forms": [
+    "elevate"
+   ],
+   "derived": [
+    "elevator"
+   ]
+  },
+  {
+   "lemma": "eliminate"
+  },
+  {
+   "lemma": "elite"
+  },
+  {
+   "lemma": "embassy"
+  },
+  {
+   "lemma": "embrace"
+  },
+  {
+   "lemma": "emerge",
+   "forms": [
+    "emerge"
+   ],
+   "derived": [
+    "emergence"
+   ]
+  },
+  {
+   "lemma": "emergency"
+  },
+  {
+   "lemma": "emit",
+   "forms": [
+    "emit"
+   ],
+   "derived": [
+    "emission"
+   ]
+  },
+  {
+   "lemma": "emphasis"
+  },
+  {
+   "lemma": "encounter"
+  },
+  {
+   "lemma": "endure"
+  },
+  {
+   "lemma": "enhance"
+  },
+  {
+   "lemma": "enterprise"
+  },
+  {
+   "lemma": "enthusiastic"
+  },
+  {
+   "lemma": "entry"
+  },
+  {
+   "lemma": "environ",
+   "forms": [
+    "environ"
+   ],
+   "derived": [
+    "environment"
+   ]
+  },
+  {
+   "lemma": "envy"
+  },
+  {
+   "lemma": "equip",
+   "forms": [
+    "equip"
+   ],
+   "derived": [
+    "equipment"
+   ]
+  },
+  {
+   "lemma": "era"
+  },
+  {
+   "lemma": "erase",
+   "forms": [
+    "erase"
+   ],
+   "derived": [
+    "eraser"
+   ]
+  },
+  {
+   "lemma": "erect"
+  },
+  {
+   "lemma": "err",
+   "forms": [
+    "err"
+   ],
+   "derived": [
+    "error"
+   ]
+  },
+  {
+   "lemma": "essence",
+   "forms": [
+    "essence"
+   ],
+   "derived": [
+    "essential"
+   ]
+  },
+  {
+   "lemma": "estate"
+  },
+  {
+   "lemma": "ethic",
+   "forms": [
+    "ethic"
+   ],
+   "derived": [
+    "ethical"
+   ]
+  },
+  {
+   "lemma": "ethnic"
+  },
+  {
+   "lemma": "evacuate"
+  },
+  {
+   "lemma": "evaluate"
+  },
+  {
+   "lemma": "evitable",
+   "forms": [
+    "evitable"
+   ],
+   "derived": [
+    "inevitable"
+   ]
+  },
+  {
+   "lemma": "evolution"
+  },
+  {
+   "lemma": "evolve"
+  },
+  {
+   "lemma": "exaggerate"
+  },
+  {
+   "lemma": "exceed"
+  },
+  {
+   "lemma": "excel",
+   "forms": [
+    "excel"
+   ],
+   "derived": [
+    "excellent"
+   ]
+  },
+  {
+   "lemma": "excess"
+  },
+  {
+   "lemma": "exclude",
+   "forms": [
+    "exclude"
+   ],
+   "derived": [
+    "exclusive"
+   ]
+  },
+  {
+   "lemma": "executive"
+  },
+  {
+   "lemma": "exhibit"
+  },
+  {
+   "lemma": "exotic"
+  },
+  {
+   "lemma": "expertise"
+  },
+  {
+   "lemma": "explicit"
+  },
+  {
+   "lemma": "explode"
+  },
+  {
+   "lemma": "explore"
+  },
+  {
+   "lemma": "export"
+  },
+  {
+   "lemma": "extent"
+  },
+  {
+   "lemma": "external"
+  },
+  {
+   "lemma": "extinct"
+  },
+  {
+   "lemma": "extract"
+  },
+  {
+   "lemma": "extraordinary"
+  },
+  {
+   "lemma": "eyebrow"
+  },
+  {
+   "lemma": "fabric"
+  },
+  {
+   "lemma": "facilitate"
+  },
+  {
+   "lemma": "facility"
+  },
+  {
+   "lemma": "faculty"
+  },
+  {
+   "lemma": "fade"
+  },
+  {
+   "lemma": "false"
+  },
+  {
+   "lemma": "fame",
+   "forms": [
+    "fame"
+   ],
+   "derived": [
+    "famous"
+   ]
+  },
+  {
+   "lemma": "fare"
+  },
+  {
+   "lemma": "fasten"
+  },
+  {
+   "lemma": "fate",
+   "forms": [
+    "fate"
+   ],
+   "derived": [
+    "fatal"
+   ]
+  },
+  {
+   "lemma": "federal"
+  },
+  {
+   "lemma": "ferry"
+  },
+  {
+   "lemma": "fertile"
+  },
+  {
+   "lemma": "fiber",
+   "forms": [
+    "fiber",
+    "fibre"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "fiction"
+  },
+  {
+   "lemma": "fierce"
+  },
+  {
+   "lemma": "filter"
+  },
+  {
+   "lemma": "finite"
+  },
+  {
+   "lemma": "flavor",
+   "forms": [
+    "flavor",
+    "flavour"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "flaw"
+  },
+  {
+   "lemma": "flee"
+  },
+  {
+   "lemma": "flesh"
+  },
+  {
+   "lemma": "flexible"
+  },
+  {
+   "lemma": "flip"
+  },
+  {
+   "lemma": "flock"
+  },
+  {
+   "lemma": "flourish"
+  },
+  {
+   "lemma": "flush"
+  },
+  {
+   "lemma": "fond"
+  },
+  {
+   "lemma": "forbid"
+  },
+  {
+   "lemma": "forecast"
+  },
+  {
+   "lemma": "forehead"
+  },
+  {
+   "lemma": "format"
+  },
+  {
+   "lemma": "former"
+  },
+  {
+   "lemma": "formula"
+  },
+  {
+   "lemma": "foster"
+  },
+  {
+   "lemma": "fountain"
+  },
+  {
+   "lemma": "fraction"
+  },
+  {
+   "lemma": "framework"
+  },
+  {
+   "lemma": "frequent"
+  },
+  {
+   "lemma": "frost"
+  },
+  {
+   "lemma": "frown"
+  },
+  {
+   "lemma": "fuel"
+  },
+  {
+   "lemma": "fulfil"
+  },
+  {
+   "lemma": "fundamental"
+  },
+  {
+   "lemma": "funeral"
+  },
+  {
+   "lemma": "furnish"
+  },
+  {
+   "lemma": "furthermore"
+  },
+  {
+   "lemma": "fury",
+   "forms": [
+    "fury"
+   ],
+   "derived": [
+    "furious"
+   ]
+  },
+  {
+   "lemma": "fuse"
+  },
+  {
+   "lemma": "gallery"
+  },
+  {
+   "lemma": "gamble"
+  },
+  {
+   "lemma": "gang"
+  },
+  {
+   "lemma": "gap"
+  },
+  {
+   "lemma": "gasoline",
+   "forms": [
+    "gasoline",
+    "petrol"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "gaze"
+  },
+  {
+   "lemma": "gender"
+  },
+  {
+   "lemma": "gene",
+   "forms": [
+    "gene"
+   ],
+   "derived": [
+    "genetic"
+   ]
+  },
+  {
+   "lemma": "generate",
+   "forms": [
+    "generate"
+   ],
+   "derived": [
+    "generation"
+   ]
+  },
+  {
+   "lemma": "generous"
+  },
+  {
+   "lemma": "genius"
+  },
+  {
+   "lemma": "genuine"
+  },
+  {
+   "lemma": "geography"
+  },
+  {
+   "lemma": "geology"
+  },
+  {
+   "lemma": "glare"
+  },
+  {
+   "lemma": "globe",
+   "forms": [
+    "globe"
+   ],
+   "derived": [
+    "global"
+   ]
+  },
+  {
+   "lemma": "glow"
+  },
+  {
+   "lemma": "goat"
+  },
+  {
+   "lemma": "graduate"
+  },
+  {
+   "lemma": "grain"
+  },
+  {
+   "lemma": "grasp"
+  },
+  {
+   "lemma": "grateful"
+  },
+  {
+   "lemma": "grave"
+  },
+  {
+   "lemma": "greed"
+  },
+  {
+   "lemma": "grief"
+  },
+  {
+   "lemma": "grip"
+  },
+  {
+   "lemma": "gross"
+  },
+  {
+   "lemma": "guardian"
+  },
+  {
+   "lemma": "guideline"
+  },
+  {
+   "lemma": "gulf"
+  },
+  {
+   "lemma": "gymnasium",
+   "forms": [
+    "gymnasium",
+    "gym"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "habitat"
+  },
+  {
+   "lemma": "halt"
+  },
+  {
+   "lemma": "hammer"
+  },
+  {
+   "lemma": "handicap"
+  },
+  {
+   "lemma": "harbor",
+   "forms": [
+    "harbor",
+    "harbour"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "harmony",
+   "forms": [
+    "harmony"
+   ],
+   "derived": [
+    "harmonious"
+   ]
+  },
+  {
+   "lemma": "harsh"
+  },
+  {
+   "lemma": "harvest"
+  },
+  {
+   "lemma": "haunt"
+  },
+  {
+   "lemma": "hazard"
+  },
+  {
+   "lemma": "headquarters"
+  },
+  {
+   "lemma": "heal"
+  },
+  {
+   "lemma": "heel"
+  },
+  {
+   "lemma": "heir"
+  },
+  {
+   "lemma": "hence"
+  },
+  {
+   "lemma": "heritage"
+  },
+  {
+   "lemma": "hierarchy"
+  },
+  {
+   "lemma": "highlight"
+  },
+  {
+   "lemma": "holy"
+  },
+  {
+   "lemma": "hook"
+  },
+  {
+   "lemma": "horizon"
+  },
+  {
+   "lemma": "horror"
+  },
+  {
+   "lemma": "host"
+  },
+  {
+   "lemma": "hostile"
+  },
+  {
+   "lemma": "household"
+  },
+  {
+   "lemma": "hut"
+  },
+  {
+   "lemma": "hypothesis"
+  },
+  {
+   "lemma": "ideal"
+  },
+  {
+   "lemma": "identical"
+  },
+  {
+   "lemma": "ideology"
+  },
+  {
+   "lemma": "illude",
+   "forms": [
+    "illude"
+   ],
+   "derived": [
+    "illusion"
+   ]
+  },
+  {
+   "lemma": "imitate"
+  },
+  {
+   "lemma": "immense"
+  },
+  {
+   "lemma": "immigrate"
+  },
+  {
+   "lemma": "immune"
+  },
+  {
+   "lemma": "impact"
+  },
+  {
+   "lemma": "imperial"
+  },
+  {
+   "lemma": "implement"
+  },
+  {
+   "lemma": "imply"
+  },
+  {
+   "lemma": "import",
+   "forms": [
+    "import"
+   ],
+   "derived": [
+    "importance",
+    "important"
+   ]
+  },
+  {
+   "lemma": "impose"
+  },
+  {
+   "lemma": "incentive"
+  },
+  {
+   "lemma": "incident"
+  },
+  {
+   "lemma": "incline"
+  },
+  {
+   "lemma": "incorporate"
+  },
+  {
+   "lemma": "index"
+  },
+  {
+   "lemma": "induce"
+  },
+  {
+   "lemma": "infant"
+  },
+  {
+   "lemma": "infect"
+  },
+  {
+   "lemma": "infer",
+   "forms": [
+    "infer"
+   ],
+   "derived": [
+    "inference"
+   ]
+  },
+  {
+   "lemma": "inflate"
+  },
+  {
+   "lemma": "ingredient"
+  },
+  {
+   "lemma": "inhabit"
+  },
+  {
+   "lemma": "inherent"
+  },
+  {
+   "lemma": "inhibit"
+  },
+  {
+   "lemma": "initial"
+  },
+  {
+   "lemma": "inject"
+  },
+  {
+   "lemma": "inn"
+  },
+  {
+   "lemma": "innovate"
+  },
+  {
+   "lemma": "input"
+  },
+  {
+   "lemma": "inquire",
+   "forms": [
+    "inquire",
+    "enquire"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "insect"
+  },
+  {
+   "lemma": "insert"
+  },
+  {
+   "lemma": "insight"
+  },
+  {
+   "lemma": "inspire"
+  },
+  {
+   "lemma": "install"
+  },
+  {
+   "lemma": "instinct"
+  },
+  {
+   "lemma": "institute",
+   "forms": [
+    "institute"
+   ],
+   "derived": [
+    "institution"
+   ]
+  },
+  {
+   "lemma": "insult"
+  },
+  {
+   "lemma": "integrate"
+  },
+  {
+   "lemma": "intellect",
+   "forms": [
+    "intellect"
+   ],
+   "derived": [
+    "intellectual"
+   ]
+  },
+  {
+   "lemma": "intelligent"
+  },
+  {
+   "lemma": "interfere"
+  },
+  {
+   "lemma": "interior"
+  },
+  {
+   "lemma": "intermediate"
+  },
+  {
+   "lemma": "interpret"
+  },
+  {
+   "lemma": "interval"
+  },
+  {
+   "lemma": "intervene"
+  },
+  {
+   "lemma": "intimate"
+  },
+  {
+   "lemma": "intrigue"
+  },
+  {
+   "lemma": "invade"
+  },
+  {
+   "lemma": "irony"
+  },
+  {
+   "lemma": "irritate"
+  },
+  {
+   "lemma": "isolate"
+  },
+  {
+   "lemma": "jail"
+  },
+  {
+   "lemma": "jar"
+  },
+  {
+   "lemma": "jog"
+  },
+  {
+   "lemma": "joint"
+  },
+  {
+   "lemma": "journal"
+  },
+  {
+   "lemma": "jury"
+  },
+  {
+   "lemma": "keen"
+  },
+  {
+   "lemma": "kit"
+  },
+  {
+   "lemma": "knight"
+  },
+  {
+   "lemma": "knot"
+  },
+  {
+   "lemma": "ladder"
+  },
+  {
+   "lemma": "landscape"
+  },
+  {
+   "lemma": "lap"
+  },
+  {
+   "lemma": "latter"
+  },
+  {
+   "lemma": "launch"
+  },
+  {
+   "lemma": "laundry"
+  },
+  {
+   "lemma": "leak"
+  },
+  {
+   "lemma": "lease"
+  },
+  {
+   "lemma": "leather"
+  },
+  {
+   "lemma": "lecture"
+  },
+  {
+   "lemma": "legend"
+  },
+  {
+   "lemma": "legislate"
+  },
+  {
+   "lemma": "legitimate"
+  },
+  {
+   "lemma": "leisure"
+  },
+  {
+   "lemma": "liberal"
+  },
+  {
+   "lemma": "liberty"
+  },
+  {
+   "lemma": "likewise"
+  },
+  {
+   "lemma": "linguistic"
+  },
+  {
+   "lemma": "liquid"
+  },
+  {
+   "lemma": "literature"
+  },
+  {
+   "lemma": "logic"
+  },
+  {
+   "lemma": "lone"
+  },
+  {
+   "lemma": "loyal"
+  },
+  {
+   "lemma": "lump"
+  },
+  {
+   "lemma": "luxury"
+  },
+  {
+   "lemma": "magnet"
+  },
+  {
+   "lemma": "magnificent"
+  },
+  {
+   "lemma": "manifest"
+  },
+  {
+   "lemma": "manipulate"
+  },
+  {
+   "lemma": "margin"
+  },
+  {
+   "lemma": "marine"
+  },
+  {
+   "lemma": "mature"
+  },
+  {
+   "lemma": "mayor"
+  },
+  {
+   "lemma": "meanwhile"
+  },
+  {
+   "lemma": "mechanic"
+  },
+  {
+   "lemma": "mechanism"
+  },
+  {
+   "lemma": "mediate"
+  },
+  {
+   "lemma": "medieval"
+  },
+  {
+   "lemma": "medium",
+   "forms": [
+    "medium"
+   ],
+   "derived": [
+    "media"
+   ]
+  },
+  {
+   "lemma": "merchant"
+  },
+  {
+   "lemma": "mere"
+  },
+  {
+   "lemma": "merge"
+  },
+  {
+   "lemma": "merit"
+  },
+  {
+   "lemma": "metropolitan"
+  },
+  {
+   "lemma": "microphone"
+  },
+  {
+   "lemma": "migrate",
+   "forms": [
+    "migrate"
+   ],
+   "derived": [
+    "migrant"
+   ]
+  },
+  {
+   "lemma": "mild"
+  },
+  {
+   "lemma": "million"
+  },
+  {
+   "lemma": "mine",
+   "forms": [
+    "mine"
+   ],
+   "derived": [
+    "miner"
+   ]
+  },
+  {
+   "lemma": "mineral"
+  },
+  {
+   "lemma": "minimal"
+  },
+  {
+   "lemma": "minimum"
+  },
+  {
+   "lemma": "ministry"
+  },
+  {
+   "lemma": "miracle"
+  },
+  {
+   "lemma": "missile"
+  },
+  {
+   "lemma": "mobile"
+  },
+  {
+   "lemma": "mock"
+  },
+  {
+   "lemma": "mode"
+  },
+  {
+   "lemma": "modify"
+  },
+  {
+   "lemma": "moderate"
+  },
+  {
+   "lemma": "modest"
+  },
+  {
+   "lemma": "moist",
+   "forms": [
+    "moist"
+   ],
+   "derived": [
+    "moisture"
+   ]
+  },
+  {
+   "lemma": "molecule"
+  },
+  {
+   "lemma": "monster"
+  },
+  {
+   "lemma": "monument"
+  },
+  {
+   "lemma": "mortal"
+  },
+  {
+   "lemma": "motive"
+  },
+  {
+   "lemma": "multiple"
+  },
+  {
+   "lemma": "murder"
+  },
+  {
+   "lemma": "mutual"
+  },
+  {
+   "lemma": "myth"
+  },
+  {
+   "lemma": "naive"
+  },
+  {
+   "lemma": "naked"
+  },
+  {
+   "lemma": "narrate"
+  },
+  {
+   "lemma": "nasty"
+  },
+  {
+   "lemma": "needle"
+  },
+  {
+   "lemma": "negate",
+   "forms": [
+    "negate"
+   ],
+   "derived": [
+    "negative"
+   ]
+  },
+  {
+   "lemma": "neglect"
+  },
+  {
+   "lemma": "negotiate"
+  },
+  {
+   "lemma": "nephew"
+  },
+  {
+   "lemma": "network"
+  },
+  {
+   "lemma": "neutral"
+  },
+  {
+   "lemma": "nevertheless"
+  },
+  {
+   "lemma": "nightmare"
+  },
+  {
+   "lemma": "noble"
+  },
+  {
+   "lemma": "nod"
+  },
+  {
+   "lemma": "nominate"
+  },
+  {
+   "lemma": "nonetheless"
+  },
+  {
+   "lemma": "norm",
+   "forms": [
+    "norm"
+   ],
+   "derived": [
+    "normal"
+   ]
+  },
+  {
+   "lemma": "novel"
+  },
+  {
+   "lemma": "nuclear"
+  },
+  {
+   "lemma": "numerous"
+  },
+  {
+   "lemma": "obey"
+  },
+  {
+   "lemma": "oblige"
+  },
+  {
+   "lemma": "obsess"
+  },
+  {
+   "lemma": "obtain"
+  },
+  {
+   "lemma": "occupy",
+   "forms": [
+    "occupy"
+   ],
+   "derived": [
+    "occupation"
+   ]
+  },
+  {
+   "lemma": "offend"
+  },
+  {
+   "lemma": "opportune",
+   "forms": [
+    "opportune"
+   ],
+   "derived": [
+    "opportunity"
+   ]
+  },
+  {
+   "lemma": "opt",
+   "forms": [
+    "opt"
+   ],
+   "derived": [
+    "option"
+   ]
+  },
+  {
+   "lemma": "optimist"
+  },
+  {
+   "lemma": "oral"
+  },
+  {
+   "lemma": "orbit"
+  },
+  {
+   "lemma": "orchestra"
+  },
+  {
+   "lemma": "organ",
+   "forms": [
+    "organ"
+   ],
+   "derived": [
+    "organic",
+    "organize /   organise"
+   ]
+  },
+  {
+   "lemma": "orient",
+   "forms": [
+    "orient"
+   ],
+   "derived": [
+    "orientation"
+   ]
+  },
+  {
+   "lemma": "origin",
+   "forms": [
+    "origin"
+   ],
+   "derived": [
+    "original"
+   ]
+  },
+  {
+   "lemma": "outcome"
+  },
+  {
+   "lemma": "outline"
+  },
+  {
+   "lemma": "output"
+  },
+  {
+   "lemma": "outrage"
+  },
+  {
+   "lemma": "outstanding"
+  },
+  {
+   "lemma": "overcome"
+  },
+  {
+   "lemma": "overhead"
+  },
+  {
+   "lemma": "overlap"
+  },
+  {
+   "lemma": "overlook"
+  },
+  {
+   "lemma": "overnight"
+  },
+  {
+   "lemma": "oversea",
+   "forms": [
+    "oversea",
+    "overseas"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "overwhelm"
+  },
+  {
+   "lemma": "owe"
+  },
+  {
+   "lemma": "pace"
+  },
+  {
+   "lemma": "pad"
+  },
+  {
+   "lemma": "pale"
+  },
+  {
+   "lemma": "palm"
+  },
+  {
+   "lemma": "panel"
+  },
+  {
+   "lemma": "parallel"
+  },
+  {
+   "lemma": "parliament"
+  },
+  {
+   "lemma": "participate"
+  },
+  {
+   "lemma": "particle"
+  },
+  {
+   "lemma": "passage"
+  },
+  {
+   "lemma": "passenger"
+  },
+  {
+   "lemma": "passion"
+  },
+  {
+   "lemma": "passport"
+  },
+  {
+   "lemma": "pat"
+  },
+  {
+   "lemma": "patch"
+  },
+  {
+   "lemma": "patent"
+  },
+  {
+   "lemma": "pave"
+  },
+  {
+   "lemma": "peak"
+  },
+  {
+   "lemma": "peasant"
+  },
+  {
+   "lemma": "peel"
+  },
+  {
+   "lemma": "peer"
+  },
+  {
+   "lemma": "penalty"
+  },
+  {
+   "lemma": "perceive",
+   "forms": [
+    "perceive"
+   ],
+   "derived": [
+    "perception"
+   ]
+  },
+  {
+   "lemma": "permanent"
+  },
+  {
+   "lemma": "permit"
+  },
+  {
+   "lemma": "persist"
+  },
+  {
+   "lemma": "perspective"
+  },
+  {
+   "lemma": "persuade"
+  },
+  {
+   "lemma": "phase"
+  },
+  {
+   "lemma": "phenomenon"
+  },
+  {
+   "lemma": "philosophy"
+  },
+  {
+   "lemma": "phrase"
+  },
+  {
+   "lemma": "physics"
+  },
+  {
+   "lemma": "pill"
+  },
+  {
+   "lemma": "pinch"
+  },
+  {
+   "lemma": "pioneer"
+  },
+  {
+   "lemma": "platform"
+  },
+  {
+   "lemma": "plot"
+  },
+  {
+   "lemma": "polish"
+  },
+  {
+   "lemma": "poll"
+  },
+  {
+   "lemma": "pond"
+  },
+  {
+   "lemma": "populate",
+   "forms": [
+    "populate"
+   ],
+   "derived": [
+    "population"
+   ]
+  },
+  {
+   "lemma": "portion"
+  },
+  {
+   "lemma": "portrait"
+  },
+  {
+   "lemma": "pose",
+   "forms": [
+    "pose"
+   ],
+   "derived": [
+    "dispose"
+   ]
+  },
+  {
+   "lemma": "posit",
+   "forms": [
+    "posit"
+   ],
+   "derived": [
+    "position",
+    "positive"
+   ]
+  },
+  {
+   "lemma": "praise"
+  },
+  {
+   "lemma": "preach"
+  },
+  {
+   "lemma": "precede",
+   "forms": [
+    "precede"
+   ],
+   "derived": [
+    "unprecedented"
+   ]
+  },
+  {
+   "lemma": "precise"
+  },
+  {
+   "lemma": "predator"
+  },
+  {
+   "lemma": "predict"
+  },
+  {
+   "lemma": "prejudice"
+  },
+  {
+   "lemma": "premium"
+  },
+  {
+   "lemma": "prescribe"
+  },
+  {
+   "lemma": "preserve"
+  },
+  {
+   "lemma": "preside",
+   "forms": [
+    "preside"
+   ],
+   "derived": [
+    "president"
+   ]
+  },
+  {
+   "lemma": "presume"
+  },
+  {
+   "lemma": "prevail"
+  },
+  {
+   "lemma": "prey"
+  },
+  {
+   "lemma": "priest"
+  },
+  {
+   "lemma": "primitive"
+  },
+  {
+   "lemma": "principal"
+  },
+  {
+   "lemma": "prior"
+  },
+  {
+   "lemma": "privilege"
+  },
+  {
+   "lemma": "professor"
+  },
+  {
+   "lemma": "profile"
+  },
+  {
+   "lemma": "profound"
+  },
+  {
+   "lemma": "prohibit"
+  },
+  {
+   "lemma": "prominent"
+  },
+  {
+   "lemma": "prompt"
+  },
+  {
+   "lemma": "proof"
+  },
+  {
+   "lemma": "proportion"
+  },
+  {
+   "lemma": "prospect"
+  },
+  {
+   "lemma": "prosper"
+  },
+  {
+   "lemma": "protein"
+  },
+  {
+   "lemma": "province"
+  },
+  {
+   "lemma": "provoke"
+  },
+  {
+   "lemma": "psychology"
+  },
+  {
+   "lemma": "publish",
+   "forms": [
+    "publish"
+   ],
+   "derived": [
+    "publisher"
+   ]
+  },
+  {
+   "lemma": "pupil"
+  },
+  {
+   "lemma": "pursue"
+  },
+  {
+   "lemma": "quantity"
+  },
+  {
+   "lemma": "questionnaire"
+  },
+  {
+   "lemma": "rage"
+  },
+  {
+   "lemma": "rally"
+  },
+  {
+   "lemma": "random"
+  },
+  {
+   "lemma": "rank"
+  },
+  {
+   "lemma": "rational"
+  },
+  {
+   "lemma": "raw"
+  },
+  {
+   "lemma": "rear"
+  },
+  {
+   "lemma": "rebel"
+  },
+  {
+   "lemma": "receipt"
+  },
+  {
+   "lemma": "recruit"
+  },
+  {
+   "lemma": "refine"
+  },
+  {
+   "lemma": "reform"
+  },
+  {
+   "lemma": "refrigerate",
+   "forms": [
+    "refrigerate"
+   ],
+   "derived": [
+    "refrigerator"
+   ]
+  },
+  {
+   "lemma": "regret"
+  },
+  {
+   "lemma": "regulate"
+  },
+  {
+   "lemma": "reinforce"
+  },
+  {
+   "lemma": "reject"
+  },
+  {
+   "lemma": "relevant"
+  },
+  {
+   "lemma": "relieve"
+  },
+  {
+   "lemma": "religion"
+  },
+  {
+   "lemma": "reluctant"
+  },
+  {
+   "lemma": "remedy"
+  },
+  {
+   "lemma": "remote"
+  },
+  {
+   "lemma": "republic"
+  },
+  {
+   "lemma": "reputation"
+  },
+  {
+   "lemma": "rescue"
+  },
+  {
+   "lemma": "resemble"
+  },
+  {
+   "lemma": "reside",
+   "forms": [
+    "reside"
+   ],
+   "derived": [
+    "resident"
+   ]
+  },
+  {
+   "lemma": "resign"
+  },
+  {
+   "lemma": "resolve"
+  },
+  {
+   "lemma": "resort"
+  },
+  {
+   "lemma": "restore"
+  },
+  {
+   "lemma": "restrain"
+  },
+  {
+   "lemma": "restrict"
+  },
+  {
+   "lemma": "resume"
+  },
+  {
+   "lemma": "retail"
+  },
+  {
+   "lemma": "retain"
+  },
+  {
+   "lemma": "retreat"
+  },
+  {
+   "lemma": "reveal"
+  },
+  {
+   "lemma": "revenge"
+  },
+  {
+   "lemma": "reverse"
+  },
+  {
+   "lemma": "revise"
+  },
+  {
+   "lemma": "revive"
+  },
+  {
+   "lemma": "revolution"
+  },
+  {
+   "lemma": "reward"
+  },
+  {
+   "lemma": "rhythm"
+  },
+  {
+   "lemma": "rid"
+  },
+  {
+   "lemma": "ridicule",
+   "forms": [
+    "ridicule"
+   ],
+   "derived": [
+    "ridiculous"
+   ]
+  },
+  {
+   "lemma": "riot"
+  },
+  {
+   "lemma": "rival"
+  },
+  {
+   "lemma": "roar"
+  },
+  {
+   "lemma": "roast"
+  },
+  {
+   "lemma": "rod"
+  },
+  {
+   "lemma": "romantic"
+  },
+  {
+   "lemma": "rot"
+  },
+  {
+   "lemma": "routine"
+  },
+  {
+   "lemma": "rumor",
+   "forms": [
+    "rumor",
+    "rumour"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "rural"
+  },
+  {
+   "lemma": "sack"
+  },
+  {
+   "lemma": "sacred"
+  },
+  {
+   "lemma": "sacrifice"
+  },
+  {
+   "lemma": "satellite"
+  },
+  {
+   "lemma": "scan"
+  },
+  {
+   "lemma": "scandal"
+  },
+  {
+   "lemma": "scarce"
+  },
+  {
+   "lemma": "scatter"
+  },
+  {
+   "lemma": "scheme"
+  },
+  {
+   "lemma": "scholar"
+  },
+  {
+   "lemma": "scope"
+  },
+  {
+   "lemma": "scramble"
+  },
+  {
+   "lemma": "screw"
+  },
+  {
+   "lemma": "sculpt",
+   "forms": [
+    "sculpt"
+   ],
+   "derived": [
+    "sculpture"
+   ]
+  },
+  {
+   "lemma": "sector"
+  },
+  {
+   "lemma": "seize"
+  },
+  {
+   "lemma": "sensible"
+  },
+  {
+   "lemma": "sentiment"
+  },
+  {
+   "lemma": "sequence"
+  },
+  {
+   "lemma": "severe"
+  },
+  {
+   "lemma": "shallow"
+  },
+  {
+   "lemma": "sigh"
+  },
+  {
+   "lemma": "silent"
+  },
+  {
+   "lemma": "simulate"
+  },
+  {
+   "lemma": "simultaneous"
+  },
+  {
+   "lemma": "sin"
+  },
+  {
+   "lemma": "skip"
+  },
+  {
+   "lemma": "slice"
+  },
+  {
+   "lemma": "slim"
+  },
+  {
+   "lemma": "slope"
+  },
+  {
+   "lemma": "sneak"
+  },
+  {
+   "lemma": "soak"
+  },
+  {
+   "lemma": "soap"
+  },
+  {
+   "lemma": "sociology"
+  },
+  {
+   "lemma": "sole"
+  },
+  {
+   "lemma": "sophisticate"
+  },
+  {
+   "lemma": "span"
+  },
+  {
+   "lemma": "spark"
+  },
+  {
+   "lemma": "spectacle"
+  },
+  {
+   "lemma": "spectrum"
+  },
+  {
+   "lemma": "sphere"
+  },
+  {
+   "lemma": "spill"
+  },
+  {
+   "lemma": "spit"
+  },
+  {
+   "lemma": "splash"
+  },
+  {
+   "lemma": "split"
+  },
+  {
+   "lemma": "spouse"
+  },
+  {
+   "lemma": "squeeze"
+  },
+  {
+   "lemma": "stack"
+  },
+  {
+   "lemma": "stain"
+  },
+  {
+   "lemma": "starve"
+  },
+  {
+   "lemma": "statistic"
+  },
+  {
+   "lemma": "statue"
+  },
+  {
+   "lemma": "status"
+  },
+  {
+   "lemma": "steep"
+  },
+  {
+   "lemma": "stem"
+  },
+  {
+   "lemma": "stiff"
+  },
+  {
+   "lemma": "stimulate"
+  },
+  {
+   "lemma": "stitch"
+  },
+  {
+   "lemma": "stove"
+  },
+  {
+   "lemma": "strain"
+  },
+  {
+   "lemma": "strict"
+  },
+  {
+   "lemma": "strip"
+  },
+  {
+   "lemma": "stripe"
+  },
+  {
+   "lemma": "stroke"
+  },
+  {
+   "lemma": "submarine"
+  },
+  {
+   "lemma": "submit",
+   "forms": [
+    "submit"
+   ],
+   "derived": [
+    "submission"
+   ]
+  },
+  {
+   "lemma": "subscribe"
+  },
+  {
+   "lemma": "substance",
+   "forms": [
+    "substance"
+   ],
+   "derived": [
+    "substantial"
+   ]
+  },
+  {
+   "lemma": "substitute"
+  },
+  {
+   "lemma": "subtle"
+  },
+  {
+   "lemma": "suburb"
+  },
+  {
+   "lemma": "suck"
+  },
+  {
+   "lemma": "suffice",
+   "forms": [
+    "suffice"
+   ],
+   "derived": [
+    "sufficient"
+   ]
+  },
+  {
+   "lemma": "suicide"
+  },
+  {
+   "lemma": "suite"
+  },
+  {
+   "lemma": "summit"
+  },
+  {
+   "lemma": "superb"
+  },
+  {
+   "lemma": "superior"
+  },
+  {
+   "lemma": "supervise"
+  },
+  {
+   "lemma": "supplement"
+  },
+  {
+   "lemma": "surgery"
+  },
+  {
+   "lemma": "surrender"
+  },
+  {
+   "lemma": "suspend"
+  },
+  {
+   "lemma": "sustain"
+  },
+  {
+   "lemma": "swear"
+  },
+  {
+   "lemma": "sweat"
+  },
+  {
+   "lemma": "swell"
+  },
+  {
+   "lemma": "swift"
+  },
+  {
+   "lemma": "symbol"
+  },
+  {
+   "lemma": "sympathy"
+  },
+  {
+   "lemma": "symphony"
+  },
+  {
+   "lemma": "symptom"
+  },
+  {
+   "lemma": "tackle"
+  },
+  {
+   "lemma": "tag"
+  },
+  {
+   "lemma": "talent"
+  },
+  {
+   "lemma": "task"
+  },
+  {
+   "lemma": "tease"
+  },
+  {
+   "lemma": "telegraph"
+  },
+  {
+   "lemma": "temple"
+  },
+  {
+   "lemma": "temporary"
+  },
+  {
+   "lemma": "tempt"
+  },
+  {
+   "lemma": "tenant"
+  },
+  {
+   "lemma": "tender"
+  },
+  {
+   "lemma": "terminal"
+  },
+  {
+   "lemma": "terminate"
+  },
+  {
+   "lemma": "terrace"
+  },
+  {
+   "lemma": "terrific"
+  },
+  {
+   "lemma": "territory"
+  },
+  {
+   "lemma": "terror",
+   "forms": [
+    "terror"
+   ],
+   "derived": [
+    "terrorist"
+   ]
+  },
+  {
+   "lemma": "theme"
+  },
+  {
+   "lemma": "therapy"
+  },
+  {
+   "lemma": "thorough"
+  },
+  {
+   "lemma": "thread"
+  },
+  {
+   "lemma": "thrill"
+  },
+  {
+   "lemma": "thumb"
+  },
+  {
+   "lemma": "tick"
+  },
+  {
+   "lemma": "timber"
+  },
+  {
+   "lemma": "tissue"
+  },
+  {
+   "lemma": "torture"
+  },
+  {
+   "lemma": "toss"
+  },
+  {
+   "lemma": "toxic"
+  },
+  {
+   "lemma": "tragic"
+  },
+  {
+   "lemma": "trail"
+  },
+  {
+   "lemma": "transact"
+  },
+  {
+   "lemma": "transform"
+  },
+  {
+   "lemma": "transition"
+  },
+  {
+   "lemma": "translate"
+  },
+  {
+   "lemma": "transmit"
+  },
+  {
+   "lemma": "treasure"
+  },
+  {
+   "lemma": "treaty"
+  },
+  {
+   "lemma": "tremendous"
+  },
+  {
+   "lemma": "trend"
+  },
+  {
+   "lemma": "tribe"
+  },
+  {
+   "lemma": "trigger"
+  },
+  {
+   "lemma": "trim"
+  },
+  {
+   "lemma": "triumph"
+  },
+  {
+   "lemma": "troop"
+  },
+  {
+   "lemma": "tube"
+  },
+  {
+   "lemma": "tunnel"
+  },
+  {
+   "lemma": "turnover"
+  },
+  {
+   "lemma": "ultimate"
+  },
+  {
+   "lemma": "undergo"
+  },
+  {
+   "lemma": "underlie"
+  },
+  {
+   "lemma": "undermine"
+  },
+  {
+   "lemma": "undertake"
+  },
+  {
+   "lemma": "unify"
+  },
+  {
+   "lemma": "unique"
+  },
+  {
+   "lemma": "universe"
+  },
+  {
+   "lemma": "update"
+  },
+  {
+   "lemma": "upward",
+   "forms": [
+    "upward",
+    "upwards"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "urban"
+  },
+  {
+   "lemma": "urge",
+   "forms": [
+    "urge"
+   ],
+   "derived": [
+    "urgent"
+   ]
+  },
+  {
+   "lemma": "utilize",
+   "forms": [
+    "utilize",
+    "utilise"
+   ],
+   "derived": []
+  },
+  {
+   "lemma": "utter"
+  },
+  {
+   "lemma": "vacate",
+   "forms": [
+    "vacate"
+   ],
+   "derived": [
+    "vacation"
+   ]
+  },
+  {
+   "lemma": "vaccine"
+  },
+  {
+   "lemma": "vacuum"
+  },
+  {
+   "lemma": "vague"
+  },
+  {
+   "lemma": "valid"
+  },
+  {
+   "lemma": "vanish"
+  },
+  {
+   "lemma": "vast"
+  },
+  {
+   "lemma": "venture"
+  },
+  {
+   "lemma": "verb",
+   "forms": [
+    "verb"
+   ],
+   "derived": [
+    "verbal"
+   ]
+  },
+  {
+   "lemma": "verse"
+  },
+  {
+   "lemma": "versus"
+  },
+  {
+   "lemma": "vertical"
+  },
+  {
+   "lemma": "vessel"
+  },
+  {
+   "lemma": "veterinarian"
+  },
+  {
+   "lemma": "via"
+  },
+  {
+   "lemma": "vice"
+  },
+  {
+   "lemma": "victory"
+  },
+  {
+   "lemma": "vigor",
+   "forms": [
+    "vigor"
+   ],
+   "derived": [
+    "vigorous"
+   ]
+  },
+  {
+   "lemma": "virgin"
+  },
+  {
+   "lemma": "virtue",
+   "forms": [
+    "virtue"
+   ],
+   "derived": [
+    "virtual"
+   ]
+  },
+  {
+   "lemma": "virus"
+  },
+  {
+   "lemma": "visible"
+  },
+  {
+   "lemma": "visual"
+  },
+  {
+   "lemma": "vital"
+  },
+  {
+   "lemma": "vivid"
+  },
+  {
+   "lemma": "vocabulary"
+  },
+  {
+   "lemma": "vocation"
+  },
+  {
+   "lemma": "wander"
+  },
+  {
+   "lemma": "warehouse"
+  },
+  {
+   "lemma": "warrant"
+  },
+  {
+   "lemma": "wealth"
+  },
+  {
+   "lemma": "weave"
+  },
+  {
+   "lemma": "weed"
+  },
+  {
+   "lemma": "weird"
+  },
+  {
+   "lemma": "welfare"
+  },
+  {
+   "lemma": "wheat"
+  },
+  {
+   "lemma": "whereas"
+  },
+  {
+   "lemma": "whip"
+  },
+  {
+   "lemma": "wicked"
+  },
+  {
+   "lemma": "wit"
+  },
+  {
+   "lemma": "withdraw"
+  },
+  {
+   "lemma": "witness"
+  },
+  {
+   "lemma": "worship"
+  },
+  {
+   "lemma": "wreck"
+  },
+  {
+   "lemma": "yield"
+  },
+  {
+   "lemma": "zone"
+  }
  ]
 }
