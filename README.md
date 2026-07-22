@@ -17,7 +17,7 @@
 
 ## 현재 상태
 
-**M1 (사전) — 표제어 200개 완성.** 발음 오디오 200개, 검색·화면·오프라인 동작. 관찰 테스트 후 M2(반복 학습)로. [로드맵](docs/04-roadmap.md) 참조.
+**M2 (반복 학습) 완성.** 사전 200개 + Leitner 5박스 학습(뜻 고르기·소리 듣고 고르기·철자 채우기), 오답 화면, 학습 기록 백업. 다음은 표제어 확대와 M3(문장). [로드맵](docs/04-roadmap.md) 참조.
 
 ## 실행
 
@@ -59,10 +59,14 @@ npm test                   # entries + sample + fixture 전부
 ```
 docs/                     설계 문서
 data/source/              저작 소스 (단일 진실) → 생성물의 원본
-src/                      앱 — 검색 · 표제어 화면 · 학년/테마 설정
+src/                      앱 — 사전 + 학습
   data/dictionary.ts        entries.json 번들 로드
   search/search.ts          오타 관용 검색
   components/EntryCard.tsx   사전 지면 렌더
+  study/                    학습 엔진 (순수 로직 + IndexedDB)
+    schedule.ts               Leitner 5박스 스케줄러
+    session.ts                하루 세션 구성
+    question.ts               문제·오답 보기 생성
 tools/build-entries/      소스 → entries.json (IPA·음절 생성)
 tools/audio/              Piper TTS → 발음 mp3
 tools/validate/           검증기 — 토큰화 · 어휘 판정 · V01~V16 · CLI
