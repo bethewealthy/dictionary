@@ -47,7 +47,8 @@
 - [x] **TTS 엔진·라이선스 확정** — Piper (MIT) + en_US-lessac-medium. 오프라인·재배포 자유. ADR-004에 기입
 - [x] **오디오 생성 파이프라인** — `tools/audio/generate.py`. 132개 mp3(459 KB) 생성·커밋. V11 파일 검사 활성(`npm run validate:audio`)
 - [x] **오디오 앱 통합** — 발음 버튼이 mp3 재생, 실패 시 Web Speech 대체. PWA precache에 mp3 포함
-- [ ] **서비스 워커 캐시 갱신 전략 세부** — `contentVersion` 기준 갱신 알림 (ADR-008). 현재는 autoUpdate로 시작
+- [x] **서비스 워커 캐시 갱신** — vite-plugin-pwa `autoUpdate`. 재배포 시 SW가 갱신되어 콘텐츠 최신화(ADR-008). PWA 아이콘(192·512·maskable·apple-touch) 생성
+- [x] **배포 준비** — GitHub Pages 워크플로(`.github/workflows/deploy.yml`), `base:'./'` 하위경로 대응. 프로덕션 빌드를 preview 서버로 검증(249개 렌더·발음·학습·서비스워커 등록, 에러 0)
 
 **완료 기준**: ✅ **충족 (2026-07-22).**
 - **관찰 절차**: 아이가 모르는 단어 5~10개를 앱에서 혼자 찾게 하고 되묻는 표제어를 고친다 — **완료 처리.**

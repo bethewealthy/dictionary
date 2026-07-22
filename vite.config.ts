@@ -9,8 +9,9 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      // autoUpdate: 새로 배포하면 서비스 워커가 갱신되어 콘텐츠가 최신이 된다 (ADR-008).
       registerType: 'autoUpdate',
-      includeAssets: ['favicon.svg'],
+      includeAssets: ['favicon.svg', 'apple-touch-icon.png'],
       manifest: {
         name: '초등 영한사전',
         short_name: '영한사전',
@@ -22,6 +23,7 @@ export default defineConfig({
         icons: [
           { src: 'icon-192.png', sizes: '192x192', type: 'image/png' },
           { src: 'icon-512.png', sizes: '512x512', type: 'image/png' },
+          { src: 'icon-maskable-512.png', sizes: '512x512', type: 'image/png', purpose: 'maskable' },
         ],
       },
       workbox: {

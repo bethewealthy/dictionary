@@ -29,6 +29,14 @@ npm run build      # 타입 검사 + 프로덕션 빌드 (PWA 포함)
 
 Vite + React 19 + TypeScript. 사전 데이터·발음 mp3는 빌드에 번들되어 오프라인 동작한다(ADR-003).
 
+## 배포
+
+사전 데이터와 발음 mp3가 저장소에 커밋돼 있어, **파이썬 파이프라인 없이 `npm run build`만으로** 배포 가능한 `dist/`가 나온다.
+
+- **GitHub Pages**: `.github/workflows/deploy.yml`이 `main` 푸시 시 자동 빌드·배포한다. 최초 1회 저장소 **Settings → Pages → Source = "GitHub Actions"** 설정 필요.
+- **그 외 정적 호스팅**: `npm run build` 후 `dist/`를 업로드. `base: './'`라 하위 경로에서도 동작한다.
+- 태블릿·PC 브라우저에서 열고 **홈 화면에 추가**하면 앱처럼, 오프라인으로 쓸 수 있다.
+
 ## 콘텐츠 파이프라인
 
 표제어는 저작 소스에서 생성한다. 정의·예문·한국어만 사람이 쓰고, 발음기호·음절·오디오는 자동 생성된다.
