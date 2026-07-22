@@ -692,3 +692,12 @@ body {
   .q-word { font-size: 2rem; }
   .q-choices { grid-template-columns: 1fr; }
 }
+
+/* ── 예문 빈칸(cloze) ─────────────────────────────────────────── */
+.q-cloze {
+  font-family: var(--serif);
+  font-size: 1.4rem;
+  line-height: 1.5;
+  color: var(--ink);
+}
+.q-cloze-ko { font-size: 0.95rem; color: var(--ink-soft); }

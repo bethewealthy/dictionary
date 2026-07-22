@@ -23,24 +23,36 @@ export function QuestionView({
     if (question.kind === 'listen') {
       void playWord(question.audioWord, question.audioPath);
     }
-    if (question.kind === 'spell') inputRef.current?.focus();
+    if (question.kind === 'spell' || question.kind === 'cloze') inputRef.current?.focus();
   }, [question]);
 
   const say = () => void playWord(question.audioWord, question.audioPath);
+  const judgeTyped = () => onAnswer(question.accept.some((a) => checkSpelling(typed, a)));
 
-  if (question.kind === 'spell') {
+  // 철자 채우기 · 예문 빈칸 — 둘 다 타이핑
+  if (question.kind === 'spell' || question.kind === 'cloze') {
+    const isCloze = question.kind === 'cloze';
     return (
       <div className="q">
-        <p className="q-instr">소리를 듣고 단어를 완성하세요</p>
+        <p className="q-instr">
+          {isCloze ? '빈칸에 알맞은 영어 단어를 쓰세요' : '소리를 듣고 단어를 완성하세요'}
+        </p>
         <button type="button" className="q-audio" onClick={say}>
           <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 2 4.5 5H2v6h2.5L8 14V2zm3 2.6a5 5 0 0 1 0 6.8l-1-1a3.6 3.6 0 0 0 0-4.8l1-1z" /></svg>
-          소리 듣기
+          {isCloze ? '힌트 소리' : '소리 듣기'}
         </button>
-        <p className="q-ko">{question.promptKo}</p>
-        <p className="q-mask">{question.masked}</p>
-        <form
-          onSubmit={(e) => { e.preventDefault(); if (typed.trim()) onAnswer(checkSpelling(typed, question.answer)); }}
-        >
+        {isCloze ? (
+          <>
+            <p className="q-cloze">{question.clozeEn}</p>
+            <p className="q-cloze-ko">{question.clozeKo}</p>
+          </>
+        ) : (
+          <>
+            <p className="q-ko">{question.promptKo}</p>
+            <p className="q-mask">{question.masked}</p>
+          </>
+        )}
+        <form onSubmit={(e) => { e.preventDefault(); if (typed.trim()) judgeTyped(); }}>
           <input
             ref={inputRef}
             className="q-input"
@@ -50,7 +62,7 @@ export function QuestionView({
             autoComplete="off"
             autoCapitalize="off"
             spellCheck={false}
-            aria-label="철자 입력"
+            aria-label="영어 단어 입력"
           />
           <button type="submit" className="q-submit" disabled={!typed.trim()}>확인</button>
         </form>

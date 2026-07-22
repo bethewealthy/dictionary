@@ -7,7 +7,7 @@
 
 import type { StudyUnit } from './session.ts';
 
-export type QuestionKind = 'meaning' | 'listen' | 'spell';
+export type QuestionKind = 'meaning' | 'listen' | 'spell' | 'cloze';
 
 export interface Choice {
   label: string;
@@ -22,10 +22,15 @@ export interface Question {
   audioPath?: string;
   /** 뜻 고르기: 한국어 보기 / 소리 듣고 고르기: 철자 보기 */
   choices?: Choice[];
-  /** 철자 채우기: 빈칸 마스크(예 "r_bb_t")와 정답 */
+  /** 철자 채우기: 빈칸 마스크(예 "r_bb_t") */
   masked?: string;
-  /** 정답 텍스트 (철자 채우기 판정용, 소리/뜻은 correct choice.label) */
+  /** 예문 빈칸(cloze): 빈칸 뚫린 영어 문장과 그 한국어 번역 */
+  clozeEn?: string;
+  clozeKo?: string;
+  /** 정답 텍스트 (대표). */
   answer: string;
+  /** 타이핑 문제에서 정답으로 인정하는 표기들 (cloze는 굴절형+원형 둘 다 허용) */
+  accept: string[];
   /** 오답 화면에 보여줄 문제 지문 */
   promptEn: string;
   promptKo: string;
@@ -112,7 +117,7 @@ function makeMeaning(target: StudyUnit, pool: StudyUnit[], rng: () => number): Q
   return {
     kind: 'meaning', unit: target,
     audioWord: unitText(target), audioPath: target.entry.audio.us,
-    choices, answer: unitKo(target),
+    choices, answer: unitKo(target), accept: [],
     promptEn: unitText(target), promptKo: unitKo(target),
   };
 }
@@ -142,7 +147,7 @@ function makeListen(target: StudyUnit, pool: StudyUnit[], rng: () => number): Qu
   return {
     kind: 'listen', unit: target,
     audioWord: answer, audioPath: target.entry.audio.us,
-    choices, answer,
+    choices, answer, accept: [],
     promptEn: answer, promptKo: unitKo(target),
   };
 }
@@ -161,8 +166,31 @@ function makeSpell(target: StudyUnit, rng: () => number): Question {
   return {
     kind: 'spell', unit: target,
     audioWord: answer, audioPath: target.entry.audio.us,
-    masked: maskWord(answer, rng), answer,
+    masked: maskWord(answer, rng), answer, accept: [answer],
     promptEn: answer, promptKo: unitKo(target),
+  };
+}
+
+const MARK = /\{\{(.+?)\}\}/;
+
+/**
+ * 예문 빈칸 — P4(문장에 못 쓴다) 대응. 예문의 표제어 자리를 빈칸으로 뚫고,
+ * 한국어 번역을 단서로 준다. 굴절형(예문의 실제 표기)과 원형 둘 다 정답 인정.
+ * 쓸 만한 예문이 없으면 null → 호출부가 철자로 대체.
+ */
+function makeCloze(target: StudyUnit, rng: () => number): Question | null {
+  const examples = target.sense.examples.filter((e) => MARK.test(e.en));
+  if (examples.length === 0) return null;
+  const ex = examples[Math.floor(rng() * examples.length)];
+  const surface = ex.en.match(MARK)![1];
+  const clozeEn = ex.en.replace(MARK, '_____').replace(/\{\{(.+?)\}\}/g, '$1');
+  const headword = target.entry.headword;
+  const accept = [...new Set([surface, headword])];
+  return {
+    kind: 'cloze', unit: target,
+    audioWord: headword, audioPath: target.entry.audio.us,
+    clozeEn, clozeKo: ex.ko, answer: surface, accept,
+    promptEn: headword, promptKo: unitKo(target),
   };
 }
 
@@ -178,8 +206,16 @@ export function makeQuestion(
 ): Question {
   const rng = opts.rng ?? Math.random;
 
-  // 박스 3+ 는 인출(철자). 연어는 구(句)라 철자 대신 뜻 고르기를 우선한다.
-  if (box >= 3 && !target.collocation) {
+  // 박스 3+ 는 인출. 예문 빈칸(P4)과 철자 채우기를 번갈아 낸다.
+  // 연어는 구(句)라 철자 대신 예문 빈칸을 우선한다.
+  if (box >= 3) {
+    if (target.collocation) {
+      return makeCloze(target, rng) ?? makeMeaning(target, pool, rng) ?? makeSpell(target, rng);
+    }
+    if (rng() < 0.5) {
+      const cloze = makeCloze(target, rng);
+      if (cloze) return cloze;
+    }
     return makeSpell(target, rng);
   }
 
