@@ -7,7 +7,7 @@ import { EntryCard } from './components/EntryCard.tsx';
 import { StudyTab } from './components/StudyTab.tsx';
 import { useStudy } from './study/useStudy.ts';
 
-const GRADES: Level[] = [1, 2, 3];
+const GRADES: Level[] = [1, 2, 3, 4];
 type Tab = 'dict' | 'study';
 
 export function App() {

@@ -9,11 +9,12 @@ export const GRADE_LABELS: Record<Level, string> = {
   1: '3–4학년',
   2: '5학년',
   3: '6학년',
+  4: '중학교',
 };
 
 function readGrade(): Level {
   const v = Number(localStorage.getItem(GRADE_KEY));
-  return v === 2 || v === 3 ? v : 1;
+  return v === 2 || v === 3 || v === 4 ? v : 1;
 }
 
 export function useGrade(): [Level, (l: Level) => void] {

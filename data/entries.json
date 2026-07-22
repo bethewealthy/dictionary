@@ -4,6 +4,50 @@
   "_note": "data/source/entries.src.json에서 tools/build-entries/build.py로 생성. 직접 편집하지 말 것.",
   "entries": [
     {
+      "id": "accept",
+      "headword": "accept",
+      "syllables": "ac·cept",
+      "ipa": {
+        "us": "/æk.ˈsept/"
+      },
+      "audio": {
+        "us": "audio/us/accept.mp3"
+      },
+      "inflections": {
+        "past": "accepted",
+        "presentParticiple": "accepting",
+        "thirdPerson": "accepts"
+      },
+      "senses": [
+        {
+          "id": "accept-1",
+          "pos": "verb",
+          "en": "to take something that someone gives to you",
+          "ko": "받아들이다",
+          "level": 4,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "accept-1-e1",
+              "en": "She was happy to {{accept}} the gift.",
+              "ko": "그녀는 선물을 기꺼이 받았어요."
+            },
+            {
+              "id": "accept-1-e2",
+              "en": "Please {{accept}} my help with your bags.",
+              "ko": "가방 드는 것을 도와드릴게요, 받아 주세요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "allow",
       "headword": "allow",
       "syllables": "al·low",
@@ -605,6 +649,55 @@
       ],
       "curriculum": {
         "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "believe",
+      "headword": "believe",
+      "syllables": "be·lieve",
+      "ipa": {
+        "us": "/bɪ.ˈliːv/"
+      },
+      "audio": {
+        "us": "audio/us/believe.mp3"
+      },
+      "inflections": {
+        "past": "believed",
+        "presentParticiple": "believing",
+        "thirdPerson": "believes"
+      },
+      "senses": [
+        {
+          "id": "believe-1",
+          "pos": "verb",
+          "en": "to think that something is true",
+          "ko": "믿다",
+          "level": 4,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "believe-1-e1",
+              "en": "I {{believe}} you can do it.",
+              "ko": "나는 네가 할 수 있다고 믿어요."
+            },
+            {
+              "id": "believe-1-e2",
+              "en": "She did not {{believe}} the strange story.",
+              "ko": "그녀는 그 이상한 이야기를 믿지 않았어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "belief"
+        ]
+      },
+      "curriculum": {
+        "grade": 7
       },
       "editorialStatus": "done"
     },
@@ -2593,6 +2686,133 @@
       "editorialStatus": "done"
     },
     {
+      "id": "common",
+      "headword": "common",
+      "syllables": "com·mon",
+      "ipa": {
+        "us": "/ˈkɑː.mən/"
+      },
+      "audio": {
+        "us": "audio/us/common.mp3"
+      },
+      "senses": [
+        {
+          "id": "common-1",
+          "pos": "adjective",
+          "en": "that many people have, do, or know",
+          "ko": "흔한",
+          "level": 4,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "common-1-e1",
+              "en": "Rain is very {{common}} in the spring.",
+              "ko": "봄에는 비가 아주 흔해요."
+            },
+            {
+              "id": "common-1-e2",
+              "en": "This is a {{common}} name in Korea.",
+              "ko": "이것은 한국에서 흔한 이름이에요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "contain",
+      "headword": "contain",
+      "syllables": "con·tain",
+      "ipa": {
+        "us": "/kən.ˈteɪn/"
+      },
+      "audio": {
+        "us": "audio/us/contain.mp3"
+      },
+      "inflections": {
+        "past": "contained",
+        "presentParticiple": "containing",
+        "thirdPerson": "contains"
+      },
+      "senses": [
+        {
+          "id": "contain-1",
+          "pos": "verb",
+          "en": "to have something inside it",
+          "ko": "담고 있다",
+          "level": 4,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "contain-1-e1",
+              "en": "This box {{contains}} all my old toys.",
+              "ko": "이 상자에는 내 오래된 장난감이 다 들어 있어요."
+            },
+            {
+              "id": "contain-1-e2",
+              "en": "The bottle {{contains}} cold water for you.",
+              "ko": "병에는 너를 위한 차가운 물이 담겨 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "continue",
+      "headword": "continue",
+      "syllables": "con·tin·ue",
+      "ipa": {
+        "us": "/kən.ˈtɪn.juː/"
+      },
+      "audio": {
+        "us": "audio/us/continue.mp3"
+      },
+      "inflections": {
+        "past": "continued",
+        "presentParticiple": "continuing",
+        "thirdPerson": "continues"
+      },
+      "senses": [
+        {
+          "id": "continue-1",
+          "pos": "verb",
+          "en": "to keep doing something and not stop",
+          "ko": "계속하다",
+          "level": 4,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "continue-1-e1",
+              "en": "Please {{continue}} reading the next page.",
+              "ko": "다음 쪽을 계속 읽어 주세요."
+            },
+            {
+              "id": "continue-1-e2",
+              "en": "The rain will {{continue}} all day long.",
+              "ko": "비는 하루 종일 계속 올 거예요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "cook",
       "headword": "cook",
       "syllables": "cook",
@@ -2816,6 +3036,49 @@
       "editorialStatus": "done"
     },
     {
+      "id": "culture",
+      "headword": "culture",
+      "syllables": "cul·ture",
+      "ipa": {
+        "us": "/ˈkʌl.tʃɚ/"
+      },
+      "audio": {
+        "us": "audio/us/culture.mp3"
+      },
+      "inflections": {
+        "plural": "cultures"
+      },
+      "senses": [
+        {
+          "id": "culture-1",
+          "pos": "noun",
+          "en": "the way that the people of one country live",
+          "ko": "문화",
+          "level": 4,
+          "tags": [
+            "idea",
+            "people"
+          ],
+          "examples": [
+            {
+              "id": "culture-1-e1",
+              "en": "Food is a big part of every {{culture}}.",
+              "ko": "음식은 모든 문화의 큰 부분이에요."
+            },
+            {
+              "id": "culture-1-e2",
+              "en": "We learned about the {{culture}} of Japan.",
+              "ko": "우리는 일본의 문화를 배웠어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "cup",
       "headword": "cup",
       "syllables": "cup",
@@ -2951,6 +3214,50 @@
       },
       "curriculum": {
         "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "dangerous",
+      "headword": "dangerous",
+      "syllables": "dan·ger·ous",
+      "ipa": {
+        "us": "/ˈdeɪn.dʒɚ.əs/"
+      },
+      "audio": {
+        "us": "audio/us/dangerous.mp3"
+      },
+      "senses": [
+        {
+          "id": "dangerous-1",
+          "pos": "adjective",
+          "en": "not safe to be near or to use",
+          "ko": "위험한",
+          "level": 4,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "dangerous-1-e1",
+              "en": "It is {{dangerous}} to play near the fire.",
+              "ko": "불 근처에서 노는 것은 위험해요."
+            },
+            {
+              "id": "dangerous-1-e2",
+              "en": "The road is {{dangerous}} for small children.",
+              "ko": "그 길은 어린아이에게 위험해요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "danger"
+        ]
+      },
+      "curriculum": {
+        "grade": 7
       },
       "editorialStatus": "done"
     },
@@ -3269,6 +3576,56 @@
       "editorialStatus": "done"
     },
     {
+      "id": "difficult",
+      "headword": "difficult",
+      "syllables": "dif·fi·cult",
+      "ipa": {
+        "us": "/ˈdɪ.fə.kəlt/"
+      },
+      "audio": {
+        "us": "audio/us/difficult.mp3"
+      },
+      "senses": [
+        {
+          "id": "difficult-1",
+          "pos": "adjective",
+          "en": "not [[easy]] to do or understand",
+          "ko": "어려운",
+          "level": 4,
+          "tags": [
+            "describing",
+            "school"
+          ],
+          "examples": [
+            {
+              "id": "difficult-1-e1",
+              "en": "This math problem is very {{difficult}}.",
+              "ko": "이 수학 문제는 아주 어려워요."
+            },
+            {
+              "id": "difficult-1-e2",
+              "en": "It was {{difficult}} to climb the tall tree.",
+              "ko": "그 높은 나무를 오르기는 어려웠어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "easy"
+          }
+        ],
+        "wordFamily": [
+          "difficulty"
+        ]
+      },
+      "curriculum": {
+        "grade": 7
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "dirty",
       "headword": "dirty",
       "syllables": "dirty",
@@ -3315,6 +3672,55 @@
       },
       "curriculum": {
         "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "discover",
+      "headword": "discover",
+      "syllables": "dis·cov·er",
+      "ipa": {
+        "us": "/dɪs.ˈkʌ.vɚ/"
+      },
+      "audio": {
+        "us": "audio/us/discover.mp3"
+      },
+      "inflections": {
+        "past": "discovered",
+        "presentParticiple": "discovering",
+        "thirdPerson": "discovers"
+      },
+      "senses": [
+        {
+          "id": "discover-1",
+          "pos": "verb",
+          "en": "to find something for the very first time",
+          "ko": "발견하다",
+          "level": 4,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "discover-1-e1",
+              "en": "We can {{discover}} many stars at night.",
+              "ko": "우리는 밤에 많은 별을 발견할 수 있어요."
+            },
+            {
+              "id": "discover-1-e2",
+              "en": "The children {{discovered}} a small cave near the sea.",
+              "ko": "아이들은 바다 근처에서 작은 동굴을 발견했어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "discovery"
+        ]
+      },
+      "curriculum": {
+        "grade": 7
       },
       "editorialStatus": "done"
     },
@@ -4033,6 +4439,138 @@
       },
       "curriculum": {
         "grade": 5
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "energy",
+      "headword": "energy",
+      "syllables": "en·er·gy",
+      "ipa": {
+        "us": "/ˈe.nɚ.dʒiː/"
+      },
+      "audio": {
+        "us": "audio/us/energy.mp3"
+      },
+      "senses": [
+        {
+          "id": "energy-1",
+          "pos": "noun",
+          "en": "the power that makes a machine work or a body move",
+          "ko": "에너지, 힘",
+          "level": 4,
+          "tags": [
+            "nature",
+            "science"
+          ],
+          "examples": [
+            {
+              "id": "energy-1-e1",
+              "en": "The sun gives us light and {{energy}}.",
+              "ko": "해는 우리에게 빛과 에너지를 줘요."
+            },
+            {
+              "id": "energy-1-e2",
+              "en": "Children have a lot of {{energy}} to play.",
+              "ko": "아이들은 놀 힘이 넘쳐요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "event",
+      "headword": "event",
+      "syllables": "event",
+      "ipa": {
+        "us": "/ɪ.ˈvent/"
+      },
+      "audio": {
+        "us": "audio/us/event.mp3"
+      },
+      "inflections": {
+        "plural": "events"
+      },
+      "senses": [
+        {
+          "id": "event-1",
+          "pos": "noun",
+          "en": "something important that happens",
+          "ko": "사건, 행사",
+          "level": 4,
+          "tags": [
+            "idea"
+          ],
+          "examples": [
+            {
+              "id": "event-1-e1",
+              "en": "The school festival is a big {{event}}.",
+              "ko": "학교 축제는 큰 행사예요."
+            },
+            {
+              "id": "event-1-e2",
+              "en": "Sports day is my favorite {{event}}.",
+              "ko": "운동회는 내가 가장 좋아하는 행사예요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "explain",
+      "headword": "explain",
+      "syllables": "ex·plain",
+      "ipa": {
+        "us": "/ɪksp.ˈleɪn/"
+      },
+      "audio": {
+        "us": "audio/us/explain.mp3"
+      },
+      "inflections": {
+        "past": "explained",
+        "presentParticiple": "explaining",
+        "thirdPerson": "explains"
+      },
+      "senses": [
+        {
+          "id": "explain-1",
+          "pos": "verb",
+          "en": "to tell someone about something so they can understand it",
+          "ko": "설명하다",
+          "level": 4,
+          "tags": [
+            "action",
+            "school"
+          ],
+          "examples": [
+            {
+              "id": "explain-1-e1",
+              "en": "Can you {{explain}} the game to me?",
+              "ko": "그 게임을 나에게 설명해 줄래요?"
+            },
+            {
+              "id": "explain-1-e2",
+              "en": "The teacher {{explained}} the new word to us.",
+              "ko": "선생님이 우리에게 새 단어를 설명해 주셨어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "explanation"
+        ]
+      },
+      "curriculum": {
+        "grade": 7
       },
       "editorialStatus": "done"
     },
@@ -6254,6 +6792,55 @@
       "editorialStatus": "done"
     },
     {
+      "id": "imagine",
+      "headword": "imagine",
+      "syllables": "imag·ine",
+      "ipa": {
+        "us": "/ˌɪ.ˈmæ.dʒən/"
+      },
+      "audio": {
+        "us": "audio/us/imagine.mp3"
+      },
+      "inflections": {
+        "past": "imagined",
+        "presentParticiple": "imagining",
+        "thirdPerson": "imagines"
+      },
+      "senses": [
+        {
+          "id": "imagine-1",
+          "pos": "verb",
+          "en": "to make a picture of something in your mind",
+          "ko": "상상하다",
+          "level": 4,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "imagine-1-e1",
+              "en": "Close your eyes and {{imagine}} a blue sea.",
+              "ko": "눈을 감고 파란 바다를 상상해 보세요."
+            },
+            {
+              "id": "imagine-1-e2",
+              "en": "I can {{imagine}} how happy she was.",
+              "ko": "그녀가 얼마나 기뻤을지 상상이 돼요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "imagination"
+        ]
+      },
+      "curriculum": {
+        "grade": 7
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "improve",
       "headword": "improve",
       "syllables": "im·prove",
@@ -6294,6 +6881,50 @@
       ],
       "curriculum": {
         "grade": 6
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "increase",
+      "headword": "increase",
+      "syllables": "in·crease",
+      "ipa": {
+        "us": "/ˌɪnk.ˈriːs/"
+      },
+      "audio": {
+        "us": "audio/us/increase.mp3"
+      },
+      "inflections": {
+        "past": "increased",
+        "presentParticiple": "increasing",
+        "thirdPerson": "increases"
+      },
+      "senses": [
+        {
+          "id": "increase-1",
+          "pos": "verb",
+          "en": "to become more in number or size",
+          "ko": "늘다, 늘리다",
+          "level": 4,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "increase-1-e1",
+              "en": "The number of birds began to {{increase}}.",
+              "ko": "새의 수가 늘기 시작했어요."
+            },
+            {
+              "id": "increase-1-e2",
+              "en": "Reading every day will {{increase}} your words.",
+              "ko": "매일 읽으면 아는 단어가 늘어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
       },
       "editorialStatus": "done"
     },
@@ -7274,6 +7905,48 @@
       "editorialStatus": "done"
     },
     {
+      "id": "member",
+      "headword": "member",
+      "syllables": "mem·ber",
+      "ipa": {
+        "us": "/ˈmem.bɚ/"
+      },
+      "audio": {
+        "us": "audio/us/member.mp3"
+      },
+      "inflections": {
+        "plural": "members"
+      },
+      "senses": [
+        {
+          "id": "member-1",
+          "pos": "noun",
+          "en": "one of the people in a group",
+          "ko": "회원, 일원",
+          "level": 4,
+          "tags": [
+            "people"
+          ],
+          "examples": [
+            {
+              "id": "member-1-e1",
+              "en": "She is a {{member}} of our music club.",
+              "ko": "그녀는 우리 음악 동아리의 일원이에요."
+            },
+            {
+              "id": "member-1-e2",
+              "en": "Every {{member}} of the team ran fast.",
+              "ko": "팀의 모든 일원이 빠르게 달렸어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "milk",
       "headword": "milk",
       "syllables": "milk",
@@ -7786,6 +8459,52 @@
       },
       "curriculum": {
         "grade": 6
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "natural",
+      "headword": "natural",
+      "syllables": "nat·u·ral",
+      "ipa": {
+        "us": "/ˈnæ.tʃɚ.əl/"
+      },
+      "audio": {
+        "us": "audio/us/natural.mp3"
+      },
+      "senses": [
+        {
+          "id": "natural-1",
+          "pos": "adjective",
+          "en": "that comes from nature, and not from people",
+          "ko": "자연의",
+          "level": 4,
+          "tags": [
+            "describing",
+            "nature"
+          ],
+          "examples": [
+            {
+              "id": "natural-1-e1",
+              "en": "A forest is a {{natural}} place.",
+              "ko": "숲은 자연 그대로의 장소예요."
+            },
+            {
+              "id": "natural-1-e2",
+              "en": "We drank {{natural}} water from the mountain.",
+              "ko": "우리는 산에서 나온 자연의 물을 마셨어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "naturally",
+          "nature"
+        ]
+      },
+      "curriculum": {
+        "grade": 7
       },
       "editorialStatus": "done"
     },
@@ -8721,6 +9440,45 @@
       "editorialStatus": "done"
     },
     {
+      "id": "possible",
+      "headword": "possible",
+      "syllables": "pos·si·ble",
+      "ipa": {
+        "us": "/ˈpɑː.sə.bəl/"
+      },
+      "audio": {
+        "us": "audio/us/possible.mp3"
+      },
+      "senses": [
+        {
+          "id": "possible-1",
+          "pos": "adjective",
+          "en": "that can happen or that you can do",
+          "ko": "가능한",
+          "level": 4,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "possible-1-e1",
+              "en": "It is {{possible}} to learn a new language.",
+              "ko": "새 언어를 배우는 것은 가능해요."
+            },
+            {
+              "id": "possible-1-e2",
+              "en": "Is it {{possible}} to finish this today?",
+              "ko": "이걸 오늘 끝내는 게 가능할까요?"
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "potato",
       "headword": "potato",
       "syllables": "pota·to",
@@ -8851,6 +9609,50 @@
       "editorialStatus": "done"
     },
     {
+      "id": "produce",
+      "headword": "produce",
+      "syllables": "pro·duce",
+      "ipa": {
+        "us": "/prə.ˈduːs/"
+      },
+      "audio": {
+        "us": "audio/us/produce.mp3"
+      },
+      "inflections": {
+        "past": "produced",
+        "presentParticiple": "producing",
+        "thirdPerson": "produces"
+      },
+      "senses": [
+        {
+          "id": "produce-1",
+          "pos": "verb",
+          "en": "to make something for people to use",
+          "ko": "생산하다, 만들어 내다",
+          "level": 4,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "produce-1-e1",
+              "en": "Cows {{produce}} milk for us to drink.",
+              "ko": "소는 우리가 마실 우유를 만들어 내요."
+            },
+            {
+              "id": "produce-1-e2",
+              "en": "This factory {{produces}} many new cars.",
+              "ko": "이 공장은 많은 새 차를 생산해요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "protect",
       "headword": "protect",
       "syllables": "pro·tect",
@@ -8891,6 +9693,92 @@
       ],
       "curriculum": {
         "grade": 6
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "provide",
+      "headword": "provide",
+      "syllables": "pro·vide",
+      "ipa": {
+        "us": "/prə.ˈvaɪd/"
+      },
+      "audio": {
+        "us": "audio/us/provide.mp3"
+      },
+      "inflections": {
+        "past": "provided",
+        "presentParticiple": "providing",
+        "thirdPerson": "provides"
+      },
+      "senses": [
+        {
+          "id": "provide-1",
+          "pos": "verb",
+          "en": "to give someone the thing that they need",
+          "ko": "제공하다",
+          "level": 4,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "provide-1-e1",
+              "en": "The school {{provides}} lunch for every child.",
+              "ko": "학교는 모든 아이에게 점심을 제공해요."
+            },
+            {
+              "id": "provide-1-e2",
+              "en": "Trees {{provide}} homes for many birds.",
+              "ko": "나무는 많은 새에게 집을 제공해요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "purpose",
+      "headword": "purpose",
+      "syllables": "pur·pose",
+      "ipa": {
+        "us": "/ˈpɜːr.pəs/"
+      },
+      "audio": {
+        "us": "audio/us/purpose.mp3"
+      },
+      "inflections": {
+        "plural": "purposes"
+      },
+      "senses": [
+        {
+          "id": "purpose-1",
+          "pos": "noun",
+          "en": "the reason why you do something",
+          "ko": "목적",
+          "level": 4,
+          "tags": [
+            "idea"
+          ],
+          "examples": [
+            {
+              "id": "purpose-1-e1",
+              "en": "The {{purpose}} of a map is to help you.",
+              "ko": "지도의 목적은 너를 돕는 거예요."
+            },
+            {
+              "id": "purpose-1-e2",
+              "en": "What is the {{purpose}} of this game?",
+              "ko": "이 게임의 목적이 뭐예요?"
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
       },
       "editorialStatus": "done"
     },
@@ -9163,6 +10051,48 @@
       "editorialStatus": "done"
     },
     {
+      "id": "reason",
+      "headword": "reason",
+      "syllables": "rea·son",
+      "ipa": {
+        "us": "/ˈriː.zən/"
+      },
+      "audio": {
+        "us": "audio/us/reason.mp3"
+      },
+      "inflections": {
+        "plural": "reasons"
+      },
+      "senses": [
+        {
+          "id": "reason-1",
+          "pos": "noun",
+          "en": "why you do something, or why it happens",
+          "ko": "이유",
+          "level": 4,
+          "tags": [
+            "idea"
+          ],
+          "examples": [
+            {
+              "id": "reason-1-e1",
+              "en": "Tell me the {{reason}} you are late.",
+              "ko": "네가 늦은 이유를 말해 줘."
+            },
+            {
+              "id": "reason-1-e2",
+              "en": "There is a good {{reason}} for this rule.",
+              "ko": "이 규칙에는 좋은 이유가 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "red",
       "headword": "red",
       "syllables": "red",
@@ -9199,6 +10129,92 @@
       ],
       "curriculum": {
         "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "reduce",
+      "headword": "reduce",
+      "syllables": "re·duce",
+      "ipa": {
+        "us": "/rə.ˈduːs/"
+      },
+      "audio": {
+        "us": "audio/us/reduce.mp3"
+      },
+      "inflections": {
+        "past": "reduced",
+        "presentParticiple": "reducing",
+        "thirdPerson": "reduces"
+      },
+      "senses": [
+        {
+          "id": "reduce-1",
+          "pos": "verb",
+          "en": "to make the number of something go down",
+          "ko": "줄이다",
+          "level": 4,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "reduce-1-e1",
+              "en": "We must {{reduce}} the trash we make.",
+              "ko": "우리는 만드는 쓰레기를 줄여야 해요."
+            },
+            {
+              "id": "reduce-1-e2",
+              "en": "Turn off the light to {{reduce}} power use.",
+              "ko": "불을 꺼서 전기 사용을 줄이세요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "result",
+      "headword": "result",
+      "syllables": "re·sult",
+      "ipa": {
+        "us": "/rɪ.ˈzʌlt/"
+      },
+      "audio": {
+        "us": "audio/us/result.mp3"
+      },
+      "inflections": {
+        "plural": "results"
+      },
+      "senses": [
+        {
+          "id": "result-1",
+          "pos": "noun",
+          "en": "the thing that happens because of another thing",
+          "ko": "결과",
+          "level": 4,
+          "tags": [
+            "idea"
+          ],
+          "examples": [
+            {
+              "id": "result-1-e1",
+              "en": "The {{result}} of the game made us happy.",
+              "ko": "경기 결과가 우리를 기쁘게 했어요."
+            },
+            {
+              "id": "result-1-e2",
+              "en": "We will know the {{result}} of the test soon.",
+              "ko": "우리는 곧 시험 결과를 알게 될 거예요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
       },
       "editorialStatus": "done"
     },
@@ -9903,6 +10919,45 @@
       "editorialStatus": "done"
     },
     {
+      "id": "similar",
+      "headword": "similar",
+      "syllables": "sim·i·lar",
+      "ipa": {
+        "us": "/ˈsɪ.mə.lɚ/"
+      },
+      "audio": {
+        "us": "audio/us/similar.mp3"
+      },
+      "senses": [
+        {
+          "id": "similar-1",
+          "pos": "adjective",
+          "en": "almost the same as another thing",
+          "ko": "비슷한",
+          "level": 4,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "similar-1-e1",
+              "en": "My bag is {{similar}} to your bag.",
+              "ko": "내 가방은 네 가방과 비슷해요."
+            },
+            {
+              "id": "similar-1-e2",
+              "en": "The two brothers look very {{similar}}.",
+              "ko": "그 두 형제는 아주 비슷하게 생겼어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "sing",
       "headword": "sing",
       "syllables": "sing",
@@ -10041,6 +11096,48 @@
       ],
       "curriculum": {
         "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "situation",
+      "headword": "situation",
+      "syllables": "sit·u·a·tion",
+      "ipa": {
+        "us": "/ˌsɪ.tʃuː.ˈeɪ.ʃən/"
+      },
+      "audio": {
+        "us": "audio/us/situation.mp3"
+      },
+      "inflections": {
+        "plural": "situations"
+      },
+      "senses": [
+        {
+          "id": "situation-1",
+          "pos": "noun",
+          "en": "the things that are happening at one time and place",
+          "ko": "상황",
+          "level": 4,
+          "tags": [
+            "idea"
+          ],
+          "examples": [
+            {
+              "id": "situation-1-e1",
+              "en": "She helped me in a hard {{situation}}.",
+              "ko": "그녀는 어려운 상황에서 나를 도왔어요."
+            },
+            {
+              "id": "situation-1-e2",
+              "en": "This is a very difficult {{situation}} for us.",
+              "ko": "이것은 우리에게 아주 어려운 상황이에요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
       },
       "editorialStatus": "done"
     },
@@ -10651,6 +11748,55 @@
       "editorialStatus": "done"
     },
     {
+      "id": "suggest",
+      "headword": "suggest",
+      "syllables": "sug·gest",
+      "ipa": {
+        "us": "/sə.ˈdʒest/"
+      },
+      "audio": {
+        "us": "audio/us/suggest.mp3"
+      },
+      "inflections": {
+        "past": "suggested",
+        "presentParticiple": "suggesting",
+        "thirdPerson": "suggests"
+      },
+      "senses": [
+        {
+          "id": "suggest-1",
+          "pos": "verb",
+          "en": "to tell someone your idea about what to do",
+          "ko": "제안하다",
+          "level": 4,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "suggest-1-e1",
+              "en": "I {{suggest}} we go to the park today.",
+              "ko": "오늘 공원에 가자고 제안할게요."
+            },
+            {
+              "id": "suggest-1-e2",
+              "en": "She {{suggested}} a fun game for the class.",
+              "ko": "그녀는 반을 위한 재미있는 게임을 제안했어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "suggestion"
+        ]
+      },
+      "curriculum": {
+        "grade": 7
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "sun",
       "headword": "sun",
       "syllables": "sun",
@@ -10694,6 +11840,48 @@
       },
       "curriculum": {
         "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "surface",
+      "headword": "surface",
+      "syllables": "sur·face",
+      "ipa": {
+        "us": "/ˈsɜːr.fəs/"
+      },
+      "audio": {
+        "us": "audio/us/surface.mp3"
+      },
+      "inflections": {
+        "plural": "surfaces"
+      },
+      "senses": [
+        {
+          "id": "surface-1",
+          "pos": "noun",
+          "en": "the top or outside part of something",
+          "ko": "표면",
+          "level": 4,
+          "tags": [
+            "nature"
+          ],
+          "examples": [
+            {
+              "id": "surface-1-e1",
+              "en": "The {{surface}} of the lake was very still.",
+              "ko": "호수의 표면은 아주 잔잔했어요."
+            },
+            {
+              "id": "surface-1-e2",
+              "en": "A boat moves on the {{surface}} of the water.",
+              "ko": "배는 물 표면 위에서 움직여요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
       },
       "editorialStatus": "done"
     },
@@ -11418,6 +12606,45 @@
       ],
       "curriculum": {
         "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "various",
+      "headword": "various",
+      "syllables": "var·i·ous",
+      "ipa": {
+        "us": "/ˈve.riː.əs/"
+      },
+      "audio": {
+        "us": "audio/us/various.mp3"
+      },
+      "senses": [
+        {
+          "id": "various-1",
+          "pos": "adjective",
+          "en": "many, and not all the same",
+          "ko": "다양한",
+          "level": 4,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "various-1-e1",
+              "en": "The shop sells {{various}} kinds of bread.",
+              "ko": "그 가게는 다양한 종류의 빵을 팔아요."
+            },
+            {
+              "id": "various-1-e2",
+              "en": "We saw {{various}} animals at the zoo.",
+              "ko": "우리는 동물원에서 다양한 동물을 봤어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 7
       },
       "editorialStatus": "done"
     },

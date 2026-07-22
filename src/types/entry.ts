@@ -47,8 +47,8 @@ export type Pos =
   | 'interjection'
   | 'determiner';
 
-/** 학년 난이도. 1=3~4학년, 2=5학년, 3=6학년 */
-export type Level = 1 | 2 | 3;
+/** 학년 난이도. 1=3~4학년, 2=5학년, 3=6학년, 4=중학교 */
+export type Level = 1 | 2 | 3 | 4;
 
 /**
  * 편집 상태. 1,000개 표제어 중 어디까지 됐는지 추적한다.
@@ -189,7 +189,8 @@ export interface Entry {
   /** 삽화. 그림으로 그릴 수 있는 명사에만. 없는 편이 잘못된 그림보다 낫다. */
   illustration?: { src: string; alt: string };
   curriculum?: {
-    grade: 3 | 4 | 5 | 6;
+    /** 3~6=초등, 7=중학교(교육과정 **, 중·고 권장 어휘). */
+    grade: 3 | 4 | 5 | 6 | 7;
     /** 출처 표기. 예: "2022 개정 교육과정 별표3" */
     source?: string;
   };
