@@ -180,6 +180,50 @@
       "editorialStatus": "done"
     },
     {
+      "id": "bad",
+      "headword": "bad",
+      "syllables": "bad",
+      "ipa": {
+        "us": "/bæd/"
+      },
+      "audio": {
+        "us": "audio/us/bad.mp3"
+      },
+      "inflections": {
+        "comparative": "worse",
+        "superlative": "worst",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "bad-1",
+          "pos": "adjective",
+          "en": "not good",
+          "ko": "나쁜",
+          "level": 1,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "bad-1-e1",
+              "en": "Too much candy is {{bad}} for your teeth.",
+              "ko": "사탕을 너무 많이 먹으면 이에 나빠요."
+            },
+            {
+              "id": "bad-1-e2",
+              "en": "I had a {{bad}} dream last night.",
+              "ko": "나는 어젯밤에 나쁜 꿈을 꿨어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "bag",
       "headword": "bag",
       "syllables": "bag",
@@ -298,6 +342,48 @@
               "id": "banana-1-e2",
               "en": "The monkey took my yellow {{banana}}.",
               "ko": "원숭이가 내 바나나를 가져갔어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "basket",
+      "headword": "basket",
+      "syllables": "bas·ket",
+      "ipa": {
+        "us": "/ˈbæs.kət/"
+      },
+      "audio": {
+        "us": "audio/us/basket.mp3"
+      },
+      "inflections": {
+        "plural": "baskets"
+      },
+      "senses": [
+        {
+          "id": "basket-1",
+          "pos": "noun",
+          "en": "a thing that you carry fruit or bread in",
+          "ko": "바구니",
+          "level": 1,
+          "tags": [
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "basket-1-e1",
+              "en": "She put apples in the {{basket}}.",
+              "ko": "그녀는 바구니에 사과를 담았어요."
+            },
+            {
+              "id": "basket-1-e2",
+              "en": "The {{basket}} is full of fresh bread.",
+              "ko": "바구니에 갓 구운 빵이 가득해요."
             }
           ]
         }
@@ -469,6 +555,91 @@
               "id": "bee-1-e2",
               "en": "The {{bees}} fly around the garden all day.",
               "ko": "벌들이 하루 종일 정원을 날아다녀요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "bell",
+      "headword": "bell",
+      "syllables": "bell",
+      "ipa": {
+        "us": "/bel/"
+      },
+      "audio": {
+        "us": "audio/us/bell.mp3"
+      },
+      "inflections": {
+        "plural": "bells"
+      },
+      "senses": [
+        {
+          "id": "bell-1",
+          "pos": "noun",
+          "en": "a thing that makes a sound when you hit or push it",
+          "ko": "종, 벨",
+          "level": 1,
+          "tags": [
+            "object",
+            "sound"
+          ],
+          "examples": [
+            {
+              "id": "bell-1-e1",
+              "en": "The school {{bell}} rings at nine.",
+              "ko": "학교 종이 아홉 시에 울려요."
+            },
+            {
+              "id": "bell-1-e2",
+              "en": "She pushed the {{bell}} on the door.",
+              "ko": "그녀는 문에 있는 벨을 눌렀어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "belt",
+      "headword": "belt",
+      "syllables": "belt",
+      "ipa": {
+        "us": "/belt/"
+      },
+      "audio": {
+        "us": "audio/us/belt.mp3"
+      },
+      "inflections": {
+        "plural": "belts"
+      },
+      "senses": [
+        {
+          "id": "belt-1",
+          "pos": "noun",
+          "en": "a long thing that you wear around your body to hold up your pants",
+          "ko": "허리띠, 벨트",
+          "level": 1,
+          "tags": [
+            "clothes"
+          ],
+          "examples": [
+            {
+              "id": "belt-1-e1",
+              "en": "He wears a black {{belt}} every day.",
+              "ko": "그는 매일 검은 벨트를 매요."
+            },
+            {
+              "id": "belt-1-e2",
+              "en": "My {{belt}} is too long for me.",
+              "ko": "내 벨트는 나에게 너무 길어요."
             }
           ]
         }
@@ -914,6 +1085,50 @@
       "editorialStatus": "done"
     },
     {
+      "id": "brave",
+      "headword": "brave",
+      "syllables": "brave",
+      "ipa": {
+        "us": "/breɪv/"
+      },
+      "audio": {
+        "us": "audio/us/brave.mp3"
+      },
+      "inflections": {
+        "comparative": "braver",
+        "superlative": "bravest"
+      },
+      "senses": [
+        {
+          "id": "brave-1",
+          "pos": "adjective",
+          "en": "not afraid when something is hard or dangerous",
+          "ko": "용감한",
+          "level": 1,
+          "tags": [
+            "describing",
+            "feeling"
+          ],
+          "examples": [
+            {
+              "id": "brave-1-e1",
+              "en": "The {{brave}} boy helped the small child.",
+              "ko": "용감한 소년이 어린아이를 도와줬어요."
+            },
+            {
+              "id": "brave-1-e2",
+              "en": "Be {{brave}} and try one more time.",
+              "ko": "용감하게 다시 해 봐."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "bread",
       "headword": "bread",
       "syllables": "bread",
@@ -943,6 +1158,49 @@
               "id": "bread-1-e2",
               "en": "My mother makes fresh {{bread}} every week.",
               "ko": "우리 엄마는 매주 갓 구운 빵을 만들어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "bright",
+      "headword": "bright",
+      "syllables": "bright",
+      "ipa": {
+        "us": "/braɪt/"
+      },
+      "audio": {
+        "us": "audio/us/bright.mp3"
+      },
+      "inflections": {
+        "comparative": "brighter",
+        "superlative": "brightest"
+      },
+      "senses": [
+        {
+          "id": "bright-1",
+          "pos": "adjective",
+          "en": "giving much light",
+          "ko": "밝은",
+          "level": 1,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "bright-1-e1",
+              "en": "The sun is very {{bright}} today.",
+              "ko": "오늘 해가 아주 밝아요."
+            },
+            {
+              "id": "bright-1-e2",
+              "en": "She wore a {{bright}} yellow dress.",
+              "ko": "그녀는 밝은 노란 원피스를 입었어요."
             }
           ]
         }
@@ -1039,6 +1297,131 @@
       "editorialStatus": "done"
     },
     {
+      "id": "busy",
+      "headword": "busy",
+      "syllables": "busy",
+      "ipa": {
+        "us": "/ˈbɪ.ziː/"
+      },
+      "audio": {
+        "us": "audio/us/busy.mp3"
+      },
+      "inflections": {
+        "comparative": "busier",
+        "superlative": "busiest"
+      },
+      "senses": [
+        {
+          "id": "busy-1",
+          "pos": "adjective",
+          "en": "having many things to do",
+          "ko": "바쁜",
+          "level": 1,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "busy-1-e1",
+              "en": "My mother is {{busy}} in the morning.",
+              "ko": "우리 엄마는 아침에 바빠요."
+            },
+            {
+              "id": "busy-1-e2",
+              "en": "The market is {{busy}} on weekends.",
+              "ko": "시장은 주말에 붐벼요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "butter",
+      "headword": "butter",
+      "syllables": "but·ter",
+      "ipa": {
+        "us": "/ˈbʌ.tɚ/"
+      },
+      "audio": {
+        "us": "audio/us/butter.mp3"
+      },
+      "senses": [
+        {
+          "id": "butter-1",
+          "pos": "noun",
+          "en": "a soft yellow food made from milk",
+          "ko": "버터",
+          "level": 1,
+          "tags": [
+            "food-drink"
+          ],
+          "examples": [
+            {
+              "id": "butter-1-e1",
+              "en": "I put {{butter}} on my warm bread.",
+              "ko": "나는 따뜻한 빵에 버터를 발라요."
+            },
+            {
+              "id": "butter-1-e2",
+              "en": "We need {{butter}} to make this cake.",
+              "ko": "이 케이크를 만들려면 버터가 필요해요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "button",
+      "headword": "button",
+      "syllables": "but·ton",
+      "ipa": {
+        "us": "/ˈbʌ.tən/"
+      },
+      "audio": {
+        "us": "audio/us/button.mp3"
+      },
+      "inflections": {
+        "plural": "buttons"
+      },
+      "senses": [
+        {
+          "id": "button-1",
+          "pos": "noun",
+          "en": "a small round thing that you push or that holds clothes",
+          "ko": "단추, 버튼",
+          "level": 1,
+          "tags": [
+            "object",
+            "clothes"
+          ],
+          "examples": [
+            {
+              "id": "button-1-e1",
+              "en": "Please push the small red {{button}} now.",
+              "ko": "빨간 버튼을 누르세요."
+            },
+            {
+              "id": "button-1-e2",
+              "en": "One {{button}} on my shirt is gone.",
+              "ko": "내 셔츠 단추 하나가 떨어졌어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "buy",
       "headword": "buy",
       "syllables": "buy",
@@ -1117,6 +1500,92 @@
               "id": "cake-1-e2",
               "en": "My mother made a chocolate {{cake}}.",
               "ko": "우리 엄마가 초콜릿 케이크를 만들었어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "call",
+      "headword": "call",
+      "syllables": "call",
+      "ipa": {
+        "us": "/kɔːl/"
+      },
+      "audio": {
+        "us": "audio/us/call.mp3"
+      },
+      "inflections": {
+        "past": "called",
+        "presentParticiple": "calling",
+        "thirdPerson": "calls"
+      },
+      "senses": [
+        {
+          "id": "call-1",
+          "pos": "verb",
+          "en": "to say someone's name so they will come",
+          "ko": "부르다, 전화하다",
+          "level": 1,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "call-1-e1",
+              "en": "My mother will {{call}} me for dinner.",
+              "ko": "엄마가 저녁 먹으라고 나를 부를 거예요."
+            },
+            {
+              "id": "call-1-e2",
+              "en": "Please {{call}} me when you are ready.",
+              "ko": "준비되면 나에게 전화해 주세요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "camera",
+      "headword": "camera",
+      "syllables": "cam·era",
+      "ipa": {
+        "us": "/ˈkæ.mɚ.ə/"
+      },
+      "audio": {
+        "us": "audio/us/camera.mp3"
+      },
+      "inflections": {
+        "plural": "cameras"
+      },
+      "senses": [
+        {
+          "id": "camera-1",
+          "pos": "noun",
+          "en": "a thing that you use to take pictures",
+          "ko": "카메라",
+          "level": 1,
+          "tags": [
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "camera-1-e1",
+              "en": "My father took a photo with his {{camera}}.",
+              "ko": "우리 아빠는 카메라로 사진을 찍었어요."
+            },
+            {
+              "id": "camera-1-e2",
+              "en": "May I use your new {{camera}}, please?",
+              "ko": "카메라 좀 써도 될까요?"
             }
           ]
         }
@@ -1255,6 +1724,60 @@
       "editorialStatus": "done"
     },
     {
+      "id": "carry",
+      "headword": "carry",
+      "syllables": "car·ry",
+      "ipa": {
+        "us": "/ˈkæ.riː/"
+      },
+      "audio": {
+        "us": "audio/us/carry.mp3"
+      },
+      "inflections": {
+        "past": "carried",
+        "presentParticiple": "carrying",
+        "thirdPerson": "carries"
+      },
+      "senses": [
+        {
+          "id": "carry-1",
+          "pos": "verb",
+          "en": "to hold something and take it to another place",
+          "ko": "나르다, 들다",
+          "level": 1,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "carry-1-e1",
+              "en": "I {{carry}} a bag to school every day.",
+              "ko": "나는 매일 가방을 메고 학교에 가요."
+            },
+            {
+              "id": "carry-1-e2",
+              "en": "He helped me {{carry}} the heavy box.",
+              "ko": "그가 무거운 상자 드는 걸 도와줬어요."
+            }
+          ],
+          "collocations": [
+            {
+              "id": "carry-1-c1",
+              "text": "carry a bag",
+              "ko": "가방을 들다",
+              "exampleId": "carry-1-e1",
+              "level": 1,
+              "studiable": true
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "cat",
       "headword": "cat",
       "syllables": "cat",
@@ -1287,6 +1810,63 @@
               "id": "cat-1-e2",
               "en": "The {{cat}} is playing with a small ball.",
               "ko": "고양이가 작은 공을 가지고 놀고 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "catch",
+      "headword": "catch",
+      "syllables": "catch",
+      "ipa": {
+        "us": "/kætʃ/"
+      },
+      "audio": {
+        "us": "audio/us/catch.mp3"
+      },
+      "inflections": {
+        "past": "caught",
+        "pastParticiple": "caught",
+        "presentParticiple": "catching",
+        "thirdPerson": "catches",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "catch-1",
+          "pos": "verb",
+          "en": "to take and hold something that is moving",
+          "ko": "잡다",
+          "level": 1,
+          "tags": [
+            "action",
+            "sport"
+          ],
+          "examples": [
+            {
+              "id": "catch-1-e1",
+              "en": "He can {{catch}} a ball with one hand.",
+              "ko": "그는 한 손으로 공을 잡을 수 있어요."
+            },
+            {
+              "id": "catch-1-e2",
+              "en": "The cat tried to {{catch}} the mouse.",
+              "ko": "고양이가 쥐를 잡으려고 했어요."
+            }
+          ],
+          "collocations": [
+            {
+              "id": "catch-1-c1",
+              "text": "catch a ball",
+              "ko": "공을 잡다",
+              "exampleId": "catch-1-e1",
+              "level": 1,
+              "studiable": true
             }
           ]
         }
@@ -1975,6 +2555,50 @@
       "editorialStatus": "done"
     },
     {
+      "id": "cool",
+      "headword": "cool",
+      "syllables": "cool",
+      "ipa": {
+        "us": "/kuːl/"
+      },
+      "audio": {
+        "us": "audio/us/cool.mp3"
+      },
+      "inflections": {
+        "comparative": "cooler",
+        "superlative": "coolest"
+      },
+      "senses": [
+        {
+          "id": "cool-1",
+          "pos": "adjective",
+          "en": "a little cold, in a nice way",
+          "ko": "시원한",
+          "level": 1,
+          "tags": [
+            "describing",
+            "weather"
+          ],
+          "examples": [
+            {
+              "id": "cool-1-e1",
+              "en": "The water in the lake is {{cool}}.",
+              "ko": "호숫물이 시원해요."
+            },
+            {
+              "id": "cool-1-e2",
+              "en": "A {{cool}} wind blew in the evening.",
+              "ko": "저녁에 시원한 바람이 불었어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "cow",
       "headword": "cow",
       "syllables": "cow",
@@ -2007,6 +2631,51 @@
               "id": "cow-1-e2",
               "en": "We get milk from a {{cow}}.",
               "ko": "우리는 소에게서 우유를 얻어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "cry",
+      "headword": "cry",
+      "syllables": "cry",
+      "ipa": {
+        "us": "/kraɪ/"
+      },
+      "audio": {
+        "us": "audio/us/cry.mp3"
+      },
+      "inflections": {
+        "past": "cried",
+        "presentParticiple": "crying",
+        "thirdPerson": "cries"
+      },
+      "senses": [
+        {
+          "id": "cry-1",
+          "pos": "verb",
+          "en": "to make water come from your eyes when you are sad",
+          "ko": "울다",
+          "level": 1,
+          "tags": [
+            "action",
+            "feeling"
+          ],
+          "examples": [
+            {
+              "id": "cry-1-e1",
+              "en": "The baby began to {{cry}} at night.",
+              "ko": "아기가 밤에 울기 시작했어요."
+            },
+            {
+              "id": "cry-1-e2",
+              "en": "Do not {{cry}}, everything is okay.",
+              "ko": "울지 마, 다 괜찮아."
             }
           ]
         }
@@ -2054,6 +2723,102 @@
           ]
         }
       ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "cut",
+      "headword": "cut",
+      "syllables": "cut",
+      "ipa": {
+        "us": "/kʌt/"
+      },
+      "audio": {
+        "us": "audio/us/cut.mp3"
+      },
+      "inflections": {
+        "past": "cut",
+        "pastParticiple": "cut",
+        "presentParticiple": "cutting",
+        "thirdPerson": "cuts",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "cut-1",
+          "pos": "verb",
+          "en": "to open or break something with a knife",
+          "ko": "자르다, 베다",
+          "level": 1,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "cut-1-e1",
+              "en": "Please {{cut}} the bread into small pieces.",
+              "ko": "빵을 작은 조각으로 잘라 주세요."
+            },
+            {
+              "id": "cut-1-e2",
+              "en": "He {{cut}} the apple with a knife.",
+              "ko": "그는 칼로 사과를 잘랐어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "dance",
+      "headword": "dance",
+      "syllables": "dance",
+      "ipa": {
+        "us": "/dæns/"
+      },
+      "audio": {
+        "us": "audio/us/dance.mp3"
+      },
+      "inflections": {
+        "past": "danced",
+        "presentParticiple": "dancing",
+        "thirdPerson": "dances"
+      },
+      "senses": [
+        {
+          "id": "dance-1",
+          "pos": "verb",
+          "en": "to move your body to music",
+          "ko": "춤추다",
+          "level": 1,
+          "tags": [
+            "action",
+            "music"
+          ],
+          "examples": [
+            {
+              "id": "dance-1-e1",
+              "en": "The children {{dance}} to the happy song.",
+              "ko": "아이들이 즐거운 노래에 맞춰 춤을 춰요."
+            },
+            {
+              "id": "dance-1-e2",
+              "en": "She likes to sing and {{dance}}.",
+              "ko": "그녀는 노래하고 춤추는 걸 좋아해요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "dancer"
+        ]
+      },
       "curriculum": {
         "grade": 3
       },
@@ -2146,6 +2911,49 @@
           }
         ]
       },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "deep",
+      "headword": "deep",
+      "syllables": "deep",
+      "ipa": {
+        "us": "/diːp/"
+      },
+      "audio": {
+        "us": "audio/us/deep.mp3"
+      },
+      "inflections": {
+        "comparative": "deeper",
+        "superlative": "deepest"
+      },
+      "senses": [
+        {
+          "id": "deep-1",
+          "pos": "adjective",
+          "en": "going a long way down from the top",
+          "ko": "깊은",
+          "level": 1,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "deep-1-e1",
+              "en": "The river is very {{deep}} here.",
+              "ko": "이곳은 강이 아주 깊어요."
+            },
+            {
+              "id": "deep-1-e2",
+              "en": "Do not swim in the {{deep}} water.",
+              "ko": "깊은 물에서 헤엄치지 마세요."
+            }
+          ]
+        }
+      ],
       "curriculum": {
         "grade": 3
       },
@@ -2556,6 +3364,57 @@
       "editorialStatus": "done"
     },
     {
+      "id": "drive",
+      "headword": "drive",
+      "syllables": "drive",
+      "ipa": {
+        "us": "/draɪv/"
+      },
+      "audio": {
+        "us": "audio/us/drive.mp3"
+      },
+      "inflections": {
+        "past": "drove",
+        "pastParticiple": "driven",
+        "presentParticiple": "driving",
+        "thirdPerson": "drives",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "drive-1",
+          "pos": "verb",
+          "en": "to make a car move and go where you want",
+          "ko": "운전하다",
+          "level": 1,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "drive-1-e1",
+              "en": "My father {{drives}} me to school.",
+              "ko": "우리 아빠는 나를 학교에 데려다줘요."
+            },
+            {
+              "id": "drive-1-e2",
+              "en": "She learned to {{drive}} last year.",
+              "ko": "그녀는 작년에 운전을 배웠어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "driver"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "duck",
       "headword": "duck",
       "syllables": "duck",
@@ -2634,6 +3493,94 @@
           ]
         }
       ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "earth",
+      "headword": "earth",
+      "syllables": "earth",
+      "ipa": {
+        "us": "/ɜːrθ/"
+      },
+      "audio": {
+        "us": "audio/us/earth.mp3"
+      },
+      "senses": [
+        {
+          "id": "earth-1",
+          "pos": "noun",
+          "en": "the round world that we all live on",
+          "ko": "지구, 땅",
+          "level": 1,
+          "tags": [
+            "nature",
+            "space"
+          ],
+          "examples": [
+            {
+              "id": "earth-1-e1",
+              "en": "The {{earth}} goes around the sun.",
+              "ko": "지구는 태양 주위를 돌아요."
+            },
+            {
+              "id": "earth-1-e2",
+              "en": "We must keep the {{earth}} clean.",
+              "ko": "우리는 지구를 깨끗하게 지켜야 해요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "easy",
+      "headword": "easy",
+      "syllables": "easy",
+      "ipa": {
+        "us": "/ˈiː.ziː/"
+      },
+      "audio": {
+        "us": "audio/us/easy.mp3"
+      },
+      "inflections": {
+        "comparative": "easier",
+        "superlative": "easiest"
+      },
+      "senses": [
+        {
+          "id": "easy-1",
+          "pos": "adjective",
+          "en": "not hard to do",
+          "ko": "쉬운",
+          "level": 1,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "easy-1-e1",
+              "en": "This game is very {{easy}} to learn.",
+              "ko": "이 게임은 배우기 아주 쉬워요."
+            },
+            {
+              "id": "easy-1-e2",
+              "en": "The test was {{easy}} for me.",
+              "ko": "시험이 나에게는 쉬웠어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "easily"
+        ]
+      },
       "curriculum": {
         "grade": 3
       },
@@ -2858,6 +3805,62 @@
       "editorialStatus": "done"
     },
     {
+      "id": "fall",
+      "headword": "fall",
+      "syllables": "fall",
+      "ipa": {
+        "us": "/fɔːl/"
+      },
+      "audio": {
+        "us": "audio/us/fall.mp3"
+      },
+      "inflections": {
+        "past": "fell",
+        "pastParticiple": "fallen",
+        "presentParticiple": "falling",
+        "thirdPerson": "falls",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "fall-1",
+          "pos": "verb",
+          "en": "to go down to the ground when you did not mean to",
+          "ko": "떨어지다, 넘어지다",
+          "level": 1,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "fall-1-e1",
+              "en": "Be careful, do not {{fall}} down the stairs.",
+              "ko": "조심해, 계단에서 넘어지지 마."
+            },
+            {
+              "id": "fall-1-e2",
+              "en": "The leaves {{fall}} from the trees in autumn.",
+              "ko": "가을에는 나뭇잎이 나무에서 떨어져요."
+            }
+          ],
+          "collocations": [
+            {
+              "id": "fall-1-c1",
+              "text": "fall down",
+              "ko": "넘어지다",
+              "exampleId": "fall-1-e1",
+              "level": 1,
+              "studiable": true
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "farm",
       "headword": "farm",
       "syllables": "farm",
@@ -2989,6 +3992,95 @@
               "id": "father-1-e2",
               "en": "His {{father}} reads him a story at night.",
               "ko": "그의 아버지는 밤에 그에게 이야기를 읽어 줘요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "field",
+      "headword": "field",
+      "syllables": "field",
+      "ipa": {
+        "us": "/fiːld/"
+      },
+      "audio": {
+        "us": "audio/us/field.mp3"
+      },
+      "inflections": {
+        "plural": "fields"
+      },
+      "senses": [
+        {
+          "id": "field-1",
+          "pos": "noun",
+          "en": "a wide area of land where grass or food grows",
+          "ko": "들판, 밭",
+          "level": 1,
+          "tags": [
+            "nature",
+            "place"
+          ],
+          "examples": [
+            {
+              "id": "field-1-e1",
+              "en": "The cows are eating grass in the {{field}}.",
+              "ko": "소들이 들판에서 풀을 먹고 있어요."
+            },
+            {
+              "id": "field-1-e2",
+              "en": "We played soccer on the green {{field}}.",
+              "ko": "우리는 초록 들판에서 축구를 했어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "find",
+      "headword": "find",
+      "syllables": "find",
+      "ipa": {
+        "us": "/faɪnd/"
+      },
+      "audio": {
+        "us": "audio/us/find.mp3"
+      },
+      "inflections": {
+        "past": "found",
+        "pastParticiple": "found",
+        "presentParticiple": "finding",
+        "thirdPerson": "finds",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "find-1",
+          "pos": "verb",
+          "en": "to see something that you were looking for",
+          "ko": "찾다, 발견하다",
+          "level": 1,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "find-1-e1",
+              "en": "I can not {{find}} my other sock.",
+              "ko": "내 나머지 양말 한 짝을 못 찾겠어요."
+            },
+            {
+              "id": "find-1-e2",
+              "en": "She {{found}} her key under the bed.",
+              "ko": "그녀는 침대 밑에서 열쇠를 찾았어요."
             }
           ]
         }
@@ -3202,6 +4294,52 @@
               "id": "flower-1-e2",
               "en": "Many {{flowers}} grow in our garden.",
               "ko": "우리 정원에는 꽃이 많이 피어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "fly",
+      "headword": "fly",
+      "syllables": "fly",
+      "ipa": {
+        "us": "/flaɪ/"
+      },
+      "audio": {
+        "us": "audio/us/fly.mp3"
+      },
+      "inflections": {
+        "past": "flew",
+        "pastParticiple": "flown",
+        "presentParticiple": "flying",
+        "thirdPerson": "flies",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "fly-1",
+          "pos": "verb",
+          "en": "to move through the air like a bird",
+          "ko": "날다",
+          "level": 1,
+          "tags": [
+            "action"
+          ],
+          "examples": [
+            {
+              "id": "fly-1-e1",
+              "en": "Birds {{fly}} high up in the sky.",
+              "ko": "새들은 하늘 높이 날아요."
+            },
+            {
+              "id": "fly-1-e2",
+              "en": "The airplane {{flew}} over the sea.",
+              "ko": "비행기가 바다 위를 날아갔어요."
             }
           ]
         }
@@ -3427,6 +4565,49 @@
           "friendship"
         ]
       },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "full",
+      "headword": "full",
+      "syllables": "full",
+      "ipa": {
+        "us": "/fʊl/"
+      },
+      "audio": {
+        "us": "audio/us/full.mp3"
+      },
+      "inflections": {
+        "comparative": "fuller",
+        "superlative": "fullest"
+      },
+      "senses": [
+        {
+          "id": "full-1",
+          "pos": "adjective",
+          "en": "having no more space inside",
+          "ko": "가득 찬, 배부른",
+          "level": 1,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "full-1-e1",
+              "en": "The box is {{full}} of toys.",
+              "ko": "상자에 장난감이 가득해요."
+            },
+            {
+              "id": "full-1-e2",
+              "en": "I am {{full}}, I can not eat more.",
+              "ko": "배불러서 더 못 먹겠어요."
+            }
+          ]
+        }
+      ],
       "curriculum": {
         "grade": 3
       },
@@ -3826,6 +5007,92 @@
       "editorialStatus": "done"
     },
     {
+      "id": "ground",
+      "headword": "ground",
+      "syllables": "ground",
+      "ipa": {
+        "us": "/ɡraʊnd/"
+      },
+      "audio": {
+        "us": "audio/us/ground.mp3"
+      },
+      "senses": [
+        {
+          "id": "ground-1",
+          "pos": "noun",
+          "en": "the land that you walk on outside",
+          "ko": "땅, 바닥",
+          "level": 1,
+          "tags": [
+            "nature"
+          ],
+          "examples": [
+            {
+              "id": "ground-1-e1",
+              "en": "The leaves fell to the {{ground}}.",
+              "ko": "나뭇잎이 땅에 떨어졌어요."
+            },
+            {
+              "id": "ground-1-e2",
+              "en": "We sat on the {{ground}} under a tree.",
+              "ko": "우리는 나무 밑 땅에 앉았어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "grow",
+      "headword": "grow",
+      "syllables": "grow",
+      "ipa": {
+        "us": "/ɡroʊ/"
+      },
+      "audio": {
+        "us": "audio/us/grow.mp3"
+      },
+      "inflections": {
+        "past": "grew",
+        "pastParticiple": "grown",
+        "presentParticiple": "growing",
+        "thirdPerson": "grows",
+        "irregular": true
+      },
+      "senses": [
+        {
+          "id": "grow-1",
+          "pos": "verb",
+          "en": "to become bigger over time",
+          "ko": "자라다, 기르다",
+          "level": 1,
+          "tags": [
+            "action",
+            "nature"
+          ],
+          "examples": [
+            {
+              "id": "grow-1-e1",
+              "en": "Plants {{grow}} well with water and sun.",
+              "ko": "식물은 물과 햇빛으로 잘 자라요."
+            },
+            {
+              "id": "grow-1-e2",
+              "en": "You have {{grown}} so tall this year!",
+              "ko": "너 올해 키가 정말 많이 컸구나!"
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "hair",
       "headword": "hair",
       "syllables": "hair",
@@ -3954,6 +5221,56 @@
         "wordFamily": [
           "happily",
           "happiness"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "hard",
+      "headword": "hard",
+      "syllables": "hard",
+      "ipa": {
+        "us": "/hɑːrd/"
+      },
+      "audio": {
+        "us": "audio/us/hard.mp3"
+      },
+      "inflections": {
+        "comparative": "harder",
+        "superlative": "hardest"
+      },
+      "senses": [
+        {
+          "id": "hard-1",
+          "pos": "adjective",
+          "en": "not soft, or not [[easy]] to do",
+          "ko": "단단한, 어려운",
+          "level": 1,
+          "tags": [
+            "describing"
+          ],
+          "examples": [
+            {
+              "id": "hard-1-e1",
+              "en": "This gray rock is very {{hard}}.",
+              "ko": "이 바위는 아주 단단해요."
+            },
+            {
+              "id": "hard-1-e2",
+              "en": "The math homework was {{hard}} today.",
+              "ko": "오늘 수학 숙제가 어려웠어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "easy"
+          }
         ]
       },
       "curriculum": {
@@ -4130,6 +5447,57 @@
       "related": {
         "wordFamily": [
           "helpful"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "high",
+      "headword": "high",
+      "syllables": "high",
+      "ipa": {
+        "us": "/haɪ/"
+      },
+      "audio": {
+        "us": "audio/us/high.mp3"
+      },
+      "inflections": {
+        "comparative": "higher",
+        "superlative": "highest"
+      },
+      "senses": [
+        {
+          "id": "high-1",
+          "pos": "adjective",
+          "en": "far up from the ground",
+          "ko": "높은",
+          "level": 1,
+          "tags": [
+            "describing",
+            "size"
+          ],
+          "examples": [
+            {
+              "id": "high-1-e1",
+              "en": "The little bird flew very {{high}}.",
+              "ko": "새가 아주 높이 날았어요."
+            },
+            {
+              "id": "high-1-e2",
+              "en": "That white mountain is very {{high}}.",
+              "ko": "저 산은 아주 높아요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "low"
+          }
         ]
       },
       "curriculum": {
@@ -4359,6 +5727,47 @@
       "editorialStatus": "done"
     },
     {
+      "id": "ice",
+      "headword": "ice",
+      "syllables": "ice",
+      "ipa": {
+        "us": "/aɪs/"
+      },
+      "audio": {
+        "us": "audio/us/ice.mp3"
+      },
+      "senses": [
+        {
+          "id": "ice-1",
+          "pos": "noun",
+          "en": "water that has become very cold and hard",
+          "ko": "얼음",
+          "level": 1,
+          "tags": [
+            "nature",
+            "food-drink",
+            "weather"
+          ],
+          "examples": [
+            {
+              "id": "ice-1-e1",
+              "en": "Please put some {{ice}} in my drink.",
+              "ko": "제 음료에 얼음 좀 넣어 주세요."
+            },
+            {
+              "id": "ice-1-e2",
+              "en": "The {{ice}} on the lake is very thick.",
+              "ko": "호수의 얼음이 아주 두꺼워요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "jacket",
       "headword": "jacket",
       "syllables": "jack·et",
@@ -4521,6 +5930,55 @@
           ]
         }
       ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "kind",
+      "headword": "kind",
+      "syllables": "kind",
+      "ipa": {
+        "us": "/kaɪnd/"
+      },
+      "audio": {
+        "us": "audio/us/kind.mp3"
+      },
+      "inflections": {
+        "comparative": "kinder",
+        "superlative": "kindest"
+      },
+      "senses": [
+        {
+          "id": "kind-1",
+          "pos": "adjective",
+          "en": "nice and good to other people",
+          "ko": "친절한, 다정한",
+          "level": 1,
+          "tags": [
+            "describing",
+            "feeling"
+          ],
+          "examples": [
+            {
+              "id": "kind-1-e1",
+              "en": "My teacher is very {{kind}} to us.",
+              "ko": "우리 선생님은 우리에게 아주 친절해요."
+            },
+            {
+              "id": "kind-1-e2",
+              "en": "It was {{kind}} of you to help me.",
+              "ko": "도와줘서 고마워요, 참 다정하네요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "kindly"
+        ]
+      },
       "curriculum": {
         "grade": 3
       },
@@ -4784,6 +6242,61 @@
       "editorialStatus": "done"
     },
     {
+      "id": "listen",
+      "headword": "listen",
+      "syllables": "lis·ten",
+      "ipa": {
+        "us": "/ˈlɪ.sən/"
+      },
+      "audio": {
+        "us": "audio/us/listen.mp3"
+      },
+      "inflections": {
+        "past": "listened",
+        "presentParticiple": "listening",
+        "thirdPerson": "listens"
+      },
+      "senses": [
+        {
+          "id": "listen-1",
+          "pos": "verb",
+          "en": "to hear a sound and think about it",
+          "ko": "듣다",
+          "level": 1,
+          "tags": [
+            "action",
+            "sound"
+          ],
+          "examples": [
+            {
+              "id": "listen-1-e1",
+              "en": "I {{listen}} to music every evening.",
+              "ko": "나는 매일 저녁 음악을 들어요."
+            },
+            {
+              "id": "listen-1-e2",
+              "en": "Please {{listen}} to your teacher in class.",
+              "ko": "선생님 말씀을 잘 들으세요."
+            }
+          ],
+          "collocations": [
+            {
+              "id": "listen-1-c1",
+              "text": "listen to music",
+              "ko": "음악을 듣다",
+              "exampleId": "listen-1-e1",
+              "level": 1,
+              "studiable": true
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "long",
       "headword": "long",
       "syllables": "long",
@@ -4873,6 +6386,57 @@
           ]
         }
       ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "low",
+      "headword": "low",
+      "syllables": "low",
+      "ipa": {
+        "us": "/loʊ/"
+      },
+      "audio": {
+        "us": "audio/us/low.mp3"
+      },
+      "inflections": {
+        "comparative": "lower",
+        "superlative": "lowest"
+      },
+      "senses": [
+        {
+          "id": "low-1",
+          "pos": "adjective",
+          "en": "close to the ground, not high",
+          "ko": "낮은",
+          "level": 1,
+          "tags": [
+            "describing",
+            "size"
+          ],
+          "examples": [
+            {
+              "id": "low-1-e1",
+              "en": "The branch is {{low}} enough to touch.",
+              "ko": "그 나뭇가지는 손이 닿을 만큼 낮아요."
+            },
+            {
+              "id": "low-1-e2",
+              "en": "Please speak in a {{low}} voice here.",
+              "ko": "여기서는 낮은 목소리로 말해 주세요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "antonyms": [
+          {
+            "entryId": "high"
+          }
+        ]
+      },
       "curriculum": {
         "grade": 3
       },
@@ -5522,6 +7086,50 @@
       "editorialStatus": "done"
     },
     {
+      "id": "nice",
+      "headword": "nice",
+      "syllables": "nice",
+      "ipa": {
+        "us": "/naɪs/"
+      },
+      "audio": {
+        "us": "audio/us/nice.mp3"
+      },
+      "inflections": {
+        "comparative": "nicer",
+        "superlative": "nicest"
+      },
+      "senses": [
+        {
+          "id": "nice-1",
+          "pos": "adjective",
+          "en": "good and pleasing",
+          "ko": "멋진, 좋은",
+          "level": 1,
+          "tags": [
+            "describing",
+            "feeling"
+          ],
+          "examples": [
+            {
+              "id": "nice-1-e1",
+              "en": "We had a {{nice}} time at the beach.",
+              "ko": "우리는 바닷가에서 즐거운 시간을 보냈어요."
+            },
+            {
+              "id": "nice-1-e2",
+              "en": "That is a {{nice}} picture you drew.",
+              "ko": "네가 그린 그림 참 멋지다."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "night",
       "headword": "night",
       "syllables": "night",
@@ -6087,6 +7695,48 @@
       "editorialStatus": "done"
     },
     {
+      "id": "pizza",
+      "headword": "pizza",
+      "syllables": "piz·za",
+      "ipa": {
+        "us": "/ˈpiːt.sə/"
+      },
+      "audio": {
+        "us": "audio/us/pizza.mp3"
+      },
+      "inflections": {
+        "plural": "pizzas"
+      },
+      "senses": [
+        {
+          "id": "pizza-1",
+          "pos": "noun",
+          "en": "a flat round food with cheese on top",
+          "ko": "피자",
+          "level": 1,
+          "tags": [
+            "food-drink"
+          ],
+          "examples": [
+            {
+              "id": "pizza-1-e1",
+              "en": "We ate {{pizza}} at my birthday party.",
+              "ko": "우리는 내 생일 파티에서 피자를 먹었어요."
+            },
+            {
+              "id": "pizza-1-e2",
+              "en": "I want one more piece of {{pizza}}.",
+              "ko": "피자 한 조각 더 먹고 싶어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "play",
       "headword": "play",
       "syllables": "play",
@@ -6407,6 +8057,48 @@
       "editorialStatus": "done"
     },
     {
+      "id": "radio",
+      "headword": "radio",
+      "syllables": "ra·dio",
+      "ipa": {
+        "us": "/ˈreɪ.diː.ˌoʊ/"
+      },
+      "audio": {
+        "us": "audio/us/radio.mp3"
+      },
+      "inflections": {
+        "plural": "radios"
+      },
+      "senses": [
+        {
+          "id": "radio-1",
+          "pos": "noun",
+          "en": "a thing that you listen to music and news on",
+          "ko": "라디오",
+          "level": 1,
+          "tags": [
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "radio-1-e1",
+              "en": "My grandmother listens to the {{radio}}.",
+              "ko": "우리 할머니는 라디오를 들으세요."
+            },
+            {
+              "id": "radio-1-e2",
+              "en": "Please turn on the {{radio}} for me.",
+              "ko": "라디오 좀 켜 주세요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "rain",
       "headword": "rain",
       "syllables": "rain",
@@ -6622,6 +8314,48 @@
       "editorialStatus": "done"
     },
     {
+      "id": "rock",
+      "headword": "rock",
+      "syllables": "rock",
+      "ipa": {
+        "us": "/rɑːk/"
+      },
+      "audio": {
+        "us": "audio/us/rock.mp3"
+      },
+      "inflections": {
+        "plural": "rocks"
+      },
+      "senses": [
+        {
+          "id": "rock-1",
+          "pos": "noun",
+          "en": "a very hard thing that comes from the ground",
+          "ko": "바위, 돌",
+          "level": 1,
+          "tags": [
+            "nature"
+          ],
+          "examples": [
+            {
+              "id": "rock-1-e1",
+              "en": "A big {{rock}} was next to the road.",
+              "ko": "큰 바위가 길 옆에 있었어요."
+            },
+            {
+              "id": "rock-1-e2",
+              "en": "The children sat on the flat {{rock}}.",
+              "ko": "아이들이 평평한 바위에 앉았어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "room",
       "headword": "room",
       "syllables": "room",
@@ -6762,6 +8496,165 @@
           }
         ]
       },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "salad",
+      "headword": "salad",
+      "syllables": "sal·ad",
+      "ipa": {
+        "us": "/ˈsæ.ləd/"
+      },
+      "audio": {
+        "us": "audio/us/salad.mp3"
+      },
+      "senses": [
+        {
+          "id": "salad-1",
+          "pos": "noun",
+          "en": "a cold food made from vegetables",
+          "ko": "샐러드",
+          "level": 1,
+          "tags": [
+            "food-drink"
+          ],
+          "examples": [
+            {
+              "id": "salad-1-e1",
+              "en": "I eat {{salad}} with my dinner.",
+              "ko": "나는 저녁에 샐러드를 먹어요."
+            },
+            {
+              "id": "salad-1-e2",
+              "en": "She put carrots in the {{salad}}.",
+              "ko": "그녀는 샐러드에 당근을 넣었어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "salt",
+      "headword": "salt",
+      "syllables": "salt",
+      "ipa": {
+        "us": "/sɔːlt/"
+      },
+      "audio": {
+        "us": "audio/us/salt.mp3"
+      },
+      "senses": [
+        {
+          "id": "salt-1",
+          "pos": "noun",
+          "en": "the white thing that makes food taste better",
+          "ko": "소금",
+          "level": 1,
+          "tags": [
+            "food-drink"
+          ],
+          "examples": [
+            {
+              "id": "salt-1-e1",
+              "en": "Please put some {{salt}} in the soup.",
+              "ko": "국에 소금을 조금 넣어 주세요."
+            },
+            {
+              "id": "salt-1-e2",
+              "en": "Too much {{salt}} is not good for you.",
+              "ko": "소금을 너무 많이 먹으면 몸에 안 좋아요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "sand",
+      "headword": "sand",
+      "syllables": "sand",
+      "ipa": {
+        "us": "/sænd/"
+      },
+      "audio": {
+        "us": "audio/us/sand.mp3"
+      },
+      "senses": [
+        {
+          "id": "sand-1",
+          "pos": "noun",
+          "en": "the very small soft pieces of rock on a beach",
+          "ko": "모래",
+          "level": 1,
+          "tags": [
+            "nature"
+          ],
+          "examples": [
+            {
+              "id": "sand-1-e1",
+              "en": "The children played in the {{sand}}.",
+              "ko": "아이들이 모래에서 놀았어요."
+            },
+            {
+              "id": "sand-1-e2",
+              "en": "My feet are covered with {{sand}}.",
+              "ko": "내 발이 모래로 뒤덮였어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "sandwich",
+      "headword": "sandwich",
+      "syllables": "sand·wich",
+      "ipa": {
+        "us": "/ˈsænd.wɪtʃ/"
+      },
+      "audio": {
+        "us": "audio/us/sandwich.mp3"
+      },
+      "inflections": {
+        "plural": "sandwiches"
+      },
+      "senses": [
+        {
+          "id": "sandwich-1",
+          "pos": "noun",
+          "en": "food made with meat or cheese between two pieces of bread",
+          "ko": "샌드위치",
+          "level": 1,
+          "tags": [
+            "food-drink"
+          ],
+          "examples": [
+            {
+              "id": "sandwich-1-e1",
+              "en": "I made a cheese {{sandwich}} for lunch.",
+              "ko": "나는 점심으로 치즈 샌드위치를 만들었어요."
+            },
+            {
+              "id": "sandwich-1-e2",
+              "en": "She put a tomato in her {{sandwich}}.",
+              "ko": "그녀는 샌드위치에 토마토를 넣었어요."
+            }
+          ]
+        }
+      ],
       "curriculum": {
         "grade": 3
       },
@@ -7498,6 +9391,45 @@
       "editorialStatus": "done"
     },
     {
+      "id": "soup",
+      "headword": "soup",
+      "syllables": "soup",
+      "ipa": {
+        "us": "/suːp/"
+      },
+      "audio": {
+        "us": "audio/us/soup.mp3"
+      },
+      "senses": [
+        {
+          "id": "soup-1",
+          "pos": "noun",
+          "en": "a hot food that you eat with a spoon",
+          "ko": "수프, 국",
+          "level": 1,
+          "tags": [
+            "food-drink"
+          ],
+          "examples": [
+            {
+              "id": "soup-1-e1",
+              "en": "This warm {{soup}} is very delicious.",
+              "ko": "이 따뜻한 수프는 아주 맛있어요."
+            },
+            {
+              "id": "soup-1-e2",
+              "en": "My mother made {{soup}} for dinner.",
+              "ko": "우리 엄마가 저녁으로 국을 끓였어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "spoon",
       "headword": "spoon",
       "syllables": "spoon",
@@ -7531,6 +9463,46 @@
               "id": "spoon-1-e2",
               "en": "Please put a {{spoon}} next to each plate.",
               "ko": "접시마다 옆에 숟가락을 놓으세요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "spring",
+      "headword": "spring",
+      "syllables": "spring",
+      "ipa": {
+        "us": "/sprɪŋ/"
+      },
+      "audio": {
+        "us": "audio/us/spring.mp3"
+      },
+      "senses": [
+        {
+          "id": "spring-1",
+          "pos": "noun",
+          "en": "the warm time of the year when flowers grow",
+          "ko": "봄",
+          "level": 1,
+          "tags": [
+            "time",
+            "weather"
+          ],
+          "examples": [
+            {
+              "id": "spring-1-e1",
+              "en": "Many pretty flowers grow in {{spring}}.",
+              "ko": "봄에는 꽃이 많이 피어요."
+            },
+            {
+              "id": "spring-1-e2",
+              "en": "The weather is warm in {{spring}}.",
+              "ko": "봄에는 날씨가 따뜻해요."
             }
           ]
         }
@@ -7584,6 +9556,48 @@
       "editorialStatus": "done"
     },
     {
+      "id": "stone",
+      "headword": "stone",
+      "syllables": "stone",
+      "ipa": {
+        "us": "/stoʊn/"
+      },
+      "audio": {
+        "us": "audio/us/stone.mp3"
+      },
+      "inflections": {
+        "plural": "stones"
+      },
+      "senses": [
+        {
+          "id": "stone-1",
+          "pos": "noun",
+          "en": "a small hard piece of rock",
+          "ko": "돌",
+          "level": 1,
+          "tags": [
+            "nature"
+          ],
+          "examples": [
+            {
+              "id": "stone-1-e1",
+              "en": "He threw a {{stone}} into the river.",
+              "ko": "그는 강에 돌을 던졌어요."
+            },
+            {
+              "id": "stone-1-e2",
+              "en": "There are many small {{stones}} on the road.",
+              "ko": "길에 작은 돌이 많이 있어요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
       "id": "strong",
       "headword": "strong",
       "syllables": "strong",
@@ -7617,6 +9631,45 @@
               "id": "strong-1-e2",
               "en": "He is {{strong}} enough to lift the box.",
               "ko": "그는 상자를 들 만큼 힘이 세요."
+            }
+          ]
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "sugar",
+      "headword": "sugar",
+      "syllables": "sug·ar",
+      "ipa": {
+        "us": "/ˈʃʊ.ɡɚ/"
+      },
+      "audio": {
+        "us": "audio/us/sugar.mp3"
+      },
+      "senses": [
+        {
+          "id": "sugar-1",
+          "pos": "noun",
+          "en": "the sweet white thing that you put in food",
+          "ko": "설탕",
+          "level": 1,
+          "tags": [
+            "food-drink"
+          ],
+          "examples": [
+            {
+              "id": "sugar-1-e1",
+              "en": "I put {{sugar}} in my milk.",
+              "ko": "나는 우유에 설탕을 넣어요."
+            },
+            {
+              "id": "sugar-1-e2",
+              "en": "This cake has too much {{sugar}}.",
+              "ko": "이 케이크는 설탕이 너무 많아요."
             }
           ]
         }
@@ -7915,6 +9968,96 @@
           "teach"
         ]
       },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "television",
+      "headword": "television",
+      "syllables": "tele·vi·sion",
+      "ipa": {
+        "us": "/ˈte.lə.ˌvɪ.ʒən/"
+      },
+      "audio": {
+        "us": "audio/us/television.mp3"
+      },
+      "inflections": {
+        "plural": "televisions"
+      },
+      "senses": [
+        {
+          "id": "television-1",
+          "pos": "noun",
+          "en": "a thing that you watch shows and movies on",
+          "ko": "텔레비전",
+          "level": 1,
+          "tags": [
+            "object"
+          ],
+          "examples": [
+            {
+              "id": "television-1-e1",
+              "en": "We watch {{television}} together after dinner.",
+              "ko": "우리는 저녁 먹고 텔레비전을 봐요."
+            },
+            {
+              "id": "television-1-e2",
+              "en": "There is a big {{television}} in our room.",
+              "ko": "우리 방에 큰 텔레비전이 있어요."
+            }
+          ]
+        }
+      ],
+      "related": {
+        "wordFamily": [
+          "TV"
+        ]
+      },
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "tent",
+      "headword": "tent",
+      "syllables": "tent",
+      "ipa": {
+        "us": "/tent/"
+      },
+      "audio": {
+        "us": "audio/us/tent.mp3"
+      },
+      "inflections": {
+        "plural": "tents"
+      },
+      "senses": [
+        {
+          "id": "tent-1",
+          "pos": "noun",
+          "en": "a small house that you sleep in when you camp outside",
+          "ko": "천막, 텐트",
+          "level": 1,
+          "tags": [
+            "object",
+            "place"
+          ],
+          "examples": [
+            {
+              "id": "tent-1-e1",
+              "en": "We slept in a {{tent}} near the lake.",
+              "ko": "우리는 호수 근처 텐트에서 잤어요."
+            },
+            {
+              "id": "tent-1-e2",
+              "en": "My father put up the {{tent}} on the grass.",
+              "ko": "우리 아빠가 잔디에 텐트를 쳤어요."
+            }
+          ]
+        }
+      ],
       "curriculum": {
         "grade": 3
       },
@@ -8472,6 +10615,49 @@
             }
           ],
           "note": "셀 수 없는 명사예요. 'a glass of water'라고 해요."
+        }
+      ],
+      "curriculum": {
+        "grade": 3
+      },
+      "editorialStatus": "done"
+    },
+    {
+      "id": "watermelon",
+      "headword": "watermelon",
+      "syllables": "wa·ter·mel·on",
+      "ipa": {
+        "us": "/ˈwɔː.tɚ.ˌme.lən/"
+      },
+      "audio": {
+        "us": "audio/us/watermelon.mp3"
+      },
+      "inflections": {
+        "plural": "watermelons"
+      },
+      "senses": [
+        {
+          "id": "watermelon-1",
+          "pos": "noun",
+          "en": "a very big green fruit that is red inside",
+          "ko": "수박",
+          "level": 1,
+          "tags": [
+            "food-drink",
+            "plant"
+          ],
+          "examples": [
+            {
+              "id": "watermelon-1-e1",
+              "en": "We ate cold {{watermelon}} in the summer.",
+              "ko": "우리는 여름에 시원한 수박을 먹었어요."
+            },
+            {
+              "id": "watermelon-1-e2",
+              "en": "This {{watermelon}} is sweet and red.",
+              "ko": "이 수박은 달고 빨개요."
+            }
+          ]
         }
       ],
       "curriculum": {
