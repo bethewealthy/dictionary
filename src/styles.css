@@ -431,6 +431,38 @@ body {
   flex-direction: column;
   gap: var(--s3);
 }
+
+.unlock-suggest {
+  background: var(--spot-tint);
+  border: 1px solid var(--spot);
+  border-radius: 2px;
+  padding: var(--s3);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+}
+.unlock-msg { color: var(--ink); line-height: 1.7; }
+.unlock-msg b { color: var(--spot); }
+.unlock-actions {
+  display: flex;
+  gap: var(--s2);
+  justify-content: center;
+}
+.unlock-yes, .unlock-later {
+  font: inherit;
+  font-size: 0.95rem;
+  padding: 0.5rem 1.4rem;
+  border-radius: 999px;
+  cursor: pointer;
+}
+.unlock-yes { color: #fff; background: var(--spot); border: 0; }
+:root[data-theme="dark"] .unlock-yes { color: var(--paper-raised); }
+.unlock-later {
+  color: var(--ink-soft);
+  background: transparent;
+  border: 1px solid var(--rule-strong);
+}
 .study-start h2 {
   font-family: var(--serif);
   font-size: 1.5rem;

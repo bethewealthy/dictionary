@@ -13,6 +13,37 @@ import { indexRecords, isDue, targetKey } from './schedule.ts';
 export const NEW_PER_DAY = 5;
 export const REVIEW_PER_DAY = 15;
 
+/** 정답률 문지방. 로드맵 M2 완료 기준(4번 박스 80%)과 같은 값이다. */
+export const MASTERY_RATE = 0.8;
+/** 정답률을 신뢰하기 위한 최소 누적 응답 수. 초반 표본이 적을 때의 오판을 막는다. */
+export const PACE_MIN_ATTEMPTS = 20;
+/** 다음 등급을 제안하려면 현재 등급에서 아직 손대지 않은 단어가 이 수 이하여야 한다. */
+export const UNLOCK_REMAINING_MAX = 5;
+
+/** 누적 정답률. 답한 적 있는 카드(attempts>0)만 센다. */
+export function accuracy(records: StudyRecord[]): { rate: number | null; attempts: number } {
+  let att = 0;
+  let cor = 0;
+  for (const r of records) {
+    if (r.attempts > 0) { att += r.attempts; cor += r.correct; }
+  }
+  return { rate: att > 0 ? cor / att : null, attempts: att };
+}
+
+/**
+ * 정답률에 따른 신규 투입량. 밀린 복습이 있는데 정답률이 문지방 아래면(표본 충분할 때만)
+ * 새 단어를 멈추고 복습부터 따라잡게 한다. 밀린 복습이 없으면 정답률과 무관하게 공급한다.
+ * → docs/02-learning-design.md
+ */
+export function pacedNewCount(records: StudyRecord[], day: string, base = NEW_PER_DAY): number {
+  const { rate, attempts } = accuracy(records);
+  const dueBacklog = records.some((r) => r.attempts > 0 && isDue(r, day));
+  if (attempts >= PACE_MIN_ATTEMPTS && dueBacklog && rate !== null && rate < MASTERY_RATE) {
+    return 0;
+  }
+  return base;
+}
+
 /** 학습 단위 하나. 뜻갈래 또는 연어. */
 export interface StudyUnit {
   target: StudyTarget;
@@ -65,7 +96,7 @@ export function buildSession(
   day: string,
   opts: BuildOptions = {},
 ): Session {
-  const newCap = opts.newPerDay ?? NEW_PER_DAY;
+  const newCap = opts.newPerDay ?? pacedNewCount(records, day);
   const reviewCap = opts.reviewPerDay ?? REVIEW_PER_DAY;
 
   const units = studiableUnits(entries, grade);
@@ -134,4 +165,32 @@ export function stats(records: StudyRecord[]): Stats {
     box4Samples: box4.length,
     box4FirstReviewRate: totalAtt > 0 ? totalCor / totalAtt : null,
   };
+}
+
+/**
+ * 다음 학년 등급을 제안할지 판단한다. 자동 전환이 아니라 **제안**이다 —
+ * 난이도 급상승을 사용자가 통제하게 한다. → docs/02-learning-design.md
+ *
+ * 조건: ① 다음 등급에 실제로 더 열릴 단어가 있고, ② 현재 등급에서 아직 손대지
+ * 않은 단어가 소량 이하이며, ③ 누적 정답률이 문지방 이상(표본 충분)일 때.
+ * 셋을 함께 걸어 "충분히 익혔고 잘하고 있을 때만" 다음 단계를 권한다.
+ */
+export function suggestNextGrade(
+  entries: Entry[], records: StudyRecord[], grade: Level,
+): Level | null {
+  if (grade >= 4) return null;
+  const next = (grade + 1) as Level;
+
+  const cur = studiableUnits(entries, grade);
+  const nxt = studiableUnits(entries, next);
+  if (nxt.length <= cur.length) return null;             // 더 열릴 단어가 없다
+
+  const started = indexRecords(records);
+  const remainingNew = cur.filter((u) => !started.has(targetKey(u.target))).length;
+  if (remainingNew > UNLOCK_REMAINING_MAX) return null;  // 현재 등급을 아직 많이 안 봤다
+
+  const { rate, attempts } = accuracy(records);
+  if (attempts < PACE_MIN_ATTEMPTS || rate === null || rate < MASTERY_RATE) return null;
+
+  return next;
 }

@@ -102,7 +102,7 @@ export function App() {
         </main>
       ) : (
         <main className="results">
-          <StudyTab entries={entries} grade={grade} state={state} persist={persist} onOpenEntry={openEntry} />
+          <StudyTab entries={entries} grade={grade} state={state} persist={persist} onOpenEntry={openEntry} onChangeGrade={setGrade} />
         </main>
       )}
     </div>

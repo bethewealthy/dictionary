@@ -3,7 +3,7 @@ import type { Entry, StudyRecord } from '../types/entry.ts';
 import type { SessionCard, StudyUnit } from '../study/session.ts';
 import { applyAnswer, newRecord, targetKey } from '../study/schedule.ts';
 import { makeQuestion } from '../study/question.ts';
-import { playWord } from '../audio.ts';
+import { playCorrectChime, playWord } from '../audio.ts';
 import { QuestionView } from './QuestionView.tsx';
 
 const MAX_SESSION_ATTEMPTS = 2; // 카드당 세션 내 최대 출제 (당일 재출제 1회)
@@ -55,6 +55,7 @@ export function SessionRunner({ cards, pool, records, day, soundOff, onUpdate, o
     attemptsRef.current.set(key, n);
 
     if (correct) {
+      playCorrectChime(); // 정답에만 효과음. 오답에는 소리 없음.
       finishedRef.current.add(key);
       advance();
     } else {

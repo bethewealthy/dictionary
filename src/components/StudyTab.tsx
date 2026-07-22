@@ -1,9 +1,12 @@
 import { useMemo, useRef, useState } from 'react';
 import type { Entry, Level, StudyState } from '../types/entry.ts';
-import { buildSession, stats, studiableUnits, type SessionCard } from '../study/session.ts';
+import { buildSession, stats, studiableUnits, suggestNextGrade, type SessionCard } from '../study/session.ts';
 import { today } from '../study/schedule.ts';
 import { exportState, parseImport } from '../study/store.ts';
 import { audioAvailable } from '../audio.ts';
+import {
+  GRADE_LABELS, clearUnlockDismissed, dismissUnlock, readUnlockDismissed,
+} from '../settings.ts';
 import { SessionRunner } from './SessionRunner.tsx';
 
 interface Props {
@@ -12,11 +15,13 @@ interface Props {
   state: StudyState;
   persist: (s: StudyState) => void;
   onOpenEntry: (entry: Entry) => void;
+  onChangeGrade: (level: Level) => void;
 }
 
-export function StudyTab({ entries, grade, state, persist, onOpenEntry }: Props) {
+export function StudyTab({ entries, grade, state, persist, onOpenEntry, onChangeGrade }: Props) {
   const [active, setActive] = useState<SessionCard[] | null>(null);
   const [importMsg, setImportMsg] = useState<string | null>(null);
+  const [dismissed, setDismissed] = useState(readUnlockDismissed);
   const fileRef = useRef<HTMLInputElement>(null);
   const day = today();
 
@@ -26,6 +31,20 @@ export function StudyTab({ entries, grade, state, persist, onOpenEntry }: Props)
     [entries, state.records, grade, day],
   );
   const st = useMemo(() => stats(state.records), [state.records]);
+  const suggestion = useMemo(() => {
+    const next = suggestNextGrade(entries, state.records, grade);
+    return next && next > dismissed ? next : null;
+  }, [entries, state.records, grade, dismissed]);
+
+  const acceptUnlock = (next: Level) => {
+    clearUnlockDismissed();
+    setDismissed(0);
+    onChangeGrade(next);
+  };
+  const laterUnlock = (next: Level) => {
+    dismissUnlock(next);
+    setDismissed(next);
+  };
 
   if (active) {
     return (
@@ -68,6 +87,23 @@ export function StudyTab({ entries, grade, state, persist, onOpenEntry }: Props)
 
   return (
     <div className="study-home">
+      {suggestion && (
+        <section className="unlock-suggest">
+          <p className="unlock-msg">
+            <b>{GRADE_LABELS[grade]}</b> 단어를 잘 익히고 있어요.
+            <br />이제 <b>{GRADE_LABELS[suggestion]}</b> 단어도 열어 볼까요?
+          </p>
+          <div className="unlock-actions">
+            <button type="button" className="unlock-yes" onClick={() => acceptUnlock(suggestion)}>
+              네, 열기
+            </button>
+            <button type="button" className="unlock-later" onClick={() => laterUnlock(suggestion)}>
+              나중에
+            </button>
+          </div>
+        </section>
+      )}
+
       <section className="study-start">
         <h2>오늘의 학습</h2>
         {totalCards > 0 ? (
